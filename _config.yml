@@ -1,3 +1,4 @@
 theme: jekyll-theme-minimal
 title: VSeeFace
-site.github.is_project_page: nil
+github:
+  is_project_page: false
