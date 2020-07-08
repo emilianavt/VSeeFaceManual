@@ -5,6 +5,7 @@ You can see a comparison of the face tracking performance compared to other popu
 In this comparison, VSeeFace is still listed under its former name of OpenSeeFaceDemo.
 
 It is currently in open beta and can be found for download in the latest pinned message of the `#tech-dev` channel
-of @[Virtual_Deat](https://twitter.com/Virtual_Deat)'s discord server.
+of @[Virtual_Deat](https://twitter.com/Virtual_Deat)'s discord server. The latest release notes can be found
+[here](https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae).
 
 If you have any questions or suggestions, please contact me, @[Emiliana_vt](https://twitter.com/emiliana_vt)!
