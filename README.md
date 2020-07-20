@@ -18,3 +18,6 @@ VSeeFace is currently in open beta and can be found for download in the latest p
 
 The reason it is currently only released in this way, is to make sure that everybody who tries it out has an easy channel to give me feedback.
 
+## Terms of use
+
+You can use VSeeFace to stream or do pretty much anything you like. Please just do not give anybody a copy directly or pass the download link around. It's still very much in development, so I want every user to be able to find updates and give feedback easily. If somebody is interested, you can just point them to this page.
