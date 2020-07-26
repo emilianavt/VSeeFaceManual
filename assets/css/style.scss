@@ -8,3 +8,29 @@ section {
     margin-left: auto;
     margin-right: auto;
 }
+
+nav {
+    border: 1px solid #aaaaaa;
+    width: 150px;
+    padding: 6px 9px 6px 9px;
+    font-size: 95%
+}
+
+@media only screen and (min-width: 860px) {
+nav {
+    position: fixed;
+    top: 80px;
+}
+}
+
+nav > ul {
+    list-style: outside none none !important;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+nav > ul ul {
+    list-style: outside none none !important;
+    padding: 0px 0px 0px 20px;
+    margin: 0px 0px 0px 0px;
+}
