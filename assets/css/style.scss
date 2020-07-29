@@ -13,14 +13,6 @@ nav {
     border: 1px solid #aaaaaa;
     width: 150px;
     padding: 6px 9px 6px 9px;
-    font-size: 95%
-}
-
-@media only screen and (min-width: 860px) {
-nav {
-    position: fixed;
-    top: 80px;
-}
 }
 
 nav > ul {
@@ -34,3 +26,15 @@ nav > ul ul {
     padding: 0px 0px 0px 20px;
     margin: 0px 0px 0px 0px;
 }
+
+@media only screen and (min-width: 980px) {
+nav {
+    position: fixed;
+    top: 80px;
+    font-size: 95%
+}
+nav > ul ul {
+    font-size: 95%
+}
+}
+
