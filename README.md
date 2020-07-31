@@ -32,6 +32,22 @@ This section is still a work in progress. For help with common issues, please re
 
 The most important information can be found by reading through the help screen as well as the usage notes inside the program.
 
+### FAQ
+
+#### How can I move my character?
+
+You can rotate, zoom and move the camera by holding the Alt key and using the different mouse buttons. The exact controls are given on the help screen.
+
+Once you've found a camera position you like, you set the default camera to `Current` in the `General settings` and it will remember it when you restart the program. You can press `Update` to save a new camera position. Please note that these custom camera positions to not adapt to avatar size, while the regular default positions do.
+
+#### How do I do chroma keying with a gray background?
+
+VSeeFace does not support chroma keying. Instead, capture it in OBS using a game capture and enable the `Allow transparency` option on it. Once you press the tiny ※ button in the lower right corner, the UI will become hidden and the background will turn transparent in OBS.
+
+#### Can I get rid of the ※ button in the corner somehow?
+
+You can hide and show the ※ button using the space key.
+
 ### Virtual camera
 
 The virtual camera can be used to use VSeeFace for teleconferences, Discord calls and similar. It can also be used in situations where using a game capture is not possible or very slow, due to specific laptop hardware setups.
