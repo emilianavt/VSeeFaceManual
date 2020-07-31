@@ -155,6 +155,8 @@ Please note that this is not a guaranteed fix by far, but it might help. If you 
 
 #### Lipsync issues
 
+First, make sure you have your microphone selected on the starting screen. You can also change it in the `General settings`.
+
 If you change your audio output device in Windows, the lipsync function may stop working. If this happens, it should be possible to get it working again by changing the selected microphone in the `General settings` or toggling the lipsync option off and on.
 
 Lipsync and mouth animation relies on the model having VRM blendshape clips for the A, I, U, E, O mouth shapes. Jaw bones are not supported and known to cause trouble during VRM export, so it is recommended to unassign them from Unity's humanoid avatar configuration if present.
