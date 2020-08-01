@@ -54,6 +54,10 @@ You can set up the virtual camera function, load a background image and do a Dis
 
 You can hide and show the ※ button using the space key.
 
+#### I moved my Leap Motion from the desk to a neck holder and now my arms are in the sky?
+
+Changing the position also changes the height of the Leap Motion in VSeeFace, so just pull the Leap Motion position's height slider way down. I'm still trying to think of a good way of avoiding that, that also won't mess up existing settings for anybody.
+
 ### Virtual camera
 
 The virtual camera can be used to use VSeeFace for teleconferences, Discord calls and similar. It can also be used in situations where using a game capture is not possible or very slow, due to specific laptop hardware setups.
