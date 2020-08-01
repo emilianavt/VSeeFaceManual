@@ -46,6 +46,10 @@ Once you've found a camera position you like and would like for it to be the ini
 
 VSeeFace does not support chroma keying. Instead, capture it in OBS using a game capture and enable the `Allow transparency` option on it. Once you press the tiny ※ button in the lower right corner, the UI will become hidden and the background will turn transparent in OBS.
 
+#### What's the best way to set up a collab then?
+
+You can set up the virtual camera function, load a background image and do a Discord (or similar) call using the virtual VSeeFace camera.
+
 #### Can I get rid of the ※ button in the corner somehow?
 
 You can hide and show the ※ button using the space key.
