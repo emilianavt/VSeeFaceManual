@@ -20,7 +20,7 @@ The latest release notes can be found [here](https://gist.github.com/emilianavt/
 
 The reason it is currently only released in this way, is to make sure that everybody who tries it out has an easy channel to give me feedback.
 
-この度VSeeFaceは@[Virtual_Deat](https://twitter.com/Virtual_Deat)さんの[ディスコード](https://discord.gg/BjBgk7k)だけでダウンロードが出来ます。サーバーに入るとルールズチャンネルで👌にクリックでルールを同意して他のチャンネルも表示されます。ダウンロードは#tech-devチャンネルの固定メッセージにあります。リリースノートは[こちら](https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae)。
+<span lang="ja">この度VSeeFaceは@[Virtual_Deat](https://twitter.com/Virtual_Deat)さんの[ディスコード](https://discord.gg/BjBgk7k)だけでダウンロードが出来ます。サーバーに入るとルールズチャンネルで👌にクリックでルールを同意して他のチャンネルも表示されます。ダウンロードは#tech-devチャンネルの固定メッセージにあります。リリースノートは[こちら](https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae)。</span>
 
 ## Terms of use
 
