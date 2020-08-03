@@ -22,6 +22,8 @@ The reason it is currently only released in this way, is to make sure that every
 
 <span lang="ja">この度VSeeFaceは@[Virtual_Deat](https://twitter.com/Virtual_Deat)さんの[ディスコード](https://discord.gg/BjBgk7k)だけでダウンロードが出来ます。サーバーに入るとルールズチャンネルで👌にクリックでルールを同意して他のチャンネルも表示されます。ダウンロードは#tech-devチャンネルの固定メッセージにあります。リリースノートは[こちら](https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae)。</span>
 
+<span lang="ja">VSeeFaceはカラーキーで録画が出来ないけどOBSのGame CaptureでAllow transparencyをチェックして右下の※ボタンでUIを見えないにすれば綺麗な透明の背景になります。</span>
+
 ## Terms of use
 
 You can use VSeeFace to stream or do pretty much anything you like. Please just do not give anybody a copy directly or pass the download link around. It's still very much in development, so I want every user to be able to find updates and give feedback easily. If somebody is interested, you can just point them to this page.
