@@ -46,13 +46,13 @@ Once you've found a camera position you like and would like for it to be the ini
 
 #### How do I do chroma keying with a gray background?
 
-VSeeFace does not support chroma keying. Instead, capture it in OBS using a game capture and enable the `Allow transparency` option on it. Once you press the tiny ※ button in the lower right corner, the UI will become hidden and the background will turn transparent in OBS.
+VSeeFace does not support chroma keying. Instead, capture it in OBS using a game capture and enable the `Allow transparency` option on it. Once you press the tiny ※ button in the lower right corner, the UI will become hidden and the background will turn transparent in OBS. You can hide and show the ※ button using the space key.
 
 #### What's the best way to set up a collab then?
 
 You can set up the virtual camera function, load a background image and do a Discord (or similar) call using the virtual VSeeFace camera.
 
-#### Can I get rid of the ※ button in the corner somehow?
+#### Can I get rid of the ※ button in the corner somehow? It shows on OBS.
 
 You can hide and show the ※ button using the space key.
 
@@ -64,7 +64,7 @@ Changing the position also changes the height of the Leap Motion in VSeeFace, so
 
 The virtual camera can be used to use VSeeFace for teleconferences, Discord calls and similar. It can also be used in situations where using a game capture is not possible or very slow, due to specific laptop hardware setups.
 
-To use the virtual camera, you have to enable it in the `General settings`. For performance reasons, it is disabled again after closing the program. Please note that the video camera will only output a picture while the UI of VSeeFace is hidden using the small ※ button in the lower right corner.
+To use the virtual camera, you have to enable it in the `General settings`. For performance reasons, it is disabled again after closing the program. Starting with version 1.13.27, the virtual camera will always provide a clean (no UI) image, even while the UI of VSeeFace is not hidden using the small ※ button in the lower right corner.
 
 When using it for the first time, you first have to install the camera driver by clicking the installation button in the virtual camera section of the `General settings`. This should open an UAC prompt asking for permission to make changes to your computer, which is required to set up the virtual camera. If no such prompt appears and the installation fails, starting VSeeFace with administrator permissions may fix this, but it is not generally recommended. After a successful installation, the button will change to an uninstall button that allows you to remove the virtual camera from your system.
 
@@ -72,7 +72,11 @@ After installation, it should appear as a regular webcam. The virtual camera onl
 
 The virtual camera supports loading background images, which can be useful for vtuber collabs over discord calls, by setting a unicolored background.
 
-If supported by the capture program, the virtual camera can be used to output video with alpha transparency. To make use if this a fully transparent PNG needs to be loaded as the background. Starting with version 1.13.25, such an image can be found in `VSeeFace_Data\StreamingAssets`. Partially transparent backgrounds are supported as well. Please note that using (partially) transparent background images with a capture program, which does not support RGBA webcams can lead to color errors. OBS and Streamlabs OBS support ARGB video camera capture, but require some additional setup. Apparently, the Twitch video capturing app supports it by default.
+Should you encounter strange issues with with the virtual camera and have previously used it with a version of VSeeFace earlier than 1.13.22, please try uninstalling it using the `UninstallAll.bat`, which can be found in `VSeeFace_Data\StreamingAssets\UnityCapture`.
+
+#### Transparent virtual camera
+
+If supported by the capture program, the virtual camera can be used to output video with alpha transparency. To make use of this, a fully transparent PNG needs to be loaded as the background image. Starting with version 1.13.25, such an image can be found in `VSeeFace_Data\StreamingAssets`. Partially transparent backgrounds are supported as well. Please note that using (partially) transparent background images with a capture program that do not support RGBA webcams can lead to color errors. OBS and Streamlabs OBS support ARGB video camera capture, but require some additional setup. Apparently, the Twitch video capturing app supports it by default.
 
 To setup OBS or Streamlabs OBS to capture video from the virtual camera with transparency, please follow [these](assets/img/ARGBCamera.png) settings. The important settings are:
 
@@ -80,7 +84,7 @@ To setup OBS or Streamlabs OBS to capture video from the virtual camera with tra
 * Resolution: 1280x720
 * Video Format: ARGB
 
-Should you encounter strange issues with with the virtual camera and have previously used it with a version of VSeeFace earlier than 1.13.22, please try uninstalling it using the `UninstallAll.bat`, which can be found in `VSeeFace_Data\StreamingAssets\UnityCapture`.
+As the virtual camera keeps running even while the UI is shown, using it instead of a game capture can be useful if you often make changes to settings during a stream.
 
 ### Network tracking
 
