@@ -145,7 +145,7 @@ If no window with a graphical user interface appears, please confirm that you ha
 
 #### Webcam issues
 
-If an error message about the tracker process appears, it may be necessary to restart the program and enter a different camera resolution and/or frame rate that is known to be supported by the camera.
+If an error message about the tracker process appears, it may be necessary to restart the program and enter a different camera resolution and/or frame rate that is known to be supported by the camera. To figure out a good combination, you can try adding your webcam as a video source in OBS and play with the parameters (resolution and frame rate) to find something that works.
 
 Should the tracking still not work, one possible workaround is to capture the actual webcam using OBS and then re-export it as a camera using OBS-VirtualCam.
 
