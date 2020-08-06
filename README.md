@@ -145,9 +145,7 @@ If no window with a graphical user interface appears, please confirm that you ha
 
 #### Webcam issues
 
-Currently, certain cameras cause issues with VSeeFace. In many cases, where the camera seemingly simply doesn't switch on, this can be fixed by ticking the `Try this if your webcam won't turn on` box in the `General settings`.
-
-If, after ticking this box an error message appears, it may be necessary to restart the program an enter a different camera resolution and/or frame rate that is known to be supported by the camera.
+If an error message about the tracker process appears, it may be necessary to restart the program and enter a different camera resolution and/or frame rate that is known to be supported by the camera.
 
 Should the tracking still not work, one possible workaround is to capture the actual webcam using OBS and then re-export it as a camera using OBS-VirtualCam.
 
