@@ -22,7 +22,9 @@ The latest release notes can be found [here](https://gist.github.com/emilianavt/
 
 The reason it is currently only released in this way, is to make sure that everybody who tries it out has an easy channel to give me feedback.
 
-<span lang="ja" id="japanese-info">この度VSeeFaceは@[Virtual_Deat](https://twitter.com/Virtual_Deat)さんの[ディスコード](https://discord.gg/BjBgk7k)だけでダウンロードが出来ます。サーバーに入るとルールズチャンネルで👌にクリックでルールを同意して他のチャンネルも表示されます。ダウンロードは#tech-devチャンネルの固定メッセージにあります。リリースノートは[こちら](https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae)。</span>
+<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。</span>
+
+<span lang="ja">まだベータ版なのでこの度VSeeFaceは@[Virtual_Deat](https://twitter.com/Virtual_Deat)さんの[ディスコード](https://discord.gg/BjBgk7k)だけでダウンロードが出来ます。サーバーに入るとルールズチャンネルで👌にクリックでルールを同意して他のチャンネルも表示されます。ダウンロードは#tech-devチャンネルの固定メッセージにあります。リリースノートは[こちら](https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae)。</span>
 
 <span lang="ja">VSeeFaceはカラーキーで録画が出来ないけどOBSのGame CaptureでAllow transparencyをチェックしてVSeeFaceで右下の※ボタンでUIを見えないにすれば綺麗な透明の背景になります。</span>
 
@@ -76,7 +78,7 @@ After installation, it should appear as a regular webcam. The virtual camera onl
 
 The virtual camera supports loading background images, which can be useful for vtuber collabs over discord calls, by setting a unicolored background.
 
-Should you encounter strange issues with with the virtual camera and have previously used it with a version of VSeeFace earlier than 1.13.22, please try uninstalling it using the `UninstallAll.bat`, which can be found in `VSeeFace_Data\StreamingAssets\UnityCapture`.
+Should you encounter strange issues with with the virtual camera and have previously used it with a version of VSeeFace earlier than 1.13.22, please try uninstalling it using the `UninstallAll.bat`, which can be found in `VSeeFace_Data\StreamingAssets\UnityCapture`. If the camera outputs a strange green/yellow pattern, please do this as well.
 
 #### Transparent virtual camera
 
@@ -145,7 +147,7 @@ If no window with a graphical user interface appears, please confirm that you ha
 
 #### Webcam issues
 
-If an error message about the tracker process appears, it may be necessary to restart the program and enter a different camera resolution and/or frame rate that is known to be supported by the camera. To figure out a good combination, you can try adding your webcam as a video source in OBS and play with the parameters (resolution and frame rate) to find something that works.
+If an error message about the tracker process appears, it may be necessary to restart the program and, on the first screen of the program, enter a different camera resolution and/or frame rate that is known to be supported by the camera. To figure out a good combination, you can try adding your webcam as a video source in OBS and play with the parameters (resolution and frame rate) to find something that works.
 
 Should the tracking still not work, one possible workaround is to capture the actual webcam using OBS and then re-export it as a camera using OBS-VirtualCam.
 
