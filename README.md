@@ -78,7 +78,7 @@ After installation, it should appear as a regular webcam. The virtual camera onl
 
 The virtual camera supports loading background images, which can be useful for vtuber collabs over discord calls, by setting a unicolored background.
 
-Should you encounter strange issues with with the virtual camera and have previously used it with a version of VSeeFace earlier than 1.13.22, please try uninstalling it using the `UninstallAll.bat`, which can be found in `VSeeFace_Data\StreamingAssets\UnityCapture`.
+Should you encounter strange issues with with the virtual camera and have previously used it with a version of VSeeFace earlier than 1.13.22, please try uninstalling it using the `UninstallAll.bat`, which can be found in `VSeeFace_Data\StreamingAssets\UnityCapture`. If the camera outputs a strange green/yellow pattern, please do this as well.
 
 #### Transparent virtual camera
 
