@@ -66,6 +66,10 @@ You can hide and show the ※ button using the space key.
 
 Changing the position also changes the height of the Leap Motion in VSeeFace, so just pull the Leap Motion position's height slider way down. I'm still trying to think of a good way of avoiding that, that also won't mess up existing settings for anybody.
 
+#### My Leap Motion complains that I need to update its software, but I'm already on the newest version of V2?
+
+To fix this error, please install the [V4 (Orion) SDK](https://developer.leapmotion.com/setup/desktop). It says it's used for VR, but it is also used by desktop applications.
+
 ### Virtual camera
 
 The virtual camera can be used to use VSeeFace for teleconferences, Discord calls and similar. It can also be used in situations where using a game capture is not possible or very slow, due to specific laptop hardware setups.
