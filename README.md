@@ -220,9 +220,11 @@ Here are some suggestions on how you can improve the performance of VSeeFace.
 
 CPU usage is mainly caused by the separate face tracking process `facetracker.exe` that runs alongside VSeeFace.
 
-There are two ways to reduce the amount of CPU used by the tracker. The first and recommended way is to reduce the webcam frame rate on the starting screen of VSeeFace. VSeeFace interpolates between tracking frames, so even low frame rates like 15 or 10 frames per second might look acceptable. The webcam resolution has almost no impact on CPU usage.
+There are two ways to reduce the amount of CPU used by the tracker. The first and most recommended way is to reduce the webcam frame rate on the starting screen of VSeeFace. Tracking at a frame rate of 15 should still give acceptable results. VSeeFace interpolates between tracking frames, so even low frame rates like 15 or 10 frames per second might look acceptable. The webcam resolution has almost no impact on CPU usage.
 
-The second way is to use a lower quality tracking model. The tracking models can also be selected on the starting screen of VSeeFace. Here is a list of the different models:
+The second way is to use a lower quality tracking model. The tracking models can also be selected on the starting screen of VSeeFace. Please note you might not see a change in CPU usage, even if you reduce the tracking quality, if the tracking still runs slower than the webcam's frame rate. For this reason, it is recommended to first reduce the frame rate until you can observe a reduction in CPU usage. At that point, you can reduce the tracking quality to further reduce CPU usage.
+
+Here is a list of the different models:
 
 * `High quality`: The default model with the best tracking and highest CPU utilization.
 * `Medium quality`: Slightly faster and slightly worse tracking quality.
