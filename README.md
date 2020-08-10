@@ -48,7 +48,7 @@ The most important information can be found by reading through the help screen a
 
 You can rotate, zoom and move the camera by holding the Alt key and using the different mouse buttons. The exact controls are given on the help screen.
 
-Once you've found a camera position you like and would like for it to be the initial camera position, you can set the default camera setting in the `General settings` to `Current` and it will remember it when you restart the program or press the reset camera hotkey. You can press `Update` next to it to save a new camera position. Please note that these custom camera positions to not adapt to avatar size, while the regular default positions do.
+Once you've found a camera position you like and would like for it to be the initial camera position, you can set the default camera setting in the `General settings` to `Custom`. You can now move the camera into the desired position and press `Save` next to it, to save a custom camera position. Please note that these custom camera positions to not adapt to avatar size, while the regular default positions do.
 
 #### How do I do chroma keying with a gray background?
 
