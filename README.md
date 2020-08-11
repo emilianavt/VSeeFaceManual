@@ -149,7 +149,11 @@ If an error appears after pressing the `Start` button, please confirm that the V
 
 If no window with a graphical user interface appears, please confirm that you have downloaded VSeeFace and not OpenSeeFace, which is just a backend library.
 
-#### Webcam issues
+#### Webcam and tracking issues
+
+If tracking doesn't work, you can actually test what the camera sees by running the `run.bat` in the `VSeeFace_Data\StreamingAssets\Binary` folder. Before running it, make sure that no other program, including VSeeFace, is using the camera. After starting it, you will first see a list of cameras, each with a number in front of it. Enter the number of the camera you would like to check and press enter. Next, it will ask you to enter a horizontal and vertical resolution as well as a frame rate. You can enter the default values VSeeFace uses (1280, 720, 24 respectively). Press enter after entering each value. After this, a second window should open, showing the image captured by your camera. If your face is visible on the image, you should see red and yellow tracking dots marked on your face. You can use this to make sure your camera is working as expected, your room has enough light, there is no strong light from the background messing up the image and so on. If the tracking points accurately track your face, the tracking should work in VSeeFace as well. To close the window, either press `q` in the window showing the camera image or press Ctrl+C in the console window.
+
+If you would like to see the camera image while your avatar is being animated, you can start VSeeFace while `run.bat` is running and select `[Network tracking]` in the camera option. It should receive the tracking data from the active `run.bat` process.
 
 If an error message about the tracker process appears, it may be necessary to restart the program and, on the first screen of the program, enter a different camera resolution and/or frame rate that is known to be supported by the camera. To figure out a good combination, you can try adding your webcam as a video source in OBS and play with the parameters (resolution and frame rate) to find something that works.
 
