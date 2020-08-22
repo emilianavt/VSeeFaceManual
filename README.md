@@ -16,7 +16,7 @@ If you have any questions or suggestions, please contact me, @[Emiliana_vt](http
 
 **The only legitimate and correct way to download VSeeFace is as described below. OpenSeeFace is not VSeeFace. VSeeFace does not cost money.**
 
-VSeeFace is currently in open beta and can be found for download in the latest pinned message of the `#tech-dev` channel of @[Virtual_Deat](https://twitter.com/Virtual_Deat)'s [discord server](https://discord.gg/BjBgk7k). I post news about new versions and the development process in Twitter with the `#VSeeFace` hashtag. Feel free to also use this hashtag for anything VSeeFace related. Starting with 1.13.26, VSeeFace will also check for updates and display a green message in the upper left corner when a new version is available, so please make sure to update if you are still on an older version.
+VSeeFace is currently in open beta and can be found for download in the latest pinned message of the `#vseeface` channel of @[Virtual_Deat](https://twitter.com/Virtual_Deat)'s [discord server](https://discord.gg/BjBgk7k). I post news about new versions and the development process in Twitter with the `#VSeeFace` hashtag. Feel free to also use this hashtag for anything VSeeFace related. Starting with 1.13.26, VSeeFace will also check for updates and display a green message in the upper left corner when a new version is available, so please make sure to update if you are still on an older version.
 
 The latest release notes can be found [here](https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae).
 
@@ -24,7 +24,7 @@ The reason it is currently only released in this way, is to make sure that every
 
 <span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。</span>
 
-<span lang="ja">まだベータ版なのでこの度VSeeFaceは@[Virtual_Deat](https://twitter.com/Virtual_Deat)さんの[ディスコード](https://discord.gg/BjBgk7k)だけでダウンロードが出来ます。サーバーに入るとルールズチャンネルで👌にクリックでルールを同意して他のチャンネルも表示されます。ダウンロードは#tech-devチャンネルの固定メッセージにあります。リリースノートは[こちら](https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae)。</span>
+<span lang="ja">まだベータ版なのでこの度VSeeFaceは@[Virtual_Deat](https://twitter.com/Virtual_Deat)さんの[ディスコード](https://discord.gg/BjBgk7k)だけでダウンロードが出来ます。サーバーに入るとルールズチャンネルで👌にクリックでルールを同意して他のチャンネルも表示されます。ダウンロードは#vseefaceチャンネルの固定メッセージにあります。リリースノートは[こちら](https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae)。</span>
 
 <span lang="ja">VSeeFaceはカラーキーで録画が出来ないけどOBSのGame CaptureでAllow transparencyをチェックしてVSeeFaceで右下の※ボタンでUIを見えないにすれば綺麗な透明の背景になります。</span>
 
@@ -135,6 +135,28 @@ If things don't work as expected, check the following things:
 * While running, many lines showing something like `Took 20ms` at the beginning should appear. While a face is in the view of the camera, lines with `Confidence` should appear too. A second window should show the camera view and red and yellow tracking points overlaid on the face. If this is not the case, something is wrong on this side of the process.
 * If the face tracker is running correctly, but the avatar does not move, confirm that the Windows firewall is not blocking the connection and that on both sides the IP address of PC A (the PC running VSeeFace) was entered.
 
+### Expression detection
+
+You can set up VSeeFace to recognize your facial expressions and automatically trigger VRM blendshape clips in response. There are two different modes that can be selected in the `General settings`.
+
+#### Simple expression detection
+
+This mode is easy to use, but it is limited to the `Fun`, `Angry` and `Surprised` expressions. Simply enable it and it should work. There are two sliders at the bottom of the `General settings` that can be used to adjust how it works.
+
+To trigger the `Fun` expression, smile, moving the corners of your mouth upwards. To trigger the `Angry` expression, do not smile and move your eyebrows down. To trigger the `Surprised` expression, move your eyebrows up.
+
+#### Experimental expression detection
+
+This mode supports the `Fun`, `Angry`, `Joy`, `Sorrow` and `Surprised` VRM expressions. To use it, you first have to teach the program how your face will look for each expression, which can be tricky and take a bit of time. What kind of face you make for each of them is completely up to you, but it's usually a good idea to enable the tracking point display in the `General settings`, so you can see how well the tracking can recognize the face you are making. The following [video](https://www.youtube.com/watch?v=-Y2JyGLxuyo) will explain the process:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-Y2JyGLxuyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+When the `Calibrate` button is pressed, most of the recorded data is used to train a detection system. The rest of the data will be used to verify the accuracy. This will result in a number between 0 (everything was misdetected) and 1 (everything was detected correctly) and is displayed above the calibration button. A good rule of thumb is to aim for a value between 0.95 and 0.98. While this might be unexpected, a value of 1 or very close to 1 is not actually a good thing and usually indicates that you need to record more data. A value significantly below 0.95 indicates that, most likely, some mixup occurred during recording (e.g. your sorrow expression was recorded for your surprised expression). If this happens, either reload your last saved calibration or restart from the beginning.
+
+It is also possible to set up only a few of the possible expressions. This usually improves detection accuracy. However, make sure to always set up the `Neutral` expression. This expression should contain any kind of expression that should not as one of the other expressions. To remove an already set up expression, press the corresponding `Clear` button and then `Calibrate`.
+
+Having an expression detection setup loaded can increase the startup time of VSeeFace even if expression detection is disabled or set to simple mode. To avoid this, press the `Clear calibration` button, which will clear out all calibration data and preventing it from being loaded at startup. You can always load your detection setup again using the `Load calibration` button.
+
 ### Troubleshooting
 
 This section lists common issues and possible solutions for them.
@@ -224,7 +246,9 @@ Here are some suggestions on how you can improve the performance of VSeeFace.
 
 CPU usage is mainly caused by the separate face tracking process `facetracker.exe` that runs alongside VSeeFace.
 
-There are two ways to reduce the amount of CPU used by the tracker. The first and most recommended way is to reduce the webcam frame rate on the starting screen of VSeeFace. Tracking at a frame rate of 15 should still give acceptable results. VSeeFace interpolates between tracking frames, so even low frame rates like 15 or 10 frames per second might look acceptable. The webcam resolution has almost no impact on CPU usage.
+One way to slightly reduce the face tracking process's CPU usage is to turn on the synthetic gaze option in the `General settings` which will cause the tracking process to skip running the gaze tracking model starting with version 1.13.31.
+
+There are two other ways to reduce the amount of CPU used by the tracker. The first and most recommended way is to reduce the webcam frame rate on the starting screen of VSeeFace. Tracking at a frame rate of 15 should still give acceptable results. VSeeFace interpolates between tracking frames, so even low frame rates like 15 or 10 frames per second might look acceptable. The webcam resolution has almost no impact on CPU usage.
 
 The second way is to use a lower quality tracking model. The tracking models can also be selected on the starting screen of VSeeFace. Please note you might not see a change in CPU usage, even if you reduce the tracking quality, if the tracking still runs slower than the webcam's frame rate. For this reason, it is recommended to first reduce the frame rate until you can observe a reduction in CPU usage. At that point, you can reduce the tracking quality to further reduce CPU usage.
 
