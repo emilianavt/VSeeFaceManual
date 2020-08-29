@@ -14,7 +14,7 @@ If you have any questions or suggestions, please contact me, @[Emiliana_vt](http
 
 ## Download
 
-**The only legitimate and correct way to download VSeeFace is as described below. OpenSeeFace is not VSeeFace. VSeeFace does not cost money.**
+**The only legitimate and correct way to download VSeeFace is as described below. VSeeFace does not cost money. Also note that OpenSeeFace is not VSeeFace.**
 
 VSeeFace is currently in open beta and can be found for download in the latest pinned message of the `#vseeface` channel of @[Virtual_Deat](https://twitter.com/Virtual_Deat)'s [discord server](https://discord.gg/BjBgk7k). I post news about new versions and the development process in Twitter with the `#VSeeFace` hashtag. Feel free to also use this hashtag for anything VSeeFace related. Starting with 1.13.26, VSeeFace will also check for updates and display a green message in the upper left corner when a new version is available, so please make sure to update if you are still on an older version.
 
