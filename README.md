@@ -272,3 +272,17 @@ GPU usage is mainly dictated by frame rate and anti-aliasing. These options can 
 Most of the anti-aliasing options should not be too heavy, but the `Really nice` option causes very heavy CPU load.
 
 If VSeeFace causes too much load on the CPU, you can also try reducing the frame rate by changing the frame rate cap from 60 to something lower like 30 or 24.
+
+## Donations
+
+A surprising number of people have asked if it's possible to support the development of VSeeFace, so I figured I'd add this section.
+
+### Emiliana
+
+I don't really accept monetary donations, but getting [fanart](https://twitter.com/search?q=%23emivt_art&f=live) makes me really, really happy and getting vtuber gift subs on Twitch is nice too, because it both helps the community and I get some cute emotes to use as well.
+
+<span style="width:100%; font-size:6pt;word-wrap:break-word; display:inline-block;color: #888888;">You really don't have to at all, but if you really, really insist and happen to have Monero (XMR), you can send something to: 8AWmb7CTB6sMhvW4FVq6zh1yo7LeJdtGmR7tyofkcHYhPstQGaKEDpv1W2u1wokFGr7Q9RtbWXBmJZh7gAy6ouDDVqDev2t<br>You could also send certain other crypto currencies to my Monero address through <a href="https://www.morphtoken.com/" style="color:#aaaaaa; text-decoration: underline; font-weight: normal;">Morphtoken</a>.</span>
+
+### Deat
+
+If you appreciate Deat's contributions to VSeeFace, his amazing [Tracking World](http://deatrathias.net/TW/) or just him being him overall, you can buy him a [Ko-fi](https://ko-fi.com/deatrathias), tip him through [Streamlabs](https://streamlabs.com/virtual_deat/tip) or subscribe to his [Twitch](https://www.twitch.tv/virtual_deat) channel.
