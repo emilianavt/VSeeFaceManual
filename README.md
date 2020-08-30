@@ -287,7 +287,7 @@ GPU usage is mainly dictated by frame rate and anti-aliasing. These options can 
 
 Most of the anti-aliasing options should not be too heavy, but the `Really nice` option causes very heavy CPU load.
 
-If VSeeFace causes too much load on the CPU, you can also try reducing the frame rate by changing the frame rate cap from 60 to something lower like 30 or 24.
+If VSeeFace causes too much load on the GPU, you can also try reducing the frame rate by changing the frame rate cap from 60 to something lower like 30 or 24.
 
 ## Donations
 
