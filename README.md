@@ -14,7 +14,7 @@ If you have any questions or suggestions, please contact me, @[Emiliana_vt](http
 
 ## Download
 
-**The only legitimate and correct way to download VSeeFace is as described below. OpenSeeFace is not VSeeFace. VSeeFace does not cost money.**
+**The only legitimate and correct way to download VSeeFace is as described below. VSeeFace does not cost money. Also note that OpenSeeFace is not VSeeFace.**
 
 VSeeFace is currently in open beta and can be found for download in the latest pinned message of the `#vseeface` channel of @[Virtual_Deat](https://twitter.com/Virtual_Deat)'s [discord server](https://discord.gg/BjBgk7k). I post news about new versions and the development process in Twitter with the `#VSeeFace` hashtag. Feel free to also use this hashtag for anything VSeeFace related. Starting with 1.13.26, VSeeFace will also check for updates and display a green message in the upper left corner when a new version is available, so please make sure to update if you are still on an older version.
 
@@ -69,6 +69,22 @@ Changing the position also changes the height of the Leap Motion in VSeeFace, so
 #### My Leap Motion complains that I need to update its software, but I'm already on the newest version of V2?
 
 To fix this error, please install the [V4 (Orion) SDK](https://developer.leapmotion.com/setup/desktop). It says it's used for VR, but it is also used by desktop applications.
+
+#### Sometimes blue bars appear at the edge of the screen, what's up with that?
+
+Those bars are there to let you know that you are close to the edge of your webcam's field of view and should stop moving that way, so you don't lose tracking due to being out of sight. If you have set the UI to be hidden using the ※ button in the lower right corner, blue bars will still appear, but they will be invisible in OBS.
+
+#### Do hotkeys work even while VSeeFace is in the background?
+
+All configurable hotkeys also work while it is in the background or minimized, so the expression hotkeys, the audio lipsync toggle hotkey and the configurable position reset hotkey all work from any other program as well. On some systems it might be necessary to run VSeeFace as admin to get this to work properly for some reason.
+
+#### Where can I find avatars I can use?
+
+Many people make their own using [VRoid Studio](https://vroid.com/en/studio/) or commission someone. [Vita](Vita.vrm) is one of the included sample characters. You can also find VRM models on [VRoid Hub](https://hub.vroid.com/en/) and [Niconi Solid](https://3d.nicovideo.jp/search?work_type=vrm), just make sure to follow the terms of use.
+
+#### I have a model in a different format, how do I convert it to VRM?
+
+Follow the [official guide](https://vrm.dev/en/how_to_make_vrm/). The important thing to note is that it is a two step process. First, you export a base VRM file, which you then import back into Unity to configure things like blend shape clips. After that, you export the final VRM. If you look around, there are probably other resources out there too.
 
 ### Virtual camera
 
