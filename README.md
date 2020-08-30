@@ -295,7 +295,7 @@ A surprising number of people have asked if it's possible to support the develop
 
 ### Emiliana
 
-I don't really accept monetary donations, but getting [fanart](https://twitter.com/search?q=%23emivt_art&f=live) makes me really, really happy and getting vtuber gift subs on Twitch is nice too, because it both helps the community and I get some cute emotes to use as well.
+I don't really accept monetary donations, but getting [fanart](https://twitter.com/search?q=%23emivt_art&f=live) makes me really, really happy and getting vtuber gift subs on [Twitch](https://www.twitch.tv/Emiliana_vt) is nice too, because it both helps the community and I get some cute emotes to use as well.
 
 <span style="width:100%; font-size:6pt;word-wrap:break-word; display:inline-block;color: #888888;">You really don't have to at all, but if you really, really insist and happen to have Monero (XMR), you can send something to: 8AWmb7CTB6sMhvW4FVq6zh1yo7LeJdtGmR7tyofkcHYhPstQGaKEDpv1W2u1wokFGr7Q9RtbWXBmJZh7gAy6ouDDVqDev2t<br>You could also send certain other crypto currencies to my Monero address through <a href="https://www.morphtoken.com/" style="color:#aaaaaa; text-decoration: underline; font-weight: normal;">Morphtoken</a>.</span>
 
