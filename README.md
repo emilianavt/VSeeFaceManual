@@ -86,6 +86,10 @@ Many people make their own using [VRoid Studio](https://vroid.com/en/studio/) or
 
 Follow the [official guide](https://vrm.dev/en/how_to_make_vrm/). The important thing to note is that it is a two step process. First, you export a base VRM file, which you then import back into Unity to configure things like blend shape clips. After that, you export the final VRM. If you look around, there are probably other resources out there too.
 
+#### My model's arms/hair/whatever looks weirdly twisted?
+
+This is most likely caused by not normalizing the model during the first [VRM conversion](https://vrm.dev/en/how_to_make_vrm/). To normalize the avatar during the first VRM export, make sure that `Pose Freeze` is ticked. I also recommend making sure that no jaw bone is set in [Unity's humanoid avatar configuration](https://docs.unity3d.com/560/Documentation/Manual/ConfiguringtheAvatar.html) before the first export. If a jaw bone is set in the head section, click on it and unset it using the backspace key on your keyboard.
+
 ### Virtual camera
 
 The virtual camera can be used to use VSeeFace for teleconferences, Discord calls and similar. It can also be used in situations where using a game capture is not possible or very slow, due to specific laptop hardware setups.
