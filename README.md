@@ -278,6 +278,7 @@ Here is a list of the different models:
 * `Medium quality`: Slightly faster and slightly worse tracking quality.
 * `Barely okay quality`: Noticably faster than the first two models, but also noticably worse tracking. The worse tracking mainly results in worse eye blink and eyebrow tracking, as well as highly reduced expression detection performance. I recommend using auto blinking with this and the `Low quality` model.
 * `Low quality`: Slightly faster and noticably worse tracking quality.
+* `Toaster`: This model is specifically intended for old PCs and is much faster than all the others, but it also offers noticably lower tracking quality. Eye blink and gaze tracking as well as expression detection are disabled when using this model.
 
 ##### Models with many meshes
 
