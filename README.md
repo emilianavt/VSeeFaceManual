@@ -14,7 +14,7 @@ If you have any questions or suggestions, please contact me, @[Emiliana_vt](http
 
 ## Download
 
-**The only legitimate and correct way to download VSeeFace is as described below. VSeeFace does not cost money. Also note that OpenSeeFace is not VSeeFace.**
+**The only legitimate site to download VSeeFace is this or the release repository [here](https://github.com/emilianavt/VSeeFaceReleases/releases/). VSeeFace does not cost money. Also note that OpenSeeFace is not VSeeFace.**
 
 Please click [here](https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.32d/VSeeFace-v1.13.32d.zip) to download the latest beta version of VSeeFace.
 
