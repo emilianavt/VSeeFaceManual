@@ -36,6 +36,8 @@ The reason it is currently only released in this way, is to make sure that every
 
 You can use VSeeFace to stream or do pretty much anything you like. Please just do not give anybody a copy directly or pass the download link around. It's still very much in development, so I want every user to be able to find updates and give feedback easily. If somebody is interested, you can just point them to this page.
 
+VSeeFace is beta software. There may be bugs and new versions may change things around. Use it at your own risk. It should generally work fine, but it may be a good idea to keep the previous version around when updating.
+
 ## Credits
 
 VSeeFace is being created by @[Emiliana_vt](https://twitter.com/emiliana_vt) and @[Virtual_Deat](https://twitter.com/VirtualDeat).
