@@ -16,17 +16,21 @@ If you have any questions or suggestions, please contact me, @[Emiliana_vt](http
 
 **The only legitimate and correct way to download VSeeFace is as described below. VSeeFace does not cost money. Also note that OpenSeeFace is not VSeeFace.**
 
-VSeeFace is currently in open beta and can be found for download in the latest pinned message of the `#vseeface` channel of @[Virtual_Deat](https://twitter.com/Virtual_Deat)'s [discord server](https://discord.gg/BjBgk7k). I post news about new versions and the development process in Twitter with the `#VSeeFace` hashtag. Feel free to also use this hashtag for anything VSeeFace related. Starting with 1.13.26, VSeeFace will also check for updates and display a green message in the upper left corner when a new version is available, so please make sure to update if you are still on an older version.
+Please click [here](https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.32d/VSeeFace-v1.13.32d.zip) to download the latest beta version of VSeeFace.
+
+If you have any issues, questions or feedback, please come to the `#vseeface` channel of @[Virtual_Deat](https://twitter.com/Virtual_Deat)'s [discord server](https://discord.gg/BjBgk7k). I post news about new versions and the development process in Twitter with the `#VSeeFace` hashtag. Feel free to also use this hashtag for anything VSeeFace related. Starting with 1.13.26, VSeeFace will also check for updates and display a green message in the upper left corner when a new version is available, so please make sure to update if you are still on an older version.
 
 The latest release notes can be found [here](https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae).
 
 The reason it is currently only released in this way, is to make sure that everybody who tries it out has an easy channel to give me feedback.
 
-<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。</span>
+<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。ダウンロードは[こちら](https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.32d/VSeeFace-v1.13.32d.zip)。リリースノートは[こちら](https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae)。まだベータ版です。</span>
 
-<span lang="ja">まだベータ版なのでこの度VSeeFaceは@[Virtual_Deat](https://twitter.com/Virtual_Deat)さんの[ディスコード](https://discord.gg/BjBgk7k)だけでダウンロードが出来ます。サーバーに入るとルールズチャンネルで👌にクリックでルールを同意して他のチャンネルも表示されます。ダウンロードは#vseefaceチャンネルの固定メッセージにあります。リリースノートは[こちら](https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae)。</span>
+<span lang="ja">@[Virtual_Deat](https://twitter.com/Virtual_Deat)さんの[ディスコードサーバー](https://discord.gg/BjBgk7k)に入るとルールズチャンネルで👌にクリックでルールを同意して他のチャンネルも表示されます。#vseefaceと日本語チャンネルもあります。</span>
 
 <span lang="ja">VSeeFaceはカラーキーで録画が出来ないけどOBSのGame CaptureでAllow transparencyをチェックしてVSeeFaceで右下の※ボタンでUIを見えないにすれば綺麗な透明の背景になります。</span>
+
+<span lang="ja">UIはほとんど英語のままですが`VSeeFace_Data\StreamingAssets\Strings.json`で翻訳が出来ます。</span>
 
 ## Terms of use
 
