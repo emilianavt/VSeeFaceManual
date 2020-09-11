@@ -32,7 +32,7 @@ The reason it is currently only released in this way, is to make sure that every
 
 <span lang="ja">UIはほとんど英語のままですが`VSeeFace_Data\StreamingAssets\Strings.json`で翻訳が出来ます。</span>
 
-<span lang="ja">ライセンス：基本的にご自由に使って良いです。（個人用可、商用利用可）</span>
+<span lang="ja">ライセンス：基本的にご自由に使用可（個人用可も商用利用可も）</span>
 
 ## Terms of use
 
