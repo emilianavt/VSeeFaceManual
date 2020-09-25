@@ -36,9 +36,9 @@ The reason it is currently only released in this way, is to make sure that every
 
 ## Terms of use
 
-You can use VSeeFace to stream or do pretty much anything you like. Just don't modify it (other than Strings.json) or claim you made it. It's still very much in development, so I want every user to be able to find updates and give feedback easily. If somebody is interested, you can just point them to this page.
+You can use VSeeFace to stream or do pretty much anything you like. Just don't modify it (other than Strings.json) or claim you made it.
 
-VSeeFace is beta software. There may be bugs and new versions may change things around. Use it at your own risk. It should generally work fine, but it may be a good idea to keep the previous version around when updating.
+VSeeFace is beta software. There may be bugs and new versions may change things around. It is offered without any kind of warrenty, so use it at your own risk. It should generally work fine, but it may be a good idea to keep the previous version around when updating.
 
 ## Credits
 
