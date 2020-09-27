@@ -18,6 +18,8 @@ If you have any questions or suggestions, please contact me, @[Emiliana_vt](http
 
 <a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.32h/VSeeFace-v1.13.32h.zip" class="download">Download</a>
 
+To update, just delete the old folder or overwrite it when unpacking the new version.
+
 If you have any issues, questions or feedback, please come to the `#vseeface` channel of @[Virtual_Deat](https://twitter.com/Virtual_Deat)'s [discord server](https://discord.gg/BjBgk7k). I post news about new versions and the development process in Twitter with the `#VSeeFace` hashtag. Feel free to also use this hashtag for anything VSeeFace related. Starting with 1.13.26, VSeeFace will also check for updates and display a green message in the upper left corner when a new version is available, so please make sure to update if you are still on an older version.
 
 The latest release notes can be found <a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">here</a>.
