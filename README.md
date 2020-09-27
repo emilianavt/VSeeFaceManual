@@ -14,9 +14,9 @@ If you have any questions or suggestions, please contact me, @[Emiliana_vt](http
 
 ## Download
 
-<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.32h/VSeeFace-v1.13.32h.zip" class="download">Download</a>
-
 **To update VSeeFace, just delete the old folder or overwrite it when unpacking the new version.**
+
+<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.32h/VSeeFace-v1.13.32h.zip" class="download">Download</a>
 
 Old versions can be found in the release archive [here](https://github.com/emilianavt/VSeeFaceReleases/releases/). This website, the #vseeface-updates channel on Deat's discord and the release archive are the only official download locations for VSeeFace.
 
