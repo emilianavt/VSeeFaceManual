@@ -31,6 +31,25 @@ nav > ul ul {
     display: none;
 }
 
+.download {
+    display: block;
+    padding: 2em 0.5em 2em 0.5em;
+    border: 2px solid #4a6d7e;
+    background-color: #74abc6;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align:center; width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+a.download:hover {
+    background-color: #6493aa;
+    color: white;
+}
+
 @media only screen and (min-width: 980px) {
 nav {
     position: fixed;
