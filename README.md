@@ -189,6 +189,15 @@ It is also possible to set up only a few of the possible expressions. This usual
 
 Having an expression detection setup loaded can increase the startup time of VSeeFace even if expression detection is disabled or set to simple mode. To avoid this, press the `Clear calibration` button, which will clear out all calibration data and preventing it from being loaded at startup. You can always load your detection setup again using the `Load calibration` button.
 
+### Model preview in Unity
+
+If you are working on an avatar, it can be useful to get an accurate idea of how it will look in VSeeFace before exporting the VRM. The following settings in Unity should allow you to get an accurate idea of how the avatar will look with default settings in VSeeFace:
+
+1) ([Screenshot](/assets/img/LightingLinear.png)) Edit -> Project Settings... -> Player -> Other Settings -> Color Space: Linear
+2) ([Screenshot](/assets/img/LightingLight.png)) Directional light: Color: FFFFFF (Hexadecimal), Intensity: 0.975, Rotation: 16, -146, -7.8
+3) ([Screenshot](/assets/img/LightingSceneCamera.png)) Camera icon next to Gizmos: Field of View: 16.1 (default focal length of 85mm) or 10.2 (135mm)
+4) ([Screenshot](/assets/img/LightingCamera.png)) Optional, Main Camera: Clear Flags: Solid Color, Background: 808080 (Hexadecimal), Field of View: as above
+
 ### Troubleshooting
 
 This section lists common issues and possible solutions for them.
