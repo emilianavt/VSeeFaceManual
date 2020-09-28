@@ -4,7 +4,7 @@
 
 <a href="#japanese-info">日本語</a>
 
-VSeeFace is a highly configurable face and hand tracking VRM avatar puppeteering program for virtual youtubers with a focus on robust tracking and high image quality. VSeeFace offers functionality similar to Luppet, 3tene, Wakaru and similar programs. VSeeFace runs on Windows 8 and above (64 bit only). It probably runs on Windows 7 too.
+VSeeFace is a free, highly configurable face and hand tracking VRM avatar puppeteering program for virtual youtubers with a focus on robust tracking and high image quality. VSeeFace offers functionality similar to Luppet, 3tene, Wakaru and similar programs. VSeeFace runs on Windows 8 and above (64 bit only). It probably runs on Windows 7 too.
 
 Face tracking, including gaze and mouth tracking, is done through a regular webcam. For hand tracking, a Leap Motion device is required. You can see a comparison of the face tracking performance compared to other popular vtuber applications [here](https://twitter.com/emiliana_vt/status/1275424412167221248). In this comparison, VSeeFace is still listed under its former name OpenSeeFaceDemo.
 
@@ -14,9 +14,11 @@ If you have any questions or suggestions, please contact me, @[Emiliana_vt](http
 
 ## Download
 
-**The only legitimate site to download VSeeFace is this or the release repository [here](https://github.com/emilianavt/VSeeFaceReleases/releases/). VSeeFace does not cost money. Also note that OpenSeeFace is not VSeeFace.**
+**To update VSeeFace, just delete the old folder or overwrite it when unpacking the new version.**
 
 <a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.32h/VSeeFace-v1.13.32h.zip" class="download">Download</a>
+
+Old versions can be found in the release archive [here](https://github.com/emilianavt/VSeeFaceReleases/releases/). This website, the #vseeface-updates channel on Deat's discord and the release archive are the only official download locations for VSeeFace.
 
 If you have any issues, questions or feedback, please come to the `#vseeface` channel of @[Virtual_Deat](https://twitter.com/Virtual_Deat)'s [discord server](https://discord.gg/BjBgk7k). I post news about new versions and the development process in Twitter with the `#VSeeFace` hashtag. Feel free to also use this hashtag for anything VSeeFace related. Starting with 1.13.26, VSeeFace will also check for updates and display a green message in the upper left corner when a new version is available, so please make sure to update if you are still on an older version.
 
