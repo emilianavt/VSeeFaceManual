@@ -200,6 +200,8 @@ If you are working on an avatar, it can be useful to get an accurate idea of how
 3) ([Screenshot](/assets/img/LightingSceneCamera.png)) Camera icon next to Gizmos: Field of View: 16.1 (default focal length of 85mm) or 10.2 (135mm)
 4) ([Screenshot](/assets/img/LightingCamera.png)) Optional, Main Camera: Clear Flags: Solid Color, Background: 808080 (Hexadecimal), Field of View: as above
 
+The first setting is the most important one.
+
 ### Troubleshooting
 
 This section lists common issues and possible solutions for them.
