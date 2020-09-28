@@ -195,12 +195,10 @@ Having an expression detection setup loaded can increase the startup time of VSe
 
 If you are working on an avatar, it can be useful to get an accurate idea of how it will look in VSeeFace before exporting the VRM. The following settings in Unity should allow you to get an accurate idea of how the avatar will look with default settings in VSeeFace:
 
-1) ([Screenshot](/assets/img/LightingLinear.png)) Edit -> Project Settings... -> Player -> Other Settings -> Color Space: Linear
-2) ([Screenshot](/assets/img/LightingLight.png)) Directional light: Color: FFFFFF (Hexadecimal), Intensity: 0.975, Rotation: 16, -146, -7.8
-3) ([Screenshot](/assets/img/LightingSceneCamera.png)) Camera icon next to Gizmos: Field of View: 16.1 (default focal length of 85mm) or 10.2 (135mm)
-4) ([Screenshot](/assets/img/LightingCamera.png)) Optional, Main Camera: Clear Flags: Solid Color, Background: 808080 (Hexadecimal), Field of View: as above
-
-The first setting is the most important one.
+* ([Screenshot](/assets/img/LightingLinear.png)) Edit -> Project Settings... -> Player -> Other Settings -> Color Space: Linear
+* ([Screenshot](/assets/img/LightingLight.png)) Directional light: Color: FFFFFF (Hexadecimal), Intensity: 0.975, Rotation: 16, -146, -7.8
+* ([Screenshot](/assets/img/LightingSceneCamera.png)) Camera icon next to Gizmos: Field of View: 16.1 (default focal length of 85mm) or 10.2 (135mm)
+* ([Screenshot](/assets/img/LightingCamera.png)) Optional, Main Camera: Clear Flags: Solid Color, Background: 808080 (Hexadecimal), Field of View: as above
 
 ### Troubleshooting
 
