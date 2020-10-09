@@ -203,6 +203,27 @@ If you are working on an avatar, it can be useful to get an accurate idea of how
 
 To see the model with better light and shadow quality, use the `Game` view. You can align the camera with the current scene view by pressing `Ctrl+Shift+F` or using `Game Object -> Align with view` from the menu.
 
+### Running on Linux
+
+Some people have gotten VSeeFace to run on Linux through wine. However, reading webcams is not possible through wine. As a workaround, you can set the camera in VSeeFace to `[Network tracking]` and run the `facetracker.py` script from [OpenSeeFace](https://github.com/emilianavt/OpenSeeFace) manually. To do this, you will need a Python 3.7 or newer installation. To set up everything for the `facetracker.py`, you can try something like this, depending on your Linux distribution:
+
+    sudo apt-get install python3 python3-pip python3-virtualenv git
+    git clone https://github.com/emilianavt/OpenSeeFace
+    cd OpenSeeFace
+    virtualenv -p python3 env
+    source env/bin/activate
+    pip3 install onnxruntime==1.2.0 opencv-python pillow numpy
+
+To run the tracker, first enter the `OpenSeeFace` directory and activate the virtual environment for the current session:
+
+    source env/bin/activate
+
+Then you can run the tracker:
+
+    python facetracker.py -c 0 -W 1280 -H 720 --discard-after 0 --scan-every 0 --no-3d-adapt 1 --max-feature-updates 900
+
+Running this command, will send the tracking data to a UDP port on localhost, on which VSeeFace will listen to receive the tracking data. The `-c` argument specifies which camera should be used, with the first being `0`, while `-W` and `-H` let you specify the resolution. To see the webcam image with tracking points overlaid on your face, you can add the arguments `-v 3 -P 1` somewhere.
+
 ### Troubleshooting
 
 This section lists common issues and possible solutions for them.
