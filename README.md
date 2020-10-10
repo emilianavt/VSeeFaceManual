@@ -6,7 +6,7 @@
 
 VSeeFace is a free, highly configurable face and hand tracking VRM avatar puppeteering program for virtual youtubers with a focus on robust tracking and high image quality. VSeeFace offers functionality similar to Luppet, 3tene, Wakaru and similar programs. VSeeFace runs on Windows 8 and above (64 bit only). It probably runs on Windows 7 too.
 
-Face tracking, including gaze and mouth tracking, is done through a regular webcam. For the optional hand tracking, a Leap Motion device is required. You can see a comparison of the face tracking performance compared to other popular vtuber applications [here](https://twitter.com/emiliana_vt/status/1275424412167221248). In this comparison, VSeeFace is still listed under its former name OpenSeeFaceDemo.
+Face tracking, including eye gaze, blink, eyebrow and mouth tracking, is done through a regular webcam. For the optional hand tracking, a Leap Motion device is required. You can see a comparison of the face tracking performance compared to other popular vtuber applications [here](https://twitter.com/emiliana_vt/status/1275424412167221248). In this comparison, VSeeFace is still listed under its former name OpenSeeFaceDemo.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Running four face tracking programs (OpenSeeFaceDemo, Luppet, Wakaru, Hitogata) at once with the same camera input. 😊 <a href="https://t.co/ioO2pofpMx">pic.twitter.com/ioO2pofpMx</a></p>&mdash; Emiliana (@emiliana_vt) <a href="https://twitter.com/emiliana_vt/status/1275424412167221248?ref_src=twsrc%5Etfw">June 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
@@ -16,7 +16,7 @@ If you have any questions or suggestions, please contact me, @[Emiliana_vt](http
 
 **To update VSeeFace, just delete the old folder or overwrite it when unpacking the new version.**
 
-<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.33e/VSeeFace-v1.13.33e.zip" class="download">Download<br>v1.13.33e</a>
+<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.33f/VSeeFace-v1.13.33f.zip" class="download">Download<br>v1.13.33f</a>
 
 Old versions can be found in the release archive [here](https://github.com/emilianavt/VSeeFaceReleases/releases/). This website, the #vseeface-updates channel on Deat's discord and the release archive are the only official download locations for VSeeFace.
 
@@ -26,7 +26,7 @@ The latest release notes can be found <a href="https://gist.github.com/emilianav
 
 The reason it is currently only released in this way, is to make sure that everybody who tries it out has an easy channel to give me feedback.
 
-<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.33e/VSeeFace-v1.13.33e.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
+<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.33f/VSeeFace-v1.13.33f.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
 
 <span lang="ja">@[Virtual_Deat](https://twitter.com/Virtual_Deat)さんの[ディスコードサーバー](https://discord.gg/BjBgk7k)に入るとルールズチャンネルで👌にクリックでルールを同意して他のチャンネルも表示されます。#vseefaceと日本語チャンネルもあります。</span>
 
@@ -181,9 +181,9 @@ To trigger the `Fun` expression, smile, moving the corners of your mouth upwards
 
 #### Experimental expression detection
 
-This mode supports the `Fun`, `Angry`, `Joy`, `Sorrow` and `Surprised` VRM expressions. To use it, you first have to teach the program how your face will look for each expression, which can be tricky and take a bit of time. What kind of face you make for each of them is completely up to you, but it's usually a good idea to enable the tracking point display in the `General settings`, so you can see how well the tracking can recognize the face you are making. The following [video](https://www.youtube.com/watch?v=-Y2JyGLxuyo) will explain the process:
+This mode supports the `Fun`, `Angry`, `Joy`, `Sorrow` and `Surprised` VRM expressions. To use it, you first have to teach the program how your face will look for each expression, which can be tricky and take a bit of time. What kind of face you make for each of them is completely up to you, but it's usually a good idea to enable the tracking point display in the `General settings`, so you can see how well the tracking can recognize the face you are making. The following [video](https://www.youtube.com/watch?v=FQGe7p1v078) will explain the process:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-Y2JyGLxuyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/FQGe7p1v078" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 When the `Calibrate` button is pressed, most of the recorded data is used to train a detection system. The rest of the data will be used to verify the accuracy. This will result in a number between 0 (everything was misdetected) and 1 (everything was detected correctly) and is displayed above the calibration button. A good rule of thumb is to aim for a value between 0.95 and 0.98. While this might be unexpected, a value of 1 or very close to 1 is not actually a good thing and usually indicates that you need to record more data. A value significantly below 0.95 indicates that, most likely, some mixup occurred during recording (e.g. your sorrow expression was recorded for your surprised expression). If this happens, either reload your last saved calibration or restart from the beginning.
 
@@ -202,6 +202,14 @@ If you are working on an avatar, it can be useful to get an accurate idea of how
 * ([Screenshot](/assets/img/LightingQuality.png)) `Edit -> Project Settings... -> Quality`, select `Ultra` and set the anti-aliasing to 8x
 
 To see the model with better light and shadow quality, use the `Game` view. You can align the camera with the current scene view by pressing `Ctrl+Shift+F` or using `Game Object -> Align with view` from the menu.
+
+### Translations
+
+It is possible to translate VSeeFace into different languages and I am happy to add contributed translations! To add a new language, first make a new entry in `VSeeFace_Data\StreamingAssets\Strings\Languages.json` with a new language code and the name of the language in that language. The language code should usually be given in two lowercase letters, but can be longer in special cases. Afterwards, make a copy of `VSeeFace_Data\StreamingAssets\Strings\en.json` and rename it to match the language code of the new language. Now you can edit this new file and translate the `"text"` parts of each entry into your language. The `"comment"` might help you find where the text is used, so you can more easily understand the context, but it otherwise doesn't matter.
+
+New languages should automatically appear in the language selection menu in VSeeFace, so you can check how your translation looks inside the program. Note that a JSON syntax error might lead to your whole file not loading correctly. In this case, you may be able to find the position of the error, by looking into the `Player.log`, which can be found by using the button all the way at the bottom of the general settings.
+
+Generally, your translation has to be enclosed by doublequotes `"like this"`. If double quotes occur in your text, put a \ in front, for example `"like \"this\""`. Line breaks can be written as `\n`.
 
 ### Running on Linux
 
@@ -223,6 +231,10 @@ Then you can run the tracker:
     python facetracker.py -c 0 -W 1280 -H 720 --discard-after 0 --scan-every 0 --no-3d-adapt 1 --max-feature-updates 900
 
 Running this command, will send the tracking data to a UDP port on localhost, on which VSeeFace will listen to receive the tracking data. The `-c` argument specifies which camera should be used, with the first being `0`, while `-W` and `-H` let you specify the resolution. To see the webcam image with tracking points overlaid on your face, you can add the arguments `-v 3 -P 1` somewhere.
+
+Notes on running wine: First make sure you have the Arial font installed. You can put `Arial.ttf` in your wine prefix's `C:\Windows\Fonts` folder and it should work. Secondly, make sure you have the 64bit version of wine installed. It often comes in a package called `wine64`. Also make sure that you are using a 64bit wine prefix. After installing `wine64`, you can set one up using `WINEARCH=win64 WINEPREFIX=~/.wine64 wine whatever`, then unzip VSeeFace in ``~/.wine64/drive_c/VSeeFace` and run it with `WINEARCH=win64 WINEPREFIX=~/.wine64 wine VSeeFace.exe`.
+
+Starting with VSeeFace v1.13.33f, while running under wine `--background-color #00FF00` can be used to set a window background color. To disable wine mode and make things work like on Windows, `--disable-wine-mode` can be used.
 
 ### Troubleshooting
 
@@ -357,4 +369,4 @@ If you appreciate Deat's contributions to VSeeFace, his amazing [Tracking World]
 
 I don't really accept monetary donations, but getting [fanart](https://twitter.com/search?q=%23emivt_art&f=live) makes me really, really happy and getting vtuber gift subs on [Twitch](https://www.twitch.tv/Emiliana_vt) is nice too, because it both helps the community and I get some cute emotes to use as well.
 
-<span style="width:100%;word-wrap:break-word; display:inline-block;color: #bbbbbb;">You really don't have to at all, but if you really, really insist and happen to have Monero (XMR), you can send something to: 8AWmb7CTB6sMhvW4FVq6zh1yo7LeJdtGmR7tyofkcHYhPstQGaKEDpv1W2u1wokFGr7Q9RtbWXBmJZh7gAy6ouDDVqDev2t<br>You could also send certain other crypto currencies to my Monero address through <a href="https://www.morphtoken.com/" style="color:#cccccc; text-decoration: underline; font-weight: normal;">Morphtoken</a>.</span>
+<span style="width:100%;word-wrap:break-word; display:inline-block;color: #bbbbbb;">You really don't have to at all, but if you really, really insist and happen to have Monero (XMR), you can send something to: 8AWmb7CTB6sMhvW4FVq6zh1yo7LeJdtGmR7tyofkcHYhPstQGaKEDpv1W2u1wokFGr7Q9RtbWXBmJZh7gAy6ouDDVqDev2t</span>
