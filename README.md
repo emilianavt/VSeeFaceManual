@@ -211,9 +211,9 @@ New languages should automatically appear in the language selection menu in VSee
 
 Generally, your translation has to be enclosed by doublequotes `"like this"`. If double quotes occur in your text, put a \ in front, for example `"like \"this\""`. Line breaks can be written as `\n`.
 
-### Running on Linux
+### Running on Linux and maybe Mac
 
-Some people have gotten VSeeFace to run on Linux through wine. However, reading webcams is not possible through wine. As a workaround, you can set the camera in VSeeFace to `[Network tracking]` and run the `facetracker.py` script from [OpenSeeFace](https://github.com/emilianavt/OpenSeeFace) manually. To do this, you will need a Python 3.7 or newer installation. To set up everything for the `facetracker.py`, you can try something like this, depending on your Linux distribution:
+Some people have gotten VSeeFace to run on Linux through wine and it might be possible on Mac as well, but nobody tried, to my knowledge. However, reading webcams is not possible through wine. As a workaround, you can set the camera in VSeeFace to `[Network tracking]` and run the `facetracker.py` script from [OpenSeeFace](https://github.com/emilianavt/OpenSeeFace) manually. To do this, you will need a Python 3.7 or newer installation. To set up everything for the `facetracker.py`, you can try something like this on Debian based distributions:
 
     sudo apt-get install python3 python3-pip python3-virtualenv git
     git clone https://github.com/emilianavt/OpenSeeFace
@@ -232,7 +232,7 @@ Then you can run the tracker:
 
 Running this command, will send the tracking data to a UDP port on localhost, on which VSeeFace will listen to receive the tracking data. The `-c` argument specifies which camera should be used, with the first being `0`, while `-W` and `-H` let you specify the resolution. To see the webcam image with tracking points overlaid on your face, you can add the arguments `-v 3 -P 1` somewhere.
 
-Notes on running wine: First make sure you have the Arial font installed. You can put `Arial.ttf` in your wine prefix's `C:\Windows\Fonts` folder and it should work. Secondly, make sure you have the 64bit version of wine installed. It often comes in a package called `wine64`. Also make sure that you are using a 64bit wine prefix. After installing `wine64`, you can set one up using `WINEARCH=win64 WINEPREFIX=~/.wine64 wine whatever`, then unzip VSeeFace in ``~/.wine64/drive_c/VSeeFace` and run it with `WINEARCH=win64 WINEPREFIX=~/.wine64 wine VSeeFace.exe`.
+Notes on running wine: First make sure you have the Arial font installed. You can put `Arial.ttf` in your wine prefix's `C:\Windows\Fonts` folder and it should work. Secondly, make sure you have the 64bit version of wine installed. It often comes in a package called `wine64`. Also make sure that you are using a 64bit wine prefix. After installing `wine64`, you can set one up using `WINEARCH=win64 WINEPREFIX=~/.wine64 wine whatever`, then unzip VSeeFace in `~/.wine64/drive_c/VSeeFace` and run it with `WINEARCH=win64 WINEPREFIX=~/.wine64 wine VSeeFace.exe`.
 
 Starting with VSeeFace v1.13.33f, while running under wine `--background-color #00FF00` can be used to set a window background color. To disable wine mode and make things work like on Windows, `--disable-wine-mode` can be used.
 
