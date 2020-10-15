@@ -201,6 +201,8 @@ If you are working on an avatar, it can be useful to get an accurate idea of how
 * ([Screenshot](/assets/img/LightingCamera.png)) Optional, Main Camera: Clear Flags: Solid Color, Background: 808080 (Hexadecimal), Field of View: as above
 * ([Screenshot](/assets/img/LightingQuality.png)) `Edit -> Project Settings... -> Quality`, select `Ultra` and set the anti-aliasing to 8x
 
+If you enabled shadows in the VSeeFace light settings, set the shadow type on the directional light to soft.
+
 To see the model with better light and shadow quality, use the `Game` view. You can align the camera with the current scene view by pressing `Ctrl+Shift+F` or using `Game Object -> Align with view` from the menu.
 
 ### Translations
