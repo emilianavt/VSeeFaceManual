@@ -16,7 +16,7 @@ If you have any questions or suggestions, please contact me, @[Emiliana_vt](http
 
 **To update VSeeFace, just delete the old folder or overwrite it when unpacking the new version.**
 
-<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.33g/VSeeFace-v1.13.33g.zip" class="download">Download<br>v1.13.33g</a>
+<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.33h/VSeeFace-v1.13.33h.zip" class="download">Download<br>v1.13.33h</a>
 
 Old versions can be found in the release archive [here](https://github.com/emilianavt/VSeeFaceReleases/releases/). This website, the #vseeface-updates channel on Deat's discord and the release archive are the only official download locations for VSeeFace.
 
@@ -26,7 +26,7 @@ The latest release notes can be found <a href="https://gist.github.com/emilianav
 
 The reason it is currently only released in this way, is to make sure that everybody who tries it out has an easy channel to give me feedback.
 
-<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.33g/VSeeFace-v1.13.33g.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
+<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.33h/VSeeFace-v1.13.33h.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
 
 <span lang="ja">@[Virtual_Deat](https://twitter.com/Virtual_Deat)さんの[ディスコードサーバー](https://discord.gg/BjBgk7k)に入るとルールズチャンネルで👌にクリックでルールを同意して他のチャンネルも表示されます。#vseefaceと日本語チャンネルもあります。</span>
 
@@ -82,11 +82,15 @@ To fix this error, please install the [V4 (Orion) SDK](https://developer.leapmot
 
 #### Sometimes blue bars appear at the edge of the screen, what's up with that?
 
-Those bars are there to let you know that you are close to the edge of your webcam's field of view and should stop moving that way, so you don't lose tracking due to being out of sight. If you have set the UI to be hidden using the ※ button in the lower right corner, blue bars will still appear, but they will be invisible in OBS.
+Those bars are there to let you know that you are close to the edge of your webcam's field of view and should stop moving that way, so you don't lose tracking due to being out of sight. If you have set the UI to be hidden using the ※ button in the lower right corner, blue bars will still appear, but they will be invisible in OBS as long as you are using a `Game Capture` with `Allow transparency` enabled.
 
 #### Do hotkeys work even while VSeeFace is in the background?
 
 All configurable hotkeys also work while it is in the background or minimized, so the expression hotkeys, the audio lipsync toggle hotkey and the configurable position reset hotkey all work from any other program as well. On some systems it might be necessary to run VSeeFace as admin to get this to work properly for some reason.
+
+#### I get an error when starting the tracking with DroidCam (or some other camera)?
+
+Try switching the camera settings from `Camera defaults` to something else. The camera might be using an unsupported format by default.
 
 #### Where can I find avatars I can use?
 
@@ -369,6 +373,6 @@ If you appreciate Deat's contributions to VSeeFace, his amazing [Tracking World]
 
 ### Emiliana
 
-I don't really accept monetary donations, but getting [fanart](https://twitter.com/search?q=%23emivt_art&f=live) makes me really, really happy and getting vtuber gift subs on [Twitch](https://www.twitch.tv/Emiliana_vt) is nice too, because it both helps the community and I get some cute emotes to use as well.
+I don't really accept monetary donations, but getting [fanart](https://twitter.com/search?q=%23emivt_art&f=live), you can find a [reference](/assets/img/Ref.png) here, makes me really, really happy and getting vtuber gift subs on [Twitch](https://www.twitch.tv/Emiliana_vt) is nice too, because it both helps the community and I get some cute emotes to use as well.
 
 <span style="width:100%;word-wrap:break-word; display:inline-block;color: #bbbbbb;">You really don't have to at all, but if you really, really insist and happen to have Monero (XMR), you can send something to: 8AWmb7CTB6sMhvW4FVq6zh1yo7LeJdtGmR7tyofkcHYhPstQGaKEDpv1W2u1wokFGr7Q9RtbWXBmJZh7gAy6ouDDVqDev2t</span>
