@@ -104,6 +104,10 @@ Follow the [official guide](https://vrm.dev/en/how_to_make_vrm/). The important 
 
 This is most likely caused by not normalizing the model during the first [VRM conversion](https://vrm.dev/en/how_to_make_vrm/). To normalize the avatar during the first VRM export, make sure that `Pose Freeze` is ticked. I also recommend making sure that no jaw bone is set in [Unity's humanoid avatar configuration](https://docs.unity3d.com/560/Documentation/Manual/ConfiguringtheAvatar.html) before the first export. If a jaw bone is set in the head section, click on it and unset it using the backspace key on your keyboard.
 
+#### How can I get my eyebrows to work on a custom model?
+
+You can add two custom VRM blend shape clips called "Brows up" and "Brows down" and they will be used for the eyebrow tracking. You can also add them on VRoid and Cecil Henshin models to customize how the eyebrow tracking looks.
+
 #### Where does VSeeFace put screenshots?
 
 The screenshots are saved to a folder called `VSeeFace` inside your `Pictures` folder.
