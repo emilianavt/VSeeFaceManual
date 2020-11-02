@@ -331,11 +331,15 @@ The settings file is called `settings.ini`. If you performed a factory reset, th
 
 ### Performance tuning
 
-Here are some suggestions on how you can improve the performance of VSeeFace.
+This section contains some suggestions on how you can improve the performance of VSeeFace.
+
+If VSeeFace becomes laggy while the window is in the background, you can try enabling the increased priority option from the `General settings`, but this can impact the responsiveness of other programs running at the same time.
 
 #### CPU
 
 CPU usage is mainly caused by the separate face tracking process `facetracker.exe` that runs alongside VSeeFace.
+
+The first thing to try for performance tuning should be the `Recommend Settings` button on the starting screen, which will run a system benchmark to adjust tracking quality and webcam frame rate automatically to a level that balances CPU usage with quality. This usually provides a reasonable starting point that you can adjust further to your needs.
 
 One way to slightly reduce the face tracking process's CPU usage is to turn on the synthetic gaze option in the `General settings` which will cause the tracking process to skip running the gaze tracking model starting with version 1.13.31.
 
@@ -357,7 +361,7 @@ Here is a list of the different models:
 
 Certain models with a high number of meshes in them can cause significant slowdown. Starting with 1.23.25c, there is an option in the `Advanced` section of the `General settings` called `Disable updates`. By turning on this option, this slowdown can be mostly prevented. However, while this option is enabled, parts of the avatar may disappear when looked at from certain angles. Only enable it when necessary.
 
-In some cases it has been found that enabling this option and disabling again mostly eliminates the slowdown as well, so give that a try if you encounter this issue. This should prevent any issues with disappearing avatar parts. However, in this case, enabling and disabling the checkbox has to be done each time after loading the model.
+In some cases it has been found that enabling this option and disabling it again mostly eliminates the slowdown as well, so give that a try if you encounter this issue. This should prevent any issues with disappearing avatar parts. However, in this case, enabling and disabling the checkbox has to be done each time after loading the model.
 
 #### GPU
 
