@@ -112,6 +112,10 @@ You can add two custom VRM blend shape clips called "Brows up" and "Brows down" 
 
 The screenshots are saved to a folder called `VSeeFace` inside your `Pictures` folder.
 
+#### I converted my model to VRM format, but the mouth doesn't move and the eyes don't blink?
+
+VRM conversion is a two step process. After the first export, you have to put the VRM file back into your Unity project to actually set up the VRM blend shape clips and other things. You can follow the [guide](https://vrm.dev/en/how_to_make_vrm/) on the VRM website, which is very detailed with many screenshots.
+
 ### Virtual camera
 
 The virtual camera can be used to use VSeeFace for teleconferences, Discord calls and similar. It can also be used in situations where using a game capture is not possible or very slow, due to specific laptop hardware setups.
