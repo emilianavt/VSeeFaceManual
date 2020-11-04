@@ -298,7 +298,7 @@ Please note that this is not a guaranteed fix by far, but it might help. If you 
 
 #### Virtual camera issues
 
-If, after installing it from the `General settings`, the virtual camera is still not listed as a webcam under the name `VSeeFaceCamera` in other programs or if it displays an odd green and yellow pattern while VSeeFace is not running, run the `UninstallAll.bat` inside the folder `VSeeFace_Data\StreamingAssets\UnityCapture` as administrator. Afterwards, run the `Install.bat` inside the same folder as administrator.
+If, after installing it from the `General settings`, the virtual camera is still not listed as a webcam under the name `VSeeFaceCamera` in other programs or if it displays an odd green and yellow pattern while VSeeFace is not running, run the `UninstallAll.bat` inside the folder `VSeeFace_Data\StreamingAssets\UnityCapture` as administrator. Afterwards, run the `Install.bat` inside the same folder as administrator. After installing the virtual camera in this way, it may be necessary to restart other programs like Discord before they recognize the virtual camera.
 
 If the virtual camera is listed, but only shows a black picture, make sure that VSeeFace is running and that the virtual camera is enabled in the `General settings`. It automatically disables itself when closing VSeeFace to reduce its performance impact, so it has to be manually re-enabled the next time it is used.
 
