@@ -296,6 +296,12 @@ Alternatively or in addition, you can try the following approach:
 
 Please note that this is not a guaranteed fix by far, but it might help. If you are using a laptop where battery life is important, I recommend only following the second set of steps and setting them up for a power plan that is only active while the laptop is charging.
 
+#### Virtual camera issues
+
+If, after installing it from the `General settings`, the virtual camera is still not listed as a webcam under the name `VSeeFaceCamera` in other programs or if it displays an odd green and yellow pattern while VSeeFace is not running, run the `UninstallAll.bat` inside the folder `VSeeFace_Data\StreamingAssets\UnityCapture` as administrator. Afterwards, run the `Install.bat` inside the same folder as administrator.
+
+If the virtual camera is listed, but only shows a black picture, make sure that VSeeFace is running and that the virtual camera is enabled in the `General settings`. It automatically disables itself when closing VSeeFace to reduce its performance impact, so it has to be manually re-enabled the next time it is used.
+
 #### Lipsync issues
 
 First, make sure you have your microphone selected on the starting screen. You can also change it in the `General settings`.
