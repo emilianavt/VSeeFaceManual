@@ -181,6 +181,13 @@ If things don't work as expected, check the following things:
 * While running, many lines showing something like `Took 20ms` at the beginning should appear. While a face is in the view of the camera, lines with `Confidence` should appear too. A second window should show the camera view and red and yellow tracking points overlaid on the face. If this is not the case, something is wrong on this side of the process.
 * If the face tracker is running correctly, but the avatar does not move, confirm that the Windows firewall is not blocking the connection and that on both sides the IP address of PC A (the PC running VSeeFace) was entered.
 
+### Special blendshapes
+
+VSeeFace has special support for certain custom VRM blend shape clips:
+
+* `Surprised` is supported by the simple and experimental expression detection features.
+* `Brows up` and `Brows down` will be used for eyebrow tracking if present on a model.
+
 ### Expression detection
 
 You can set up VSeeFace to recognize your facial expressions and automatically trigger VRM blendshape clips in response. There are two different modes that can be selected in the `General settings`.
