@@ -72,17 +72,21 @@ You can set up the virtual camera function, load a background image and do a Dis
 
 You can hide and show the ※ button using the space key.
 
+#### Sometimes blue bars appear at the edge of the screen, what's up with that and how do I get rid of them?
+
+Those bars are there to let you know that you are close to the edge of your webcam's field of view and should stop moving that way, so you don't lose tracking due to being out of sight. If you have set the UI to be hidden using the ※ button in the lower right corner, blue bars will still appear, but they will be invisible in OBS as long as you are using a `Game Capture` with `Allow transparency` enabled.
+
+#### How do I adjust the Leap Motion's position? My arms are stiff and stretched out?
+
+First, hold the alt key and right click to zoom out until you can see the Leap Motion model in the scene. Then use the sliders to adjust the model's position to match its location relative to yourself in the real world. You can refer to [this](https://twitter.com/emiliana_vt/status/1313431152045293568) video to see how the sliders work.
+
 #### I moved my Leap Motion from the desk to a neck holder, changed the position to chest and now my arms are in the sky?
 
-Changing the position also changes the height of the Leap Motion in VSeeFace, so just pull the Leap Motion position's height slider way down. I'm still trying to think of a good way of avoiding that, that also won't mess up existing settings for anybody.
+Changing the position also changes the height of the Leap Motion in VSeeFace, so just pull the Leap Motion position's height slider way down. Zooming out may also help.
 
 #### My Leap Motion complains that I need to update its software, but I'm already on the newest version of V2?
 
 To fix this error, please install the [V4 (Orion) SDK](https://developer.leapmotion.com/setup/desktop). It says it's used for VR, but it is also used by desktop applications.
-
-#### Sometimes blue bars appear at the edge of the screen, what's up with that?
-
-Those bars are there to let you know that you are close to the edge of your webcam's field of view and should stop moving that way, so you don't lose tracking due to being out of sight. If you have set the UI to be hidden using the ※ button in the lower right corner, blue bars will still appear, but they will be invisible in OBS as long as you are using a `Game Capture` with `Allow transparency` enabled.
 
 #### Do hotkeys work even while VSeeFace is in the background?
 
@@ -90,7 +94,7 @@ All configurable hotkeys also work while it is in the background or minimized, s
 
 #### I get an error when starting the tracking with DroidCam (or some other camera)?
 
-Try switching the camera settings from `Camera defaults` to something else. The camera might be using an unsupported format by default.
+Try switching the camera settings from `Camera defaults` to something else. The camera might be using an unsupported video format by default.
 
 #### Where can I find avatars I can use?
 
@@ -102,11 +106,13 @@ Follow the [official guide](https://vrm.dev/en/how_to_make_vrm/). The important 
 
 #### My model's arms/hair/whatever looks weirdly twisted?
 
-This is most likely caused by not normalizing the model during the first [VRM conversion](https://vrm.dev/en/how_to_make_vrm/). To normalize the avatar during the first VRM export, make sure that `Pose Freeze` is ticked. I also recommend making sure that no jaw bone is set in [Unity's humanoid avatar configuration](https://docs.unity3d.com/560/Documentation/Manual/ConfiguringtheAvatar.html) before the first export. If a jaw bone is set in the head section, click on it and unset it using the backspace key on your keyboard.
+This is most likely caused by not properly normalizing the model during the first [VRM conversion](https://vrm.dev/en/how_to_make_vrm/). To properly normalize the avatar during the first VRM export, make sure that `Pose Freeze` and `Force T Pose` is ticked on the `ExportSettings` tab of the VRM export dialog. I also recommend making sure that no jaw bone is set in [Unity's humanoid avatar configuration](https://docs.unity3d.com/560/Documentation/Manual/ConfiguringtheAvatar.html) before the first export, since often a hair bone gets assigned by Unity as a jaw bone by mistake. If a jaw bone is set in the head section, click on it and unset it using the backspace key on your keyboard. If your model does have a jaw bone that you want to use, make sure it is correctly assigned instead.
+
+Note that re-exporting a VRM will not work to for properly normalizing the model. Instead the original model (usually FBX) has to be exported with the correct options set.
 
 #### How can I get my eyebrows to work on a custom model?
 
-You can add two custom VRM blend shape clips called "Brows up" and "Brows down" and they will be used for the eyebrow tracking. You can also add them on VRoid and Cecil Henshin models to customize how the eyebrow tracking looks.
+You can add two custom VRM blend shape clips called "Brows up" and "Brows down" and they will be used for the eyebrow tracking. You can also add them on VRoid and Cecil Henshin models to customize how the eyebrow tracking looks. Also refer to the [special blendshapes](#special-blendshapes) section.
 
 #### Where does VSeeFace put screenshots?
 
@@ -115,6 +121,12 @@ The screenshots are saved to a folder called `VSeeFace` inside your `Pictures` f
 #### I converted my model to VRM format, but the mouth doesn't move and the eyes don't blink?
 
 VRM conversion is a two step process. After the first export, you have to put the VRM file back into your Unity project to actually set up the VRM blend shape clips and other things. You can follow the [guide](https://vrm.dev/en/how_to_make_vrm/) on the VRM website, which is very detailed with many screenshots.
+
+#### How do I install a zip file?
+
+Right click it and select `Extract All...` and press next. You should have a new folder called VSeeFace. Inside there should be a file called `VSeeFace` with a blue icon, like the logo on this site. Double click on that to run VSeeFace. There's a video [here](Install.mp4).
+
+If Windows 10 won't run the file and complains that the file may be a threat because it is not signed, you can try the following: Right click it -> Properties -> Unblock -> Apply or select exe file -> Select More Info -> Run Anyways
 
 ### Virtual camera
 
@@ -187,6 +199,9 @@ VSeeFace has special support for certain custom VRM blend shape clips:
 
 * `Surprised` is supported by the simple and experimental expression detection features.
 * `Brows up` and `Brows down` will be used for eyebrow tracking if present on a model.
+
+<!--* Starting with v1.13.34, if all of the following VRM blend shape clips are present on a model, they will be used for audio based lip sync instead of the regular `A`, `I`, `U`, `E` and `O` blend shapes: `SIL`, `AA`, `CH`, `DD`, `E`, `FF`, `IH`, `KK`, `NN`, `OH`, `OU`, `PP`, `RR`, `SS`, `TH`
+    You can refer to [this](https://developer.oculus.com/documentation/unity/audio-ovrlipsync-viseme-reference/) reference for how the mouth should look for each of these visemes. I do not recommend using the Blender CATS plugin to automatically generate shapekeys for these blendshapes, because VSeeFace will already follow a similar approach in mixing the `A`, `I`, `U`, `E` and `O` shapes by itself, so setting up custom VRM blend shape clips would be unnecessary effort.-->
 
 ### Expression detection
 
