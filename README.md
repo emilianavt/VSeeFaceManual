@@ -16,7 +16,7 @@ If you have any questions or suggestions, please contact me, @[Emiliana_vt](http
 
 **To update VSeeFace, just delete the old folder or overwrite it when unpacking the new version.**
 
-<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.33i/VSeeFace-v1.13.33i.zip" class="download">Download<br>v1.13.33i</a>
+<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.34/VSeeFace-v1.13.34.zip" class="download">Download<br>v1.13.34</a>
 
 Old versions can be found in the release archive [here](https://github.com/emilianavt/VSeeFaceReleases/releases/). This website, the #vseeface-updates channel on Deat's discord and the release archive are the only official download locations for VSeeFace.
 
@@ -26,7 +26,7 @@ The latest release notes can be found <a href="https://gist.github.com/emilianav
 
 The reason it is currently only released in this way, is to make sure that everybody who tries it out has an easy channel to give me feedback.
 
-<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.33i/VSeeFace-v1.13.33i.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
+<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.34/VSeeFace-v1.13.34.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
 
 <span lang="ja">@[Virtual_Deat](https://twitter.com/Virtual_Deat)さんの[ディスコードサーバー](https://discord.gg/BjBgk7k)に入るとルールズチャンネルで👌にクリックでルールを同意して他のチャンネルも表示されます。#vseefaceと日本語チャンネルもあります。</span>
 
@@ -124,7 +124,7 @@ VRM conversion is a two step process. After the first export, you have to put th
 
 #### How do I install a zip file?
 
-Right click it and select `Extract All...` and press next. You should have a new folder called VSeeFace. Inside there should be a file called `VSeeFace` with a blue icon, like the logo on this site. Double click on that to run VSeeFace. There's a video [here](Install.mp4).
+Right click it, select `Extract All...` and press next. You should have a new folder called VSeeFace. Inside there should be a file called `VSeeFace` with a blue icon, like the logo on this site. Double click on that to run VSeeFace. There's a video [here](Install.mp4).
 
 If Windows 10 won't run the file and complains that the file may be a threat because it is not signed, you can try the following: Right click it -> Properties -> Unblock -> Apply or select exe file -> Select More Info -> Run Anyways
 
@@ -199,9 +199,9 @@ VSeeFace has special support for certain custom VRM blend shape clips:
 
 * `Surprised` is supported by the simple and experimental expression detection features.
 * `Brows up` and `Brows down` will be used for eyebrow tracking if present on a model.
-
-<!--* Starting with v1.13.34, if all of the following VRM blend shape clips are present on a model, they will be used for audio based lip sync instead of the regular `A`, `I`, `U`, `E` and `O` blend shapes: `SIL`, `AA`, `CH`, `DD`, `E`, `FF`, `IH`, `KK`, `NN`, `OH`, `OU`, `PP`, `RR`, `SS`, `TH`
-    You can refer to [this](https://developer.oculus.com/documentation/unity/audio-ovrlipsync-viseme-reference/) reference for how the mouth should look for each of these visemes. I do not recommend using the Blender CATS plugin to automatically generate shapekeys for these blendshapes, because VSeeFace will already follow a similar approach in mixing the `A`, `I`, `U`, `E` and `O` shapes by itself, so setting up custom VRM blend shape clips would be unnecessary effort.-->
+* Starting with v1.13.34, if all of the following custom VRM blend shape clips are present on a model, they will be used for audio based lip sync in addition to the regular `A`, `I`, `U`, `E` and `O` blend shapes: `SIL`, `CH`, `DD`, `FF`, `KK`, `NN`, `PP`, `RR`, `SS`, `TH`
+    You can refer to [this](https://developer.oculus.com/documentation/unity/audio-ovrlipsync-viseme-reference/) reference for how the mouth should look for each of these visemes. The existing VRM blend shape clips `A`, `I`, `U`, `E` and `O` are mapped to `aa`, `ih`, `ou`, `E` and `oh` respectively.
+    I do not recommend using the Blender CATS plugin to automatically generate shapekeys for these blendshapes, because VSeeFace will already follow a similar approach in mixing the `A`, `I`, `U`, `E` and `O` shapes by itself, so setting up custom VRM blend shape clips would be unnecessary effort. In this case it is better to have only the standard `A`, `I`, `U`, `E` and `O` VRM blend shape clips on the model.
 
 ### Expression detection
 
