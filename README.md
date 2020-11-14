@@ -334,6 +334,8 @@ Lipsync and mouth animation relies on the model having VRM blendshape clips for 
 
 If a stereo audio device is used for recording, please make sure that the voice data is on the left channel. If the voice is only on the right channel, it will not be detected. In this case, software like [Equalizer APO](https://sourceforge.net/projects/equalizerapo/) or [Voicemeeter](https://www.vb-audio.com/Voicemeeter/potato.htm) can be used to respectively either copy the right channel to the left channel or provide a mono device that can be used as a mic in VSeeFace. In my experience Equalizer APO can work with less delay and is more stable, but harder to set up.
 
+If no microphones are displayed in the list, please check the `Player.log` in the [log folder](#settings-and-log-file-location). Look for `FMOD` errors. They might list some information on how to fix the issue. [This](https://forum.unity.com/threads/fmod-failed-to-initialize.602845/) thread on the Unity forums might contain helpful information.
+
 In one case, having a microphone with a 192kHz sample rate installed on the system could make lip sync fail, even when using a different microphone. In this case setting it to 48kHz allowed lip sync to work.
 
 #### Game capture in OBS is slow or not working
