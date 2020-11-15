@@ -132,6 +132,10 @@ Right click it, select `Extract All...` and press next. You should have a new fo
 
 If Windows 10 won't run the file and complains that the file may be a threat because it is not signed, you can try the following: Right click it -> Properties -> Unblock -> Apply or select exe file -> Select More Info -> Run Anyways
 
+#### Is VSeeFace open source? I heard it was open source.
+
+No. It uses paid assets from the Unity asset store that cannot be freely redistributed. However, the actual face tracking and avatar animation code is open source. You can find it [here](https://github.com/emilianavt/OpenSeeFace) and [here](https://gist.github.com/emilianavt/b211073096a4484fb92e6550212c2f48).
+
 ### Virtual camera
 
 The virtual camera can be used to use VSeeFace for teleconferences, Discord calls and similar. It can also be used in situations where using a game capture is not possible or very slow, due to specific laptop hardware setups.
