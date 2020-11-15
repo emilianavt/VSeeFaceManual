@@ -122,6 +122,10 @@ The screenshots are saved to a folder called `VSeeFace` inside your `Pictures` f
 
 VRM conversion is a two step process. After the first export, you have to put the VRM file back into your Unity project to actually set up the VRM blend shape clips and other things. You can follow the [guide](https://vrm.dev/en/how_to_make_vrm/) on the VRM website, which is very detailed with many screenshots.
 
+#### Why does Windows give me a warning that the publisher is unknown?
+
+Because I don't want to pay a high yearly fee for a code signing certificate.
+
 #### How do I install a zip file?
 
 Right click it, select `Extract All...` and press next. You should have a new folder called VSeeFace. Inside there should be a file called `VSeeFace` with a blue icon, like the logo on this site. Double click on that to run VSeeFace. There's a video [here](Install.mp4).
