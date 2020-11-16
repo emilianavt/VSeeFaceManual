@@ -282,7 +282,7 @@ Running this command, will send the tracking data to a UDP port on localhost, on
 
 Notes on running wine: First make sure you have the Arial font installed. You can put `Arial.ttf` in your wine prefix's `C:\Windows\Fonts` folder and it should work. Secondly, make sure you have the 64bit version of wine installed. It often comes in a package called `wine64`. Also make sure that you are using a 64bit wine prefix. After installing `wine64`, you can set one up using `WINEARCH=win64 WINEPREFIX=~/.wine64 wine whatever`, then unzip VSeeFace in `~/.wine64/drive_c/VSeeFace` and run it with `WINEARCH=win64 WINEPREFIX=~/.wine64 wine VSeeFace.exe`.
 
-Starting with VSeeFace v1.13.33f, while running under wine `--background-color #00FF00` can be used to set a window background color. To disable wine mode and make things work like on Windows, `--disable-wine-mode` can be used.
+Starting with VSeeFace v1.13.33f, while running under wine `--background-color '#00FF00'` can be used to set a window background color. To disable wine mode and make things work like on Windows, `--disable-wine-mode` can be used.
 
 ### Troubleshooting
 
