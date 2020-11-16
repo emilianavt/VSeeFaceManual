@@ -110,6 +110,10 @@ This is most likely caused by not properly normalizing the model during the firs
 
 Note that re-exporting a VRM will not work to for properly normalizing the model. Instead the original model (usually FBX) has to be exported with the correct options set.
 
+#### I converted my model to VRM format, but when I blink, my mouth moves or I activate an expressions, it looks weird and the shadows shift?
+
+Make sure to set "Blendshape Normals" to "None" on the FBX when you import it into Unity and before you export your VRM. That should prevent        this issue.
+
 #### How can I get my eyebrows to work on a custom model?
 
 You can add two custom VRM blend shape clips called "Brows up" and "Brows down" and they will be used for the eyebrow tracking. You can also add them on VRoid and Cecil Henshin models to customize how the eyebrow tracking looks. Also refer to the [special blendshapes](#special-blendshapes) section.
