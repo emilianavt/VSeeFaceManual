@@ -237,6 +237,26 @@ It is also possible to set up only a few of the possible expressions. This usual
 
 Having an expression detection setup loaded can increase the startup time of VSeeFace even if expression detection is disabled or set to simple mode. To avoid this, press the `Clear calibration` button, which will clear out all calibration data and preventing it from being loaded at startup. You can always load your detection setup again using the `Load calibration` button.
 
+### OSC/VMC protocol support
+
+VSeeFace both supports sending and receiving motion data (humanoid bone rotations, root offset, blendshape values) using the [VMC protocol](https://protocol.vmc.info/) introduced by Virtual Motion Capture. If both sending and receiving are enabled, sending will be done after received data has been applied. In this case, make sure that VSeeFace is not sending data to itself, i.e. the ports for sending and receiving are different, otherwise very strange things may happen.
+
+When receiving motion data, VSeeFace can additionally perform its own tracking and apply it. `Track face features` will apply blendshapes, eye bone and jaw bone rotations according to VSeeFace's tracking. If only `Track fingers` and `Track hands to shoulders` are enabled, the Leap Motion tracking will be applied, but camera tracking will remain disabled. If any of the other options are enabled, camera based tracking will be enabled and the selected parts of it will be applied to the avatar.
+
+Please note that received blendshape data will not be used for expression detection and that, if received blendshapes are applied to a model, triggering expressions via hotkeys will not work.
+
+You can find a list of applications with support for the VMC protocol [here](https://protocol.vmc.info/Reference).
+
+#### Model animation or posing
+
+Using the [prepared Unity project and scene](#model-preview-in-unity), pose data will be sent over VMC protocol while the scene is being played. If an animator is added to the model in the scene, the animation will be transmitted, otherwise it can be posed manually as well. For best results, it is recommended to use the same models in both VSeeFace and the Unity scene.
+
+#### iPhone face tracking
+
+Certain iPhone apps like [Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077) can send perfect sync blendshape information over the VMC protocol, which VSeeFace can receive, allowing you to use iPhone based face tracking. This requires an especially prepared avatar containing the necessary blendshapes. A list of these blendshapes can be found in [VMagicMirror](https://malaybaku.github.io/VMagicMirror/en/index)'s documentation [here](https://malaybaku.github.io/VMagicMirror/en/tips/perfect_sync#setup-step2-create-blendshapeclip-on-unity). You can find an example avatar containing the necessary blendshapes [here](https://hub.vroid.com/en/characters/3617226131864868953/models/8493640469981656107). An easy, but not free, way to apply these blendshapes to VRoid avatars is to use [Hana tool](https://booth.pm/ja/items/2437978).
+
+To combine iPhone tracking with Leap Motion tracking, enable the `Track fingers` and `Track hands to shoulders` options in VMC reception settings in VSeeFace. Enabling all over options except `Track face features` as well, will apply the usual head tracking and body movements, which may allow more freedom of movement than just the iPhone tracking on its own.
+
 ### Model preview in Unity
 
 If you are working on an avatar, it can be useful to get an accurate idea of how it will look in VSeeFace before exporting the VRM. You can load [this](https://github.com/emilianavt/VSeeFacePreview/archive/v1.13.34b.zip) example project into Unity 2019.4.12f1 and load the included preview scene to preview your model with VSeeFace like lighting settings. This project also allows posing an avatar and sending the pose to VSeeFace using the VMC protocol starting with VSeeFace v1.13.34b.
