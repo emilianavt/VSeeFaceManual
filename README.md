@@ -257,6 +257,12 @@ Certain iPhone apps like [Waidayo](https://apps.apple.com/us/app/waidayo/id15131
 
 To combine iPhone tracking with Leap Motion tracking, enable the `Track fingers` and `Track hands to shoulders` options in VMC reception settings in VSeeFace. Enabling all over options except `Track face features` as well, will apply the usual head tracking and body movements, which may allow more freedom of movement than just the iPhone tracking on its own.
 
+#### Full body tracking with ThreeDPoseTracker
+
+[ThreeDPoseTracker](https://qiita.com/yukihiko_a/items/82b1e50de8d81e554721) allows webcam based full body tracking. Please note that it can only be used for non-commercial purposes according to its license.
+
+It allows transmitting its pose data using the VMC protocol, so by enabling VMC receiving in VSeeFace, you can use its webcam based fully body tracking to animate your avatar. From what I saw, it is set up in such a way that the avatar will face away from the camera in VSeeFace, so you will most likely have to turn the lights and camera around. By enabling the `Track face features` option, you can apply VSeeFace's face tracking to the avatar.
+
 ### Model preview in Unity
 
 If you are working on an avatar, it can be useful to get an accurate idea of how it will look in VSeeFace before exporting the VRM. You can load [this](https://github.com/emilianavt/VSeeFacePreview/archive/v1.13.34b.zip) example project into Unity 2019.4.12f1 and load the included preview scene to preview your model with VSeeFace like lighting settings. This project also allows posing an avatar and sending the pose to VSeeFace using the VMC protocol starting with VSeeFace v1.13.34b.
