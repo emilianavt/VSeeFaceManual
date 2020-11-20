@@ -259,7 +259,7 @@ To combine iPhone tracking with Leap Motion tracking, enable the `Track fingers`
 
 #### Full body tracking with ThreeDPoseTracker
 
-[ThreeDPoseTracker](https://qiita.com/yukihiko_a/items/82b1e50de8d81e554721) allows webcam based full body tracking. Please note that it can only be used for non-commercial purposes according to its license.
+[ThreeDPoseTracker](https://qiita.com/yukihiko_a/items/43d09db5628334789fab#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB) allows webcam based full body tracking. Please note that it can only be used for non-commercial purposes according to its license.
 
 It allows transmitting its pose data using the VMC protocol, so by enabling VMC receiving in VSeeFace, you can use its webcam based fully body tracking to animate your avatar. From what I saw, it is set up in such a way that the avatar will face away from the camera in VSeeFace, so you will most likely have to turn the lights and camera around. By enabling the `Track face features` option, you can apply VSeeFace's face tracking to the avatar.
 
