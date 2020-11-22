@@ -257,6 +257,16 @@ Certain iPhone apps like [Waidayo](https://apps.apple.com/us/app/waidayo/id15131
 
 To combine iPhone tracking with Leap Motion tracking, enable the `Track fingers` and `Track hands to shoulders` options in VMC reception settings in VSeeFace. Enabling all over options except `Track face features` as well, will apply the usual head tracking and body movements, which may allow more freedom of movement than just the iPhone tracking on its own.
 
+#### Perception Neuron tracking
+
+It is possible to stream Perception Neuron motion capture data into VSeeFace by using the VMC protocol. To do so, load [this](https://github.com/emilianavt/VSeeFacePreview/archive/neuron.zip) project into Unity 2019.4.12f1 and load the included scene in the `Scenes` folder. Create a new folder for your VRM avatar inside the `Avatars` folder and put in the VRM file. Unity should import it automatically. You can then delete the included Vita model from the the scene and add your own avatar by dragging it into the `Hierarchy` section on the left.
+
+You can now start the Neuron software and set it up for transmitting BVH data on port 7001. Once this is done, press play in Unity to play the scene. If no red text appears, the avatar should have been set up correctly and should be receiving tracking data from the Neuron software, while also sending the tracking data over VMC protocol.
+
+Next, you can start VSeeFace and set up the VMC receiver according to the port listed in the message displayed in the game view of the running Unity scene. Once enabled, it should start applying the motion tracking data from the Neuron to the avatar in VSeeFace.
+
+The provided project includes [NeuronAnimator](https://github.com/keijiro/NeuronAnimator) by Keijiro Takahashi and uses it to receive the tracking data from the Perception Neuron software and apply it to the avatar.
+
 #### Full body tracking with ThreeDPoseTracker
 
 [ThreeDPoseTracker](https://qiita.com/yukihiko_a/items/43d09db5628334789fab#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB) allows webcam based full body tracking. Please note that it can only be used for non-commercial purposes according to its license.
