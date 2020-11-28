@@ -253,9 +253,38 @@ Using the [prepared Unity project and scene](#model-preview-in-unity), pose data
 
 #### iPhone face tracking
 
-Certain iPhone apps like [Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077) can send [perfect sync](https://hinzka.hatenablog.com/entry/2020/08/15/145040) [blendshape information](https://hinzka.hatenablog.com/entry/2020/06/15/072929) over the VMC protocol, which VSeeFace can receive, allowing you to use iPhone based face tracking. This requires an especially prepared avatar containing the necessary blendshapes. A list of these blendshapes can be found in [VMagicMirror](https://malaybaku.github.io/VMagicMirror/en/index)'s documentation [here](https://malaybaku.github.io/VMagicMirror/en/tips/perfect_sync#setup-step2-create-blendshapeclip-on-unity). You can find an example avatar containing the necessary blendshapes [here](https://hub.vroid.com/en/characters/7535723910806948192/models/2729494919026563201). An easy, but not free, way to apply these blendshapes to VRoid avatars is to use [Hana tool](https://booth.pm/ja/items/2437978).
+Certain iPhone apps like [Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077) can send [perfect sync](https://hinzka.hatenablog.com/entry/2020/08/15/145040) [blendshape information](https://hinzka.hatenablog.com/entry/2020/06/15/072929) over the VMC protocol, which VSeeFace can receive, allowing you to use iPhone based face tracking. This requires an especially prepared avatar containing the necessary blendshapes. A list of these blendshapes can be found in [VMagicMirror](https://malaybaku.github.io/VMagicMirror/en/index)'s documentation [here](https://malaybaku.github.io/VMagicMirror/en/tips/perfect_sync#setup-step2-create-blendshapeclip-on-unity). You can find an example avatar containing the necessary blendshapes [here](https://hub.vroid.com/en/characters/7535723910806948192/models/2729494919026563201). An easy, but not free, way to apply these blendshapes to VRoid avatars is to use [HANA Tool](https://booth.pm/ja/items/2437978).
 
 To combine iPhone tracking with Leap Motion tracking, enable the `Track fingers` and `Track hands to shoulders` options in VMC reception settings in VSeeFace. Enabling all over options except `Track face features` as well, will apply the usual head tracking and body movements, which may allow more freedom of movement than just the iPhone tracking on its own.
+
+##### Step by step guide
+
+* Make sure the iPhone and PC to are on one network
+* Run VSeeFace
+* Load a compatible avatar ([sample](https://hub.vroid.com/en/characters/7535723910806948192/models/2729494919026563201), it's also possible to apply those blendshapes to a VRoid avatar using [HANA Tool](https://booth.pm/ja/items/2437978))
+* Disable the VMC protocol sender in the general settings if it's enabled
+* Enable the VMC protocol receiver in the general settings
+* Change the port number from 39539 to 39540
+* Under the VMC receiver, enable all the "Track ..." options except for face features at the top
+* The settings should look like [this](/assets/img/PerfectSync1.png)
+* You should now be able to move your avatar normally, except the face is frozen other than expressions
+* Install and run [Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077) on the iPhone
+* Go to the [settings (設定)](https://github.com/nmchan/waidayo/wiki/%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E4%BD%BF%E3%81%84%E6%96%B9#4-iphone%E7%89%88%E3%82%A2%E3%83%97%E3%83%AA%E3%81%B8pc%E3%81%AEip%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%82%92%E7%99%BB%E9%8C%B2%E3%81%99%E3%82%8B)
+* Set `Send Motion IP Address` to your PC's LAN IP address (you should be able to find it by pressing Windows+X, selecting `Command Prompt` and typing the `ipconfig` command, it will probably start with `192.168.`)
+* Make sure that the port is set to the same number as in VSeeFace (39540)
+* Your model's face should start moving, including some special things like puffed cheeks, tongue or smiling only on one side
+
+##### Using HANA Tool to add perfect sync blendshapes to VRoid models
+
+A full Japanese guide can be found [here](https://hinzka.hatenablog.com/entry/2020/10/12/014540). The following gives a short English language summary. To use [HANA Tool](https://booth.pm/ja/items/2437978) to add perfect sync blendshapes to a VRoid model, you need to install Unity, create a new project and add the [UniVRM](https://github.com/vrm-c/UniVRM/releases) package and then the VRM version of the HANA Tool package to your project. You can do this by dragging in the `.unitpackage` files into the file section of the Unity project. Next, make sure that your VRoid VRM is exported from VRoid v0.11.3 without optimizing or decimating the mesh. Create a folder for your model in the `Assets` folder of your Unity project and copy in the VRM file. It should now get imported.
+
+Drag the model file from the files section in Unity to the hierarchy section. It should now appear in the scene view. Click the triangle in front of the model in the hierarchy to unfold it. You should see an entry called `Face`. From the `HANA_Tool` menu at the top, select `Reader`. A new window should appear. Drag the `Face` object into the `SkinnedMeshRenderer` slot at the top of the new window. Select the VRoid version and type of your model. Make sure to select `Add` at the bottom, then click `Read BlendShapes`.　If you get a message window with a long message inside it, it means that your model does not match the requirements. It might be exported from a different VRoid version, have been decimated or edited etc. If you get a window with 変換完了, the blendshapes were successfully added and you can close the `Reader` window.
+
+From the `HANA_Tool` menu at the top, select `AddBlendShapeClip`. A new window should appear. Drag the model from the hierarchy into the `VRMBlendShapeProxy` slot at the top of the new window. Again, drag the `Face` object into the `SkinnedMeshRenderer` slot underneath. Select your model type, not `Extra` and press the button at the bottom. You should get a window with 変換完了, meaning you can close this window as well.
+
+Try pressing the play button in Unity, switch back to the `Scene` tab and select your model in the hierarchy. Scroll down in the inspector until you see a list of blend shapes. You should be able to move the sliders and see the face of your model change. Below the regular VRM and VRoid blendshapes, there should now be a bit more than 50 additional blendshapes for perfect sync use, such as one to puff your cheeks.
+
+Press the stop button, select your model in the hierarchy and from the `VRM` menu, select `UniVRM`, then `Export humanoid`. All the necessary details should already be filled in, so you can press export to save your new VRM file.
 
 #### Perception Neuron tracking
 
