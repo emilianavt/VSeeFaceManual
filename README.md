@@ -269,6 +269,7 @@ To combine iPhone tracking with Leap Motion tracking, enable the `Track fingers`
 * The settings should look like [this](/assets/img/PerfectSync1.png)
 * You should now be able to move your avatar normally, except the face is frozen other than expressions
 * Install and run [Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077) on the iPhone
+* Load your model into Waidayo
 * Go to the [settings](https://github.com/nmchan/waidayo/wiki/%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E4%BD%BF%E3%81%84%E6%96%B9#4-iphone%E7%89%88%E3%82%A2%E3%83%97%E3%83%AA%E3%81%B8pc%E3%81%AEip%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%82%92%E7%99%BB%E9%8C%B2%E3%81%99%E3%82%8B) (設定) in Waidayo
 * Set `Send Motion IP Address` to your PC's LAN IP address (you should be able to find it by pressing Windows+X, selecting `Command Prompt` and typing the [`ipconfig` command](/assets/img/Ipconfig.png), it will probably start with `192.168.`)
 * Make sure that the port is set to the same number as in VSeeFace (39540)
