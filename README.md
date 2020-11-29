@@ -4,7 +4,7 @@
 
 <a href="#japanese-info">日本語</a>
 
-VSeeFace is a free, highly configurable face and hand tracking VRM avatar puppeteering program for virtual youtubers with a focus on robust tracking and high image quality. VSeeFace offers functionality similar to Luppet, 3tene, Wakaru and similar programs. VSeeFace runs on Windows 8 and above (64 bit only). VSeeFace can send, receive and combine tracking data using the [VMC protocol](https://protocol.vmc.info/), which also allows iPhone [perfect sync](https://hinzka.hatenablog.com/entry/2020/08/15/145040) support through [Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077).
+VSeeFace is a free, highly configurable face and hand tracking VRM avatar puppeteering program for virtual youtubers with a focus on robust tracking and high image quality. VSeeFace offers functionality similar to Luppet, 3tene, Wakaru and similar programs. VSeeFace runs on Windows 8 and above (64 bit only). VSeeFace can send, receive and combine tracking data using the [VMC protocol](https://protocol.vmc.info/), which also allows iPhone [perfect sync](https://hinzka.hatenablog.com/entry/2020/08/15/145040) support through [Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077) like [this](https://twitter.com/ovaraisu/status/1332463731159293954).
 
 Face tracking, including eye gaze, blink, eyebrow and mouth tracking, is done through a regular webcam. For the optional hand tracking, a Leap Motion device is required. You can see a comparison of the face tracking performance compared to other popular vtuber applications [here](https://twitter.com/emiliana_vt/status/1275424412167221248). In this comparison, VSeeFace is still listed under its former name OpenSeeFaceDemo.
 
