@@ -92,6 +92,10 @@ To fix this error, please install the [V4 (Orion) SDK](https://developer.leapmot
 
 All configurable hotkeys also work while it is in the background or minimized, so the expression hotkeys, the audio lipsync toggle hotkey and the configurable position reset hotkey all work from any other program as well. On some systems it might be necessary to run VSeeFace as admin to get this to work properly for some reason.
 
+#### When I have a game open and VSeeFace is running in the background it slows down or stops?
+
+In at least one case, the following setting has apparently fixed this: Windows => Graphics Settings => Change default graphics settings => Disable "Hardware-accelerated GPU scheduling"
+
 #### I get an error when starting the tracking with DroidCam (or some other camera)?
 
 Try switching the camera settings from `Camera defaults` to something else. The camera might be using an unsupported video format by default.
