@@ -76,6 +76,18 @@ You can hide and show the ※ button using the space key.
 
 Those bars are there to let you know that you are close to the edge of your webcam's field of view and should stop moving that way, so you don't lose tracking due to being out of sight. If you have set the UI to be hidden using the ※ button in the lower right corner, blue bars will still appear, but they will be invisible in OBS as long as you are using a `Game Capture` with `Allow transparency` enabled.
 
+#### Does VSeeFace have gaze tracking?
+
+Yes, unless you are using the `Toaster` quality level or have enabled `Synthetic gaze` which makes the eyes follow the head movement, similar to what Luppet does. You can try increasing the gaze strength and sensitivity to make it more visible.
+
+#### I'm looking straight ahead, but my eyes are looking all the way in some direction?
+
+Make sure the gaze offset sliders are centered. They can be used to correct the gaze for avatars that don't have centered irises, but they can also make things look quite wrong when set up incorrectly.
+
+#### My eyebrows barely move?
+
+Make sure your eyebrow offset slider is centered. It can be used to overall shift the eyebrow position, but if moved all the way, it leaves little room for them to move.
+
 #### How do I adjust the Leap Motion's position? My arms are stiff and stretched out?
 
 First, hold the alt key and right click to zoom out until you can see the Leap Motion model in the scene. Then use the sliders to adjust the model's position to match its location relative to yourself in the real world. You can refer to [this](https://twitter.com/emiliana_vt/status/1313431152045293568) video to see how the sliders work.
