@@ -146,6 +146,10 @@ VRM conversion is a two step process. After the first export, you have to put th
 
 Because I don't want to pay a high yearly fee for a code signing certificate.
 
+#### I have an N edition Windows and when I start VSeeFace, it just shows a big error message that the tracker is gone right away.
+
+N versions of Windows are missing some multimedia features. First make sure your Windows is updated and then install the [media feature pack](https://www.microsoft.com/en-us/software-download/mediafeaturepack).
+
 #### How do I install a zip file?
 
 Right click it, select `Extract All...` and press next. You should have a new folder called VSeeFace. Inside there should be a file called `VSeeFace` with a blue icon, like the logo on this site. Double click on that to run VSeeFace. There's a video [here](Install.mp4).
