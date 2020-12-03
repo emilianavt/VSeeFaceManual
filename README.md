@@ -335,7 +335,7 @@ The provided project includes [NeuronAnimator](https://github.com/keijiro/Neuron
 
 #### Full body tracking with ThreeDPoseTracker
 
-[ThreeDPoseTracker](https://qiita.com/yukihiko_a/items/43d09db5628334789fab#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB) allows webcam based full body tracking. Please note that ThreeDPoseTracker can only be used for non-commercial purposes according to its license.
+[ThreeDPoseTracker](https://qiita.com/yukihiko_a/items/43d09db5628334789fab#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB) allows webcam based full body tracking. While the ThreeDPoseTracker application can be used freely for non-commercial and commercial uses, the source code is for non-commercial use only.
 
 It allows transmitting its pose data using the VMC protocol, so by enabling VMC receiving in VSeeFace, you can use its webcam based fully body tracking to animate your avatar. From what I saw, it is set up in such a way that the avatar will face away from the camera in VSeeFace, so you will most likely have to turn the lights and camera around. By enabling the `Track face features` option, you can apply VSeeFace's face tracking to the avatar.
 
