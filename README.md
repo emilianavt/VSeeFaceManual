@@ -38,7 +38,7 @@ The reason it is currently only released in this way, is to make sure that every
 
 ## Terms of use
 
-You can use VSeeFace to stream or do pretty much anything you like, including for non-commercial and commercial purposes. Just don't modify it (other than the translation `json` files) or claim you made it.
+You can use VSeeFace to stream or do pretty much anything you like, including non-commercial and commercial uses. Just don't modify it (other than the translation `json` files) or claim you made it.
 
 VSeeFace is beta software. There may be bugs and new versions may change things around. It is offered without any kind of warrenty, so use it at your own risk. It should generally work fine, but it may be a good idea to keep the previous version around when updating.
 
