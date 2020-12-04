@@ -222,7 +222,7 @@ To use it for network tracking, edit the `run.bat` file or create a new batch fi
     set /p fps=Select the FPS:
     set /p ip=Enter the LAN IP of the PC running VSeeFace:
     
-    facetracker -c %cameraNum% -F %fps% -D %dcaps% -v 3 -P 1 -i %ip --discard-after 0 --scan-every 0 --no-3d-adapt 1 --max-feature-updates 900
+    facetracker -c %cameraNum% -F %fps% -D %dcaps% -v 3 -P 1 -i %ip% --discard-after 0 --scan-every 0 --no-3d-adapt 1 --max-feature-updates 900
     
     pause
 
