@@ -209,21 +209,24 @@ In the following, the PC running VSeeFace will be called PC A, and the PC runnin
 To use it for network tracking, edit the `run.bat` file or create a new batch file with the following content:
 
     %ECHO OFF
-    
+
     facetracker -l 1
     
+    echo Make sure that nothing is accessing your camera before you proceed.
     
     set /p cameraNum=Select your camera from the list above and enter the corresponding number:
-    set /p width=Select the width:
-    set /p height=Select the height:
+    
+    facetracker -a %cameraNum%
+    
+    set /p dcaps=Select your camera mode or -1 for default settings:
     set /p fps=Select the FPS:
     set /p ip=Enter the LAN IP of the PC running VSeeFace:
     
-    facetracker -c %cameraNum% -W %width% -H %height% -F %fps% -v 3 -P 1 -i %ip% --discard-after 0 --scan-every 0 --no-3d-adapt 1 --max-feature-updates 900
+    facetracker -c %cameraNum% -F %fps% -D %dcaps% -v 3 -P 1 -i %ip --discard-after 0 --scan-every 0 --no-3d-adapt 1 --max-feature-updates 900
     
     pause
 
-If the webcam is not detected or does not work, on both `facetracker` lines add `--use-escapi 0` at the end. If you would like to disable the webcam image display, you can change `-v 3` to `-v 0`.
+If you would like to disable the webcam image display, you can change `-v 3` to `-v 0`.
 
 When starting this modified file, in addition to the camera information, you will also have to enter the local network IP address of the PC A. You can start and stop the tracker process on PC B and VSeeFace on PC A independently. When no tracker process is running, the avatar in VSeeFace will simply not move.
 
