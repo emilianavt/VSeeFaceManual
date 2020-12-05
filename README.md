@@ -399,6 +399,8 @@ This section lists common issues and possible solutions for them.
 
 #### Startup issues
 
+If the VSeeFace window remains black when starting and you have an AMD graphics card, please try disabling `Radeon Image Sharpening` either globally or for VSeeFace. It reportedly can cause this type of issue.
+
 If an error appears after pressing the `Start` button, please confirm that the VSeeFace folder is correctly unpacked. Previous causes have included:
 
 * A full disk caused the unpacking process to file, so files were missing from the VSeeFace folder. Solution: Free up additional space, delete the VSeeFace folder and unpack it again.
