@@ -449,7 +449,7 @@ If the virtual camera is listed, but only shows a black picture, make sure that 
 
 #### Lipsync issues
 
-First, make sure you have your microphone selected on the starting screen. You can also change it in the `General settings`.
+First, make sure you have your microphone selected on the starting screen. You can also change it in the `General settings`. Also make sure that the `Mouth size reduction` slider in the `General settings` is not turned up.
 
 If you change your audio output device in Windows, the lipsync function may stop working. If this happens, it should be possible to get it working again by changing the selected microphone in the `General settings` or toggling the lipsync option off and on.
 
