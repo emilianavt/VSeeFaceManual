@@ -524,9 +524,7 @@ In some cases it has been found that enabling this option and disabling it again
 
 GPU usage is mainly dictated by frame rate and anti-aliasing. These options can be found in the `General settings`.
 
-Most of the anti-aliasing options should not be too heavy, but the `Really nice` option causes very heavy CPU load.
-
-If VSeeFace causes too much load on the GPU, you can also try reducing the frame rate by changing the frame rate cap from 60 to something lower like 30 or 24.
+If you find GPU usage is too high, first ensure that you do not have anti-aliasing set to `Really nice`, because it can cause very heavy CPU load. Next, make sure that all effects in the effect settings are disabled. If it is still too high, make sure to disable the virtual camera and improved anti-aliasing. Finally, you can try reducing the regular anti-aliasing setting or reducing the framerate cap from 60 to something lower like 30 or 24.
 
 ## Donations
 
