@@ -1,4 +1,4 @@
-## About
+﻿## About
 
 <a href="/assets/img/VSeeFaceScreenshot.png"><img src="/assets/img/VSeeFaceScreenshot500px.png" alt="VSeeFace screenshot"></a>
 
@@ -16,7 +16,7 @@ If you have any questions or suggestions, please contact me, @[Emiliana_vt](http
 
 **To update VSeeFace, just delete the old folder or overwrite it when unpacking the new version.**
 
-<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.34l/VSeeFace-v1.13.34l.zip" class="download">Download<br>v1.13.34l</a>
+<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.34m/VSeeFace-v1.13.34m.zip" class="download">Download<br>v1.13.34m</a>
 
 Old versions can be found in the release archive [here](https://github.com/emilianavt/VSeeFaceReleases/releases/). This website, the #vseeface-updates channel on Deat's discord and the release archive are the only official download locations for VSeeFace.
 
@@ -26,7 +26,7 @@ The latest release notes can be found <a href="https://gist.github.com/emilianav
 
 The reason it is currently only released in this way, is to make sure that everybody who tries it out has an easy channel to give me feedback.
 
-<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.34l/VSeeFace-v1.13.34l.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
+<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.34m/VSeeFace-v1.13.34m.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
 
 <span lang="ja">@[Virtual_Deat](https://twitter.com/Virtual_Deat)さんの[ディスコードサーバー](https://discord.gg/BjBgk7k)に入るとルールズチャンネルで👌にクリックでルールを同意して他のチャンネルも表示されます。#vseefaceと日本語チャンネルもあります。</span>
 
@@ -328,7 +328,7 @@ Press the stop button, select your model in the hierarchy and from the `VRM` men
 
 #### Perception Neuron tracking
 
-It is possible to stream Perception Neuron motion capture data into VSeeFace by using the VMC protocol. To do so, load [this](https://github.com/emilianavt/VSeeFacePreview/archive/neuron.zip) project into Unity 2019.4.12f1 and load the included scene in the `Scenes` folder. Create a new folder for your VRM avatar inside the `Avatars` folder and put in the VRM file. Unity should import it automatically. You can then delete the included Vita model from the the scene and add your own avatar by dragging it into the `Hierarchy` section on the left.
+It is possible to stream Perception Neuron motion capture data into VSeeFace by using the VMC protocol. To do so, load [this](https://github.com/emilianavt/VSeeFacePreview/archive/neuron.zip) project into Unity 2019.4.16f1 and load the included scene in the `Scenes` folder. Create a new folder for your VRM avatar inside the `Avatars` folder and put in the VRM file. Unity should import it automatically. You can then delete the included Vita model from the the scene and add your own avatar by dragging it into the `Hierarchy` section on the left.
 
 You can now start the Neuron software and set it up for transmitting BVH data on port 7001. Once this is done, press play in Unity to play the scene. If no red text appears, the avatar should have been set up correctly and should be receiving tracking data from the Neuron software, while also sending the tracking data over VMC protocol.
 
@@ -344,7 +344,7 @@ It allows transmitting its pose data using the VMC protocol, so by enabling VMC 
 
 ### Model preview in Unity
 
-If you are working on an avatar, it can be useful to get an accurate idea of how it will look in VSeeFace before exporting the VRM. You can load [this](https://github.com/emilianavt/VSeeFacePreview/archive/v1.13.34k.zip) example project into Unity 2019.4.12f1 and load the included preview scene to preview your model with VSeeFace like lighting settings. This project also allows posing an avatar and sending the pose to VSeeFace using the VMC protocol starting with VSeeFace v1.13.34b.
+If you are working on an avatar, it can be useful to get an accurate idea of how it will look in VSeeFace before exporting the VRM. You can load [this](https://github.com/emilianavt/VSeeFacePreview/archive/v1.13.34n.zip) example project into Unity 2019.4.16f1 and load the included preview scene to preview your model with VSeeFace like lighting settings. This project also allows posing an avatar and sending the pose to VSeeFace using the VMC protocol starting with VSeeFace v1.13.34b.
 
 After loading the project in Unity, load the provided scene inside the Scenes folder. If you press play, it should show some instructions on how to use it.
 
