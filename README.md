@@ -180,7 +180,7 @@ No.
 
 No. Although, if you are very experienced with Linux and wine as well, you can try following [these](https://www.vseeface.icu/#running-on-linux-and-maybe-mac) instructions for running it on Linux.
 
-#### Does VSeeFace run on Mac?
+#### Does VSeeFace run on Linux?
 
 It's reportedly  [possible](https://www.vseeface.icu/#running-on-linux-and-maybe-mac) to run it using wine.
 
