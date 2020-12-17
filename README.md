@@ -34,7 +34,7 @@ The reason it is currently only released in this way, is to make sure that every
 
 <span lang="ja">UIはほとんど英語のままですが`VSeeFace_Data\StreamingAssets\Strings.json`で翻訳が出来ます。</span>
 
-<span lang="ja">ライセンス：基本的にご自由に使用可（個人用可も商用利用可も）</span>
+<span lang="ja">ライセンス：営利・非営利問わずご自由にお使いください。</span>
 
 ## Terms of use
 
@@ -42,7 +42,7 @@ You can use VSeeFace to stream or do pretty much anything you like, including no
 
 VSeeFace is beta software. There may be bugs and new versions may change things around. It is offered without any kind of warrenty, so use it at your own risk. It should generally work fine, but it may be a good idea to keep the previous version around when updating.
 
-<span lang="ja">ライセンス：基本的にご自由に使用可（個人用可も商用利用可も）</span>
+<span lang="ja">ライセンス：営利・非営利問わずご自由にお使いください。</span>
 
 ### Disclaimer
 
