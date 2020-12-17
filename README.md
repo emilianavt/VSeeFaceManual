@@ -10,7 +10,7 @@ Face tracking, including eye gaze, blink, eyebrow and mouth tracking, is done th
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Running four face tracking programs (OpenSeeFaceDemo, Luppet, Wakaru, Hitogata) at once with the same camera input. 😊 <a href="https://t.co/ioO2pofpMx">pic.twitter.com/ioO2pofpMx</a></p>&mdash; Emiliana (@emiliana_vt) <a href="https://twitter.com/emiliana_vt/status/1275424412167221248?ref_src=twsrc%5Etfw">June 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-If you have any questions or suggestions, please contact me, @[Emiliana_vt](https://twitter.com/emiliana_vt)!
+If you have any questions or suggestions, please first check the [FAQ](#faq). If that doesn't help, feel free to contact me, @[Emiliana_vt](https://twitter.com/emiliana_vt)!
 
 ## Download
 
@@ -20,7 +20,7 @@ If you have any questions or suggestions, please contact me, @[Emiliana_vt](http
 
 Old versions can be found in the release archive [here](https://github.com/emilianavt/VSeeFaceReleases/releases/). This website, the #vseeface-updates channel on Deat's discord and the release archive are the only official download locations for VSeeFace.
 
-I post news about new versions and the development process in Twitter with the `#VSeeFace` hashtag. Feel free to also use this hashtag for anything VSeeFace related. Starting with 1.13.26, VSeeFace will also check for updates and display a green message in the upper left corner when a new version is available, so please make sure to update if you are still on an older version.
+I post news about new versions and the development process on Twitter with the `#VSeeFace` hashtag. Feel free to also use this hashtag for anything VSeeFace related. Starting with 1.13.26, VSeeFace will also check for updates and display a green message in the upper left corner when a new version is available, so please make sure to update if you are still on an older version.
 
 The latest release notes can be found <a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">here</a>.
 
@@ -178,11 +178,11 @@ No.
 
 #### Does VSeeFace run on Mac?
 
-No. Although, if you are very experienced with Linux and wine as well, you can try following [these](https://www.vseeface.icu/#running-on-linux-and-maybe-mac) instructions for running it on Linux.
+No. Although, if you are very experienced with Linux and wine as well, you can try following [these](#running-on-linux-and-maybe-mac) instructions for running it on Linux.
 
 #### Does VSeeFace run on Linux?
 
-It's reportedly  [possible](https://www.vseeface.icu/#running-on-linux-and-maybe-mac) to run it using wine.
+It's reportedly [possible](#running-on-linux-and-maybe-mac) to run it using wine.
 
 #### Is VSeeFace open source? I heard it was open source.
 
