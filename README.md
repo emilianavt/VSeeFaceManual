@@ -172,6 +172,18 @@ Right click it, select `Extract All...` and press next. You should have a new fo
 
 If Windows 10 won't run the file and complains that the file may be a threat because it is not signed, you can try the following: Right click it -> Properties -> Unblock -> Apply or select exe file -> Select More Info -> Run Anyways
 
+#### Does VSeeFace run on 32 bit CPUs?
+
+No.
+
+#### Does VSeeFace run on Mac?
+
+No. Although, if you are very experienced with Linux and wine as well, you can try following [these](https://www.vseeface.icu/#running-on-linux-and-maybe-mac) instructions for running it on Linux.
+
+#### Does VSeeFace run on Mac?
+
+It's reportedly  [possible](https://www.vseeface.icu/#running-on-linux-and-maybe-mac) to run it using wine.
+
 #### Is VSeeFace open source? I heard it was open source.
 
 No. It uses paid assets from the Unity asset store that cannot be freely redistributed. However, the actual face tracking and avatar animation code is open source. You can find it [here](https://github.com/emilianavt/OpenSeeFace) and [here](https://gist.github.com/emilianavt/b211073096a4484fb92e6550212c2f48).
