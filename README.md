@@ -88,11 +88,11 @@ You can set up the virtual camera function, load a background image and do a Dis
 
 You can hide and show the ※ button using the space key.
 
-#### Sometimes blue bars appear at the edge of the screen, what's up with that and how do I get rid of them?
+#### <a name="bluebars"></a>Sometimes blue bars appear at the edge of the screen, what's up with that and how do I get rid of them?
 
 Those bars are there to let you know that you are close to the edge of your webcam's field of view and should stop moving that way, so you don't lose tracking due to being out of sight. If you have set the UI to be hidden using the ※ button in the lower right corner, blue bars will still appear, but they will be invisible in OBS as long as you are using a `Game Capture` with `Allow transparency` enabled.
 
-#### Does VSeeFace have gaze tracking?
+#### <a name="gaze"></a>Does VSeeFace have gaze tracking?
 
 Yes, unless you are using the `Toaster` quality level or have enabled `Synthetic gaze` which makes the eyes follow the head movement, similar to what Luppet does. You can try increasing the gaze strength and sensitivity to make it more visible.
 
@@ -120,7 +120,7 @@ To fix this error, please install the [V4 (Orion) SDK](https://developer.leapmot
 
 All configurable hotkeys also work while it is in the background or minimized, so the expression hotkeys, the audio lipsync toggle hotkey and the configurable position reset hotkey all work from any other program as well. On some systems it might be necessary to run VSeeFace as admin to get this to work properly for some reason.
 
-#### When I have a game open and VSeeFace is running in the background it slows down or stops?
+#### <a name="gpuscheduling"></a>When I have a game open and VSeeFace is running in the background it slows down or stops?
 
 In at least one case, the following setting has apparently fixed this: Windows => Graphics Settings => Change default graphics settings => Disable "Hardware-accelerated GPU scheduling"
 
@@ -128,13 +128,17 @@ In at least one case, the following setting has apparently fixed this: Windows =
 
 Try switching the camera settings from `Camera defaults` to something else. The camera might be using an unsupported video format by default.
 
-#### Where can I find avatars I can use?
+#### <a name="avatars"></a><a name="models"></a>Where can I find avatars I can use?
 
 Many people make their own using [VRoid Studio](https://vroid.com/en/studio/) or commission someone. [Vita](Vita.vrm) is one of the included sample characters. You can also find VRM models on [VRoid Hub](https://hub.vroid.com/en/) and [Niconi Solid](https://3d.nicovideo.jp/search?work_type=vrm), just make sure to follow the terms of use.
 
-#### I have a model in a different format, how do I convert it to VRM?
+#### <a name="vrm"></a>I have a model in a different format, how do I convert it to VRM?
 
 Follow the [official guide](https://vrm.dev/en/how_to_make_vrm/). The important thing to note is that it is a two step process. First, you export a base VRM file, which you then import back into Unity to configure things like blend shape clips. After that, you export the final VRM. If you look around, there are probably other resources out there too.
+
+#### <a name="expressions"></a>Can I add expressions to my model?
+
+Yes, you can do so using UniVRM and Unity. You can find a tutorial [here](https://www.youtube.com/watch?v=ECZXlzlIcKU). Once the additional VRM blend shape clips are added to the model, you can assign a hotkey in the `Expression settings` to trigger it. The expression detection functionality is limited to the predefined expressions, but you can also modify those in Unity and, for example, use the `Joy` expression slot for something else.
 
 #### My model's arms/hair/whatever looks weirdly twisted?
 
@@ -150,9 +154,9 @@ Make sure to set "Blendshape Normals" to "None" on the FBX when you import it in
 
 You can add two custom VRM blend shape clips called "Brows up" and "Brows down" and they will be used for the eyebrow tracking. You can also add them on VRoid and Cecil Henshin models to customize how the eyebrow tracking looks. Also refer to the [special blendshapes](#special-blendshapes) section.
 
-#### Where does VSeeFace put screenshots?
+#### <a name="screenshots"></a>Where does VSeeFace put screenshots?
 
-The screenshots are saved to a folder called `VSeeFace` inside your `Pictures` folder.
+The screenshots are saved to a folder called `VSeeFace` inside your `Pictures` folder. You can make a screenshot by pressing `S` or a delayed screenshot by pressing `shift+S`.
 
 #### I converted my model to VRM format, but the mouth doesn't move and the eyes don't blink?
 
@@ -162,11 +166,11 @@ VRM conversion is a two step process. After the first export, you have to put th
 
 Because I don't want to pay a high yearly fee for a code signing certificate.
 
-#### I have an N edition Windows and when I start VSeeFace, it just shows a big error message that the tracker is gone right away.
+#### <a name="nedition"></a>I have an N edition Windows and when I start VSeeFace, it just shows a big error message that the tracker is gone right away.
 
 N versions of Windows are missing some multimedia features. First make sure your Windows is updated and then install the [media feature pack](https://www.microsoft.com/en-us/software-download/mediafeaturepack).
 
-#### How do I install a zip file?
+#### <a name="install"></a>How do I install a zip file?
 
 Right click it, select `Extract All...` and press next. You should have a new folder called VSeeFace. Inside there should be a file called `VSeeFace` with a blue icon, like the logo on this site. Double click on that to run VSeeFace. There's a video [here](Install.mp4).
 
