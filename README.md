@@ -188,6 +188,10 @@ No. Although, if you are very experienced with Linux and wine as well, you can t
 
 It's reportedly [possible](#running-on-linux-and-maybe-mac) to run it using wine.
 
+#### Does VSeeFace support Live2D models?
+
+No, VSeeFace only supports 3D models in VRM format. To integrate Live2D, an "Expandable Application" license would be required, for which there is no free tier. As VSeeFace is a free program, integrating an SDK that requires the payment of licensing fees is not an option.
+
 #### Is VSeeFace open source? I heard it was open source.
 
 No. It uses paid assets from the Unity asset store that cannot be freely redistributed. However, the actual face tracking and avatar animation code is open source. You can find it [here](https://github.com/emilianavt/OpenSeeFace) and [here](https://gist.github.com/emilianavt/b211073096a4484fb92e6550212c2f48).
