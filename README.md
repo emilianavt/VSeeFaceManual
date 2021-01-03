@@ -16,7 +16,7 @@ If you have any questions or suggestions, please first check the [FAQ](#faq). If
 
 **To update VSeeFace, just delete the old folder or overwrite it when unpacking the new version.**
 
-<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.34n/VSeeFace-v1.13.34n.zip" class="download">Download<br>v1.13.34n</a>
+<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.34o/VSeeFace-v1.13.34o.zip" class="download">Download<br>v1.13.34o</a>
 
 Old versions can be found in the release archive [here](https://github.com/emilianavt/VSeeFaceReleases/releases/). This website, the #vseeface-updates channel on Deat's discord and the release archive are the only official download locations for VSeeFace.
 
@@ -26,7 +26,7 @@ The latest release notes can be found <a href="https://gist.github.com/emilianav
 
 The reason it is currently only released in this way, is to make sure that everybody who tries it out has an easy channel to give me feedback.
 
-<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.34n/VSeeFace-v1.13.34n.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
+<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.34o/VSeeFace-v1.13.34o.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
 
 <span lang="ja">@[Virtual_Deat](https://twitter.com/Virtual_Deat)さんの[ディスコードサーバー](https://discord.gg/BjBgk7k)に入るとルールズチャンネルで👌にクリックでルールを同意して他のチャンネルも表示されます。#vseefaceと日本語チャンネルもあります。</span>
 
@@ -256,7 +256,7 @@ If you would like to disable the webcam image display, you can change `-v 3` to 
 
 When starting this modified file, in addition to the camera information, you will also have to enter the local network IP address of the PC A. You can start and stop the tracker process on PC B and VSeeFace on PC A independently. When no tracker process is running, the avatar in VSeeFace will simply not move.
 
-On the VSeeFace side, select `[Network tracking]` in the camera dropdown menu of the starting screen. Also, enter this PC's (PC A) local network IP address in the `Listen IP` field. Do **not** enter the IP address of PC B or it will not work. Press the start button. PC A should now be able to receive tracking data from PC B, while the tracker is running on PC B.
+On the VSeeFace side, select `[Network tracking]` in the camera dropdown menu of the starting screen. Also, enter this PC's (PC A) local network IP address in the `Listen IP` field. Do **not** enter the IP address of PC B or it will not work. Press the start button. PC A should now be able to receive tracking data from PC B, while the tracker is running on PC B. You can find PC A's local network IP address by enabling the VMC protocol receiver in the `General settings` and clicking on `Show LAN IP`.
 
 If you are sure that the camera number will not change and know a bit about batch files, you can also modify the batch file to remove the interactive input and just hard code the values.
 
@@ -334,7 +334,7 @@ To combine iPhone tracking with Leap Motion tracking, enable the `Track fingers`
 * Install and run [Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077) on the iPhone
 * Load your model into Waidayo by naming it default.vrm and putting it into the Waidayo app's folder on the phone like [this](https://www.youtube.com/watch?v=4aFOrHLR91Y&t=2m07s) or transfer it using [this](https://booth.pm/ja/items/2535168) application (I'm not sure, if you have more clear instructions I can put here, please let me know)
 * Go to the [settings](https://github.com/nmchan/waidayo/wiki/%E5%9F%BA%E6%9C%AC%E7%9A%84%E3%81%AA%E4%BD%BF%E3%81%84%E6%96%B9#4-iphone%E7%89%88%E3%82%A2%E3%83%97%E3%83%AA%E3%81%B8pc%E3%81%AEip%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%82%92%E7%99%BB%E9%8C%B2%E3%81%99%E3%82%8B) (設定) in Waidayo
-* Set `Send Motion IP Address` to your PC's LAN IP address (you should be able to find it by pressing Windows+X, selecting `Command Prompt` and typing the [`ipconfig` command](/assets/img/Ipconfig.png), it will probably start with `192.168.`)
+* Set `Send Motion IP Address` to your PC's LAN IP address. You can find it by clicking on `Show LAN IP` at the beginning of the VMC protocol receiver settings in VSeeFace.
 * Make sure that the port is set to the same number as in VSeeFace (39540)
 * Your model's face should start moving, including some special things like puffed cheeks, tongue or smiling only on one side
 
