@@ -370,7 +370,7 @@ It allows transmitting its pose data using the VMC protocol, so by enabling VMC 
 
 ### Model preview in Unity
 
-If you are working on an avatar, it can be useful to get an accurate idea of how it will look in VSeeFace before exporting the VRM. You can load [this](https://github.com/emilianavt/VSeeFacePreview/archive/v1.13.34n.zip) example project into Unity 2019.4.16f1 and load the included preview scene to preview your model with VSeeFace like lighting settings. This project also allows posing an avatar and sending the pose to VSeeFace using the VMC protocol starting with VSeeFace v1.13.34b.
+If you are working on an avatar, it can be useful to get an accurate idea of how it will look in VSeeFace before exporting the VRM. You can load [this](https://github.com/emilianavt/VSeeFacePreview/archive/v1.13.34o.zip) example project into Unity 2019.4.16f1 and load the included preview scene to preview your model with VSeeFace like lighting settings. This project also allows posing an avatar and sending the pose to VSeeFace using the VMC protocol starting with VSeeFace v1.13.34b.
 
 After loading the project in Unity, load the provided scene inside the Scenes folder. If you press play, it should show some instructions on how to use it.
 
