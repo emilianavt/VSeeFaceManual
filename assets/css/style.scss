@@ -54,7 +54,9 @@ a.download:hover {
 nav {
     position: fixed;
     top: 80px;
-    font-size: 95%
+    font-size: 95%;
+    max-height: 95%;
+    overflow: scroll;
 }
 nav > ul ul {
     font-size: 95%
