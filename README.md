@@ -32,7 +32,7 @@ The reason it is currently only released in this way, is to make sure that every
 
 <span lang="ja">VSeeFaceはカラーキーで録画が出来ないけどOBSのGame CaptureでAllow transparencyをチェックしてVSeeFaceで右下の※ボタンでUIを見えないにすれば綺麗な透明の背景になります。</span>
 
-<span lang="ja">UIはほとんど英語のままですが`VSeeFace_Data\StreamingAssets\Strings.json`で翻訳が出来ます。</span>
+<span lang="ja">UIはほとんど英語のままですが`VSeeFace_Data\StreamingAssets\Strings\ja.json`で翻訳が出来ます。</span>
 
 <span lang="ja">ライセンス：営利・非営利問わずご自由にお使いください。</span>
 
