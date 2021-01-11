@@ -22,7 +22,7 @@ Old versions can be found in the release archive [here](https://github.com/emili
 
 I post news about new versions and the development process on Twitter with the `#VSeeFace` hashtag. Feel free to also use this hashtag for anything VSeeFace related. Starting with 1.13.26, VSeeFace will also check for updates and display a green message in the upper left corner when a new version is available, so please make sure to update if you are still on an older version.
 
-The latest release notes can be found <a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">here</a>.
+The latest release notes can be found <a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">here</a>. Some tutorial videos can be found in [this section](#tutorials).
 
 The reason it is currently only released in this way, is to make sure that everybody who tries it out has an easy channel to give me feedback.
 
@@ -32,7 +32,7 @@ The reason it is currently only released in this way, is to make sure that every
 
 <span lang="ja">VSeeFaceはカラーキーで録画が出来ないけどOBSのGame CaptureでAllow transparencyをチェックしてVSeeFaceで右下の※ボタンでUIを見えないにすれば綺麗な透明の背景になります。</span>
 
-<span lang="ja">UIはほとんど英語のままですが`VSeeFace_Data\StreamingAssets\Strings\ja.json`で翻訳が出来ます。</span>
+<span lang="ja">UIはほとんど英語のままですが`VSeeFace_Data\StreamingAssets\Strings\ja.json`で翻訳が出来ます。日本語の[チュートリアル動画](#tutorials-ja)があります。</span>
 
 <span lang="ja">ライセンス：営利・非営利問わずご自由にお使いください。</span>
 
@@ -61,6 +61,29 @@ POSSIBILITY OF SUCH DAMAGE.</small>
 ## Credits
 
 VSeeFace is being created by @[Emiliana_vt](https://twitter.com/emiliana_vt) and @[Virtual_Deat](https://twitter.com/Virtual_Deat).
+
+## Tutorials
+
+There are a lot of tutorial videos out there. This section lists a few to help you get started, but it is by no means comprehensive. Make sure to look around!
+
+* [Ultimate Guide to VSeeFace](https://www.youtube.com/watch?v=CQGr75XiKuw) @ Cadet Del Valle
+* [VSeeFace is pretty pog](https://www.youtube.com/watch?v=Z_KKk2vgjXU) @ Killakuma
+* [Ultimate Guide to VSeeFace Part 2](https://www.youtube.com/watch?v=J-DE-OMSDx8) @ Cadet Del Valle
+* [iPhone Face ID tracking with Waidayo and VSeeFace](https://www.youtube.com/watch?v=wzWHhohVzjQ) @ Fofamit
+* [Full body motion from ThreeDPoseTracker to VSeeFace](https://www.youtube.com/watch?v=A1T1wsJrGWQ) @ Suvidriel
+* [VR Tracking from VMC to VSeeFace](https://www.youtube.com/watch?v=LkO0VusjkHU) @ Suvidriel
+
+About VRM models:
+
+* [Springbones: How to add physics to bones](https://www.youtube.com/watch?v=tpl_mqU8i7U) @ Virtual Deat
+* [Enhance your Vroid expressions in Unity!](https://www.youtube.com/watch?v=ui9Pm7ilQaA) @ Argama Witch
+* [Advanced emotions for VRoid VRM models](https://www.youtube.com/watch?v=u4wqTu6lXx8) @ Suvidriel
+
+<a name="tutorials-ja"></a><span lang="ja">日本語のチュートリアル動画：</span>
+
+* <span lang="ja">[VTuber向けアプリに黒船襲来！？海外勢に人気のVSeeFaceに乗り遅れるな！【How to use VSeeFace for Japanese VTubers (JPVtubers)】](https://www.youtube.com/watch?v=nkPqAD1paGE) @ 
+大福らなチャンネル</span>
+* <span lang="ja">[【Webカメラで動かす】3D VTuber 向け Unity 要らずで簡単！全身+顔+指が動くフルトラッキング環境解説【VSeeFace+TDPT+waidayo】](https://www.youtube.com/watch?v=SKhRsChcGGk) @ ひのちゃんねる/hinochannel</span>
 
 ## Manual
 
