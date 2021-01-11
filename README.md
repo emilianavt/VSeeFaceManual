@@ -75,7 +75,7 @@ There are a lot of tutorial videos out there. This section lists a few to help y
 
 About VRM models:
 
-* [Springbones: How to add physics to bones](https://www.youtube.com/watch?v=tpl_mqU8i7U) @ Virtual Deat
+* [Springbones: How to add physics to bones](https://www.youtube.com/watch?v=tpl_mqU8i7U) @ Deat's virtual escapades
 * [How to Adjust Vroid blendshapes in Unity!](https://www.youtube.com/watch?v=ECZXlzlIcKU) @ Argama Witch
 * [Advanced emotions for VRoid VRM models](https://www.youtube.com/watch?v=u4wqTu6lXx8) @ Suvidriel
 
