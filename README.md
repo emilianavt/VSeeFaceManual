@@ -66,6 +66,7 @@ VSeeFace is being created by @[Emiliana_vt](https://twitter.com/emiliana_vt) and
 
 There are a lot of tutorial videos out there. This section lists a few to help you get started, but it is by no means comprehensive. Make sure to look around!
 
+* [Tutorial: How to set up expression detection in VSeeFace](https://www.youtube.com/watch?v=-Y2JyGLxuyo) @ Emiliana
 * [Ultimate Guide to VSeeFace](https://www.youtube.com/watch?v=CQGr75XiKuw) @ Cadet Del Valle
 * [VSeeFace is pretty pog](https://www.youtube.com/watch?v=Z_KKk2vgjXU) @ Killakuma
 * [Ultimate Guide to VSeeFace Part 2](https://www.youtube.com/watch?v=J-DE-OMSDx8) @ Cadet Del Valle
