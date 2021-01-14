@@ -12,7 +12,7 @@ Face tracking, including eye gaze, blink, eyebrow and mouth tracking, is done th
 
 If you have any questions or suggestions, please first check the [FAQ](#faq). If that doesn't help, feel free to contact me, @[Emiliana_vt](https://twitter.com/emiliana_vt)!
 
-Please note that Live2D models are not supported. For those, check out VTube Studio or PrprLive.
+Please note that Live2D models are not supported. For those, please check out VTube Studio or PrprLive.
 
 ## Download
 
