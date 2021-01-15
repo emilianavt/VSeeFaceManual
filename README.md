@@ -122,6 +122,10 @@ Those bars are there to let you know that you are close to the edge of your webc
 
 Yes, unless you are using the `Toaster` quality level or have enabled `Synthetic gaze` which makes the eyes follow the head movement, similar to what Luppet does. You can try increasing the gaze strength and sensitivity to make it more visible.
 
+#### What are the requirements for a custom model to make use the gaze tracking?
+
+If humanoid eye bones are assigned in Unity, VSeeFace will directly use these for gaze tracking. The gaze strength determines how far the eyes will move. To use the VRM blendshape presets for gaze tracking, make sure that no eye bones are assigned. The synthetic gaze, which moves the eyes either according to head movement or so that they look at the camera, uses the `VRMLookAtBoneApplyer` or the `VRMLookAtBlendShapeApplyer`, depending on what exists on the model. 
+
 #### I'm looking straight ahead, but my eyes are looking all the way in some direction?
 
 Make sure the gaze offset sliders are centered. They can be used to correct the gaze for avatars that don't have centered irises, but they can also make things look quite wrong when set up incorrectly.
