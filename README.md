@@ -424,7 +424,7 @@ New languages should automatically appear in the language selection menu in VSee
 
 Generally, your translation has to be enclosed by doublequotes `"like this"`. If double quotes occur in your text, put a \ in front, for example `"like \"this\""`. Line breaks can be written as `\n`.
 
-Translations are coordinated on GitHub in the [VSeeFaceTranslations](https://github.com/emilianavt/VSeeFaceTranslations) repository.
+Translations are coordinated on GitHub in the [VSeeFaceTranslations](https://github.com/emilianavt/VSeeFaceTranslations) repository, but you can also send me contributions over [Twitter](https://www.twitter.com/Emiliana_vt) or Discord DM.
 
 ### Running on Linux and maybe Mac
 
