@@ -590,7 +590,7 @@ If you find GPU usage is too high, first ensure that you do not have anti-aliasi
 
 Generally, rendering a single character should not be very hard on the GPU, but model optimization may still make a difference. You can use [this cube model](/Cube.vrm) to test how much of your GPU utilization is related to the model. A model exported straight from VRoid with the hair meshes combined will probably still have a separate material for each strand of hair. Combined with the multiple passes of the MToon shader, this can easily lead to a few hundred draw calls, which are somewhat expensive. Merging materials and atlassing textures in Blender, then [converting](https://vrm.dev/en/how_to_make_vrm/) the model back to VRM in Unity can easily reduce the number of draw calls from a few hundred to around ten.
 
-Some people with Nvidia GPUs who reported strange spikes in GPU load found that the issue went away after setting `Prefer max performance` in the Nvidia power management settings and setting `Texture Filtering - Quality` to `High performance` in the Nvidia settings.
+[Some people](https://www.reddit.com/r/VirtualYoutubers/comments/kgmaio/vseeface_issue_with_gpu_usuage/) with Nvidia GPUs who reported strange spikes in GPU load found that the issue went away after setting `Prefer max performance` in the Nvidia power management settings and setting `Texture Filtering - Quality` to `High performance` in the Nvidia settings.
 
 ## Donations
 
