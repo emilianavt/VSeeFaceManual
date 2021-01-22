@@ -226,6 +226,10 @@ It's reportedly [possible](#running-on-linux-and-maybe-mac) to run it using wine
 
 No, VSeeFace only supports 3D models in VRM format. To integrate Live2D, an "Expandable Application" license would be required, for which there is no free tier. As VSeeFace is a free program, integrating an SDK that requires the payment of licensing fees is not an option.
 
+#### Does VSeeFace support the Tobii eye tracker?
+
+No, VSeeFace cannot use the Tobii eye tracker SDK due to its its licensing terms.
+
 #### Is VSeeFace open source? I heard it was open source.
 
 No. It uses paid assets from the Unity asset store that cannot be freely redistributed. However, the actual face tracking and avatar animation code is open source. You can find it [here](https://github.com/emilianavt/OpenSeeFace) and [here](https://gist.github.com/emilianavt/b211073096a4484fb92e6550212c2f48).
