@@ -226,6 +226,10 @@ It's reportedly [possible](#running-on-linux-and-maybe-mac) to run it using wine
 
 No, VSeeFace only supports 3D models in VRM format. To integrate Live2D, an "Expandable Application" license would be required, for which there is no free tier. As VSeeFace is a free program, integrating an SDK that requires the payment of licensing fees is not an option.
 
+#### Does VSeeFace support the Tobii eye tracker?
+
+No, VSeeFace cannot use the Tobii eye tracker SDK due to its its licensing terms.
+
 #### Is VSeeFace open source? I heard it was open source.
 
 No. It uses paid assets from the Unity asset store that cannot be freely redistributed. However, the actual face tracking and avatar animation code is open source. You can find it [here](https://github.com/emilianavt/OpenSeeFace) and [here](https://gist.github.com/emilianavt/b211073096a4484fb92e6550212c2f48).
@@ -589,6 +593,8 @@ GPU usage is mainly dictated by frame rate and anti-aliasing. These options can 
 If you find GPU usage is too high, first ensure that you do not have anti-aliasing set to `Really nice`, because it can cause very heavy CPU load. Next, make sure that all effects in the effect settings are disabled. If it is still too high, make sure to disable the virtual camera and improved anti-aliasing. Finally, you can try reducing the regular anti-aliasing setting or reducing the framerate cap from 60 to something lower like 30 or 24.
 
 Generally, rendering a single character should not be very hard on the GPU, but model optimization may still make a difference. You can use [this cube model](/Cube.vrm) to test how much of your GPU utilization is related to the model. A model exported straight from VRoid with the hair meshes combined will probably still have a separate material for each strand of hair. Combined with the multiple passes of the MToon shader, this can easily lead to a few hundred draw calls, which are somewhat expensive. Merging materials and atlassing textures in Blender, then [converting](https://vrm.dev/en/how_to_make_vrm/) the model back to VRM in Unity can easily reduce the number of draw calls from a few hundred to around ten.
+
+[Some people](https://www.reddit.com/r/VirtualYoutubers/comments/kgmaio/vseeface_issue_with_gpu_usuage/) with Nvidia GPUs who reported strange spikes in GPU load found that the issue went away after setting `Prefer max performance` in the Nvidia power management settings and setting `Texture Filtering - Quality` to `High performance` in the Nvidia settings.
 
 ## Donations
 
