@@ -436,7 +436,9 @@ Translations are coordinated on GitHub in the [VSeeFaceTranslations](https://git
 
 ### Running on Linux and maybe Mac
 
-Some people have gotten VSeeFace to run on Linux through wine and it might be possible on Mac as well, but nobody tried, to my knowledge. However, reading webcams is not possible through wine. As a workaround, you can set the camera in VSeeFace to `[Network tracking]` and run the `facetracker.py` script from [OpenSeeFace](https://github.com/emilianavt/OpenSeeFace) manually. To do this, you will need a Python 3.7 or newer installation. To set up everything for the `facetracker.py`, you can try something like this on Debian based distributions:
+Some people have gotten VSeeFace to run on Linux through wine and it might be possible on Mac as well, but nobody tried, to my knowledge. However, reading webcams is not possible through wine versions before 6. Starting with wine 6, you can try just using it normally.
+
+For previous versions or if webcam reading does not work properly, as a workaround, you can set the camera in VSeeFace to `[Network tracking]` and run the `facetracker.py` script from [OpenSeeFace](https://github.com/emilianavt/OpenSeeFace) manually. To do this, you will need a Python 3.7 or newer installation. To set up everything for the `facetracker.py`, you can try something like this on Debian based distributions:
 
     sudo apt-get install python3 python3-pip python3-virtualenv git
     git clone https://github.com/emilianavt/OpenSeeFace
