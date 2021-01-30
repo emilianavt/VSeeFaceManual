@@ -176,7 +176,7 @@ This is most likely caused by not properly normalizing the model during the firs
 
 Note that re-exporting a VRM will not work to for properly normalizing the model. Instead the original model (usually FBX) has to be exported with the correct options set.
 
-#### I converted my model to VRM format, but when I blink, my mouth moves or I activate an expressions, it looks weird and the shadows shift?
+#### <a name="blendshape-normals"></a>I converted my model to VRM format, but when I blink, my mouth moves or I activate an expressions, it looks weird and the shadows shift?
 
 Make sure to set "Blendshape Normals" to "None" on the FBX when you import it into Unity and before you export your VRM. That should prevent        this issue.
 
