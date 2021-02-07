@@ -230,6 +230,12 @@ No, VSeeFace only supports 3D models in VRM format. To integrate Live2D, an "Exp
 
 No, VSeeFace cannot use the Tobii eye tracker SDK due to its its licensing terms.
 
+#### Can I use VSeeFace with Xsplit Broadcaster?
+
+You can enable the virtual camera in VSeeFace, set a single colored background image and add the VSeeFace camera as a source, then going to the color tab and enabling a chroma key with the color corresponding to the background image. Note that this may not give as clean results as capturing in OBS with proper alpha transparency.
+
+Please note that the camera needs to be reenabled every time you start VSeeFace unless the option to keep it enabled is enabled. This option can be found in the advanced settings section.
+
 #### Is VSeeFace open source? I heard it was open source.
 
 No. It uses paid assets from the Unity asset store that cannot be freely redistributed. However, the actual face tracking and avatar animation code is open source. You can find it [here](https://github.com/emilianavt/OpenSeeFace) and [here](https://gist.github.com/emilianavt/b211073096a4484fb92e6550212c2f48).
