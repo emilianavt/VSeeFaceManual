@@ -190,7 +190,7 @@ This is most likely caused by not properly normalizing the model during the firs
 
 Note that re-exporting a VRM will not work to for properly normalizing the model. Instead the original model (usually FBX) has to be exported with the correct options set.
 
-#### I converted my model to VRM format, but when I blink, my mouth moves or I activate an expressions, it looks weird and the shadows shift?
+#### <a name="blendshape-normals"></a>I converted my model to VRM format, but when I blink, my mouth moves or I activate an expressions, it looks weird and the shadows shift?
 
 Make sure to set "Blendshape Normals" to "None" on the FBX when you import it into Unity and before you export your VRM. That should prevent        this issue.
 
@@ -243,6 +243,12 @@ No, VSeeFace only supports 3D models in VRM format. To integrate Live2D, an "Exp
 #### Does VSeeFace support the Tobii eye tracker?
 
 No, VSeeFace cannot use the Tobii eye tracker SDK due to its its licensing terms.
+
+#### Can I use VSeeFace with Xsplit Broadcaster?
+
+You can enable the virtual camera in VSeeFace, set a single colored background image and add the VSeeFace camera as a source, then going to the color tab and enabling a chroma key with the color corresponding to the background image. Note that this may not give as clean results as capturing in OBS with proper alpha transparency.
+
+Please note that the camera needs to be reenabled every time you start VSeeFace unless the option to keep it enabled is enabled. This option can be found in the advanced settings section.
 
 #### Is VSeeFace open source? I heard it was open source.
 
@@ -399,7 +405,7 @@ A full Japanese guide can be found [here](https://hinzka.hatenablog.com/entry/20
 * Drag the model file from the files section in Unity to the hierarchy section. It should now appear in the scene view. Click the triangle in front of the model in the hierarchy to unfold it. You should see an entry called `Face`. ([Screenshot](/assets/img/HANA_Tool1.png))
 * From the `HANA_Tool` menu at the top, select `Reader`. A new window should appear. Drag the `Face` object into the `SkinnedMeshRenderer` slot at the top of the new window. Select the VRoid version and type of your model. Make sure to select `Add` at the bottom, then click `Read BlendShapes`. ([Screenshot](/assets/img/HANA_Tool2.png))
 * If you get a message window with a [long message](/assets/img/HANA_Tool2Error.png) about the number of vertices not matching, it means that your model does not match the requirements. It might be exported from a different VRoid version, have been decimated or edited etc. If you get a window with saying 変換完了 or that it [finished reading blendshapes](/assets/img/HANA_Tool2Success.png), the blendshapes were successfully added and you can close the `Reader` window.
-* From the `HANA_Tool` menu at the top, select `AddBlendShapeClip`. A new window should appear. Drag the model from the hierarchy into the `VRMBlendShapeProxy` slot at the top of the new window. Again, drag the `Face` object into the `SkinnedMeshRenderer` slot underneath. Select your model type, not `Extra` and press the button at the bottom. ([Screenshot](/assets/img/HANA_Tool3.png))
+* From the `HANA_Tool` menu at the top, select `ClipBuilder`. A new window should appear. Drag the model from the hierarchy into the slot at the top and run it. For older versions than v2.9.5b, select `AddBlendShapeClip`. A new window should appear. Drag the model from the hierarchy into the `VRMBlendShapeProxy` slot at the top of the new window. Again, drag the `Face` object into the `SkinnedMeshRenderer` slot underneath. Select your model type, not `Extra` and press the button at the bottom. ([Screenshot](/assets/img/HANA_Tool3.png))
 * You should get a [window](/assets/img/HANA_Tool3Success.png) with saying it successfully added the blendshape clips or 変換完了, meaning you can close this window as well.
 * Try pressing the play button in Unity, switch back to the `Scene` tab and select your model in the hierarchy. Scroll down in the inspector until you see a list of blend shapes. You should be able to move the sliders and see the face of your model change. Below the regular VRM and VRoid blendshapes, there should now be a bit more than 50 additional blendshapes for perfect sync use, such as one to puff your cheeks. ([Screenshot](/assets/img/HANA_Tool4.png))
 * Stop the scene, select your model in the hierarchy and from the `VRM` menu, select `UniVRM`, then `Export humanoid`. All the necessary details should already be filled in, so you can press export to save your new VRM file. ([Screenshot](/assets/img/HANA_Tool5.png))
@@ -450,7 +456,9 @@ Translations are coordinated on GitHub in the [VSeeFaceTranslations](https://git
 
 ### Running on Linux and maybe Mac
 
-Some people have gotten VSeeFace to run on Linux through wine and it might be possible on Mac as well, but nobody tried, to my knowledge. However, reading webcams is not possible through wine. As a workaround, you can set the camera in VSeeFace to `[Network tracking]` and run the `facetracker.py` script from [OpenSeeFace](https://github.com/emilianavt/OpenSeeFace) manually. To do this, you will need a Python 3.7 or newer installation. To set up everything for the `facetracker.py`, you can try something like this on Debian based distributions:
+Some people have gotten VSeeFace to run on Linux through wine and it might be possible on Mac as well, but nobody tried, to my knowledge. However, reading webcams is not possible through wine versions before 6. Starting with wine 6, you can try just using it normally.
+
+For previous versions or if webcam reading does not work properly, as a workaround, you can set the camera in VSeeFace to `[Network tracking]` and run the `facetracker.py` script from [OpenSeeFace](https://github.com/emilianavt/OpenSeeFace) manually. To do this, you will need a Python 3.7 or newer installation. To set up everything for the `facetracker.py`, you can try something like this on Debian based distributions:
 
     sudo apt-get install python3 python3-pip python3-virtualenv git
     git clone https://github.com/emilianavt/OpenSeeFace
