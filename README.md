@@ -4,7 +4,7 @@
 
 <a href="#japanese-info">日本語</a>
 
-VSeeFace is a free, highly configurable face and hand tracking VRM avatar puppeteering program for virtual youtubers with a focus on robust tracking and high image quality. VSeeFace offers functionality similar to Luppet, 3tene, Wakaru and similar programs. VSeeFace runs on Windows 8 and above (64 bit only). VSeeFace can send, receive and combine tracking data using the [VMC protocol](https://protocol.vmc.info/), which also allows iPhone [perfect sync](https://hinzka.hatenablog.com/entry/2020/08/15/145040) support through [Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077) like [this](https://twitter.com/ovaraisu/status/1332463731159293954).
+VSeeFace is a free, highly configurable face and hand tracking VRM and [VSFAvatar](#vsfavatar) avatar puppeteering program for virtual youtubers with a focus on robust tracking and high image quality. VSeeFace offers functionality similar to Luppet, 3tene, Wakaru and similar programs. VSeeFace runs on Windows 8 and above (64 bit only). VSeeFace can send, receive and combine tracking data using the [VMC protocol](https://protocol.vmc.info/), which also allows iPhone [perfect sync](https://hinzka.hatenablog.com/entry/2020/08/15/145040) support through [Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077) like [this](https://twitter.com/ovaraisu/status/1332463731159293954).
 
 Face tracking, including eye gaze, blink, eyebrow and mouth tracking, is done through a regular webcam. For the optional hand tracking, a Leap Motion device is required. You can see a comparison of the face tracking performance compared to other popular vtuber applications [here](https://twitter.com/emiliana_vt/status/1275424412167221248). In this comparison, VSeeFace is still listed under its former name OpenSeeFaceDemo.
 
@@ -18,7 +18,7 @@ Please note that Live2D models are not supported. For those, please check out VT
 
 **To update VSeeFace, just delete the old folder or overwrite it when unpacking the new version.**
 
-<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.35/VSeeFace-v1.13.35.zip" class="download">Download<br>v1.13.35</a>
+<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36/VSeeFace-v1.13.36.zip" class="download">Download<br>v1.13.36</a>
 
 Old versions can be found in the release archive [here](https://github.com/emilianavt/VSeeFaceReleases/releases/). This website, the #vseeface-updates channel on Deat's discord and the release archive are the only official download locations for VSeeFace.
 
@@ -28,7 +28,7 @@ The latest release notes can be found <a href="https://gist.github.com/emilianav
 
 The reason it is currently only released in this way, is to make sure that everybody who tries it out has an easy channel to give me feedback.
 
-<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.35/VSeeFace-v1.13.35.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
+<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36/VSeeFace-v1.13.36.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
 
 <span lang="ja">@[Virtual_Deat](https://twitter.com/Virtual_Deat)さんの[ディスコードサーバー](https://discord.gg/BjBgk7k)に入るとルールズチャンネルで👌にクリックでルールを同意して他のチャンネルも表示されます。#vseefaceと日本語チャンネルもあります。</span>
 
@@ -64,11 +64,25 @@ POSSIBILITY OF SUCH DAMAGE.</small>
 
 VSeeFace is being created by @[Emiliana_vt](https://twitter.com/emiliana_vt) and @[Virtual_Deat](https://twitter.com/Virtual_Deat).
 
+## VSFAvatar
+
+Starting with VSeeFace v1.13.36, a new Unity asset bundle and VRM based avatar format called VSFAvatar is supported by VSeeFace. This format allows various Unity functionality such as custom animations, shaders and various other components like dynamic bones, constraints and even window captures to be added to VRM models. This is done by re-importing the VRM into Unity and adding and changing various things. To learn more about it, you can watch this tutorial by @[Virtual_Deat](https://www.twitter.com/Virtual_Deat), who worked hard to bring this new feature about!
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jhQ8DF87I5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+SDK download: [v1.13.36](https://github.com/emilianavt/VSeeFaceSDK/releases/download/v1.13.36/VSF_SDK_v1.13.36.unitypackage)
+
 ## Tutorials
 
 There are a lot of tutorial videos out there. This section lists a few to help you get started, but it is by no means comprehensive. Make sure to look around!
 
+### Official tutorials
+
 * [Tutorial: How to set up expression detection in VSeeFace](https://www.youtube.com/watch?v=-Y2JyGLxuyo) @ Emiliana
+* [The New VSFAvatar Format: Custom shaders, animations and more](https://youtu.be/jhQ8DF87I5I) @ Virtual_Deat
+
+### VSeeFace tutorials
+
 * [Ultimate Guide to VSeeFace](https://www.youtube.com/watch?v=CQGr75XiKuw) @ Cadet Del Valle
 * [VSeeFace is pretty pog](https://www.youtube.com/watch?v=Z_KKk2vgjXU) @ Killakuma
 * [Ultimate Guide to VSeeFace Part 2](https://www.youtube.com/watch?v=J-DE-OMSDx8) @ Cadet Del Valle
@@ -76,13 +90,13 @@ There are a lot of tutorial videos out there. This section lists a few to help y
 * [Full body motion from ThreeDPoseTracker to VSeeFace](https://www.youtube.com/watch?v=A1T1wsJrGWQ) @ Suvidriel
 * [VR Tracking from VMC to VSeeFace](https://www.youtube.com/watch?v=LkO0VusjkHU) @ Suvidriel
 
-About VRM models:
+### VRM model tutorials
 
 * [Springbones: How to add physics to bones](https://www.youtube.com/watch?v=tpl_mqU8i7U) @ Deat's virtual escapades
 * [How to Adjust Vroid blendshapes in Unity!](https://www.youtube.com/watch?v=ECZXlzlIcKU) @ Argama Witch
 * [Advanced emotions for VRoid VRM models](https://www.youtube.com/watch?v=u4wqTu6lXx8) @ Suvidriel
 
-<a name="tutorials-ja"></a><span lang="ja">日本語のチュートリアル動画：</span>
+### <a name="tutorials-ja"></a><span lang="ja">日本語のチュートリアル動画：</span>
 
 * <span lang="ja">[VTuber向けアプリに黒船襲来！？海外勢に人気のVSeeFaceに乗り遅れるな！【How to use VSeeFace for Japanese VTubers (JPVtubers)】](https://www.youtube.com/watch?v=nkPqAD1paGE) @ 
 大福らなチャンネル</span>
