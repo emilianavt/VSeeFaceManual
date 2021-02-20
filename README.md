@@ -30,6 +30,8 @@ The reason it is currently only released in this way, is to make sure that every
 
 <span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36/VSeeFace-v1.13.36.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
 
+<span lang="ja">VRM以外UnityのAssetBundle形式のVSFAvatarも使えます。SDKは<a href="https://github.com/emilianavt/VSeeFaceSDK/releases/latest>こちら</a>。</span>
+
 <span lang="ja">@[Virtual_Deat](https://twitter.com/Virtual_Deat)さんの[ディスコードサーバー](https://discord.gg/BjBgk7k)に入るとルールズチャンネルで👌にクリックでルールを同意して他のチャンネルも表示されます。#vseefaceと日本語チャンネルもあります。</span>
 
 <span lang="ja">VSeeFaceはカラーキーで録画が出来ないけどOBSのGame CaptureでAllow transparencyをチェックしてVSeeFaceで右下の※ボタンでUIを見えないにすれば綺麗な透明の背景になります。</span>
