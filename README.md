@@ -30,6 +30,8 @@ The reason it is currently only released in this way, is to make sure that every
 
 <span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36b/VSeeFace-v1.13.36b.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
 
+<span lang="ja">VRM以外UnityのAssetBundle形式のVSFAvatarも使えます。SDKは<a href="https://github.com/emilianavt/VSeeFaceSDK/releases/latest">こちら</a>。</span>
+
 <span lang="ja">@[Virtual_Deat](https://twitter.com/Virtual_Deat)さんの[ディスコードサーバー](https://discord.gg/BjBgk7k)に入るとルールズチャンネルで👌にクリックでルールを同意して他のチャンネルも表示されます。#vseefaceと日本語チャンネルもあります。</span>
 
 <span lang="ja">VSeeFaceはカラーキーで録画が出来ないけどOBSのGame CaptureでAllow transparencyをチェックしてVSeeFaceで右下の※ボタンでUIを見えないにすれば綺麗な透明の背景になります。</span>
@@ -70,7 +72,11 @@ Starting with VSeeFace v1.13.36, a new Unity asset bundle and VRM based avatar f
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jhQ8DF87I5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+A README file with various important information is included in the SDK, but you can also read it [here](https://github.com/emilianavt/VSeeFaceSDK/blob/master/README.md).
+
 SDK download: [v1.13.36](https://github.com/emilianavt/VSeeFaceSDK/releases/download/v1.13.36/VSF_SDK_v1.13.36.unitypackage) ([release archive](https://github.com/emilianavt/VSeeFaceSDK/releases))
+
+Make sure to set the Unity project to [linear color space](https://docs.unity3d.com/Manual/LinearRendering-LinearOrGammaWorkflow.html).
 
 You can watch how the two included sample models were set up [here](https://www.youtube.com/watch?v=T4LxyxfUAVY).
 
