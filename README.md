@@ -76,6 +76,8 @@ A README file with various important information is included in the SDK, but you
 
 SDK download: [v1.13.36](https://github.com/emilianavt/VSeeFaceSDK/releases/download/v1.13.36/VSF_SDK_v1.13.36.unitypackage) ([release archive](https://github.com/emilianavt/VSeeFaceSDK/releases))
 
+Make sure to set the Unity project to [linear color space](https://docs.unity3d.com/Manual/LinearRendering-LinearOrGammaWorkflow.html).
+
 You can watch how the two included sample models were set up [here](https://www.youtube.com/watch?v=T4LxyxfUAVY).
 
 ## Tutorials
