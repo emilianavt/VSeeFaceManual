@@ -512,7 +512,7 @@ If you get an error message that the tracker process has disappeared, first try 
       File "cv2__init__.py", line 3, in <module>
     ImportError: DLL load failed: %1 is not a valid Win32 application.
 
-appears near the end of the `error.txt` that should have opened, you probably have an N edition of Windows. Follow [these](#nedition) steps.
+appears near the end of the `error.txt` that should have opened, you probably have an N edition of Windows. These Windows N editions mostly distributed in Europe are missing some necessary multimedia libraries. Follow [these](#nedition) steps to install them.
 
 If tracking doesn't work, you can actually test what the camera sees by running the `run.bat` in the `VSeeFace_Data\StreamingAssets\Binary` folder. Before running it, make sure that no other program, including VSeeFace, is using the camera. After starting it, you will first see a list of cameras, each with a number in front of it. Enter the number of the camera you would like to check and press enter. Next, it will ask you to select your camera settings as well as a frame rate. You can enter -1 to use the camera defaults and 24 as the frame rate. Press enter after entering each value. After this, a second window should open, showing the image captured by your camera. If your face is visible on the image, you should see red and yellow tracking dots marked on your face. You can use this to make sure your camera is working as expected, your room has enough light, there is no strong light from the background messing up the image and so on. If the tracking points accurately track your face, the tracking should work in VSeeFace as well. To close the window, either press `q` in the window showing the camera image or press Ctrl+C in the console window.
 
