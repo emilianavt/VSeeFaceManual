@@ -174,7 +174,7 @@ All configurable hotkeys also work while it is in the background or minimized, s
 
 #### <a name="gpuscheduling"></a>When I have a game open and VSeeFace is running in the background it slows down or stops?
 
-In at least one case, the following setting has apparently fixed this: Windows => Graphics Settings => Change default graphics settings => Disable "Hardware-accelerated GPU scheduling"
+In at least one case, the following setting has apparently fixed this: Windows => Graphics Settings => Change default graphics settings => Disable "Hardware-accelerated GPU scheduling". In another case, setting VSeeFace to realtime priority seems to have helped.
 
 #### I get an error when starting the tracking with DroidCam (or some other camera)?
 
