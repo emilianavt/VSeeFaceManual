@@ -1,0 +1,63 @@
+{
+  "_id": "org.nuget.system.buffers",
+  "_rev": "1-0",
+  "name": "org.nuget.system.buffers",
+  "license": "https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
+  "description": "Provides resource pooling of any type for performance-critical applications that allocate and deallocate objects frequently.\n\nCommonly Used Types:\nSystem.Buffers.ArrayPool<T>\n \n7601f4f6225089ffb291dc7d58293c7bbf5c5d4f \nWhen using NuGet 3.x this package requires at least version 3.4.",
+  "dist-tags": {
+    "latest": "4.5.1"
+  },
+  "versions": {
+    "4.4.0": {
+      "name": "org.nuget.system.buffers",
+      "version": "4.4.0",
+      "dist": {
+        "tarball": "https://unitynuget-registry.azurewebsites.net//org.nuget.system.buffers/-/org.nuget.system.buffers-4.4.0.tgz",
+        "shasum": "8d99e663806f7c5ae41612e1b02c7a766ebb14b1"
+      },
+      "dependencies": {},
+      "_id": "org.nuget.system.buffers@4.4.0",
+      "unity": "2019.1",
+      "description": "Provides resource pooling of any type for performance-critical applications that allocate and deallocate objects frequently.\n\nCommonly Used Types:\nSystem.Buffers.ArrayPool<T>\n \n8321c729934c0f8be754953439b88e6e1c120c24 \nWhen using NuGet 3.x this package requires at least version 3.4.",
+      "displayName": "System.Buffers (NuGet)",
+      "scripts": {},
+      "author": "Microsoft"
+    },
+    "4.5.0": {
+      "name": "org.nuget.system.buffers",
+      "version": "4.5.0",
+      "dist": {
+        "tarball": "https://unitynuget-registry.azurewebsites.net//org.nuget.system.buffers/-/org.nuget.system.buffers-4.5.0.tgz",
+        "shasum": "f4f24edc07e4e78f9d8c8d47acc47700d004c79f"
+      },
+      "dependencies": {},
+      "_id": "org.nuget.system.buffers@4.5.0",
+      "unity": "2019.1",
+      "description": "Provides resource pooling of any type for performance-critical applications that allocate and deallocate objects frequently.\n\nCommonly Used Types:\nSystem.Buffers.ArrayPool<T>\n \n30ab651fcb4354552bd4891619a0bdd81e0ebdbf \nWhen using NuGet 3.x this package requires at least version 3.4.",
+      "displayName": "System.Buffers (NuGet)",
+      "scripts": {},
+      "author": "Microsoft"
+    },
+    "4.5.1": {
+      "name": "org.nuget.system.buffers",
+      "version": "4.5.1",
+      "dist": {
+        "tarball": "https://unitynuget-registry.azurewebsites.net//org.nuget.system.buffers/-/org.nuget.system.buffers-4.5.1.tgz",
+        "shasum": "7fa7ce0b4a6f371abaf354d282c29b2aacc123bb"
+      },
+      "dependencies": {},
+      "_id": "org.nuget.system.buffers@4.5.1",
+      "unity": "2019.1",
+      "description": "Provides resource pooling of any type for performance-critical applications that allocate and deallocate objects frequently.\n\nCommonly Used Types:\nSystem.Buffers.ArrayPool<T>\n \n7601f4f6225089ffb291dc7d58293c7bbf5c5d4f \nWhen using NuGet 3.x this package requires at least version 3.4.",
+      "displayName": "System.Buffers (NuGet)",
+      "scripts": {},
+      "author": "Microsoft"
+    }
+  },
+  "time": {
+    "4.4.0": "2017-08-11T18:14:35.187Z",
+    "4.5.0": "2018-05-29T20:12:21.333Z",
+    "4.5.1": "2020-03-24T17:09:47.227Z"
+  },
+  "users": {}
+}

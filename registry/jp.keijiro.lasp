@@ -1,0 +1,317 @@
+{
+  "_id": "jp.keijiro.lasp",
+  "_rev": "4-798b7572999666868f727c2b4ab4dde7",
+  "name": "jp.keijiro.lasp",
+  "dist-tags": {
+    "latest": "2.1.3"
+  },
+  "versions": {
+    "2.0.0": {
+      "author": {
+        "name": "Keijiro Takahashi"
+      },
+      "dependencies": {
+        "com.unity.burst": "1.2.3",
+        "com.unity.mathematics": "1.1.0",
+        "jp.keijiro.libsoundio": "1.0.1"
+      },
+      "description": "Low-latency audio signal processing plugin for Unity",
+      "displayName": "LASP",
+      "keywords": [
+        "unity"
+      ],
+      "license": "MIT",
+      "name": "jp.keijiro.lasp",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/keijiro/Lasp.git"
+      },
+      "unity": "2019.3",
+      "unityRelease": "1f1",
+      "version": "2.0.0",
+      "bugs": {
+        "url": "https://github.com/keijiro/Lasp/issues"
+      },
+      "homepage": "https://github.com/keijiro/Lasp#readme",
+      "_id": "jp.keijiro.lasp@2.0.0",
+      "_npmVersion": "5.8.0",
+      "_nodeVersion": "10.15.2",
+      "_npmUser": {
+        "name": "keijiro",
+        "email": "keijiro@gmail.com"
+      },
+      "dist": {
+        "integrity": "sha512-ZmdHhdp4v4cHph+5TVTWvK8xsgwnh0pS/FlF+LP9O9wgrXTz2N6oLYepnHgmX+kVk0OWMIojxdgxgbj94wXwqA==",
+        "shasum": "4bd25d7a82b21b9f7958814729536a114e62b4e0",
+        "tarball": "https://registry.npmjs.org/jp.keijiro.lasp/-/jp.keijiro.lasp-2.0.0.tgz",
+        "fileCount": 49,
+        "unpackedSize": 78844,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJecjxrCRA9TVsSAnZWagAAORIP/3pJQmz/6tbhBxKlgRtA\nMm7cuB+0WiYEhedO0z2H5+lQc8uhqFN5pMguUZcWls1RXIxOBZ9hY8O8t2in\ngG7RqT9zypphElEpb8b/4ps9wkbM+nvz0gAVlxsIJS6lv7p4cjfBBaeB+T3d\nsLuJXdbWKmgt3Kv2QeFyftHRyVJXaNULpRyczmJ6WNNt/nRQ+kkPgdwRXr6W\nZLkiXdnX1FrDDZm/Lp5O8ThaS/c3r4JjQvZNltZGABfO0FY4E7H4s+PC2m+v\niVQV2o5lKWfASoQJjAjOXGRRCx0tO8JIhaynuZuHUw6acm0zOVjOAD1Ib71t\nmpRHWNiKN1v1khmeCqcEexFf4XF2bD2mae/RPR9sTkwKStho/6ZbEuqRcBCc\n2m0Sur6R3AzN0kB49NWrNvRq8iZArDilHZQzkUhfsHWHkAX0zXV+PVc8HkWr\n6Tbhza8QIwFqMqRvqdQ+etxwSof0abzmmLbr2+f7VcnEfsMVnWM8kWX92j+t\nmkozduT6Hpy0ypVRoFqcySL5NdlSfcdNRdWlN13jOyTyeDWKjmfK4F7LCxo0\n60ReTjcV+MmUnt4obDPZr3UBEEwwQ4yNLrp+1F3dghl7qbOVOK4VCwOfDorE\nyeeJwQJMM5+Is0yC/Ffp1ATT7f/ysV/nkRuHH673Bwo/dTCRWbiPavPmouw7\nhiMr\r\n=V2Oi\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "keijiro",
+          "email": "keijiro@gmail.com"
+        }
+      ],
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/jp.keijiro.lasp_2.0.0_1584544875201_0.3405319248747556"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.1.0": {
+      "author": {
+        "name": "Keijiro Takahashi"
+      },
+      "dependencies": {
+        "com.unity.burst": "1.2.3",
+        "com.unity.mathematics": "1.1.0",
+        "jp.keijiro.libsoundio": "1.0.1"
+      },
+      "description": "Low-latency audio signal processing plugin for Unity",
+      "displayName": "LASP",
+      "keywords": [
+        "unity"
+      ],
+      "license": "MIT",
+      "name": "jp.keijiro.lasp",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/keijiro/Lasp.git"
+      },
+      "unity": "2019.3",
+      "unityRelease": "1f1",
+      "version": "2.1.0",
+      "bugs": {
+        "url": "https://github.com/keijiro/Lasp/issues"
+      },
+      "homepage": "https://github.com/keijiro/Lasp#readme",
+      "_id": "jp.keijiro.lasp@2.1.0",
+      "_npmVersion": "5.8.0",
+      "_nodeVersion": "10.15.2",
+      "_npmUser": {
+        "name": "keijiro",
+        "email": "keijiro@gmail.com"
+      },
+      "dist": {
+        "integrity": "sha512-eSPbSqroztQ3SoZPZ589HhJqDKbsCDrrIT8RFFdiBiWTn8AOB0csK5fw/sPqUM70v4j0tAeqcn1qfczzUqxDmg==",
+        "shasum": "5bbcdba028980d9a627146c0a41e9481e6a1ea22",
+        "tarball": "https://registry.npmjs.org/jp.keijiro.lasp/-/jp.keijiro.lasp-2.1.0.tgz",
+        "fileCount": 67,
+        "unpackedSize": 110842,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeiag8CRA9TVsSAnZWagAAtVQQAKF2yClH83kKpfLL6sWf\ndaJRp1hF+4SINvUw/InOf9MTRx76P9Oqrc254iJls6fYBkWWdOS5q/tlyZVB\ni8wFDsQreNDm8Z6Igq3T9rakgXiHxOOuh/0+crazEO1q+hgYgIC8lT/wwklW\nU/P3f9b9tbP5OKP9Tkx704HinEcoKFhAMn2My12F+HSegTA5H0UvmUSJVYhS\nVUYLyK+VaSNLhu40KSEsk57SRAJytNoScTmT+kOKqSm5fDvctj58Q9U+Sb4a\nIIrz5IMmh0YxpDPy8gSyLCHHjLmAx/jCVT8hAyezVJrvTcx8jz3oc5I0rFXx\n6pNWVie2MtqqrupzTAUGvesSjUUzXzXpPdjc6tVYxDYtbJP58oTwYN3Cw5Vd\nOCTLpd2dLaK6D6OxTPkawvPouSzW/6OcUFDkhRASpWFw6+flhz3H7/iD9IK8\nDgezP66Xxb6EUpW6p5xpaq9YxdSxuOMqJIKcRH5fAaef4pjQeQloYLNDcuSs\ndsxqjUZOlBBZ8oMlKhGHFNr3aU1SyqCU3Hwyf6+SnfWBYNUOnVwi3KpMjbLz\n6it3ggyGh7t1p2JsTrs2hxyCKMhOYR3v2ed8E/j3TVKiHNMJKkMwBVubQ8Jy\n95PCIxF3Ljfcdaxps2xIALVQie4S7WV9gvJ96dXccKDQlJNoAf90u2SB5G0G\nVqtL\r\n=FGjM\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "keijiro",
+          "email": "keijiro@gmail.com"
+        }
+      ],
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/jp.keijiro.lasp_2.1.0_1586079803596_0.11510350844194117"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.1.1": {
+      "author": {
+        "name": "Keijiro Takahashi"
+      },
+      "dependencies": {
+        "com.unity.burst": "1.2.3",
+        "com.unity.mathematics": "1.1.0",
+        "jp.keijiro.libsoundio": "1.0.1"
+      },
+      "description": "Low-latency audio signal processing plugin for Unity",
+      "displayName": "LASP",
+      "keywords": [
+        "unity"
+      ],
+      "license": "MIT",
+      "name": "jp.keijiro.lasp",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/keijiro/Lasp.git"
+      },
+      "unity": "2019.3",
+      "unityRelease": "1f1",
+      "version": "2.1.1",
+      "bugs": {
+        "url": "https://github.com/keijiro/Lasp/issues"
+      },
+      "homepage": "https://github.com/keijiro/Lasp#readme",
+      "_id": "jp.keijiro.lasp@2.1.1",
+      "_npmVersion": "5.8.0",
+      "_nodeVersion": "10.15.2",
+      "_npmUser": {
+        "name": "keijiro",
+        "email": "keijiro@gmail.com"
+      },
+      "dist": {
+        "integrity": "sha512-CFKj0My0FJI8va2OplXDZzPmBSsJoNaqd79JrzWc0wnSczP45SmKHoNZksF3PlBZIPIBAtUC9FIDFw6Xe/M8Rw==",
+        "shasum": "bbbea940aa221f3cf16388d555fe5d16af849d76",
+        "tarball": "https://registry.npmjs.org/jp.keijiro.lasp/-/jp.keijiro.lasp-2.1.1.tgz",
+        "fileCount": 67,
+        "unpackedSize": 110982,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeie4TCRA9TVsSAnZWagAAquIP/1wABh76ssDXftlapsbl\nijC6ZAClcKwOpi9h+OFV+MArZW4YkVZoE29jIHrlKi7eTpfhp5YUZgJwUmTx\nfOQwHjVBd1O4VPHevQWjafESIj7ezjSmrRSL15k76mfdwgKXpjFC+TztEBj7\nuLun1+OoP6ZDU/doHhUez0Gs55LaEGW55AAaG4PCAYdd+M6Tf79VRSy7L2IO\nYWe9xgdurvOKcBMFRDph/axBZAYKYPaI0nz16jGTiuzSu7OKtRS1BOMoDKZu\ns84SrfDNlF5l3/FMD6vy1b+Vm7DVcF/PD7hfj0hMV8ads4WCNrEsPoddJBkG\n0AZV7eSgTIJKx1E31GwYs+ZO0ePZzVj4dQHC/u/8Ik4/qALF+2/Ylnt8Pozr\nzD2TfBU3qn+I20luZBb8a3tovMf5dWmF/akthG4r4cW+XlZLyJsBVbbgiCsF\nUlgl9oFTKwI/Gurd7lyabuhQAjS58LaUIiuOvoO1MAGE+DxQzi+DaUXiyXVk\nw+hLHRc/F5/4wKVueRVoVuPrIIU1InQy36xQe6ZtL5x6aKrwLEZFdWP83JhA\nzoz/bvYWCUxkNNDVbW/vDYk1aY2obfZf1vmZP7aFa9Jvpk51/rPbAfiYXpeR\n93wnPL/fSgtoKgmMn5y0p5kBxVmfrYn6V70BJsb9kfthQdDnYeBIybwkN8s6\nl3Xb\r\n=7WqL\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "keijiro",
+          "email": "keijiro@gmail.com"
+        }
+      ],
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/jp.keijiro.lasp_2.1.1_1586097683274_0.3076474572916803"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.1.2": {
+      "author": {
+        "name": "Keijiro Takahashi"
+      },
+      "dependencies": {
+        "com.unity.burst": "1.2.3",
+        "com.unity.mathematics": "1.1.0",
+        "jp.keijiro.libsoundio": "1.0.1"
+      },
+      "description": "Low-latency audio signal processing plugin for Unity",
+      "displayName": "LASP",
+      "keywords": [
+        "unity"
+      ],
+      "license": "MIT",
+      "name": "jp.keijiro.lasp",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/keijiro/Lasp.git"
+      },
+      "unity": "2019.3",
+      "unityRelease": "1f1",
+      "version": "2.1.2",
+      "bugs": {
+        "url": "https://github.com/keijiro/Lasp/issues"
+      },
+      "homepage": "https://github.com/keijiro/Lasp#readme",
+      "_id": "jp.keijiro.lasp@2.1.2",
+      "_npmVersion": "5.8.0",
+      "_nodeVersion": "10.15.2",
+      "_npmUser": {
+        "name": "keijiro",
+        "email": "keijiro@gmail.com"
+      },
+      "dist": {
+        "integrity": "sha512-jkVmIBd5xA9CLN4cosS4O3sBRkJ2QhNVsUrnYpXEbdMLlYX66suVjTM0YzEJ5Dj5qvv1D8gZ+cqGc45uYlhmWw==",
+        "shasum": "52d4d1ecb8129e5d723ea1a31f2c2dbeb53446d1",
+        "tarball": "https://registry.npmjs.org/jp.keijiro.lasp/-/jp.keijiro.lasp-2.1.2.tgz",
+        "fileCount": 67,
+        "unpackedSize": 111046,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeifQ9CRA9TVsSAnZWagAA2JgP/R3c+Qh5qA7PQNSlJ2kC\nZfqSu9WqgCgEMhQIscaW51s/CZAW6Eo/bdwGjamVNxNm8fV8tPZOhFumB2j1\noW1+ZSwha5Lf/Oyw3Qfr3csQb9fWPFagVecO1m5rxhPRowP97rFioHPnX37g\neScei6amUyvmo2djlMJVEsj18BKnH/jr66gnYrfei2+i8VWSS5k54bSixVm/\ndS/Hs4SiCOn6Zs10bWjDdkOrrC5gLMB3BRHDTer956zZ6TLJazsWZ9T0/XjB\nsBYviMQxaifriRTvFyw6PpZtrSY1EG3SHB8gnkKHK90yTJStqs01zPxdo3Fi\nKsKxDLRrRf8LBC+DjnLCL59SWYKphjBFjnErLg6rN778XTujBCaNANyd+y4d\nXKKRndS7lRFKR24A0gZYrRUayRWHbL3o1O/T/1wZW8OawxPY6PR3PSMOQuz+\nm+U8CbvLo4Ku+BMB+B+ozN7IK4EXB3Vnc8feotP64ArDy67lnIWx97dJhepj\nvLgXUVERk0uiEQq8e97wqGGxRoWdpUolJgNOswWBjHm+oYp+ZjwG+U7XwUqA\nDdw4bFcXcZqVQRr/EmpJqYtZ0Fg5wglZ5RQDbpT1Y0uaUZ7+r1/WVn3DWfwP\nf7fJn5hmutUh8Ftw3WrmvrYlHl61RNatopiOgSjH/PNrv7svjruVZj1T5mde\ncW9o\r\n=pp5n\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "keijiro",
+          "email": "keijiro@gmail.com"
+        }
+      ],
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/jp.keijiro.lasp_2.1.2_1586099260775_0.44161758598528533"
+      },
+      "_hasShrinkwrap": false
+    },
+    "2.1.3": {
+      "author": {
+        "name": "Keijiro Takahashi"
+      },
+      "dependencies": {
+        "com.unity.burst": "1.4.4",
+        "jp.keijiro.libsoundio": "1.0.1"
+      },
+      "description": "Low-latency audio signal processing plugin for Unity",
+      "displayName": "LASP",
+      "keywords": [
+        "unity"
+      ],
+      "license": "Unlicense",
+      "name": "jp.keijiro.lasp",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/keijiro/Lasp.git"
+      },
+      "unity": "2019.4",
+      "unityRelease": "0f1",
+      "version": "2.1.3",
+      "bugs": {
+        "url": "https://github.com/keijiro/Lasp/issues"
+      },
+      "homepage": "https://github.com/keijiro/Lasp#readme",
+      "_id": "jp.keijiro.lasp@2.1.3",
+      "_nodeVersion": "10.19.0",
+      "_npmVersion": "6.14.4",
+      "dist": {
+        "integrity": "sha512-0K7x639oDTP44dV9RcrtE8sQzwq6/AWkCQDrdfiQHAz4uP+wggJs3AVQsobt+Tfc7q4YW6BiNQXzR2bJYdVP7A==",
+        "shasum": "ad7b8dd3e2f726b16cf7d2d67aa2912fb6680734",
+        "tarball": "https://registry.npmjs.org/jp.keijiro.lasp/-/jp.keijiro.lasp-2.1.3.tgz",
+        "fileCount": 67,
+        "unpackedSize": 110513,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgG8mQCRA9TVsSAnZWagAAvHIP/3rt6KNwg56NjOFHC0ge\n+5u12bXcWxkDYEXjF7ZA9yyw2LifVgRZRdDCVc9deqEhfymSs2SCwux7Xskx\ne1q3QJd04pQTh4Jky35InSd8KXUywsWEciagyDMnpSmXeWsqSJ2HxljhJTl+\nqwRakIebaSQTP0E8W1slTkB4AmgVamS1f2fqARI5Uay3mvV+3Ffsen/aYV79\n4WeYS7KiDz+ShIjxBq2Wy0rqNt1GAqttTjrfjOMhSgxniwdx2onv1ITLZ4u9\n7qxnN5fpHwYeYjV+YITb8AglrdY2EezALS4KxRXIrYp9j9WjxOdC//IJBIX5\nYJ7fl/jOpgPQ19kkZ4BFjTMuk8IQzZhytPxweV4wsHjBJ2cXrMzo2UTlaziv\noiqJ1v+hpGL1wDNVM3LqAAxUxUBTYpg4hXgWc7OI3iGF+frWXmB9xDLVvE4j\n1OgzsVqAdxMqADbie1swAsM+aLBp0/BDalGvgdGq+zCxJIlYPSa9VnIQhXrn\nr2/3V6Z47JUDF833OBzSdnc7ZuWYtTzogYdGNQdORWymsV7CHn+j4Az5kl/J\npMwYJYUACiHwUHrMInXYWhNTriEuL0XIjDVO5DDrEodJG/+L3x3JJZ8Bh22M\nQZ0fbZjz6g+l9nPaQbJgjWcprwBS6CJ2hG/uUTVvrGJ1jr3c9NYhur+NWJI6\nasLt\r\n=YGK2\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "_npmUser": {
+        "name": "keijiro",
+        "email": "keijiro@gmail.com"
+      },
+      "directories": {},
+      "maintainers": [
+        {
+          "name": "keijiro",
+          "email": "keijiro@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/jp.keijiro.lasp_2.1.3_1612433808255_0.7488778758114321"
+      },
+      "_hasShrinkwrap": false
+    }
+  },
+  "time": {
+    "created": "2020-03-18T15:21:15.200Z",
+    "2.0.0": "2020-03-18T15:21:15.341Z",
+    "modified": "2021-02-04T10:16:50.903Z",
+    "2.1.0": "2020-04-05T09:43:23.744Z",
+    "2.1.1": "2020-04-05T14:41:23.388Z",
+    "2.1.2": "2020-04-05T15:07:40.997Z",
+    "2.1.3": "2021-02-04T10:16:48.386Z"
+  },
+  "maintainers": [
+    {
+      "name": "keijiro",
+      "email": "keijiro@gmail.com"
+    }
+  ],
+  "description": "Low-latency audio signal processing plugin for Unity",
+  "homepage": "https://github.com/keijiro/Lasp#readme",
+  "keywords": [
+    "unity"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keijiro/Lasp.git"
+  },
+  "author": {
+    "name": "Keijiro Takahashi"
+  },
+  "bugs": {
+    "url": "https://github.com/keijiro/Lasp/issues"
+  },
+  "license": "Unlicense",
+  "readme": "LASP\n====\n\n**LASP** is a Unity plugin providing low-latency audio input features that are\nuseful to create audio-reactive visuals.\n\nDemos\n-----\n\n![gif](https://i.imgur.com/L98u4AI.gif)\n\n**Sphere** is the simplest example of LASP that shows an animated sphere scaled\nby the audio level. It uses the **Audio Level Tracker** component to calculate\nthe audio level and a **Property Binder** to animate the scale property of the\nsphere.\n\n![gif](https://i.imgur.com/4OVS00N.gif)\n\n**LevelMeter** is a slightly advanced example of the use of Audio Level Tracker\nthat shows low/mid/high frequency band levels. It also uses the raw waveform\nfunction to draw the waveform graph.\n\n![screenshot](https://i.imgur.com/D51PENw.png)\n\n**DeviceSelector** shows how to instantiate Audio Level Tracker and set Property\nBinders programmatically at run time.\n\n![gif](https://i.imgur.com/gVwN4qE.gif)\n\n**Lissajous** is an example that draws a Lissajous curve using the **Input\nStream** class and its interleaved waveform function.\n\n![gif](https://i.imgur.com/jT0Tj1o.gif)\n\n**Spectrum** is an example showing how to use the **Spectrum Analyzer**\ncomponent to get the audio frequency spectrum of an input stream.\n\nSystem Requirements\n-------------------\n\n- Unity 2019.4 or later\n\nAt the moment, LASP only supports desktop platforms (Windows, macOS, and Linux).\n\nHow To Install\n--------------\n\nThis package uses the [scoped registry] feature to resolve package dependencies.\nPlease add the following sections to the manifest file (Packages/manifest.json).\n\n[scoped registry]: https://docs.unity3d.com/Manual/upm-scoped.html\n\nTo the `scopedRegistries` section:\n\n```\n{\n  \"name\": \"Unity NuGet\",\n  \"url\": \"https://unitynuget-registry.azurewebsites.net\",\n  \"scopes\": [ \"org.nuget\" ]\n},\n{\n  \"name\": \"Keijiro\",\n  \"url\": \"https://registry.npmjs.com\",\n  \"scopes\": [ \"jp.keijiro\" ]\n}\n```\n\nTo the `dependencies` section:\n\n```\n\"jp.keijiro.lasp\": \"2.1.3\"\n```\n\nAfter changes, the manifest file should look like below:\n\n```\n{\n  \"scopedRegistries\": [\n    {\n      \"name\": \"Unity NuGet\",\n      \"url\": \"https://unitynuget-registry.azurewebsites.net\",\n      \"scopes\": [ \"org.nuget\" ]\n    },\n    {\n      \"name\": \"Keijiro\",\n      \"url\": \"https://registry.npmjs.com\",\n      \"scopes\": [ \"jp.keijiro\" ]\n    }\n  ],\n  \"dependencies\": {\n    \"jp.keijiro.lasp\": \"2.1.3\",\n...\n```\n\nAudio Level Tracker Component\n-----------------------------\n\n**Audio Level Tracker** is a component that receives an audio stream and\ncalculates the current audio level. It supports **Property Binders** that\nmodifies properties of external objects based on the normalized audio level.\n\n![gif](https://i.imgur.com/wBsYq64.gif)\n\nIt tracks the most recent peak level and calculates the normalized level based\non the difference between the current level and the peak level. It only outputs\nan effective value when the current level is in its dynamic range that is\nindicated by the gray band in the level meter.\n\n### Default Device / Device ID\n\nAs an audio source, you can use the **Default Device** or one of the available\naudio devices by specifying its Device ID.\n\nDevice IDs are system-generated random string like `{4786-742f-9e42}`. On\nEditor, you can use the **Select** button to find a device and get its ID. Note\nthat those ID strings are system-dependent. You have to reconfigure it when\nrunning the project on a different platform.\n\nFor runtime use, you can use `AudioSystem.InputDevices` to enumerate the\navailable devices and get those IDs. Please check the DeviceSelector example for\nfurther details.\n\n### Channel\n\nSelect a channel to use as an input, or stay 0 for monaural devices.\n\n### Filter Type\n\nFour types of filters are available: **Bypass**, **Low Pass**, **Band Pass**,\nand **High Pass**. These filters are useful to detect a specific type of\nrhythmic accents. For instance, you can use the low pass filter to create a\nbehavior reacting to kick drums or basslines.\n\n### Dynamic Range (dB)\n\nThe **Dynamic Range** specifies the range of audio level normalization. The\noutput value becomes zero when the input level is equal to or lower than\n*Peak Level - Dynamic Range*.\n\n### Auto Gain\n\nWhen enabled, it automatically tracks the peak level, as explained above. When\ndisabled, it fixes the peak level at 0 dB. In this case, you can manually\ncontrol the effective range via the **Gain** property.\n\n### Smooth Fall\n\nWhen enabled, the output value gradually falls to the current actual audio\nlevel. It's useful to make choppy animation smoother.\n\n![gif](https://i.imgur.com/VKiZx4M.gif)\n\nSpectrum Analyzer Component\n---------------------------\n\n![gif](https://i.imgur.com/sWRMSMG.gif)\n\n**Spectrum Analyzer** is a component that receives an audio stream and applies\nthe FFT (Fast Fourier Transform) to get the spectrum data.\n\nIt normalizes the spectrum values by using the same algorithm as Audio Level\nTracker. Please see the section above for details.\n\nYou can retrieve the spectrum data using the scripting API. Please see the\nSpectrumAnalyzer example for detailed usage.\n\nSpectrum To Texture Component\n-----------------------------\n\n![screenshot](https://i.imgur.com/r9kxPF3.png)\n\nSpectrum To Texture is a utility component that converts spectrum data into a\ntexture that is useful for creating visual effects using shaders.\n\nThere are two methods to use the spectrum texture.\n\n### Via Render Texture\n\nYou can bake the spectrum data into a render texture by specifying it in the\nRender Texture property. The render texture must follow the following\nrequirements:\n\n- Width: Must be the same as the spectrum resolution.\n- Height: Must be 1.\n- Format: R32_SFloat\n\n### Via Material Override\n\nYou can override a texture property of a material using the Material Override\nproperty, which is convenient when using the spectrum texture with Mesh\nRenderer.\n\nScripting Interface\n-------------------\n\nThere are several public methods/properties in LASP classes, such as\n`AudioLevelTracker`, `AudioSystem`, `InputStream`. Please check the example\nscripts for detailed usages.\n\nKnown Issue\n-----------\n\nWhen adding a property binder to an Audio Level Tracker component, the\nfollowing error message may be shown in Console.\n\n> Generating diff  of this object for undo because the type tree changed.\n\nThis error is caused by [Issue 1198546]. Please wait for a fix to arrive.\n\n[Issue 1198546]: https://issuetracker.unity3d.com/issues/serializedproperty-undo-does-not-work-properly-when-the-parent-serializedobject-is-a-script-with-managed-references\n",
+  "readmeFilename": "README.md"
+}
