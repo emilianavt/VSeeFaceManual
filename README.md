@@ -245,7 +245,7 @@ No. Although, if you are very experienced with Linux and wine as well, you can t
 
 It's reportedly [possible](#running-on-linux-and-maybe-mac) to run it using wine.
 
-#### Does VSeeFace support Live2D models?
+#### <a name="live2d"></a>Does VSeeFace support Live2D models?
 
 No, VSeeFace only supports 3D models in VRM format. While there are free tiers for Live2D integration licenses, adding Live2D support to VSeeFace would only make sense if people could load their own models. In that case, it would be classified as an "Expandable Application", which needs a different type of license, for which there is no free tier. As VSeeFace is a free program, integrating an SDK that requires the payment of licensing fees is not an option.
 
