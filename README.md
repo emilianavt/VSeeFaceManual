@@ -94,10 +94,12 @@ There are a lot of tutorial videos out there. This section lists a few to help y
 * [Ultimate Guide to VSeeFace](https://www.youtube.com/watch?v=CQGr75XiKuw) @ Kana Fuyuko
 * [VSeeFace is pretty pog](https://www.youtube.com/watch?v=Z_KKk2vgjXU) @ Killakuma
 * [Ultimate Guide to VSeeFace Part 2](https://www.youtube.com/watch?v=J-DE-OMSDx8) @ Kana Fuyuko
+* [HANA_Tool/iPhone tracking - Tutorial Add 52 Keyshapes to your Vroid](https://www.youtube.com/watch?v=d5_c2Ambq_s) @ Argama Witch
 * [iPhone Face ID tracking with Waidayo and VSeeFace](https://www.youtube.com/watch?v=wzWHhohVzjQ) @ Fofamit
 * [Full body motion from ThreeDPoseTracker to VSeeFace](https://www.youtube.com/watch?v=A1T1wsJrGWQ) @ Suvidriel
 * [VR Tracking from VMC to VSeeFace](https://www.youtube.com/watch?v=LkO0VusjkHU) @ Suvidriel
 * [Hand Tracking / Leap Motion Controller VSeeFace Tutorial](https://www.youtube.com/watch?v=R2o7R3FCEio) @ AMIRITE GAMING
+* [VSFAvatar tutorials](https://www.youtube.com/watch?v=drOmco8yNHc&list=PLD0oHCcDlFyLzQKwJuw5ptxTWn4sgwvXP) @ Suvidriel
 
 ### VRM model tutorials
 
