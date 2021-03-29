@@ -247,7 +247,7 @@ It's reportedly [possible](#running-on-linux-and-maybe-mac) to run it using wine
 
 #### Does VSeeFace support Live2D models?
 
-No, VSeeFace only supports 3D models in VRM format. To integrate Live2D, an "Expandable Application" license would be required, for which there is no free tier. As VSeeFace is a free program, integrating an SDK that requires the payment of licensing fees is not an option.
+No, VSeeFace only supports 3D models in VRM format. While there are free tiers for Live2D integration licenses, adding Live2D support to VSeeFace would only make sense if people could load their own models. In that case, it would be classified as an "Expandable Application", which needs a different type of license, for which there is no free tier. As VSeeFace is a free program, integrating an SDK that requires the payment of licensing fees is not an option.
 
 #### Does VSeeFace support the Tobii eye tracker?
 
