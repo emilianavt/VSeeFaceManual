@@ -553,6 +553,46 @@ If, after installing it from the `General settings`, the virtual camera is still
 
 If the virtual camera is listed, but only shows a black picture, make sure that VSeeFace is running and that the virtual camera is enabled in the `General settings`. It automatically disables itself when closing VSeeFace to reduce its performance impact, so it has to be manually re-enabled the next time it is used.
 
+#### Model issues
+
+##### <a name="clipping"></a>My eyes look strange when blinking in certain expressions/My teeth clip through my jaw in certain expressions
+
+As a quick fix, disable eye/mouth tracking in the expression settings in VSeeFace. For a better fix of the mouth issue, edit your expression in VRoid Studio to not open the mouth quite as far. You can also edit your model in [Unity](https://www.youtube.com/watch?v=ECZXlzlIcKU).
+
+##### My model has blendshapes on the mesh, but they are not working
+
+VRM models need their blendshapes to be registered as [VRM blend shape clips](https://vrm.dev/en/docs/univrm/blendshape/univrm_blendshape/) on the VRM Blend Shape Proxy.
+
+##### <a name="noblendshapes"></a>My model's custom blend shape clips won't show up in VSeeFace
+
+There are sometimes issues with blend shapes not being exported correctly by UniVRM. Reimport your VRM into Unity and check that your blendshapes are there. Make sure your scene is not playing while you add the blend shape clips. Also, make sure to press Ctrl+S to save each time you add a blend shape clip to the blend shape avatar.
+
+##### <a name="tpose"></a>My arms/hands/thumbs are not working correctly with the leap motion and are bending in weird ways
+
+This is usually caused by the model not being in the correct pose when being first exported to VRM. Please try posing it correctly and exporting it from the original model file again. Sometimes using the T-pose option in UniVRM is enough to fix it. Note that fixing the pose on a VRM file and reexporting that will only lead to further issues, it the pose needs to be corrected on the original model. The [T pose](https://vrm.dev/en/docs/univrm/humanoid/humanoid_overview/#t-pose) needs to follow these specifications:
+
+* T pose with the arms straight to the sides
+* Palm faces downward, parallel to the ground
+* Thumb parallel to the ground 45 degrees between x and z axis
+
+##### <a name="outline"></a>VSFAvatar has bright pixels around it even with the UI hidden
+
+Make sure to use a recent version of UniVRM (0.66). With VSFAvatar, the shader version from your project is included in the model file. Older versions of MToon had some issues with transparency, which are fixed in recent versions.
+
+##### My blendshape only works in a blend shape clip, not in an animation
+
+Using the same blendshapes in multiple blend shape clips or animations can cause issues. While in theory, reusing it in multiple blend shape clips should be fine, a blendshape that is used in both an animation and a blend shape clip will not work in the animation, because it will be overridden by the blend shape clip after being applied by the animation.
+
+##### <a name="required-blendshapes"></a>Required blendshapes
+
+* Mouth tracking requires the blend shape clips: `A`, `I`, `U`, `E`, `O`
+* Blink and wink tracking requires the blend shape clips: `Blink`, `Blink_L`, `Blink_R`
+* Gaze tracking does not require blend shape clips if the model has eye bones. If it has no eye bones, the VRM standard "look" blend shapes are used.
+* It's recommended to have expression blend shape clips: `Neutral`, `Fun`, `Angry`, `Joy`, `Sorrow`, `Surprised`
+* Eyebrow tracking requires two custom blend shape clips: `Brows up`, `Brows down`
+* Extended audio lip sync can use additional blend shape clips as described [here](https://www.vseeface.icu/#special-blendshapes)
+* When using perfect sync, the [52 ARKit blend shape clips](https://www.vseeface.icu/#iphone-face-tracking) need to be present. While blend shape clips may be empty, all 52 blend shape clips must be present on the model.
+
 #### Lipsync issues
 
 First, make sure you have your microphone selected on the starting screen. You can also change it in the `General settings`. Also make sure that the `Mouth size reduction` slider in the `General settings` is not turned up.
