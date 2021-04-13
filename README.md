@@ -94,6 +94,7 @@ There are a lot of tutorial videos out there. This section lists a few to help y
 * [Ultimate Guide to VSeeFace](https://www.youtube.com/watch?v=CQGr75XiKuw) @ Kana Fuyuko
 * [VSeeFace is pretty pog](https://www.youtube.com/watch?v=Z_KKk2vgjXU) @ Killakuma
 * [Ultimate Guide to VSeeFace Part 2](https://www.youtube.com/watch?v=J-DE-OMSDx8) @ Kana Fuyuko
+* [Precision face tracking from iFacialMocap to VSeeFace](https://www.youtube.com/watch?v=3IhC-dealyI) @ Suvidriel
 * [HANA_Tool/iPhone tracking - Tutorial Add 52 Keyshapes to your Vroid](https://www.youtube.com/watch?v=d5_c2Ambq_s) @ Argama Witch
 * [iPhone Face ID tracking with Waidayo and VSeeFace](https://www.youtube.com/watch?v=wzWHhohVzjQ) @ Fofamit
 * [Full body motion from ThreeDPoseTracker to VSeeFace](https://www.youtube.com/watch?v=A1T1wsJrGWQ) @ Suvidriel
@@ -385,7 +386,7 @@ Using the [prepared Unity project and scene](#model-preview-in-unity), pose data
 
 #### iPhone face tracking
 
-Certain iPhone apps like [Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077) can send [perfect sync](https://hinzka.hatenablog.com/entry/2020/08/15/145040) [blendshape information](https://hinzka.hatenablog.com/entry/2020/06/15/072929) over the VMC protocol, which VSeeFace can receive, allowing you to use iPhone based face tracking. This requires an especially prepared avatar containing the necessary blendshapes. A list of these blendshapes can be found [here](https://docs.unity3d.com/Packages/com.unity.xr.arkit-face-tracking@1.0/api/UnityEngine.XR.ARKit.ARKitBlendShapeLocation.html#fields). You can find an example avatar containing the necessary blendshapes [here](https://hub.vroid.com/en/characters/7535723910806948192/models/2729494919026563201). An easy, but not free, way to apply these blendshapes to VRoid avatars is to use [HANA Tool](https://booth.pm/en/items/2604269).
+Certain iPhone apps like [Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077) can send [perfect sync](https://hinzka.hatenablog.com/entry/2020/08/15/145040) [blendshape information](https://hinzka.hatenablog.com/entry/2020/06/15/072929) over the VMC protocol, which VSeeFace can receive, allowing you to use iPhone based face tracking. This requires an especially prepared avatar containing the necessary blendshapes. A list of these blendshapes can be found [here](https://docs.unity3d.com/Packages/com.unity.xr.arkit-face-tracking@1.0/api/UnityEngine.XR.ARKit.ARKitBlendShapeLocation.html#fields). You can find an example avatar containing the necessary blendshapes [here](https://hub.vroid.com/en/characters/7535723910806948192/models/2729494919026563201). An easy, but not free, way to apply these blendshapes to VRoid avatars is to use [HANA Tool](https://booth.pm/en/items/2604269). It is also possible to use VSeeFace with iFacialMocap through [iFacialMocap2VMC](https://www.youtube.com/watch?v=3IhC-dealyI).
 
 To combine iPhone tracking with Leap Motion tracking, enable the `Track fingers` and `Track hands to shoulders` options in VMC reception settings in VSeeFace. Enabling all over options except `Track face features` as well, will apply the usual head tracking and body movements, which may allow more freedom of movement than just the iPhone tracking on its own.
 
