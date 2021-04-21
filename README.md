@@ -395,6 +395,7 @@ To combine iPhone tracking with Leap Motion tracking, enable the `Track fingers`
 * Make sure the iPhone and PC to are on one network
 * Run VSeeFace
 * Load a compatible avatar ([sample](https://hub.vroid.com/en/characters/7535723910806948192/models/2729494919026563201), it's also possible to apply those blendshapes to a VRoid avatar using [HANA Tool](https://booth.pm/en/items/2604269))
+* Do select a camera on the starting screen as usual, do not select "[Network tracking]", as this option refers to something else. If you do not have a camera, select "[Network tracking]", but leave the fields empty.
 * Disable the VMC protocol sender in the general settings if it's enabled
 * Enable the VMC protocol receiver in the general settings
 * Change the port number from 39539 to 39540
