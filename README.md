@@ -101,6 +101,7 @@ There are a lot of tutorial videos out there. This section lists a few to help y
 * [Full body motion from ThreeDPoseTracker to VSeeFace](https://www.youtube.com/watch?v=A1T1wsJrGWQ) @ Suvidriel
 * [VR Tracking from VMC to VSeeFace](https://www.youtube.com/watch?v=LkO0VusjkHU) @ Suvidriel
 * [Hand Tracking / Leap Motion Controller VSeeFace Tutorial](https://www.youtube.com/watch?v=R2o7R3FCEio) @ AMIRITE GAMING
+* [VTuber Twitch Expression & Animation Integration](https://www.youtube.com/watch?v=EV6Xesa8jPA) @ Fofamit
 * [VSFAvatar tutorials](https://www.youtube.com/watch?v=drOmco8yNHc&list=PLD0oHCcDlFyLzQKwJuw5ptxTWn4sgwvXP) @ Suvidriel
 
 ### VRM model tutorials
