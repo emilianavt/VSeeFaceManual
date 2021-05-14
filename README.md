@@ -28,7 +28,7 @@ The latest release notes can be found <a href="https://gist.github.com/emilianav
 
 The reason it is currently only released in this way, is to make sure that everybody who tries it out has an easy channel to give me feedback.
 
-<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36h/VSeeFace-v1.13.36h.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
+<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。VMCプロトコルによるパーフェクトシンク対応です（[Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077)、[iFacialMocap2VMC](http://suvidriel.com/)）。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36h/VSeeFace-v1.13.36h.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
 
 <span lang="ja">VRM以外UnityのAssetBundle形式のVSFAvatarも使えます。SDKは<a href="https://github.com/emilianavt/VSeeFaceSDK/releases/latest">こちら</a>。</span>
 
