@@ -97,6 +97,7 @@ There are a lot of tutorial videos out there. This section lists a few to help y
 * [How to use VSeeFace](https://www.youtube.com/watch?v=afrIMv5JGYM) @ Raelice
 * [Precision face tracking from iFacialMocap to VSeeFace](https://www.youtube.com/watch?v=3IhC-dealyI) @ Suvidriel
 * [HANA_Tool/iPhone tracking - Tutorial Add 52 Keyshapes to your Vroid](https://www.youtube.com/watch?v=d5_c2Ambq_s) @ Argama Witch
+* [Setting Up Real Time Facial Tracking in VSeeFace](https://www.youtube.com/watch?v=3yvzsV6KTSQ) @ Fofamit
 * [iPhone Face ID tracking with Waidayo and VSeeFace](https://www.youtube.com/watch?v=wzWHhohVzjQ) @ Fofamit
 * [Full body motion from ThreeDPoseTracker to VSeeFace](https://www.youtube.com/watch?v=A1T1wsJrGWQ) @ Suvidriel
 * [VR Tracking from VMC to VSeeFace](https://www.youtube.com/watch?v=LkO0VusjkHU) @ Suvidriel
