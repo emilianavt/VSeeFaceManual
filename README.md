@@ -273,6 +273,14 @@ Please note that the camera needs to be reenabled every time you start VSeeFace 
 
 No. It uses paid assets from the Unity asset store that cannot be freely redistributed. However, the actual face tracking and avatar animation code is open source. You can find it [here](https://github.com/emilianavt/OpenSeeFace) and [here](https://gist.github.com/emilianavt/b211073096a4484fb92e6550212c2f48).
 
+#### <a name="ahk"></a><a name="autohotkey"></a>How can I trigger expressions from AutoHotkey?
+
+It seems that the regular send key command doesn't work, but adding a delay to prolong the key press helps. You can try something like this:
+
+    SendInput, {LCtrl down}{F19 down}
+    sleep, 40 ; lower sleep time can cause issues on rapid repeated inputs
+    SendInput, {LCtrl up}{F19 Up}
+
 #### I still have questions or feedback, where should I take it?
 
 If you have any issues, questions or feedback, please come to the `#vseeface` channel of @[Virtual_Deat](https://twitter.com/Virtual_Deat)'s [discord server](https://discord.gg/BjBgk7k).
