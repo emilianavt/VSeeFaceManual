@@ -263,7 +263,7 @@ It's reportedly [possible](#running-on-linux-and-maybe-mac) to run it using wine
 
 No. It would be quite hard to add as well, because OpenSeeFace is only designed to work with regular RGB webcam images for tracking.
 
-#### What should I look out for when buying a new webcam?
+#### <a name="webcam"></a>What should I look out for when buying a new webcam?
 
 Before looking at new webcams, make sure that your room is well lit. It should be basically as bright as possible. At the same time, if you are wearing glsases, avoid positioning light sources in a way that will cause reflections on your glasses when seen from the angle of the camera. One thing to note is that insufficient light will usually cause webcams to quietly lower their frame rate. For example, my camera will only give me 15 fps even when set to 30 fps unless I have bright daylight coming in through the window, in which case it may go up to 20 fps. You can check the actual camera framerate by looking at the TR (tracking rate) value in the lower right corner of VSeeFace, although in some cases this value might be bottlenecked by CPU speed rather than the webcam.
 
