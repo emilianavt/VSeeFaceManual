@@ -243,6 +243,10 @@ Right click it, select `Extract All...` and press next. You should have a new fo
 
 If Windows 10 won't run the file and complains that the file may be a threat because it is not signed, you can try the following: Right click it -> Properties -> Unblock -> Apply or select exe file -> Select More Info -> Run Anyways
 
+#### Sometimes, when leaving the PC, my model suddenly moves away and starts acting strange.
+
+Make sure that you don't have anything in the background that looks like a face (posters, people, TV, etc.). Sometimes even things that are not very face-like at all might get picked up. A good way to check is to run the `run.bat` from `VSeeFace_Data\StreamingAssets\Binary`. It will show you the camera image with tracking points. If green tracking points show up somewhere on the background while you are not in the view of the camera, that might be the cause. Just make sure to close VSeeFace and any other programs that might be accessing the camera first.
+
 #### Does VSeeFace run on 32 bit CPUs?
 
 No.
@@ -254,6 +258,24 @@ No. Although, if you are very experienced with Linux and wine as well, you can t
 #### Does VSeeFace run on Linux?
 
 It's reportedly [possible](#running-on-linux-and-maybe-mac) to run it using wine.
+
+#### Does VSeeFace have special support for RealSense cameras?
+
+No. It would be quite hard to add as well, because OpenSeeFace is only designed to work with regular RGB webcam images for tracking.
+
+#### What should I look out for when buying a new webcam?
+
+Before looking at new webcams, make sure that your room is well lit. It should be basically as bright as possible. At the same time, if you are wearing glsases, avoid positioning light sources in a way that will cause reflections on your glasses when seen from the angle of the camera. One thing to note is that insufficient light will usually cause webcams to quietly lower their frame rate. For example, my camera will only give me 15 fps even when set to 30 fps unless I have bright daylight coming in through the window, in which case it may go up to 20 fps. You can check the actual camera framerate by looking at the TR (tracking rate) value in the lower right corner of VSeeFace, although in some cases this value might be bottlenecked by CPU speed rather than the webcam.
+
+As far as resolution is concerned, the sweet spot is 720p to 1080p. Going higher won't really help all that much, because the tracking will crop out the section with your face and rescale it to 224x224, so if your face appears bigger than that in the camera frame, it will just get downscaled. Running the camera at lower resolutions like 640x480 can still be fine, but results will be a bit more jittery and things like eye tracking will be less accurate.
+
+By default, VSeeFace caps the camera framerate at 30 fps, so there is not much point in getting a webcam with a higher maximum framerate. While there is an option to remove this cap, actually increasing the tracking framerate to 60 fps will only make a very tiny difference with regards to how nice things look, but it will double the CPU usage of the tracking process. However, the fact that a camera is able to do 60 fps might still be a plus with respect to its general quality level.
+
+Having a ring light on the camera can be helpful with avoiding tracking issues because it is too dark, but it can also cause issues with reflections on glasses and can feel uncomfortable.
+
+I have heard reports that getting a wide angle camera helps, because it will cover more area and will allow you to move around more before losing tracking because the camera can't see you anymore, so that might be a good thing to look out for.
+
+As a final note, for higher resolutions like 720p and 1080p, I would recommend looking for an USB3 webcam, rather than a USB2 one. With USB2, the images captured by the camera will have to be compressed (e.g. using MJPEG) before being sent to the PC, which usually makes them look worse and can have a negative impact on tracking quality. With USB3, less or no compression should be necessary and images can probably be transmitted in RGB or YUV format.
 
 #### <a name="live2d"></a>Does VSeeFace support Live2D models?
 
