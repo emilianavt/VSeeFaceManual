@@ -417,6 +417,10 @@ Please note that received blendshape data will not be used for expression detect
 
 You can find a list of applications with support for the VMC protocol [here](https://protocol.vmc.info/Reference).
 
+#### VR tracking
+
+To combine VR tracking with VSeeFace's tracking, you can either use [Tracking World](http://deatrathias.net/TW/) or the pixivFANBOX version of [Virtual Motion Capture](https://vmc.info/download.html) to send VR tracking data over VMC protocol to VSeeFace. [This](https://www.youtube.com/watch?v=LkO0VusjkHU) video by Suvidriel explains how to set this up with Virtual Motion Capture.
+
 #### Model animation or posing
 
 Using the [prepared Unity project and scene](#model-preview-in-unity), pose data will be sent over VMC protocol while the scene is being played. If an animator is added to the model in the scene, the animation will be transmitted, otherwise it can be posed manually as well. For best results, it is recommended to use the same models in both VSeeFace and the Unity scene.
