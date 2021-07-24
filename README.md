@@ -168,7 +168,7 @@ More often, the issue is caused by Windows allocating all of the GPU or CPU to t
 * Set a framerate cap for the game as well and lower graphics settings.
 * Try setting the same frame rate for both VSeeFace and the game.
 * In the case of multiple screens, set all to the same refresh rate.
-* See if any of this helps: https://www.vseeface.icu/#gpuscheduling and https://www.vseeface.icu/#gpu
+* See if any of this helps: [this](https://www.vseeface.icu/#gpuscheduling) or [this](https://www.vseeface.icu/#gpu)
 
 #### I'm looking straight ahead, but my eyes are looking all the way in some direction?
 
