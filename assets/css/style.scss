@@ -1,7 +1,8 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+//@ import "{{ site.theme }}";
+@import 'jekyll-theme-minimal';
 
 section {
     float: none;
