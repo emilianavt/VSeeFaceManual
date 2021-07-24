@@ -153,7 +153,22 @@ Yes, unless you are using the `Toaster` quality level or have enabled `Synthetic
 
 #### What are the requirements for a custom model to make use the gaze tracking?
 
-If humanoid eye bones are assigned in Unity, VSeeFace will directly use these for gaze tracking. The gaze strength determines how far the eyes will move. To use the VRM blendshape presets for gaze tracking, make sure that no eye bones are assigned. The synthetic gaze, which moves the eyes either according to head movement or so that they look at the camera, uses the `VRMLookAtBoneApplyer` or the `VRMLookAtBlendShapeApplyer`, depending on what exists on the model. 
+If humanoid eye bones are assigned in Unity, VSeeFace will directly use these for gaze tracking. The gaze strength determines how far the eyes will move. To use the VRM blendshape presets for gaze tracking, make sure that no eye bones are assigned in Unity's humanoid rig configuration. Sometimes other bones (ears or hair) get assigned as eye bones by mistake, so that is something to look out for. The synthetic gaze, which moves the eyes either according to head movement or so that they look at the camera, uses the `VRMLookAtBoneApplyer` or the `VRMLookAtBlendShapeApplyer`, depending on what exists on the model. Also see the [model issues](#model-issues) section for more information on things to look out for.
+
+#### <a name="lag"></a>What should I if my model freezes or starts lagging when the VSeeFace window is in the background and a game is running?
+
+In rare cases it can be a tracking issue. If your screen is your main light source and the game is rather dark, there might not be enough light for the camera and the face tracking might freeze.
+
+More often, the issue is caused by Windows allocating all of the GPU or CPU to the game, leaving nothing for VSeeFace. Here are some things you can try to improve the situation:
+
+* Make sure game mode is not enabled in Windows.
+* Try setting VSeeFace and the facetracker.exe to realtime priority in the details tab of the task manager.
+* Run VSeeFace and OBS as admin.
+* Make sure VSeeFace has a framerate capped at 60fps.
+* Set a framerate cap for the game as well and lower graphics settings.
+* Try setting the same frame rate for both VSeeFace and the game.
+* In the case of multiple screens, set all to the same refresh rate.
+* See if any of this helps: https://www.vseeface.icu/#gpuscheduling and https://www.vseeface.icu/#gpu
 
 #### I'm looking straight ahead, but my eyes are looking all the way in some direction?
 
@@ -179,7 +194,7 @@ To fix this error, please install the [V4 (Orion) SDK](https://developer.leapmot
 
 All configurable hotkeys also work while it is in the background or minimized, so the expression hotkeys, the audio lipsync toggle hotkey and the configurable position reset hotkey all work from any other program as well. On some systems it might be necessary to run VSeeFace as admin to get this to work properly for some reason.
 
-#### <a name="gpuscheduling"></a>When I have a game open and VSeeFace is running in the background it slows down or stops?
+#### <a name="gpuscheduling"></a>Can disabling hardware-accelerated GPU scheduling help fix performance issues?
 
 In at least one case, the following setting has apparently fixed this: Windows => Graphics Settings => Change default graphics settings => Disable "Hardware-accelerated GPU scheduling". In another case, setting VSeeFace to realtime priority seems to have helped.
 
