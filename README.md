@@ -165,6 +165,7 @@ More often, the issue is caused by Windows allocating all of the GPU or CPU to t
 * Try setting VSeeFace and the facetracker.exe to realtime priority in the details tab of the task manager.
 * Run VSeeFace and OBS as admin.
 * Make sure VSeeFace has a framerate capped at 60fps.
+* Turn on VSync for the game.
 * Set a framerate cap for the game as well and lower graphics settings.
 * Try setting the same frame rate for both VSeeFace and the game.
 * In the case of multiple screens, set all to the same refresh rate.
