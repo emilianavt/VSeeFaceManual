@@ -28,15 +28,15 @@ The latest release notes can be found <a href="https://gist.github.com/emilianav
 
 The reason it is currently only released in this way, is to make sure that everybody who tries it out has an easy channel to give me feedback.
 
-<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36i/VSeeFace-v1.13.36i.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
+<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。VMCプロトコルによるパーフェクトシンクも対応です（[Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077)、[iFacialMocap2VMC](http://suvidriel.com/)）。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36i/VSeeFace-v1.13.36i.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
 
 <span lang="ja">VRM以外UnityのAssetBundle形式のVSFAvatarも使えます。SDKは<a href="https://github.com/emilianavt/VSeeFaceSDK/releases/latest">こちら</a>。</span>
 
 <span lang="ja">@[Virtual_Deat](https://twitter.com/Virtual_Deat)さんの[ディスコードサーバー](https://discord.gg/BjBgk7k)に入るとルールズチャンネルで👌にクリックでルールを同意して他のチャンネルも表示されます。#vseefaceと日本語チャンネルもあります。</span>
 
-<span lang="ja">VSeeFaceはカラーキーで録画が出来ないけどOBSのGame CaptureでAllow transparencyをチェックしてVSeeFaceで右下の※ボタンでUIを見えないにすれば綺麗な透明の背景になります。</span>
+<span lang="ja">VSeeFaceはクロマキーで録画が出来ないけどOBSのGame CaptureでAllow transparencyをチェックしてVSeeFaceで右下の※ボタンでUIを見えないにすれば綺麗な透明の背景になります。</span>
 
-<span lang="ja">UIの日本語訳があり、日本語の[チュートリアル動画](#tutorials-ja)もあります。</span>
+<span lang="ja">UIの日本語訳があり、日本語の[チュートリアル動画](#tutorials-ja)もあります。最初の画面で日本語を選択が出来ます。</span>
 
 <span lang="ja">ライセンス：営利・非営利問わずご自由にお使いください。</span>
 
@@ -94,12 +94,15 @@ There are a lot of tutorial videos out there. This section lists a few to help y
 * [Ultimate Guide to VSeeFace](https://www.youtube.com/watch?v=CQGr75XiKuw) @ Kana Fuyuko
 * [VSeeFace is pretty pog](https://www.youtube.com/watch?v=Z_KKk2vgjXU) @ Killakuma
 * [Ultimate Guide to VSeeFace Part 2](https://www.youtube.com/watch?v=J-DE-OMSDx8) @ Kana Fuyuko
+* [How to use VSeeFace](https://www.youtube.com/watch?v=afrIMv5JGYM) @ Raelice
 * [Precision face tracking from iFacialMocap to VSeeFace](https://www.youtube.com/watch?v=3IhC-dealyI) @ Suvidriel
 * [HANA_Tool/iPhone tracking - Tutorial Add 52 Keyshapes to your Vroid](https://www.youtube.com/watch?v=d5_c2Ambq_s) @ Argama Witch
+* [Setting Up Real Time Facial Tracking in VSeeFace](https://www.youtube.com/watch?v=3yvzsV6KTSQ) @ Fofamit
 * [iPhone Face ID tracking with Waidayo and VSeeFace](https://www.youtube.com/watch?v=wzWHhohVzjQ) @ Fofamit
 * [Full body motion from ThreeDPoseTracker to VSeeFace](https://www.youtube.com/watch?v=A1T1wsJrGWQ) @ Suvidriel
 * [VR Tracking from VMC to VSeeFace](https://www.youtube.com/watch?v=LkO0VusjkHU) @ Suvidriel
 * [Hand Tracking / Leap Motion Controller VSeeFace Tutorial](https://www.youtube.com/watch?v=R2o7R3FCEio) @ AMIRITE GAMING
+* [VTuber Twitch Expression & Animation Integration](https://www.youtube.com/watch?v=EV6Xesa8jPA) @ Fofamit
 * [VSFAvatar tutorials](https://www.youtube.com/watch?v=drOmco8yNHc&list=PLD0oHCcDlFyLzQKwJuw5ptxTWn4sgwvXP) @ Suvidriel
 
 ### VRM model tutorials
@@ -150,7 +153,23 @@ Yes, unless you are using the `Toaster` quality level or have enabled `Synthetic
 
 #### What are the requirements for a custom model to make use the gaze tracking?
 
-If humanoid eye bones are assigned in Unity, VSeeFace will directly use these for gaze tracking. The gaze strength determines how far the eyes will move. To use the VRM blendshape presets for gaze tracking, make sure that no eye bones are assigned. The synthetic gaze, which moves the eyes either according to head movement or so that they look at the camera, uses the `VRMLookAtBoneApplyer` or the `VRMLookAtBlendShapeApplyer`, depending on what exists on the model. 
+If humanoid eye bones are assigned in Unity, VSeeFace will directly use these for gaze tracking. The gaze strength determines how far the eyes will move. To use the VRM blendshape presets for gaze tracking, make sure that no eye bones are assigned in Unity's humanoid rig configuration. Sometimes other bones (ears or hair) get assigned as eye bones by mistake, so that is something to look out for. The synthetic gaze, which moves the eyes either according to head movement or so that they look at the camera, uses the `VRMLookAtBoneApplyer` or the `VRMLookAtBlendShapeApplyer`, depending on what exists on the model. Also see the [model issues](#model-issues) section for more information on things to look out for.
+
+#### <a name="lag"></a>What should I if my model freezes or starts lagging when the VSeeFace window is in the background and a game is running?
+
+In rare cases it can be a tracking issue. If your screen is your main light source and the game is rather dark, there might not be enough light for the camera and the face tracking might freeze.
+
+More often, the issue is caused by Windows allocating all of the GPU or CPU to the game, leaving nothing for VSeeFace. Here are some things you can try to improve the situation:
+
+* Make sure game mode is not enabled in Windows.
+* Try setting VSeeFace and the facetracker.exe to realtime priority in the details tab of the task manager.
+* Run VSeeFace and OBS as admin.
+* Make sure VSeeFace has a framerate capped at 60fps.
+* Turn on VSync for the game.
+* Set a framerate cap for the game as well and lower graphics settings.
+* Try setting the same frame rate for both VSeeFace and the game.
+* In the case of multiple screens, set all to the same refresh rate.
+* See if any of this helps: [this](https://www.vseeface.icu/#gpuscheduling) or [this](https://www.vseeface.icu/#gpu)
 
 #### I'm looking straight ahead, but my eyes are looking all the way in some direction?
 
@@ -176,7 +195,7 @@ To fix this error, please install the [V4 (Orion) SDK](https://developer.leapmot
 
 All configurable hotkeys also work while it is in the background or minimized, so the expression hotkeys, the audio lipsync toggle hotkey and the configurable position reset hotkey all work from any other program as well. On some systems it might be necessary to run VSeeFace as admin to get this to work properly for some reason.
 
-#### <a name="gpuscheduling"></a>When I have a game open and VSeeFace is running in the background it slows down or stops?
+#### <a name="gpuscheduling"></a>Can disabling hardware-accelerated GPU scheduling help fix performance issues?
 
 In at least one case, the following setting has apparently fixed this: Windows => Graphics Settings => Change default graphics settings => Disable "Hardware-accelerated GPU scheduling". In another case, setting VSeeFace to realtime priority seems to have helped.
 
@@ -201,6 +220,10 @@ Yes, you can do so using UniVRM and Unity. You can find a tutorial [here](https:
 This is most likely caused by not properly normalizing the model during the first [VRM conversion](https://vrm.dev/en/how_to_make_vrm/). To properly normalize the avatar during the first VRM export, make sure that `Pose Freeze` and `Force T Pose` is ticked on the `ExportSettings` tab of the VRM export dialog. I also recommend making sure that no jaw bone is set in [Unity's humanoid avatar configuration](https://docs.unity3d.com/560/Documentation/Manual/ConfiguringtheAvatar.html) before the first export, since often a hair bone gets assigned by Unity as a jaw bone by mistake. If a jaw bone is set in the head section, click on it and unset it using the backspace key on your keyboard. If your model does have a jaw bone that you want to use, make sure it is correctly assigned instead.
 
 Note that re-exporting a VRM will not work to for properly normalizing the model. Instead the original model (usually FBX) has to be exported with the correct options set.
+
+#### My model is twitching sometimes?
+
+If you have the fixed hips option enabled in the advanced option, try turning it off. If this helps, you can try the option to disable vertical head movement for a similar effect. If it doesn't help, try turning up the smoothing, make sure that your room is brightly lit and try different camera settings.
 
 #### <a name="blendshape-normals"></a>I converted my model to VRM format, but when I blink, my mouth moves or I activate an expressions, it looks weird and the shadows shift?
 
@@ -236,6 +259,10 @@ Right click it, select `Extract All...` and press next. You should have a new fo
 
 If Windows 10 won't run the file and complains that the file may be a threat because it is not signed, you can try the following: Right click it -> Properties -> Unblock -> Apply or select exe file -> Select More Info -> Run Anyways
 
+#### Sometimes, when leaving the PC, my model suddenly moves away and starts acting strange.
+
+Make sure that you don't have anything in the background that looks like a face (posters, people, TV, etc.). Sometimes even things that are not very face-like at all might get picked up. A good way to check is to run the `run.bat` from `VSeeFace_Data\StreamingAssets\Binary`. It will show you the camera image with tracking points. If green tracking points show up somewhere on the background while you are not in the view of the camera, that might be the cause. Just make sure to close VSeeFace and any other programs that might be accessing the camera first.
+
 #### Does VSeeFace run on 32 bit CPUs?
 
 No.
@@ -247,6 +274,24 @@ No. Although, if you are very experienced with Linux and wine as well, you can t
 #### Does VSeeFace run on Linux?
 
 It's reportedly [possible](#running-on-linux-and-maybe-mac) to run it using wine.
+
+#### Does VSeeFace have special support for RealSense cameras?
+
+No. It would be quite hard to add as well, because OpenSeeFace is only designed to work with regular RGB webcam images for tracking.
+
+#### <a name="webcam"></a>What should I look out for when buying a new webcam?
+
+Before looking at new webcams, make sure that your room is well lit. It should be basically as bright as possible. At the same time, if you are wearing glsases, avoid positioning light sources in a way that will cause reflections on your glasses when seen from the angle of the camera. One thing to note is that insufficient light will usually cause webcams to quietly lower their frame rate. For example, my camera will only give me 15 fps even when set to 30 fps unless I have bright daylight coming in through the window, in which case it may go up to 20 fps. You can check the actual camera framerate by looking at the TR (tracking rate) value in the lower right corner of VSeeFace, although in some cases this value might be bottlenecked by CPU speed rather than the webcam.
+
+As far as resolution is concerned, the sweet spot is 720p to 1080p. Going higher won't really help all that much, because the tracking will crop out the section with your face and rescale it to 224x224, so if your face appears bigger than that in the camera frame, it will just get downscaled. Running the camera at lower resolutions like 640x480 can still be fine, but results will be a bit more jittery and things like eye tracking will be less accurate.
+
+By default, VSeeFace caps the camera framerate at 30 fps, so there is not much point in getting a webcam with a higher maximum framerate. While there is an option to remove this cap, actually increasing the tracking framerate to 60 fps will only make a very tiny difference with regards to how nice things look, but it will double the CPU usage of the tracking process. However, the fact that a camera is able to do 60 fps might still be a plus with respect to its general quality level.
+
+Having a ring light on the camera can be helpful with avoiding tracking issues because it is too dark, but it can also cause issues with reflections on glasses and can feel uncomfortable.
+
+I have heard reports that getting a wide angle camera helps, because it will cover more area and will allow you to move around more before losing tracking because the camera can't see you anymore, so that might be a good thing to look out for.
+
+As a final note, for higher resolutions like 720p and 1080p, I would recommend looking for an USB3 webcam, rather than a USB2 one. With USB2, the images captured by the camera will have to be compressed (e.g. using MJPEG) before being sent to the PC, which usually makes them look worse and can have a negative impact on tracking quality. With USB3, less or no compression should be necessary and images can probably be transmitted in RGB or YUV format.
 
 #### <a name="live2d"></a>Does VSeeFace support Live2D models?
 
@@ -265,6 +310,14 @@ Please note that the camera needs to be reenabled every time you start VSeeFace 
 #### Is VSeeFace open source? I heard it was open source.
 
 No. It uses paid assets from the Unity asset store that cannot be freely redistributed. However, the actual face tracking and avatar animation code is open source. You can find it [here](https://github.com/emilianavt/OpenSeeFace) and [here](https://gist.github.com/emilianavt/b211073096a4484fb92e6550212c2f48).
+
+#### <a name="ahk"></a><a name="autohotkey"></a>How can I trigger expressions from AutoHotkey?
+
+It seems that the regular send key command doesn't work, but adding a delay to prolong the key press helps. You can try something like this:
+
+    SendInput, {LCtrl down}{F19 down}
+    sleep, 40 ; lower sleep time can cause issues on rapid repeated inputs
+    SendInput, {LCtrl up}{F19 Up}
 
 #### I still have questions or feedback, where should I take it?
 
@@ -379,6 +432,10 @@ When receiving motion data, VSeeFace can additionally perform its own tracking a
 Please note that received blendshape data will not be used for expression detection and that, if received blendshapes are applied to a model, triggering expressions via hotkeys will not work.
 
 You can find a list of applications with support for the VMC protocol [here](https://protocol.vmc.info/Reference).
+
+#### VR tracking
+
+To combine VR tracking with VSeeFace's tracking, you can either use [Tracking World](http://deatrathias.net/TW/) or the pixivFANBOX version of [Virtual Motion Capture](https://vmc.info/download.html) to send VR tracking data over VMC protocol to VSeeFace. [This](https://www.youtube.com/watch?v=LkO0VusjkHU) video by Suvidriel explains how to set this up with Virtual Motion Capture.
 
 #### Model animation or posing
 
