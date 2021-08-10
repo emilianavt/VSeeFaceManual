@@ -297,6 +297,10 @@ As a final note, for higher resolutions like 720p and 1080p, I would recommend l
 
 No, VSeeFace only supports 3D models in VRM format. While there are free tiers for Live2D integration licenses, adding Live2D support to VSeeFace would only make sense if people could load their own models. In that case, it would be classified as an "Expandable Application", which needs a different type of license, for which there is no free tier. As VSeeFace is a free program, integrating an SDK that requires the payment of licensing fees is not an option.
 
+#### <a name="eos"></a>I am using a Canon EOS camera and the tracking won't work.
+
+Try setting the camera settings on the VSeeFace starting screen to default settings. The selection will be marked in red, but you can ignore that and press start anyways. It usually works this way.
+
 #### Does VSeeFace support the Tobii eye tracker?
 
 No, VSeeFace cannot use the Tobii eye tracker SDK due to its its licensing terms.
@@ -605,6 +609,18 @@ Alternatively or in addition, you can try the following approach:
 7. Change the setting to `Disabled` and click OK
 
 Please note that this is not a guaranteed fix by far, but it might help. If you are using a laptop where battery life is important, I recommend only following the second set of steps and setting them up for a power plan that is only active while the laptop is charging.
+
+##### <a name="runbat"></a>Checking what the facetracker.exe sees
+
+If you want to check how the tracking sees your camera image, which is often useful for figuring out tracking issues, first make sure that no other program is using the camera. Then, navigate to the `VSeeFace_Data\StreamingAssets\Binary` folder inside the VSeeFace folder and double click on `run.bat`, which might also be displayed as just `run`.
+
+A console window should open and ask you to select first which camera you'd like to use and then which resolution and video format to use. In both cases, enter the number given on the line of the camera or setting you would like to choose. For the second question, you can also enter `-1` to use the camera's default settings, which is equivalent to not selecting a resolution in VSeeFace, in which case the option will look red, but you can still press start.
+
+After selecting a camera and camera settings, a second window should open and display the camera image with green tracking points on your face. The points should move along with your face and, if the room is brightly lit, not be very noisy or shaky. If the image looks very grainy or dark, the tracking may be lost easily or shake a lot.
+
+If you are trying to figure out an issue where your avatar begins moving strangely when you leave the view of the camera, now would be a good time to move out of the view and check what happens to the tracking points. Sometimes they lock onto some object in the background, which vaguely resembles a face.
+
+You can also start VSeeFace and set the camera to `[Network tracking]` on the starting screen. It should receive tracking data from the `run.bat` and your model should move along accordingly.
 
 #### Virtual camera issues
 
