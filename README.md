@@ -612,7 +612,7 @@ Please note that this is not a guaranteed fix by far, but it might help. If you 
 
 ##### <a name="runbat"></a>Checking what the facetracker.exe sees
 
-If you want to check how the tracking sees your camera image, which is often useful for figuring out tracking issues, first make sure that no other program is using the camera. Then, navigate to the `VSeeFace_Data\StreamingAssets\Binary` folder inside the VSeeFace folder and double click on `run.bat`, which might also be displayed as just `run`.
+If you want to check how the tracking sees your camera image, which is often useful for figuring out tracking issues, first make sure that no other program, including VSeeFace, is using the camera. Then, navigate to the `VSeeFace_Data\StreamingAssets\Binary` folder inside the VSeeFace folder and double click on `run.bat`, which might also be displayed as just `run`.
 
 A console window should open and ask you to select first which camera you'd like to use and then which resolution and video format to use. In both cases, enter the number given on the line of the camera or setting you would like to choose. For the second question, you can also enter `-1` to use the camera's default settings, which is equivalent to not selecting a resolution in VSeeFace, in which case the option will look red, but you can still press start.
 
