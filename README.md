@@ -472,6 +472,14 @@ To combine iPhone tracking with Leap Motion tracking, enable the `Track fingers`
 
 If VSeeFace's tracking should be disabled to reduce CPU usage, only enable "Track fingers" and "Track hands to shoulders" on the VMC protocol receiver. This should lead to VSeeFace's tracking being disabled while leaving the Leap Motion operable. If the tracking remains on, this may be caused by expression detection being enabled. In this case, additionally set the expression detection setting to none.
 
+##### <a name="receiver"></a>VMC protocol receiver troubleshooting
+
+If you can't get VSeeFace to receive anything, check these things first:
+
+* Probably the most common issue is that the Windows firewall blocks remote connections to VSeeFace, so you might have to dig into its settings a bit to remove the block.
+* Make sure both the phone and the PC are on the same network. If the phone is using mobile data it won't work. Sometimes, if the PC is on multiple networks, the "Show IP" button will also not show the correct address, so you might have to figure it out using `ipconfig` or some other way.
+* Try disabling all the `Track ...` options to make sure the received tracking data isn't getting overwritten by VSeeFace's own tracking.
+
 ##### <a name="hanatool"></a>Using HANA Tool to add perfect sync blendshapes to VRoid models
 
 A full Japanese guide can be found [here](https://hinzka.hatenablog.com/entry/2020/10/12/014540). The following gives a short English language summary. To use [HANA Tool](https://booth.pm/en/items/2604269) to add perfect sync blendshapes to a VRoid model, you need to install Unity, create a new project and add the [UniVRM](https://github.com/vrm-c/UniVRM/releases) package and then the VRM version of the HANA Tool package to your project. You can do this by dragging in the `.unitypackage` files into the file section of the Unity project. Next, make sure that your VRoid VRM is exported from VRoid v0.12 (or whatever is supported by your version of HANA_Tool) without optimizing or decimating the mesh. Create a folder for your model in the `Assets` folder of your Unity project and copy in the VRM file. It should now get imported.
