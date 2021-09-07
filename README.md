@@ -116,6 +116,7 @@ There are a lot of tutorial videos out there. This section lists a few to help y
 * <span lang="ja">[VTuber向けアプリに黒船襲来！？海外勢に人気のVSeeFaceに乗り遅れるな！【How to use VSeeFace for Japanese VTubers (JPVtubers)】](https://www.youtube.com/watch?v=nkPqAD1paGE) @ 
 大福らなチャンネル</span>
 * <span lang="ja">[【Webカメラで動かす】3D VTuber 向け Unity 要らずで簡単！全身+顔+指が動くフルトラッキング環境解説【VSeeFace+TDPT+waidayo】](https://www.youtube.com/watch?v=SKhRsChcGGk) @ ひのちゃんねる/hinochannel</span>
+* <span lang="ja">[Webカメラ2台で顔も身体もトラッキング！解説動画](https://www.youtube.com/watch?v=wdJZYL7GUCw) @ あこゆかプロジェクト</span>
 
 ## Manual
 
