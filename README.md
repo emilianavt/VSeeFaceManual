@@ -677,6 +677,14 @@ Using the same blendshapes in multiple blend shape clips or animations can cause
 * Extended audio lip sync can use additional blend shape clips as described [here](https://www.vseeface.icu/#special-blendshapes)
 * When using perfect sync, the [52 ARKit blend shape clips](https://www.vseeface.icu/#iphone-face-tracking) need to be present. While blend shape clips may be empty, all 52 blend shape clips must be present on the model.
 
+##### <a name="mouth-textures"></a>Texture based mouth blendshapes are looking messed up
+
+VSeeFace, by default, mixes the VRM mouth blend shape clips to achieve various mouth shapes. This can cause issues when the mouth shape is set through texture shifting with a material blendshape, as the different offsets get added together with varying weights. The following three steps can be followed to avoid this:
+
+* Set up custom blendshape clips for all visemes (`SIL`, `CH`, `DD`, `FF`, `KK`, `NN`, `PP`, `RR`, `SS`, `TH`) to prevent VSeeFace from trying to mix `A`, `I`, `U`, `E`, `O` to emulate them. See the [special blendshapes section](https://www.vseeface.icu/#special-blendshapes) for more information on these visemes.
+* Set the all mouth related VRM blend shape clips to binary in Unity.
+* Disable hybrid lip sync, otherwise the camera based tracking will try to mix the blendshapes.
+
 #### Lipsync issues
 
 First, make sure you have your microphone selected on the starting screen. You can also change it in the `General settings`. Also make sure that the `Mouth size reduction` slider in the `General settings` is not turned up.
