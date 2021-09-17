@@ -264,6 +264,10 @@ If Windows 10 won't run the file and complains that the file may be a threat bec
 
 Make sure that you don't have anything in the background that looks like a face (posters, people, TV, etc.). Sometimes even things that are not very face-like at all might get picked up. A good way to check is to run the `run.bat` from `VSeeFace_Data\StreamingAssets\Binary`. It will show you the camera image with tracking points. If green tracking points show up somewhere on the background while you are not in the view of the camera, that might be the cause. Just make sure to close VSeeFace and any other programs that might be accessing the camera first.
 
+#### What are the minimum system requirements to run VSeeFace?
+
+I really don't know, it's not like I have a lot of PCs with various specs to test on. You need to have a DirectX compatible GPU, a 64 bit CPU and a way to run Windows programs. Beyond that, just give it a try and see how it runs. Face tracking can be pretty resource intensive, so if you want to run a game and stream at the same time, you may need a somewhat beefier PC for that. There is some performance tuning [advice](#performance-tuning) at the bottom of this page.
+
 #### Does VSeeFace run on 32 bit CPUs?
 
 No.
