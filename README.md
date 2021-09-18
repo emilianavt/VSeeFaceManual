@@ -18,7 +18,9 @@ Please note that Live2D models are not supported. For those, please check out VT
 
 **To update VSeeFace, just delete the old folder or overwrite it when unpacking the new version.**
 
-<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36l/VSeeFace-v1.13.36l.zip" class="download">Download<br>v1.13.36l</a>
+<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36m/VSeeFace-v1.13.36m.zip" class="download">Download<br>v1.13.36m</a>
+
+<a href="https://mega.nz/file/rmoG2LaQ#C6AgN5QicApbIGomdQMNEz-I-c_5jrS0dCqD448fTRo" class="download">Mirror<br>v1.13.36m</a>
 
 Old versions can be found in the release archive [here](https://github.com/emilianavt/VSeeFaceReleases/releases/). This website, the #vseeface-updates channel on Deat's discord and the release archive are the only official download locations for VSeeFace.
 
@@ -28,7 +30,7 @@ The latest release notes can be found <a href="https://gist.github.com/emilianav
 
 The reason it is currently only released in this way, is to make sure that everybody who tries it out has an easy channel to give me feedback.
 
-<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。iFacialMocap/FaceMotion3Dによるパーフェクトシンクも対応です。VMCプロトコルも対応です（[Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077)、[iFacialMocap2VMC](http://suvidriel.com/)）。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36l/VSeeFace-v1.13.36l.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
+<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。iFacialMocap/FaceMotion3Dによるパーフェクトシンクも対応です。VMCプロトコルも対応です（[Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077)、[iFacialMocap2VMC](http://suvidriel.com/)）。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36m/VSeeFace-v1.13.36m.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
 
 <span lang="ja">VRM以外UnityのAssetBundle形式のVSFAvatarも使えます。SDKは<a href="https://github.com/emilianavt/VSeeFaceSDK/releases/latest">こちら</a>。VSFAvatar形式のモデルでカスタムシェーダーやDynamic Bonesやコンストレイントなどを使用が出来ます。 </span>
 
@@ -452,7 +454,34 @@ Using the [prepared Unity project and scene](#model-preview-in-unity), pose data
 
 #### iPhone face tracking
 
-[Perfect sync](https://hinzka.hatenablog.com/entry/2020/08/15/145040) [blendshape information](https://hinzka.hatenablog.com/entry/2020/06/15/072929) and tracking data can be received from the iFacialMocap and FaceMotion3D applications. For this to work properly, it is necessary for the avatar to have the necessary [52 ARKit blendshapes]](https://docs.unity3d.com/Packages/com.unity.xr.arkit-face-tracking@1.0/api/UnityEngine.XR.ARKit.ARKitBlendShapeLocation.html#fields). For VRoid avatars, it is possible to use [HANA Tool](https://booth.pm/en/items/2604269) to add these blendshapes as described [below](#hanatool). To do so, make sure that iPhone and PC are connected to one network and start the iFacialMocap app on the iPhone. It should display the phone's IP address. Enable the iFacialMocap receiver in the general settings of VSeeFace and enter the IP address of the phone. The avatar should now move according to the received data, according to the settings below.
+[Perfect sync](https://hinzka.hatenablog.com/entry/2020/08/15/145040) [blendshape information](https://hinzka.hatenablog.com/entry/2020/06/15/072929) and tracking data can be received from the iFacialMocap and FaceMotion3D applications. For this to work properly, it is necessary for the avatar to have the necessary [52 ARKit blendshapes](https://docs.unity3d.com/Packages/com.unity.xr.arkit-face-tracking@1.0/api/UnityEngine.XR.ARKit.ARKitBlendShapeLocation.html#fields). For VRoid avatars, it is possible to use [HANA Tool](https://booth.pm/en/items/2604269) to add these blendshapes as described [below](#hanatool). To do so, make sure that iPhone and PC are connected to one network and start the iFacialMocap app on the iPhone. It should display the phone's IP address. Enable the iFacialMocap receiver in the general settings of VSeeFace and enter the IP address of the phone. The avatar should now move according to the received data, according to the settings below.
+
+When hybrid lipsync and the `Only open mouth according to one source` option are enabled, the following ARKit blendshapes are disabled while audio visemes are detected: `JawOpen`, `MouthFunnel`, `MouthPucker`, `MouthShrugUpper`, `MouthShrugLower`, `MouthClose`, `MouthUpperUpLeft`, `MouthUpperUpRight`, `MouthLowerDownLeft`, `MouthLowerDownRight`
+
+##### iFacialMocap Troubleshooting
+
+In case of connection issues, you can try the following:
+
+* Make sure the iPhone and PC are on the same network.
+* Check the [Windows firewall](/assets/img/Firewall1.png)'s [Advanced settings](/assets/img/Firewall2.png). In there, make sure that in the [Inbound Rules](/assets/img/Firewall3.png) VSeeFace is set to accept connections.
+* In iOS, look for iFacialMocap in the app list and ensure that it has the `Local Network` permission.
+* Apparently sometimes starting VSeeFace as administrator can help.
+* Restart the PC.
+
+If it still doesn't work, you can confirm basic connectivity using the [MotionReplay](https://github.com/emilianavt/MotionReplay/releases/tag/v0.1.1-ifacialmocap) tool. Close VSeeFace, start MotionReplay, enter the iPhone's IP address and press the button underneath. You should see the packet counter counting up. If the packet counter does not count up, data is not being received at all, indicating a network or firewall issue.
+
+If you encounter issues where the head moves, but the face appears frozen:
+
+* Make sure that all 52 VRM blend shape clips are present.
+* Make sure that the various `Track ...` options are enabled in the expression settings.
+* Make sure that there isn't a still enabled VMC protocol receiver overwriting the face information.
+* Check that the `iFacialMocap smoothing` slider is not set close to 1.
+
+If you encounter issues with the gaze tracking:
+
+* Make sure that both the gaze strength and gaze sensitivity sliders are pushed up.
+* Make sure that there isn't a still enabled VMC protocol receiver overwriting the face information.
+* If your eyes are blendshape based, not bone based, make sure that your model does not have eye bones assigned in the humanoid configuration of Unity. It is also possible to unmap these bones in VRM files by following [these](https://gist.github.com/emilianavt/255ad5b0ad61a226aff74a5c1dc47399) steps.
 
 ##### Waidayo method
 
@@ -705,7 +734,7 @@ Lipsync and mouth animation relies on the model having VRM blendshape clips for 
 
 If a stereo audio device is used for recording, please make sure that the voice data is on the left channel. If the voice is only on the right channel, it will not be detected. In this case, software like [Equalizer APO](https://sourceforge.net/projects/equalizerapo/) or [Voicemeeter](https://www.vb-audio.com/Voicemeeter/potato.htm) can be used to respectively either copy the right channel to the left channel or provide a mono device that can be used as a mic in VSeeFace. In my experience Equalizer APO can work with less delay and is more stable, but harder to set up.
 
-If no microphones are displayed in the list, please check the `Player.log` in the [log folder](#settings-and-log-file-location). Look for `FMOD` errors. They might list some information on how to fix the issue. [This](https://forum.unity.com/threads/fmod-failed-to-initialize.602845/) thread on the Unity forums might contain helpful information.
+If no microphones are displayed in the list, please check the `Player.log` in the [log folder](#settings-and-log-file-location). Look for `FMOD` errors. They might list some information on how to fix the issue. [This](https://forum.unity.com/threads/fmod-failed-to-initialize.602845/) thread on the Unity forums might contain helpful information. One general approach to solving this type of issue is to go to the Windows audio settings and try disabling audio devices (both input and output) one by one until it starts working.
 
 In one case, having a microphone with a 192kHz sample rate installed on the system could make lip sync fail, even when using a different microphone. In this case setting it to 48kHz allowed lip sync to work.
 
