@@ -28,7 +28,7 @@ The latest release notes can be found <a href="https://gist.github.com/emilianav
 
 The reason it is currently only released in this way, is to make sure that everybody who tries it out has an easy channel to give me feedback.
 
-<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。VMCプロトコルによるパーフェクトシンクも対応です（[Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077)、[iFacialMocap2VMC](http://suvidriel.com/)）。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36l/VSeeFace-v1.13.36l.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
+<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。iFacialMocap/FaceMotion3Dによるパーフェクトシンクも対応です。VMCプロトコルも対応です（[Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077)、[iFacialMocap2VMC](http://suvidriel.com/)）。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36l/VSeeFace-v1.13.36l.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
 
 <span lang="ja">VRM以外UnityのAssetBundle形式のVSFAvatarも使えます。SDKは<a href="https://github.com/emilianavt/VSeeFaceSDK/releases/latest">こちら</a>。VSFAvatar形式のモデルでカスタムシェーダーやDynamic Bonesやコンストレイントなどを使用が出来ます。 </span>
 
@@ -452,11 +452,17 @@ Using the [prepared Unity project and scene](#model-preview-in-unity), pose data
 
 #### iPhone face tracking
 
+[Perfect sync](https://hinzka.hatenablog.com/entry/2020/08/15/145040) [blendshape information](https://hinzka.hatenablog.com/entry/2020/06/15/072929) and tracking data can be received from the iFacialMocap and FaceMotion3D applications. For this to work properly, it is necessary for the avatar to have the necessary [52 ARKit blendshapes]](https://docs.unity3d.com/Packages/com.unity.xr.arkit-face-tracking@1.0/api/UnityEngine.XR.ARKit.ARKitBlendShapeLocation.html#fields). For VRoid avatars, it is possible to use [HANA Tool](https://booth.pm/en/items/2604269) to add these blendshapes as described [below](#hanatool). To do so, make sure that iPhone and PC are connected to one network and start the iFacialMocap app on the iPhone. It should display the phone's IP address. Enable the iFacialMocap receiver in the general settings of VSeeFace and enter the IP address of the phone. The avatar should now move according to the received data, according to the settings below.
+
+##### Waidayo method
+
+Before iFacialMocap support was added, the only way to receive tracking data from the iPhone was through Waidayo or iFacialMocap2VMC.
+
 Certain iPhone apps like [Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077) can send [perfect sync](https://hinzka.hatenablog.com/entry/2020/08/15/145040) [blendshape information](https://hinzka.hatenablog.com/entry/2020/06/15/072929) over the VMC protocol, which VSeeFace can receive, allowing you to use iPhone based face tracking. This requires an especially prepared avatar containing the necessary blendshapes. A list of these blendshapes can be found [here](https://docs.unity3d.com/Packages/com.unity.xr.arkit-face-tracking@1.0/api/UnityEngine.XR.ARKit.ARKitBlendShapeLocation.html#fields). You can find an example avatar containing the necessary blendshapes [here](https://hub.vroid.com/en/characters/7535723910806948192/models/2729494919026563201). An easy, but not free, way to apply these blendshapes to VRoid avatars is to use [HANA Tool](https://booth.pm/en/items/2604269). It is also possible to use VSeeFace with iFacialMocap through [iFacialMocap2VMC](https://www.youtube.com/watch?v=3IhC-dealyI).
 
 To combine iPhone tracking with Leap Motion tracking, enable the `Track fingers` and `Track hands to shoulders` options in VMC reception settings in VSeeFace. Enabling all over options except `Track face features` as well, will apply the usual head tracking and body movements, which may allow more freedom of movement than just the iPhone tracking on its own.
 
-##### Step by step guide
+##### Waidayo step by step guide
 
 * Make sure the iPhone and PC to are on one network
 * Run VSeeFace
