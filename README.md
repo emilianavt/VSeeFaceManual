@@ -74,7 +74,7 @@ Starting with VSeeFace v1.13.36, a new Unity asset bundle and VRM based avatar f
 
 A README file with various important information is included in the SDK, but you can also read it [here](https://github.com/emilianavt/VSeeFaceSDK/blob/master/README.md).
 
-SDK download: [v1.13.36k](https://github.com/emilianavt/VSeeFaceSDK/releases/download/v1.13.36l/VSF_SDK_v1.13.36l.unitypackage) ([release archive](https://github.com/emilianavt/VSeeFaceSDK/releases))
+SDK download: [v1.13.36l](https://github.com/emilianavt/VSeeFaceSDK/releases/download/v1.13.36l/VSF_SDK_v1.13.36l.unitypackage) ([release archive](https://github.com/emilianavt/VSeeFaceSDK/releases))
 
 Make sure to set the Unity project to [linear color space](https://docs.unity3d.com/Manual/LinearRendering-LinearOrGammaWorkflow.html).
 
