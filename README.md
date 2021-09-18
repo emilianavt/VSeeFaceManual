@@ -4,7 +4,7 @@
 
 <a href="#japanese-info">日本語</a>
 
-VSeeFace is a free, highly configurable face and hand tracking VRM and [VSFAvatar](#vsfavatar) avatar puppeteering program for virtual youtubers with a focus on robust tracking and high image quality. VSeeFace offers functionality similar to Luppet, 3tene, Wakaru and similar programs. VSeeFace runs on Windows 8 and above (64 bit only). VSeeFace can send, receive and combine tracking data using the [VMC protocol](https://protocol.vmc.info/), which also allows iPhone [perfect sync](https://hinzka.hatenablog.com/entry/2020/08/15/145040) support through [Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077) like [this](https://twitter.com/ovaraisu/status/1332463731159293954).
+VSeeFace is a free, highly configurable face and hand tracking VRM and [VSFAvatar](#vsfavatar) avatar puppeteering program for virtual youtubers with a focus on robust tracking and high image quality. VSeeFace offers functionality similar to Luppet, 3tene, Wakaru and similar programs. VSeeFace runs on Windows 8 and above (64 bit only). [Perfect sync](https://hinzka.hatenablog.com/entry/2020/08/15/145040) is supported through iFacialMocap/FaceMotion3D. VSeeFace can send, receive and combine tracking data using the [VMC protocol](https://protocol.vmc.info/), which also allows support for tracking through [Virtual Motion Capture](https://vmc.info/), [Tracking World](http://deatrathias.net/TW/), [Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077) and more.
 
 Face tracking, including eye gaze, blink, eyebrow and mouth tracking, is done through a regular webcam. For the optional hand tracking, a Leap Motion device is required. You can see a comparison of the face tracking performance compared to other popular vtuber applications [here](https://twitter.com/emiliana_vt/status/1275424412167221248). In this comparison, VSeeFace is still listed under its former name OpenSeeFaceDemo.
 
@@ -18,7 +18,7 @@ Please note that Live2D models are not supported. For those, please check out VT
 
 **To update VSeeFace, just delete the old folder or overwrite it when unpacking the new version.**
 
-<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36k/VSeeFace-v1.13.36k.zip" class="download">Download<br>v1.13.36k</a>
+<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36l/VSeeFace-v1.13.36l.zip" class="download">Download<br>v1.13.36l</a>
 
 Old versions can be found in the release archive [here](https://github.com/emilianavt/VSeeFaceReleases/releases/). This website, the #vseeface-updates channel on Deat's discord and the release archive are the only official download locations for VSeeFace.
 
@@ -28,7 +28,7 @@ The latest release notes can be found <a href="https://gist.github.com/emilianav
 
 The reason it is currently only released in this way, is to make sure that everybody who tries it out has an easy channel to give me feedback.
 
-<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。VMCプロトコルによるパーフェクトシンクも対応です（[Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077)、[iFacialMocap2VMC](http://suvidriel.com/)）。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36k/VSeeFace-v1.13.36k.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
+<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。VMCプロトコルによるパーフェクトシンクも対応です（[Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077)、[iFacialMocap2VMC](http://suvidriel.com/)）。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36l/VSeeFace-v1.13.36l.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
 
 <span lang="ja">VRM以外UnityのAssetBundle形式のVSFAvatarも使えます。SDKは<a href="https://github.com/emilianavt/VSeeFaceSDK/releases/latest">こちら</a>。VSFAvatar形式のモデルでカスタムシェーダーやDynamic Bonesやコンストレイントなどを使用が出来ます。 </span>
 
@@ -74,7 +74,7 @@ Starting with VSeeFace v1.13.36, a new Unity asset bundle and VRM based avatar f
 
 A README file with various important information is included in the SDK, but you can also read it [here](https://github.com/emilianavt/VSeeFaceSDK/blob/master/README.md).
 
-SDK download: [v1.13.36k](https://github.com/emilianavt/VSeeFaceSDK/releases/download/v1.13.36k/VSF_SDK_v1.13.36k.unitypackage) ([release archive](https://github.com/emilianavt/VSeeFaceSDK/releases))
+SDK download: [v1.13.36k](https://github.com/emilianavt/VSeeFaceSDK/releases/download/v1.13.36l/VSF_SDK_v1.13.36l.unitypackage) ([release archive](https://github.com/emilianavt/VSeeFaceSDK/releases))
 
 Make sure to set the Unity project to [linear color space](https://docs.unity3d.com/Manual/LinearRendering-LinearOrGammaWorkflow.html).
 
