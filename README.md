@@ -228,6 +228,10 @@ Note that re-exporting a VRM will not work to for properly normalizing the model
 
 If you have the fixed hips option enabled in the advanced option, try turning it off. If this helps, you can try the option to disable vertical head movement for a similar effect. If it doesn't help, try turning up the smoothing, make sure that your room is brightly lit and try different camera settings.
 
+#### There's a bright outline around my model that stands out against dark background?
+
+First, make sure you are using the ※ button to hide the UI and use a game capture in OBS with `Allow transparency` ticked. Color or chroma key filters are not necessary. If the issue persists, try right clicking the game capture in OBS and select `Scale Filtering`, then `Bilinear`.
+
 #### <a name="blendshape-normals"></a>I converted my model to VRM format, but when I blink, my mouth moves or I activate an expressions, it looks weird and the shadows shift?
 
 Make sure to set "Blendshape Normals" to "None" on the FBX when you import it into Unity and before you export your VRM. That should prevent        this issue.
