@@ -486,6 +486,7 @@ If you encounter issues with the gaze tracking:
 * Make sure that both the gaze strength and gaze sensitivity sliders are pushed up.
 * Make sure that there isn't a still enabled VMC protocol receiver overwriting the face information.
 * If your eyes are blendshape based, not bone based, make sure that your model does not have eye bones assigned in the humanoid configuration of Unity. It is also possible to unmap these bones in VRM files by following [these](https://gist.github.com/emilianavt/255ad5b0ad61a226aff74a5c1dc47399) steps.
+* If your model uses ARKit blendshapes to control the eyes, set the gaze strength slider to zero, otherwise, both bone based eye movement and ARKit blendshape based gaze may get applied.
 
 ##### Waidayo method
 
