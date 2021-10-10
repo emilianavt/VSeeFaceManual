@@ -165,7 +165,7 @@ In rare cases it can be a tracking issue. If your screen is your main light sour
 More often, the issue is caused by Windows allocating all of the GPU or CPU to the game, leaving nothing for VSeeFace. Here are some things you can try to improve the situation:
 
 * Make sure game mode is not enabled in Windows.
-* Make sure no "game booster" is enabled in your anti virus software or graphics driver.
+* Make sure no "game booster" is enabled in your anti virus software (applies to some versions of Norton, McAfee, BullGuard and maybe others) or graphics driver.
 * Try setting VSeeFace and the facetracker.exe to realtime priority in the details tab of the task manager.
 * Run VSeeFace and OBS as admin.
 * Make sure VSeeFace has a framerate capped at 60fps.
