@@ -18,9 +18,7 @@ Please note that Live2D models are not supported. For those, please check out VT
 
 **To update VSeeFace, just delete the old folder or overwrite it when unpacking the new version.**
 
-<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36m/VSeeFace-v1.13.36m.zip" class="download">Download<br>v1.13.36m</a>
-
-<a href="https://mega.nz/file/rmoG2LaQ#C6AgN5QicApbIGomdQMNEz-I-c_5jrS0dCqD448fTRo" class="download">Mirror<br>v1.13.36m</a>
+<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36n/VSeeFace-v1.13.36n.zip" class="download">Download<br>v1.13.36n</a>
 
 Old versions can be found in the release archive [here](https://github.com/emilianavt/VSeeFaceReleases/releases/). This website, the #vseeface-updates channel on Deat's discord and the release archive are the only official download locations for VSeeFace.
 
@@ -30,7 +28,7 @@ The latest release notes can be found <a href="https://gist.github.com/emilianav
 
 The reason it is currently only released in this way, is to make sure that everybody who tries it out has an easy channel to give me feedback.
 
-<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。iFacialMocap/FaceMotion3Dによるパーフェクトシンクも対応です。VMCプロトコルも対応です（[Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077)、[iFacialMocap2VMC](http://suvidriel.com/)）。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36m/VSeeFace-v1.13.36m.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
+<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。iFacialMocap/FaceMotion3Dによるパーフェクトシンクも対応です。VMCプロトコルも対応です（[Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077)、[iFacialMocap2VMC](http://suvidriel.com/)）。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36n/VSeeFace-v1.13.36n.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
 
 <span lang="ja">VRM以外UnityのAssetBundle形式のVSFAvatarも使えます。SDKは<a href="https://github.com/emilianavt/VSeeFaceSDK/releases/latest">こちら</a>。VSFAvatar形式のモデルでカスタムシェーダーやDynamic Bonesやコンストレイントなどを使用が出来ます。 </span>
 
@@ -395,7 +393,7 @@ If you would like to disable the webcam image display, you can change `-v 3` to 
 
 When starting this modified file, in addition to the camera information, you will also have to enter the local network IP address of the PC A. You can start and stop the tracker process on PC B and VSeeFace on PC A independently. When no tracker process is running, the avatar in VSeeFace will simply not move.
 
-On the VSeeFace side, select `[Network tracking]` in the camera dropdown menu of the starting screen. Also, enter this PC's (PC A) local network IP address in the `Listen IP` field. Do **not** enter the IP address of PC B or it will not work. Press the start button. PC A should now be able to receive tracking data from PC B, while the tracker is running on PC B. You can find PC A's local network IP address by enabling the VMC protocol receiver in the `General settings` and clicking on `Show LAN IP`.
+On the VSeeFace side, select `[OpenSeeFace tracking]` in the camera dropdown menu of the starting screen. Also, enter this PC's (PC A) local network IP address in the `Listen IP` field. Do **not** enter the IP address of PC B or it will not work. Press the start button. PC A should now be able to receive tracking data from PC B, while the tracker is running on PC B. You can find PC A's local network IP address by enabling the VMC protocol receiver in the `General settings` and clicking on `Show LAN IP`.
 
 If you are sure that the camera number will not change and know a bit about batch files, you can also modify the batch file to remove the interactive input and just hard code the values.
 
@@ -502,7 +500,7 @@ To combine iPhone tracking with Leap Motion tracking, enable the `Track fingers`
 * Make sure the iPhone and PC to are on one network
 * Run VSeeFace
 * Load a compatible avatar ([sample](https://hub.vroid.com/en/characters/7535723910806948192/models/2729494919026563201), it's also possible to apply those blendshapes to a VRoid avatar using [HANA Tool](https://booth.pm/en/items/2604269))
-* Do select a camera on the starting screen as usual, do not select "[Network tracking]", as this option refers to something else. If you do not have a camera, select "[Network tracking]", but leave the fields empty.
+* Do select a camera on the starting screen as usual, do not select "[Network tracking]" or "[OpenSeeFace tracking]", as this option refers to something else. If you do not have a camera, select "[OpenSeeFace tracking]", but leave the fields empty.
 * Disable the VMC protocol sender in the general settings if it's enabled
 * Enable the VMC protocol receiver in the general settings
 * Change the port number from 39539 to 39540
@@ -586,7 +584,7 @@ Translations are coordinated on GitHub in the [VSeeFaceTranslations](https://git
 
 Some people have gotten VSeeFace to run on Linux through wine and it might be possible on Mac as well, but nobody tried, to my knowledge. However, reading webcams is not possible through wine versions before 6. Starting with wine 6, you can try just using it normally.
 
-For previous versions or if webcam reading does not work properly, as a workaround, you can set the camera in VSeeFace to `[Network tracking]` and run the `facetracker.py` script from [OpenSeeFace](https://github.com/emilianavt/OpenSeeFace) manually. To do this, you will need a Python 3.7 or newer installation. To set up everything for the `facetracker.py`, you can try something like this on Debian based distributions:
+For previous versions or if webcam reading does not work properly, as a workaround, you can set the camera in VSeeFace to `[OpenSeeFace tracking]` and run the `facetracker.py` script from [OpenSeeFace](https://github.com/emilianavt/OpenSeeFace) manually. To do this, you will need a Python 3.7 or newer installation. To set up everything for the `facetracker.py`, you can try something like this on Debian based distributions:
 
     sudo apt-get install python3 python3-pip python3-virtualenv git
     git clone https://github.com/emilianavt/OpenSeeFace
@@ -636,7 +634,7 @@ appears near the end of the `error.txt` that should have opened, you probably ha
 
 If tracking doesn't work, you can actually test what the camera sees by running the `run.bat` in the `VSeeFace_Data\StreamingAssets\Binary` folder. Before running it, make sure that no other program, including VSeeFace, is using the camera. After starting it, you will first see a list of cameras, each with a number in front of it. Enter the number of the camera you would like to check and press enter. Next, it will ask you to select your camera settings as well as a frame rate. You can enter -1 to use the camera defaults and 24 as the frame rate. Press enter after entering each value. After this, a second window should open, showing the image captured by your camera. If your face is visible on the image, you should see red and yellow tracking dots marked on your face. You can use this to make sure your camera is working as expected, your room has enough light, there is no strong light from the background messing up the image and so on. If the tracking points accurately track your face, the tracking should work in VSeeFace as well. To close the window, either press `q` in the window showing the camera image or press Ctrl+C in the console window.
 
-If you would like to see the camera image while your avatar is being animated, you can start VSeeFace while `run.bat` is running and select `[Network tracking]` in the camera option. It should receive the tracking data from the active `run.bat` process.
+If you would like to see the camera image while your avatar is being animated, you can start VSeeFace while `run.bat` is running and select `[OpenSeeFace tracking]` in the camera option. It should receive the tracking data from the active `run.bat` process.
 
 If an error message about the tracker process appears, it may be necessary to restart the program and, on the first screen of the program, enter a different camera resolution and/or frame rate that is known to be supported by the camera. To figure out a good combination, you can try adding your webcam as a video source in OBS and play with the parameters (resolution and frame rate) to find something that works.
 
@@ -674,7 +672,7 @@ After selecting a camera and camera settings, a second window should open and di
 
 If you are trying to figure out an issue where your avatar begins moving strangely when you leave the view of the camera, now would be a good time to move out of the view and check what happens to the tracking points. Sometimes they lock onto some object in the background, which vaguely resembles a face.
 
-You can also start VSeeFace and set the camera to `[Network tracking]` on the starting screen. It should receive tracking data from the `run.bat` and your model should move along accordingly.
+You can also start VSeeFace and set the camera to `[OpenSeeFace tracking]` on the starting screen. It should receive tracking data from the `run.bat` and your model should move along accordingly.
 
 #### Virtual camera issues
 
