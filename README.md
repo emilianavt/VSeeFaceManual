@@ -20,7 +20,7 @@ Please note that Live2D models are not supported. For those, please check out VT
 
 <a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36o/VSeeFace-v1.13.36o.zip" class="download">Download<br>v1.13.36o</a>
 
-<b>If you use a Leap Motion, update your Leap Motion software to <a href="https://developer.leapmotion.com/tracking-software-download">V5.2</a>!</b>
+<b>If you use a Leap Motion, update your Leap Motion software to <a href="https://developer.leapmotion.com/tracking-software-download">V5.2</a>! Just make sure to uninstall any older versions of the Leap Motion software first.</b>
 
 Old versions can be found in the release archive [here](https://github.com/emilianavt/VSeeFaceReleases/releases/). This website, the #vseeface-updates channel on Deat's discord and the release archive are the only official download locations for VSeeFace.
 
