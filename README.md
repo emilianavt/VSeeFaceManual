@@ -664,6 +664,8 @@ Alternatively or in addition, you can try the following approach:
 
 Please note that this is not a guaranteed fix by far, but it might help. If you are using a laptop where battery life is important, I recommend only following the second set of steps and setting them up for a power plan that is only active while the laptop is charging.
 
+One it was also reported that the registry change described on [this](https://thegeekpage.com/webcam-keeps-freezing/) can help with issues of this type on Windows 10.
+
 ##### <a name="runbat"></a>Checking what the facetracker.exe sees
 
 If you want to check how the tracking sees your camera image, which is often useful for figuring out tracking issues, first make sure that no other program, including VSeeFace, is using the camera. Then, navigate to the `VSeeFace_Data\StreamingAssets\Binary` folder inside the VSeeFace folder and double click on `run.bat`, which might also be displayed as just `run`.
