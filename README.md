@@ -195,11 +195,23 @@ Changing the position also changes the height of the Leap Motion in VSeeFace, so
 
 #### My Leap Motion complains that I need to update its software, but I'm already on the newest version of V2?
 
-To fix this error, please install the [V4 (Orion) SDK](https://developer.leapmotion.com/setup/desktop). It says it's used for VR, but it is also used by desktop applications.
+To fix this error, please install the [V5.2 (Gemini) SDK](https://developer.leapmotion.com/tracking-software-download). It says it's used for VR, but it is also used by desktop applications.
 
 #### Do hotkeys work even while VSeeFace is in the background?
 
 All configurable hotkeys also work while it is in the background or minimized, so the expression hotkeys, the audio lipsync toggle hotkey and the configurable position reset hotkey all work from any other program as well. On some systems it might be necessary to run VSeeFace as admin to get this to work properly for some reason.
+
+#### My VSeeFace randomly disappears?/It can no longer find the facetracker.exe file?
+
+This is usually caused by over-eager anti virus programs. The face tracking is written in Python and for some reason anti virus programs seem to dislike that and sometimes decide to delete VSeeFace or parts of it. There should be a way to whitelist the folder somehow to keep this from happening if you encounter this type of issue.
+
+#### The VSeeFace SDK doesn't work (no menu showing up, export failing with an error that a file wasn't found)?
+
+Check the "Console" tabs. There are probably some errors marked with a red symbol. You might have to scroll a bit to find it. These are usually some kind of compiler errors caused by other assets, which prevent Unity from compiling the VSeeFace SDK scripts. One way of resolving this is to remove the offending assets from the project. Another way is to make a new Unity project with only UniVRM 0.66 and the VSeeFace SDK in it.
+
+#### When exporting a VSFAvatar, this error appears? `Detected invalid components on avatar: "UniGLTF.RuntimeGltfInstance",`
+
+This error occurs with more recent versions of UniVRM. Currently [UniVRM 0.66](https://github.com/vrm-c/UniVRM/releases/tag/v0.66.0) is supported. When installing a different version of UniVRM, make sure to first completely remove all folders of the version already in the project.
 
 #### <a name="gpuscheduling"></a>Can disabling hardware-accelerated GPU scheduling help fix performance issues?
 
