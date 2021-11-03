@@ -177,6 +177,8 @@ More often, the issue is caused by Windows allocating all of the GPU or CPU to t
 * In the case of multiple screens, set all to the same refresh rate.
 * See if any of this helps: [this](https://www.vseeface.icu/#gpuscheduling) or [this](https://www.vseeface.icu/#gpu)
 
+It can also help to reduce the tracking and rendering quality settings a bit if it's just your PC in general struggling to keep up. For more information on this, please check the <a href="#performance-tuning">performance tuning</a> section.
+
 #### I'm looking straight ahead, but my eyes are looking all the way in some direction?
 
 Make sure the gaze offset sliders are centered. They can be used to correct the gaze for avatars that don't have centered irises, but they can also make things look quite wrong when set up incorrectly.
