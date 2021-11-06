@@ -172,6 +172,7 @@ More often, the issue is caused by Windows allocating all of the GPU or CPU to t
 * Run VSeeFace and OBS as admin.
 * Make sure VSeeFace has a framerate capped at 60fps.
 * Turn on VSync for the game.
+* Try setting the game to borderless/windowed fullscreen.
 * Set a framerate cap for the game as well and lower graphics settings.
 * Try setting the same frame rate for both VSeeFace and the game.
 * In the case of multiple screens, set all to the same refresh rate.
