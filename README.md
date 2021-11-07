@@ -20,7 +20,9 @@ Please note that Live2D models are not supported. For those, please check out VT
 
 <a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36p/VSeeFace-v1.13.36p.zip" class="download">Download<br>v1.13.36p</a>
 
-<b>If you use a Leap Motion, update your Leap Motion software to <a href="https://developer.leapmotion.com/tracking-software-download">V5.2</a>!</b>
+**If you use a Leap Motion, update your Leap Motion software to [V5.2](https://developer.leapmotion.com/tracking-software-download)! Just make sure to uninstall any older versions of the Leap Motion software first.**
+
+<span lang="ja">**VSeeFace v1.13.36oからLeap Motionの手トラッキングに[Leap Motion Gemini V5.2](https://developer.leapmotion.com/tracking-software-download)が必要です。V5.2インストール前に旧バージョンをアンインストールしないと正常な動作が保証されません。**</span>
 
 Old versions can be found in the release archive [here](https://github.com/emilianavt/VSeeFaceReleases/releases/). This website, the #vseeface-updates channel on Deat's discord and the release archive are the only official download locations for VSeeFace.
 
@@ -170,10 +172,13 @@ More often, the issue is caused by Windows allocating all of the GPU or CPU to t
 * Run VSeeFace and OBS as admin.
 * Make sure VSeeFace has a framerate capped at 60fps.
 * Turn on VSync for the game.
+* Try setting the game to borderless/windowed fullscreen.
 * Set a framerate cap for the game as well and lower graphics settings.
 * Try setting the same frame rate for both VSeeFace and the game.
 * In the case of multiple screens, set all to the same refresh rate.
 * See if any of this helps: [this](https://www.vseeface.icu/#gpuscheduling) or [this](https://www.vseeface.icu/#gpu)
+
+It can also help to reduce the tracking and rendering quality settings a bit if it's just your PC in general struggling to keep up. For more information on this, please check the <a href="#performance-tuning">performance tuning</a> section.
 
 #### I'm looking straight ahead, but my eyes are looking all the way in some direction?
 
@@ -193,11 +198,23 @@ Changing the position also changes the height of the Leap Motion in VSeeFace, so
 
 #### My Leap Motion complains that I need to update its software, but I'm already on the newest version of V2?
 
-To fix this error, please install the [V4 (Orion) SDK](https://developer.leapmotion.com/setup/desktop). It says it's used for VR, but it is also used by desktop applications.
+To fix this error, please install the [V5.2 (Gemini) SDK](https://developer.leapmotion.com/tracking-software-download). It says it's used for VR, but it is also used by desktop applications.
 
 #### Do hotkeys work even while VSeeFace is in the background?
 
 All configurable hotkeys also work while it is in the background or minimized, so the expression hotkeys, the audio lipsync toggle hotkey and the configurable position reset hotkey all work from any other program as well. On some systems it might be necessary to run VSeeFace as admin to get this to work properly for some reason.
+
+#### My VSeeFace randomly disappears?/It can no longer find the facetracker.exe file?
+
+This is usually caused by over-eager anti virus programs. The face tracking is written in Python and for some reason anti virus programs seem to dislike that and sometimes decide to delete VSeeFace or parts of it. There should be a way to whitelist the folder somehow to keep this from happening if you encounter this type of issue.
+
+#### The VSeeFace SDK doesn't work (no menu showing up, export failing with an error that a file wasn't found)?
+
+Check the "Console" tabs. There are probably some errors marked with a red symbol. You might have to scroll a bit to find it. These are usually some kind of compiler errors caused by other assets, which prevent Unity from compiling the VSeeFace SDK scripts. One way of resolving this is to remove the offending assets from the project. Another way is to make a new Unity project with only UniVRM 0.66 and the VSeeFace SDK in it.
+
+#### When exporting a VSFAvatar, this error appears? `Detected invalid components on avatar: "UniGLTF.RuntimeGltfInstance",`
+
+This error occurs with more recent versions of UniVRM. Currently [UniVRM 0.66](https://github.com/vrm-c/UniVRM/releases/tag/v0.66.0) is supported. When installing a different version of UniVRM, make sure to first completely remove all folders of the version already in the project.
 
 #### <a name="gpuscheduling"></a>Can disabling hardware-accelerated GPU scheduling help fix performance issues?
 
