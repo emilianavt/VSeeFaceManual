@@ -352,6 +352,14 @@ It seems that the regular send key command doesn't work, but adding a delay to p
     sleep, 40 ; lower sleep time can cause issues on rapid repeated inputs
     SendInput, {LCtrl up}{F19 Up}
 
+#### My face looks different in VSeeFace than in other programs (e.g. one eye is closed, the mouth is always open, ...)?
+
+Your model might have a misconfigured "Neutral" expression, which VSeeFace applies by default. Most other programs do not apply the "Neutral" expression, so the issue would not show up in them.
+
+#### I'm using the new stable version of VRoid (1.0) and VSeeFace is not showing the "Neutral" expression I configured?
+
+VRoid 1.0 lets you configure a "Neutral" expression, but it doesn't actually export it, so there is nothing for it to apply. You can configure it in Unity instead, as described in [this video](https://www.youtube.com/watch?v=ECZXlzlIcKU).
+
 #### I still have questions or feedback, where should I take it?
 
 If you have any issues, questions or feedback, please come to the `#vseeface` channel of @[Virtual_Deat](https://twitter.com/Virtual_Deat)'s [discord server](https://discord.gg/BjBgk7k).
