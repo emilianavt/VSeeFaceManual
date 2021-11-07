@@ -18,7 +18,7 @@ Please note that Live2D models are not supported. For those, please check out VT
 
 **To update VSeeFace, just delete the old folder or overwrite it when unpacking the new version.**
 
-<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36o/VSeeFace-v1.13.36o.zip" class="download">Download<br>v1.13.36o</a>
+<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36p/VSeeFace-v1.13.36p.zip" class="download">Download<br>v1.13.36p</a>
 
 <b>If you use a Leap Motion, update your Leap Motion software to <a href="https://developer.leapmotion.com/tracking-software-download">V5.2</a>!</b>
 
@@ -30,7 +30,7 @@ The latest release notes can be found <a href="https://gist.github.com/emilianav
 
 The reason it is currently only released in this way, is to make sure that everybody who tries it out has an easy channel to give me feedback.
 
-<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。iFacialMocap/FaceMotion3Dによるパーフェクトシンクも対応です。VMCプロトコルも対応です（[Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077)、[iFacialMocap2VMC](http://suvidriel.com/)）。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36o/VSeeFace-v1.13.36o.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
+<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。iFacialMocap/FaceMotion3Dによるパーフェクトシンクも対応です。VMCプロトコルも対応です（[Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077)、[iFacialMocap2VMC](http://suvidriel.com/)）。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.36p/VSeeFace-v1.13.36p.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
 
 <span lang="ja">VRM以外UnityのAssetBundle形式のVSFAvatarも使えます。SDKは<a href="https://github.com/emilianavt/VSeeFaceSDK/releases/latest">こちら</a>。VSFAvatar形式のモデルでカスタムシェーダーやDynamic Bonesやコンストレイントなどを使用が出来ます。 </span>
 
@@ -76,7 +76,7 @@ Starting with VSeeFace v1.13.36, a new Unity asset bundle and VRM based avatar f
 
 A README file with various important information is included in the SDK, but you can also read it [here](https://github.com/emilianavt/VSeeFaceSDK/blob/master/README.md).
 
-SDK download: [v1.13.36l](https://github.com/emilianavt/VSeeFaceSDK/releases/download/v1.13.36l/VSF_SDK_v1.13.36l.unitypackage) ([release archive](https://github.com/emilianavt/VSeeFaceSDK/releases))
+SDK download: [v1.13.36p](https://github.com/emilianavt/VSeeFaceSDK/releases/download/v1.13.36p/VSF_SDK_v1.13.36p.unitypackage) ([release archive](https://github.com/emilianavt/VSeeFaceSDK/releases))
 
 Make sure to set the Unity project to [linear color space](https://docs.unity3d.com/Manual/LinearRendering-LinearOrGammaWorkflow.html).
 
