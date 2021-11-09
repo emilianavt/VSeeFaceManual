@@ -258,6 +258,10 @@ Make sure to set "Blendshape Normals" to "None" on the FBX when you import it in
 
 You can add two custom VRM blend shape clips called "Brows up" and "Brows down" and they will be used for the eyebrow tracking. You can also add them on VRoid and Cecil Henshin models to customize how the eyebrow tracking looks. Also refer to the [special blendshapes](#special-blendshapes) section.
 
+#### When will VSeeFace support webcam based hand tracking (through MediaPipe or KalidoKit)?
+
+Probably not anytime soon. In my experience, the current webcam based hand tracking don't work well enough to warrant spending the time to integrate them. I have written more about this [here](https://twitter.com/emiliana_vt/status/1458137048989061120).
+
 #### I want to run VSeeFace on another PC and use a capture card to capture it, is that possible?
 
 I would recommend running VSeeFace on the PC that does the capturing, so it can be captured with proper transparency. The actual face tracking could be offloaded using the [network tracking](#network-tracking) functionality to reduce CPU usage. If this is really not an option, please refer to the [release notes](https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae) of v1.13.34o. The `settings.ini` can be found as described [here](https://www.vseeface.icu/#settings-and-log-file-location).
