@@ -783,6 +783,8 @@ In one case, Streamlabs OBS could only capture VSeeFace when both Streamlabs OBS
 
 Another workaround is to use the [virtual camera](#virtual-camera) with a fully transparent background image and an ARGB video capture source, as described above.
 
+It has also been reported that tools that limit the frame rates of games (e.g. Rivatuner) can cause conflicts with OBS, which then makes it unable to capture VSeeFace.
+
 #### Settings and log file location
 
 The VSeeFace settings are not stored within the VSeeFace folder, so you can easily delete it or overwrite it when a new version comes around. If you wish to access the settings file or any of the log files produced by VSeeFace, starting with version 1.13.32g, you can click the `Show log and settings folder` button at the bottom of the `General settings`. Otherwise, you can find them as follows:
