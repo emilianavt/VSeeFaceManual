@@ -108,6 +108,7 @@ There are a lot of tutorial videos out there. This section lists a few to help y
 * [Hand Tracking / Leap Motion Controller VSeeFace Tutorial](https://www.youtube.com/watch?v=R2o7R3FCEio) @ AMIRITE GAMING
 * [VTuber Twitch Expression & Animation Integration](https://www.youtube.com/watch?v=EV6Xesa8jPA) @ Fofamit
 * [VSFAvatar tutorials](https://www.youtube.com/watch?v=drOmco8yNHc&list=PLD0oHCcDlFyLzQKwJuw5ptxTWn4sgwvXP) @ Suvidriel
+* [How to pose your model with Unity and the VMC protocol receiver](https://youtu.be/HPTUy4y07M0) @ NiniNeen
 
 ### VRM model tutorials
 
