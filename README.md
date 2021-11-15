@@ -778,13 +778,15 @@ In one case, having a microphone with a 192kHz sample rate installed on the syst
 
 #### Game capture in OBS is slow or not working
 
-This is usually caused by laptops where OBS runs on the integrated graphics chip, while VSeeFace runs on a separate discrete one. Enabling the `SLI/Crossfire Capture Mode` option may enable it to work, but is usually slow. Further information can be found [here](https://obsproject.com/forum/threads/laptop-black-screen-when-capturing-read-here-first.5965/).
+Recently some issues have been reported with OBS versions after 27. Downgrading to [OBS 26.1.1](https://github.com/obsproject/obs-studio/releases/tag/26.1.1) or similar older versions may help in this case.
+
+It has also been reported that tools that limit the frame rates of games (e.g. Rivatuner) can cause conflicts with OBS, which then makes it unable to capture VSeeFace.
+
+Otherwise, this is usually caused by laptops where OBS runs on the integrated graphics chip, while VSeeFace runs on a separate discrete one. Enabling the `SLI/Crossfire Capture Mode` option may enable it to work, but is usually slow. Further information can be found [here](https://obsproject.com/forum/threads/laptop-black-screen-when-capturing-read-here-first.5965/).
 
 In one case, Streamlabs OBS could only capture VSeeFace when both Streamlabs OBS and VSeeFace where running with admin privileges, which is very odd and should not usually happen, but if you can't get the game capture to work, you could give it a try.
 
 Another workaround is to use the [virtual camera](#virtual-camera) with a fully transparent background image and an ARGB video capture source, as described above.
-
-It has also been reported that tools that limit the frame rates of games (e.g. Rivatuner) can cause conflicts with OBS, which then makes it unable to capture VSeeFace.
 
 #### Settings and log file location
 
