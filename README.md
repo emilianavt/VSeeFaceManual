@@ -108,6 +108,7 @@ There are a lot of tutorial videos out there. This section lists a few to help y
 * [Hand Tracking / Leap Motion Controller VSeeFace Tutorial](https://www.youtube.com/watch?v=R2o7R3FCEio) @ AMIRITE GAMING
 * [VTuber Twitch Expression & Animation Integration](https://www.youtube.com/watch?v=EV6Xesa8jPA) @ Fofamit
 * [VSFAvatar tutorials](https://www.youtube.com/watch?v=drOmco8yNHc&list=PLD0oHCcDlFyLzQKwJuw5ptxTWn4sgwvXP) @ Suvidriel
+* [How to pose your model with Unity and the VMC protocol receiver](https://youtu.be/HPTUy4y07M0) @ NiniNeen
 
 ### VRM model tutorials
 
@@ -258,6 +259,10 @@ Make sure to set "Blendshape Normals" to "None" on the FBX when you import it in
 
 You can add two custom VRM blend shape clips called "Brows up" and "Brows down" and they will be used for the eyebrow tracking. You can also add them on VRoid and Cecil Henshin models to customize how the eyebrow tracking looks. Also refer to the [special blendshapes](#special-blendshapes) section.
 
+#### When will VSeeFace support webcam based hand tracking (through MediaPipe or KalidoKit)?
+
+Probably not anytime soon. In my experience, the current webcam based hand tracking don't work well enough to warrant spending the time to integrate them. I have written more about this [here](https://twitter.com/emiliana_vt/status/1458137048989061120).
+
 #### I want to run VSeeFace on another PC and use a capture card to capture it, is that possible?
 
 I would recommend running VSeeFace on the PC that does the capturing, so it can be captured with proper transparency. The actual face tracking could be offloaded using the [network tracking](#network-tracking) functionality to reduce CPU usage. If this is really not an option, please refer to the [release notes](https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae) of v1.13.34o. The `settings.ini` can be found as described [here](https://www.vseeface.icu/#settings-and-log-file-location).
@@ -351,6 +356,14 @@ It seems that the regular send key command doesn't work, but adding a delay to p
     SendInput, {LCtrl down}{F19 down}
     sleep, 40 ; lower sleep time can cause issues on rapid repeated inputs
     SendInput, {LCtrl up}{F19 Up}
+
+#### My face looks different in VSeeFace than in other programs (e.g. one eye is closed, the mouth is always open, ...)?
+
+Your model might have a misconfigured "Neutral" expression, which VSeeFace applies by default. Most other programs do not apply the "Neutral" expression, so the issue would not show up in them.
+
+#### I'm using the new stable version of VRoid (1.0) and VSeeFace is not showing the "Neutral" expression I configured?
+
+VRoid 1.0 lets you configure a "Neutral" expression, but it doesn't actually export it, so there is nothing for it to apply. You can configure it in Unity instead, as described in [this video](https://www.youtube.com/watch?v=ECZXlzlIcKU).
 
 #### I still have questions or feedback, where should I take it?
 
@@ -549,7 +562,7 @@ A full Japanese guide can be found [here](https://hinzka.hatenablog.com/entry/20
 
 #### Perception Neuron tracking
 
-It is possible to stream Perception Neuron motion capture data into VSeeFace by using the VMC protocol. To do so, load [this](https://github.com/emilianavt/VSeeFacePreview/archive/neuron.zip) project into Unity 2019.4.16f1 and load the included scene in the `Scenes` folder. Create a new folder for your VRM avatar inside the `Avatars` folder and put in the VRM file. Unity should import it automatically. You can then delete the included Vita model from the the scene and add your own avatar by dragging it into the `Hierarchy` section on the left.
+It is possible to stream Perception Neuron motion capture data into VSeeFace by using the VMC protocol. To do so, load [this](https://github.com/emilianavt/VSeeFacePreview/archive/neuron.zip) project into Unity 2019.4.31f1 and load the included scene in the `Scenes` folder. Create a new folder for your VRM avatar inside the `Avatars` folder and put in the VRM file. Unity should import it automatically. You can then delete the included Vita model from the the scene and add your own avatar by dragging it into the `Hierarchy` section on the left.
 
 You can now start the Neuron software and set it up for transmitting BVH data on port 7001. Once this is done, press play in Unity to play the scene. If no red text appears, the avatar should have been set up correctly and should be receiving tracking data from the Neuron software, while also sending the tracking data over VMC protocol.
 
@@ -765,7 +778,11 @@ In one case, having a microphone with a 192kHz sample rate installed on the syst
 
 #### Game capture in OBS is slow or not working
 
-This is usually caused by laptops where OBS runs on the integrated graphics chip, while VSeeFace runs on a separate discrete one. Enabling the `SLI/Crossfire Capture Mode` option may enable it to work, but is usually slow. Further information can be found [here](https://obsproject.com/forum/threads/laptop-black-screen-when-capturing-read-here-first.5965/).
+Recently some issues have been reported with OBS versions after 27. Downgrading to [OBS 26.1.1](https://github.com/obsproject/obs-studio/releases/tag/26.1.1) or similar older versions may help in this case.
+
+It has also been reported that tools that limit the frame rates of games (e.g. Rivatuner) can cause conflicts with OBS, which then makes it unable to capture VSeeFace.
+
+Otherwise, this is usually caused by laptops where OBS runs on the integrated graphics chip, while VSeeFace runs on a separate discrete one. Enabling the `SLI/Crossfire Capture Mode` option may enable it to work, but is usually slow. Further information can be found [here](https://obsproject.com/forum/threads/laptop-black-screen-when-capturing-read-here-first.5965/).
 
 In one case, Streamlabs OBS could only capture VSeeFace when both Streamlabs OBS and VSeeFace where running with admin privileges, which is very odd and should not usually happen, but if you can't get the game capture to work, you could give it a try.
 
