@@ -859,6 +859,6 @@ If you appreciate Deat's contributions to VSeeFace, his amazing [Tracking World]
 
 ### Emiliana
 
-I don't really accept monetary donations, but getting [fanart](https://twitter.com/search?q=%23emivt_art&f=live), you can find a [reference](/assets/img/Ref.png) here, makes me really, really happy and getting vtuber gift subs on [Twitch](https://www.twitch.tv/Emiliana_vt) is nice too, because it both helps the community and I get some cute emotes to use as well.
+I don't really accept monetary donations, but getting [fanart](https://twitter.com/search?q=%23emivt_art&f=live), you can find a [reference](/assets/img/Ref.png) here, makes me really, really happy.
 
 <span style="width:100%;word-wrap:break-word; display:inline-block;color: #bbbbbb;">You really don't have to at all, but if you really, really insist and happen to have Monero (XMR), you can send something to: 8AWmb7CTB6sMhvW4FVq6zh1yo7LeJdtGmR7tyofkcHYhPstQGaKEDpv1W2u1wokFGr7Q9RtbWXBmJZh7gAy6ouDDVqDev2t</span>
