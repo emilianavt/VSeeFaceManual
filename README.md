@@ -20,9 +20,9 @@ Please note that Live2D models are not supported. For those, please check out VT
 
 <a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.37a/VSeeFace-v1.13.37a.zip" class="download">Download<br>v1.13.37a</a>
 
-**If you use a Leap Motion, update your Leap Motion software to [V5.2](https://developer.leapmotion.com/tracking-software-download)! Just make sure to uninstall any older versions of the Leap Motion software first.**
+**If you use a Leap Motion, update your Leap Motion software to [V5.2](https://developer.leapmotion.com/tracking-software-download)! Just make sure to uninstall any older versions of the Leap Motion software first. If necessary, V4 compatiblity can be enabled from VSeeFace's advanced settings.**
 
-<span lang="ja">**VSeeFace v1.13.36oからLeap Motionの手トラッキングに[Leap Motion Gemini V5.2](https://developer.leapmotion.com/tracking-software-download)が必要です。V5.2インストール前に旧バージョンをアンインストールしないと正常な動作が保証されません。**</span>
+<span lang="ja">**VSeeFace v1.13.36oからLeap Motionの手トラッキングに[Leap Motion Gemini V5.2](https://developer.leapmotion.com/tracking-software-download)が必要です。V5.2インストール前にLeap Motion Orionの旧バージョンをアンインストールしないと正常な動作が保証されません。必要に応じてVSeeFaceの設定からV4互換性を有効にすることができます。**</span>
 
 Old versions can be found in the release archive [here](https://github.com/emilianavt/VSeeFaceReleases/releases/). This website, the #vseeface-updates channel on Deat's discord and the release archive are the only official download locations for VSeeFace.
 
@@ -859,6 +859,6 @@ If you appreciate Deat's contributions to VSeeFace, his amazing [Tracking World]
 
 ### Emiliana
 
-I don't really accept monetary donations, but getting [fanart](https://twitter.com/search?q=%23emivt_art&f=live), you can find a [reference](/assets/img/Ref.png) here, makes me really, really happy and getting vtuber gift subs on [Twitch](https://www.twitch.tv/Emiliana_vt) is nice too, because it both helps the community and I get some cute emotes to use as well.
+I don't really accept monetary donations, but getting [fanart](https://twitter.com/search?q=%23emivt_art&f=live), you can find a [reference](/assets/img/Ref.png) here, makes me really, really happy.
 
 <span style="width:100%;word-wrap:break-word; display:inline-block;color: #bbbbbb;">You really don't have to at all, but if you really, really insist and happen to have Monero (XMR), you can send something to: 8AWmb7CTB6sMhvW4FVq6zh1yo7LeJdtGmR7tyofkcHYhPstQGaKEDpv1W2u1wokFGr7Q9RtbWXBmJZh7gAy6ouDDVqDev2t</span>
