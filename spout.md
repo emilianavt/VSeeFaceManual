@@ -6,7 +6,7 @@ This allows capturing the image without any bits of the user interface leaking i
 
 Do make use of this functionality, ensure that `Spout2 image capture support` is enabled in the `General settings`. This option is enabled by default.
 
-Then install the Spout2 OBS plugin and add a `Spout2 Capture` source to your scene. On the `Spout2 Capture`, make sure to set the `Composite mode` to `Default` to ensure that transparency works correctly. The source will automatically adapt to the resolution of your VSeeFace window.
+Then install the [Spout2 OBS plugin](https://github.com/Off-World-Live/obs-spout2-plugin) and add a `Spout2 Capture` source to your scene. On the `Spout2 Capture`, make sure to set the `Composite mode` to `Default` to ensure that transparency works correctly. The source will automatically adapt to the resolution of your VSeeFace window.
 
 If you have multiple instances of VSeeFace, they should show up as separate entries under `Spout Senders`.
 
