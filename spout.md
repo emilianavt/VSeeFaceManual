@@ -1,8 +1,6 @@
-# Spout2 capture support
+Starting with version v1.13.37b, it's possible to capture the image from VSeeFace in OBS by using the Spout2 interface. This allows capturing the image without any bits of the user interface leaking into the image while not incurring the resolution restrictions and performance impact of the virtual camera.
 
-Starting with version v1.13.37b, it's possible to capture the image from VSeeFace in OBS by using the Spout2 interface.
-
-This allows capturing the image without any bits of the user interface leaking into the image while not incurring the resolution restrictions and performance impact of the virtual camera.
+# Spout2 capture usage
 
 Do make use of this functionality, ensure that `Spout2 image capture support` is enabled in the `General settings`. This option is disabled by default.
 
