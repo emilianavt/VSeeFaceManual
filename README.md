@@ -444,7 +444,7 @@ VSeeFace has special support for certain custom VRM blend shape clips:
 * `Surprised` is supported by the simple and experimental expression detection features.
 * `Brows up` and `Brows down` will be used for eyebrow tracking if present on a model.
 * Starting with v1.13.34, if all of the following custom VRM blend shape clips are present on a model, they will be used for audio based lip sync in addition to the regular `A`, `I`, `U`, `E` and `O` blend shapes: `SIL`, `CH`, `DD`, `FF`, `KK`, `NN`, `PP`, `RR`, `SS`, `TH`<br>
-    You can refer to [this](https://developer.oculus.com/documentation/unity/audio-ovrlipsync-viseme-reference/) reference for how the mouth should look for each of these visemes. The existing VRM blend shape clips `A`, `I`, `U`, `E` and `O` are mapped to `aa`, `ih`, `ou`, `E` and `oh` respectively.<br>
+    You can refer to [this](https://developer.oculus.com/documentation/unity/audio-ovrlipsync-viseme-reference/) reference for how the mouth should look for each of these visemes. The existing VRM blend shape clips `A`, `I`, `U`, `E` and `O` are mapped to `aa`, `ih`, `ou`, `E` and `oh` respectively. Adding only a subset of the additional VRM blend shape clips is not supported.<br>
     I do not recommend using the Blender CATS plugin to automatically generate shapekeys for these blendshapes, because VSeeFace will already follow a similar approach in mixing the `A`, `I`, `U`, `E` and `O` shapes by itself, so setting up custom VRM blend shape clips would be unnecessary effort. In this case it is better to have only the standard `A`, `I`, `U`, `E` and `O` VRM blend shape clips on the model.
 
 ### Expression detection
