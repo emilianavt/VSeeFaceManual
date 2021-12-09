@@ -1,7 +1,3 @@
-layout: page
-title: spout2
-permalink: /spout2/
-
 # Spout2 capture support
 
 Starting with version v1.13.37b, it's possible to capture the image from VSeeFace in OBS by using the Spout2 interface.
