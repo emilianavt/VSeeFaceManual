@@ -2,7 +2,7 @@
 
 <a href="/assets/img/VSeeFaceScreenshot.png"><img src="/assets/img/VSeeFaceScreenshot500px.png" alt="VSeeFace screenshot"></a>
 
-<a href="#japanese-info">日本語</a>
+<a href="./#japanese-info">日本語</a>
 
 VSeeFace is a free, highly configurable face and hand tracking VRM and [VSFAvatar](#vsfavatar) avatar puppeteering program for virtual youtubers with a focus on robust tracking and high image quality. VSeeFace offers functionality similar to Luppet, 3tene, Wakaru and similar programs. VSeeFace runs on Windows 8 and above (64 bit only). [Perfect sync](https://hinzka.hatenablog.com/entry/2020/08/15/145040) is supported through iFacialMocap/FaceMotion3D. VSeeFace can send, receive and combine tracking data using the [VMC protocol](https://protocol.vmc.info/), which also allows support for tracking through [Virtual Motion Capture](https://vmc.info/), [Tracking World](http://deatrathias.net/TW/), [Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077) and more.
 
@@ -179,7 +179,7 @@ More often, the issue is caused by Windows allocating all of the GPU or CPU to t
 * In the case of multiple screens, set all to the same refresh rate.
 * See if any of this helps: [this](https://www.vseeface.icu/#gpuscheduling) or [this](https://www.vseeface.icu/#gpu)
 
-It can also help to reduce the tracking and rendering quality settings a bit if it's just your PC in general struggling to keep up. For more information on this, please check the <a href="#performance-tuning">performance tuning</a> section.
+It can also help to reduce the tracking and rendering quality settings a bit if it's just your PC in general struggling to keep up. For more information on this, please check the <a href="./#performance-tuning">performance tuning</a> section.
 
 #### I'm looking straight ahead, but my eyes are looking all the way in some direction?
 
