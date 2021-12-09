@@ -1,5 +1,5 @@
 layout: page
-title: "Spout2 capture support"
+title: spout2
 permalink: /spout2/
 
 # Spout2 capture support
