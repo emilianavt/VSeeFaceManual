@@ -251,6 +251,10 @@ If you have the fixed hips option enabled in the advanced option, try turning it
 
 First, make sure you are using the ※ button to hide the UI and use a game capture in OBS with `Allow transparency` ticked. Color or chroma key filters are not necessary. If the issue persists, try right clicking the game capture in OBS and select `Scale Filtering`, then `Bilinear`.
 
+##### My VSFAvatar has bright pixels around it even with the UI hidden
+
+Make sure to use a recent version of UniVRM (0.66). With VSFAvatar, the shader version from your project is included in the model file. Older versions of MToon had some issues with transparency, which are fixed in recent versions.
+
 #### <a name="blendshape-normals"></a>I converted my model to VRM format, but when I blink, my mouth moves or I activate an expressions, it looks weird and the shadows shift?
 
 Make sure to set "Blendshape Normals" to "None" on the FBX when you import it into Unity and before you export your VRM. That should prevent        this issue.
@@ -735,10 +739,6 @@ This is usually caused by the model not being in the correct pose when being fir
 * T pose with the arms straight to the sides
 * Palm faces downward, parallel to the ground
 * Thumb parallel to the ground 45 degrees between x and z axis
-
-##### <a name="outline"></a>VSFAvatar has bright pixels around it even with the UI hidden
-
-Make sure to use a recent version of UniVRM (0.66). With VSFAvatar, the shader version from your project is included in the model file. Older versions of MToon had some issues with transparency, which are fixed in recent versions.
 
 ##### My blendshape only works in a blend shape clip, not in an animation
 
