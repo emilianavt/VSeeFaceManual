@@ -251,7 +251,7 @@ If you have the fixed hips option enabled in the advanced option, try turning it
 
 First, make sure you are using the ※ button to hide the UI and use a game capture in OBS with `Allow transparency` ticked. Color or chroma key filters are not necessary. If the issue persists, try right clicking the game capture in OBS and select `Scale Filtering`, then `Bilinear`.
 
-##### My VSFAvatar has bright pixels around it even with the UI hidden
+#### My VSFAvatar has bright pixels around it even with the UI hidden?
 
 Make sure to use a recent version of UniVRM (0.66). With VSFAvatar, the shader version from your project is included in the model file. Older versions of MToon had some issues with transparency, which are fixed in recent versions.
 
