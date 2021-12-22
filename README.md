@@ -213,6 +213,10 @@ This is usually caused by over-eager anti virus programs. The face tracking is w
 
 Check the "Console" tabs. There are probably some errors marked with a red symbol. You might have to scroll a bit to find it. These are usually some kind of compiler errors caused by other assets, which prevent Unity from compiling the VSeeFace SDK scripts. One way of resolving this is to remove the offending assets from the project. Another way is to make a new Unity project with only UniVRM 0.66 and the VSeeFace SDK in it.
 
+####  <a name="avatar-hotkey"></a>Can I switch avatars with a hotkey?
+
+There is the "L" hotkey, which lets you directly load a model file. In general loading models is too slow to be useful for use through hotkeys. If you want to switch outfits, I recommend adding them all to one model. With VRM this can be done by changing making meshes transparent by changing the alpha value of its material through a material blendshape. For VSFAvatar, the objects can be toggled directly using Unity animations.
+
 #### When exporting a VSFAvatar, this error appears? `Detected invalid components on avatar: "UniGLTF.RuntimeGltfInstance",`
 
 This error occurs with more recent versions of UniVRM. Currently [UniVRM 0.66](https://github.com/vrm-c/UniVRM/releases/tag/v0.66.0) is supported. When installing a different version of UniVRM, make sure to first completely remove all folders of the version already in the project.
