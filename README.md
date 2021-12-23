@@ -247,6 +247,10 @@ This is most likely caused by not properly normalizing the model during the firs
 
 Note that re-exporting a VRM will not work to for properly normalizing the model. Instead the original model (usually FBX) has to be exported with the correct options set.
 
+#### <a name="hair-explosion"></a>I just exported my model from VRoid 1.0 and the hair explodes or goes crazy?
+
+The VRM spring bone colliders seem to be set up in an odd way for some exports. You can either import the model into Unity with UniVRM and adjust the colliders there (see [here](https://www.youtube.com/watch?v=tpl_mqU8i7U) for more details) or use [this](https://vear.booth.pm/items/3527074) application to adjust them.
+
 #### My model is twitching sometimes?
 
 If you have the fixed hips option enabled in the advanced option, try turning it off. If this helps, you can try the option to disable vertical head movement for a similar effect. If it doesn't help, try turning up the smoothing, make sure that your room is brightly lit and try different camera settings.
