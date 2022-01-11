@@ -9,3 +9,5 @@ Then install the [Spout2 OBS plugin](https://github.com/Off-World-Live/obs-spout
 If you have multiple instances of VSeeFace, they should show up as separate entries under `Spout Senders`.
 
 If the image appears flipped vertically, right click on your capture source, select `Transform` and then `Flip Vertical` to make it show up correctly.
+
+Please note that Spout2 might not work on certain GPUs (e.g. many integrated Intel graphics).
