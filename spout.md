@@ -2,11 +2,15 @@ Starting with version v1.13.37b, it's possible to capture the image from VSeeFac
 
 # Spout2 capture usage
 
-To make use of this functionality, ensure that `Spout2 image capture support` is enabled in the `General settings`. This option is disabled by default.
+<img src="/assets/img/Spout2.png" alt="VSeeFace screenshot">
 
-Then install the [Spout2 OBS plugin](https://github.com/Off-World-Live/obs-spout2-plugin/releases) and add a `Spout2 Capture` source to your scene. On the `Spout2 Capture`, make sure to set the `Composite mode` to `Default` to ensure that transparency works correctly. The source will automatically adapt to the resolution of your VSeeFace window.
+To make use of this functionality:
 
-If you have multiple instances of VSeeFace, they should show up as separate entries under `Spout Senders`.
+1) Ensure that `Spout2 image capture support` is enabled in the `General settings`. This option is disabled by default.
+2) Then install the [Spout2 OBS plugin](https://github.com/Off-World-Live/obs-spout2-plugin/releases).
+3) Add a `Spout2 Capture` source to your scene.
+4) On the `Spout2 Capture`, make sure to set the `Composite mode` to `Default` to ensure that transparency works correctly. The source will automatically adapt to the resolution of your VSeeFace window.
+5) If you have multiple instances of VSeeFace, they should show up as separate entries under `Spout Senders`. Select the one you want to capture.
 
 If the image appears flipped vertically, right click on your capture source, select `Transform` and then `Flip Vertical` to make it show up correctly.
 
