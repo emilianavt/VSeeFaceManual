@@ -14,7 +14,7 @@ Please note that Spout2 might not work on certain GPUs (e.g. many integrated Int
 
 # VSeeFace SDK usage
 
-The VSeeFace SDK allows using the SpoutSender and SpoutReceiver components from [Spout4Unity](https://github.com/sloopidoopi/Spout4Unity/archive/5cb448f30b807aa08d98269fef04d59547c201bd.zip) to import and export texture data with low overhead.
+The VSeeFace SDK allows using the SpoutSender and SpoutReceiver components from [Spout4Unity](https://github.com/sloopidoopi/Spout4Unity/tree/5cb448f30b807aa08d98269fef04d59547c201bd) ([download](https://github.com/sloopidoopi/Spout4Unity/archive/5cb448f30b807aa08d98269fef04d59547c201bd.zip)) to import and export texture data with low overhead.
 
 Adding a SpoutReceiver could for example be used to export a desktop capture from OBS to VSeeFace and display it on a screen. This is most likely more efficient than using uWindowCapture through the SDK. To export a capture from OBS, add a Spout filter to it, set the name under which you want to send the texture and press the button to apply it. On the SpoutReceiver component, enter the name set this way to receive the texture data.
 
