@@ -34,7 +34,7 @@ The reason it is currently only released in this way, is to make sure that every
 
 <span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。iFacialMocap/FaceMotion3Dによるパーフェクトシンクも対応です。VMCプロトコルも対応です（[Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077)、[iFacialMocap2VMC](http://suvidriel.com/)）。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.37b/VSeeFace-v1.13.37b.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
 
-<span lang="ja">VRM以外UnityのAssetBundle形式のVSFAvatarも使えます。SDKは<a href="https://github.com/emilianavt/VSeeFaceSDK/releases/latest">こちら</a>。VSFAvatar形式のモデルでカスタムシェーダーやDynamic Bonesやコンストレイントなどを使用が出来ます。 </span>
+<span lang="ja">VRM以外UnityのAssetBundle形式の[VSFAvatar](https://scrapbox.io/riel-tech/VSFAvatar)も使えます。SDKは<a href="https://github.com/emilianavt/VSeeFaceSDK/releases/latest">こちら</a>。VSFAvatar形式のモデルでカスタムシェーダーやDynamic Bonesやコンストレイントなどを使用が出来ます。 </span>
 
 <span lang="ja">@[Virtual_Deat](https://twitter.com/Virtual_Deat)さんの[ディスコードサーバー](https://discord.gg/BjBgk7k)に入るとルールズチャンネルで👌にクリックでルールを同意して他のチャンネルも表示されます。#vseefaceと日本語チャンネルもあります。</span>
 
@@ -79,6 +79,8 @@ Starting with VSeeFace v1.13.36, a new Unity asset bundle and VRM based avatar f
 A README file with various important information is included in the SDK, but you can also read it [here](https://github.com/emilianavt/VSeeFaceSDK/blob/master/README.md).
 
 SDK download: [v1.13.37b](https://github.com/emilianavt/VSeeFaceSDK/releases/download/v1.13.37b/VSF_SDK_v1.13.37b.unitypackage) ([release archive](https://github.com/emilianavt/VSeeFaceSDK/releases))
+
+<span lang="ja">日本語の情報が@narou_rielさんの[メモサイト](https://scrapbox.io/riel-tech/VSFAvatar)にはあります。</span>
 
 Make sure to set the Unity project to [linear color space](https://docs.unity3d.com/Manual/LinearRendering-LinearOrGammaWorkflow.html).
 
