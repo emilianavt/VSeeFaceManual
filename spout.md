@@ -1,6 +1,6 @@
 Starting with version v1.13.37b, it's possible to capture the image from VSeeFace in OBS by using the [Spout2](https://spout.zeal.co/) interface. This allows capturing the image without any bits of the user interface leaking into the image while not incurring the resolution restrictions and performance impact of the virtual camera.
 
-VSeeFace v1.13.37bからSpout2はメニューが描画される前に、VSeeFaceカメラのレンダーテクスチャをGPU上で共有します。OBSはプラグインでそのテクスチャを直接読み取ることが出来ます。メニューを写すことなくて自由に設定をいじられる軽いキャプチャー方法です。
+<span lang="ja">VSeeFace v1.13.37bからSpout2はメニューが描画される前に、VSeeFaceカメラのレンダーテクスチャをGPU上で共有します。OBSはプラグインでそのテクスチャを直接読み取ることが出来ます。メニューを写すことなくて自由に設定をいじられる軽いキャプチャー方法です。もっと詳しい情報が@narou_rielさんの[メモサイト](https://scrapbox.io/riel-tech/VSeeFace%E3%81%A7Spout2%E3%82%92%E4%BD%BF%E3%81%86)にはあります。</span>
 
 # Spout2 capture usage
 
