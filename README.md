@@ -176,6 +176,7 @@ More often, the issue is caused by Windows allocating all of the GPU or CPU to t
 * Make sure game mode is not enabled in Windows.
 * Make sure no "game booster" is enabled in your anti virus software (applies to some versions of Norton, McAfee, BullGuard and maybe others) or graphics driver.
 * Try setting VSeeFace and the facetracker.exe to realtime priority in the details tab of the task manager.
+* Try using the [Spout2](/spout) capture option instead of a game capture
 * Run VSeeFace and OBS as admin.
 * Make sure VSeeFace has a framerate capped at 60fps.
 * Turn on VSync for the game.
