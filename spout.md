@@ -19,6 +19,10 @@ If the image appears flipped vertically, right click on your capture source, sel
 
 Please note that Spout2 might not work on certain GPUs (e.g. many integrated Intel graphics).
 
+## PrprLive plugin conflict
+
+[Reportedly](https://github.com/emilianavt/VSeeFaceManual/issues/1) the α-Channel OBS plugin provided by PrprLive can cause a conflict with the Spout2 OBS plugin. As there is no uninstallation option, if you have this plugin installed, you may have to manually remove `prpr-library.dll` from the OBS plugins folder, before the `Spout2 Capture` shows up in OBS. You should also be able to capture PrprLive with the Spout2 plugin after this.
+
 # VSeeFace SDK usage
 
 The VSeeFace SDK allows using the SpoutSender and SpoutReceiver components from [Spout4Unity](https://github.com/sloopidoopi/Spout4Unity/tree/5cb448f30b807aa08d98269fef04d59547c201bd) ([download](https://github.com/sloopidoopi/Spout4Unity/archive/5cb448f30b807aa08d98269fef04d59547c201bd.zip)) to import and export texture data with low overhead.
