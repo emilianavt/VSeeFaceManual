@@ -21,7 +21,7 @@ Please note that Spout2 might not work on certain GPUs (e.g. many integrated Int
 
 ## PrprLive plugin conflict
 
-[Reportedly](https://github.com/emilianavt/VSeeFaceManual/issues/1) the α-Channel OBS plugin provided by PrprLive can cause a conflict with the Spout2 OBS plugin. As there is no uninstallation option, if you have this plugin installed, you may have to manually remove `prpr-library.dll` from the OBS plugins folder, before the `Spout2 Capture` shows up in OBS. You should also be able to capture PrprLive with the Spout2 plugin after this.
+Reportedly the α-Channel OBS plugin provided by PrprLive can cause a conflict with the Spout2 OBS plugin. As there is no uninstallation option, if you have this plugin installed, you may have to manually remove `prpr-library.dll` from the OBS plugins folder, before the `Spout2 Capture` shows up in OBS. You should also be able to capture PrprLive with the Spout2 plugin after this.
 
 # VSeeFace SDK usage
 
