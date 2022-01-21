@@ -200,6 +200,18 @@ Make sure your eyebrow offset slider is centered. It can be used to overall shif
 
 First, hold the alt key and right click to zoom out until you can see the Leap Motion model in the scene. Then use the sliders to adjust the model's position to match its location relative to yourself in the real world. You can refer to [this](https://twitter.com/emiliana_vt/status/1313431152045293568) video to see how the sliders work.
 
+#### <a name="privacy"></a>What about privacy? Is any of my data or my face transmitted online? Can my face leak into the VSeeFace window?
+
+I took a lot of care to minimize possible privacy issues. The face tracking is done in a separate process, so the camera image can never show up in the actual VSeeFace window, because it only receives the tracking points (you can see what those look like by clicking the button at the bottom of the General settings; they are very abstract). If you are extremely worried about having a webcam attached to the PC running VSeeFace, you can use the [network tracking](/#network-tracking) or [phone tracking](https://www.vseeface.icu/#iphone-face-tracking) functionalities. No tracking or camera data is ever transmitted anywhere online and all tracking is performed on the PC running the face tracking process.
+
+When starting, VSeeFace downloads [one file](https://www.vseeface.icu/current.txt) from the VSeeFace website to check if a new version is released and display an update notification message in the upper left corner. There are no automatic updates. It shouldn't establish any other online connections.
+
+Depending on certain settings, VSeeFace can receive tracking data from other applications, either locally over network, but this is not a privacy issue. If the VMC protocol sender is enabled, VSeeFace will send blendshape and bone animation data to the specified IP address and port.
+
+As for data stored on the local PC, there are a few logfiles to help with debugging, that will be overwritten after restarting VSeeFace twice, and the configuration files. This data can be found as described [here](/#settings-and-log-file-location). Screenshots made with the `S` or `Shift+S` hotkeys will be stored in a folder called VSeeFace inside your profile's pictures folder.
+
+You can also check out [this article](https://mauthedoog.medium.com/21-privacy-tips-vtubers-need-to-know-ce93082cd166) about how to make sure to keep your private information private as a streamer and VTuber. It's not complete, but it's a good introduction with the most important points.
+
 #### I moved my Leap Motion from the desk to a neck holder, changed the position to chest and now my arms are in the sky?
 
 Changing the position also changes the height of the Leap Motion in VSeeFace, so just pull the Leap Motion position's height slider way down. Zooming out may also help.
