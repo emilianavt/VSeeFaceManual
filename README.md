@@ -204,13 +204,13 @@ First, hold the alt key and right click to zoom out until you can see the Leap M
 
 I took a lot of care to minimize possible privacy issues. The face tracking is done in a separate process, so the camera image can never show up in the actual VSeeFace window, because it only receives the tracking points (you can see what those look like by clicking the button at the bottom of the General settings; they are very abstract). If you are extremely worried about having a webcam attached to the PC running VSeeFace, you can use the [network tracking](/#network-tracking) or [phone tracking](https://www.vseeface.icu/#iphone-face-tracking) functionalities. No tracking or camera data is ever transmitted anywhere online and all tracking is performed on the PC running the face tracking process.
 
-The onnxruntime library used in the face tracking processes by default includes telemetry that is sent to Microsoft, but I have recompiled it to remove this telemetry functionality, so nothing should be sent out from it. Even if it was enabled, it wouldn't send any personal information, just generic usage data.
+The onnxruntime library used in the face tracking process by default includes telemetry that is sent to Microsoft, but I have recompiled it to remove this telemetry functionality, so nothing should be sent out from it. Even if it was enabled, it wouldn't send any personal information, just generic usage data.
 
 When starting, VSeeFace downloads [one file](https://www.vseeface.icu/current.txt) from the VSeeFace website to check if a new version is released and display an update notification message in the upper left corner. There are no automatic updates. It shouldn't establish any other online connections.
 
 Depending on certain settings, VSeeFace can receive tracking data from other applications, either locally over network, but this is not a privacy issue. If the VMC protocol sender is enabled, VSeeFace will send blendshape and bone animation data to the specified IP address and port.
 
-As for data stored on the local PC, there are a few logfiles to help with debugging, that will be overwritten after restarting VSeeFace twice, and the configuration files. This data can be found as described [here](/#settings-and-log-file-location). Screenshots made with the `S` or `Shift+S` hotkeys will be stored in a folder called VSeeFace inside your profile's pictures folder.
+As for data stored on the local PC, there are a few log files to help with debugging, that will be overwritten after restarting VSeeFace twice, and the configuration files. This data can be found as described [here](/#settings-and-log-file-location). Screenshots made with the `S` or `Shift+S` hotkeys will be stored in a folder called `VSeeFace` inside your profile's pictures folder.
 
 The VSeeFace website does use Google Analytics, because I'm kind of curious about who comes here to download VSeeFace, but the program itself doesn't include any analytics.
 
