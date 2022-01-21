@@ -214,7 +214,7 @@ As for data stored on the local PC, there are a few logfiles to help with debugg
 
 The VSeeFace website does use Google Analytics, because I'm kind of curious about who comes here to download VSeeFace, but the program itself doesn't include any analytics.
 
-You can also check out [this article](https://mauthedoog.medium.com/21-privacy-tips-vtubers-need-to-know-ce93082cd166) about how to make sure to keep your private information private as a streamer and VTuber. It's not complete, but it's a good introduction with the most important points.
+You can also check out [this article](https://mauthedoog.medium.com/21-privacy-tips-vtubers-need-to-know-ce93082cd166) about how to keep your private information private as a streamer and VTuber. It's not complete, but it's a good introduction with the most important points.
 
 #### I moved my Leap Motion from the desk to a neck holder, changed the position to chest and now my arms are in the sky?
 
