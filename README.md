@@ -18,7 +18,7 @@ Please note that Live2D models are not supported. For those, please check out VT
 
 **To update VSeeFace, just delete the old folder or overwrite it when unpacking the new version.**
 
-<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.37b/VSeeFace-v1.13.37b.zip" class="download">Download<br>v1.13.37b</a>
+<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.37c/VSeeFace-v1.13.37c.zip" class="download">Download<br>v1.13.37c</a>
 
 **If you use a Leap Motion, update your Leap Motion software to [V5.2](https://developer.leapmotion.com/tracking-software-download)! Just make sure to uninstall any older versions of the Leap Motion software first. If necessary, V4 compatiblity can be enabled from VSeeFace's advanced settings.**
 
@@ -32,7 +32,7 @@ The latest release notes can be found <a href="https://gist.github.com/emilianav
 
 The reason it is currently only released in this way, is to make sure that everybody who tries it out has an easy channel to give me feedback.
 
-<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。iFacialMocap/FaceMotion3Dによるパーフェクトシンクも対応です。VMCプロトコルも対応です（[Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077)、[iFacialMocap2VMC](http://suvidriel.com/)）。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.37b/VSeeFace-v1.13.37b.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
+<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。iFacialMocap/FaceMotion3Dによるパーフェクトシンクも対応です。VMCプロトコルも対応です（[Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077)、[iFacialMocap2VMC](http://suvidriel.com/)）。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.37c/VSeeFace-v1.13.37c.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
 
 <span lang="ja">VRM以外UnityのAssetBundle形式の[VSFAvatar](https://scrapbox.io/riel-tech/VSFAvatar)も使えます。SDKは<a href="https://github.com/emilianavt/VSeeFaceSDK/releases/latest">こちら</a>。VSFAvatar形式のモデルでカスタムシェーダーやDynamic Bonesやコンストレイントなどを使用が出来ます。 </span>
 
@@ -172,6 +172,11 @@ If humanoid eye bones are assigned in Unity, VSeeFace will directly use these fo
 In rare cases it can be a tracking issue. If your screen is your main light source and the game is rather dark, there might not be enough light for the camera and the face tracking might freeze.
 
 More often, the issue is caused by Windows allocating all of the GPU or CPU to the game, leaving nothing for VSeeFace. Here are some things you can try to improve the situation:
+
+* Make sure you are using VSeeFace v1.13.37c or newer and run it as administrator.
+* Ensure that `Disable increased background priority` in the `General settings` is not ticked, so that the increased background priority function is enabled. This is the case by default.
+
+If that doesn't help, you can try the following things:
 
 * Make sure game mode is not enabled in Windows.
 * Make sure no "game booster" is enabled in your anti virus software (applies to some versions of Norton, McAfee, BullGuard and maybe others) or graphics driver.
