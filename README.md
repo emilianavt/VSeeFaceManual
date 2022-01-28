@@ -173,7 +173,7 @@ In rare cases it can be a tracking issue. If your screen is your main light sour
 
 More often, the issue is caused by Windows allocating all of the GPU or CPU to the game, leaving nothing for VSeeFace. Here are some things you can try to improve the situation:
 
-* Make sure you are using VSeeFace v1.13.37c or newer and run it as administrator.
+* Make sure you are using VSeeFace v1.13.37c or newer and run it as administrator. If you use a game capture instead of [Spout2](/spout) to capture VSeeFace, you might have to run OBS as administrator as well for the game capture to work properly.
 * Ensure that `Disable increased background priority` in the `General settings` is not ticked, so that the increased background priority function is enabled. This is the case by default.
 
 If that doesn't help, you can try the following things:
@@ -184,11 +184,13 @@ If that doesn't help, you can try the following things:
 * Try using the [Spout2](/spout) capture option instead of a game capture
 * Run VSeeFace and OBS as admin.
 * Make sure VSeeFace has a framerate capped at 60fps.
+* Turn off Steam overlay for the game.
 * Turn on VSync for the game.
 * Try setting the game to borderless/windowed fullscreen.
 * Set a framerate cap for the game as well and lower graphics settings.
 * Try setting the same frame rate for both VSeeFace and the game.
 * In the case of multiple screens, set all to the same refresh rate.
+* Turn off NVIDIA G-Sync.
 * See if any of this helps: [this](https://www.vseeface.icu/#gpuscheduling) or [this](https://www.vseeface.icu/#gpu)
 
 It can also help to reduce the tracking and rendering quality settings a bit if it's just your PC in general struggling to keep up. For more information on this, please check the <a href="./#performance-tuning">performance tuning</a> section.
