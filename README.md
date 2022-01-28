@@ -174,7 +174,7 @@ In rare cases it can be a tracking issue. If your screen is your main light sour
 More often, the issue is caused by Windows allocating all of the GPU or CPU to the game, leaving nothing for VSeeFace. Here are some things you can try to improve the situation:
 
 * Make sure you are using VSeeFace v1.13.37c or newer and run it as administrator. If you use a game capture instead of [Spout2](/spout) to capture VSeeFace, you might have to run OBS as administrator as well for the game capture to work properly.
-* Ensure that `Disable increased background priority` in the `General settings` is not ticked, so that the increased background priority function is enabled. This is the case by default.
+* Ensure that "Disable increased background priority" in the "General settings" is *not ticked*, so that the increased background priority function is enabled. This is the case by default.
 
 If that doesn't help, you can try the following things:
 
