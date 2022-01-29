@@ -820,7 +820,9 @@ In one case, having a microphone with a 192kHz sample rate installed on the syst
 
 #### Game capture in OBS is slow or not working
 
-First, if you updated VSeeFace and find that your game capture stopped working, check that the window title is set correctly in its properties. The version number of VSeeFace is part of its title bar, so after updating, you might also have to update the settings on your game capture. If you use [Spout2](/spout) instead, this should not be necessary.
+If you are running VSeeFace as administrator, you might also have to run OBS as administrator for the game capture to work.
+
+If you updated VSeeFace and find that your game capture stopped working, check that the window title is set correctly in its properties. The version number of VSeeFace is part of its title bar, so after updating, you might also have to update the settings on your game capture. If you use [Spout2](/spout) instead, this should not be necessary.
 
 Recently some issues have been reported with OBS versions after 27. Downgrading to [OBS 26.1.1](https://github.com/obsproject/obs-studio/releases/tag/26.1.1) or similar older versions may help in this case. If you encounter issues using game captures, you can also try using the new [Spout2 capture method](/spout), which will also keep menus from appearing on your capture.
 
