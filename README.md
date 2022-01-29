@@ -431,9 +431,9 @@ Should you encounter strange issues with with the virtual camera and have previo
 
 #### Transparent virtual camera
 
-If supported by the capture program, the virtual camera can be used to output video with alpha transparency. To make use of this, a fully transparent PNG needs to be loaded as the background image. Starting with version 1.13.25, such an image can be found in `VSeeFace_Data\StreamingAssets`. Partially transparent backgrounds are supported as well. Please note that using (partially) transparent background images with a capture program that do not support RGBA webcams can lead to color errors. OBS and Streamlabs OBS support ARGB video camera capture, but require some additional setup. Apparently, the Twitch video capturing app supports it by default.
+If supported by the capture program, the virtual camera can be used to output video with alpha transparency. To make use of this, a fully transparent PNG needs to be loaded as the background image. Starting with version 1.13.25, such an image can be found in `VSeeFace_Data\StreamingAssets`. Partially transparent backgrounds are supported as well. Please note that using (partially) transparent background images with a capture program that do not support RGBA webcams can lead to color errors. OBS supports ARGB video camera capture, but require some additional setup. Apparently, the Twitch video capturing app supports it by default.
 
-To setup OBS or Streamlabs OBS to capture video from the virtual camera with transparency, please follow [these](assets/img/ARGBCamera.png) settings. The important settings are:
+To setup OBS to capture video from the virtual camera with transparency, please follow [these](assets/img/ARGBCamera.png) settings. The important settings are:
 
 * Resolution/FPS: Custom
 * Resolution: 1280x720
@@ -718,7 +718,7 @@ If an error message about the tracker process appears, it may be necessary to re
 
 Should the tracking still not work, one possible workaround is to capture the actual webcam using OBS and then re-export it as a camera using OBS-VirtualCam.
 
-If tracking randomly stops and you are using Streamlabs OBS, you could see if it works properly with regular OBS. Another issue could be that Windows is putting the webcam's USB port to sleep. You can disable this behaviour as follow:
+If tracking randomly stops and you are using Streamlabs, you could see if it works properly with regular OBS. Another issue could be that Windows is putting the webcam's USB port to sleep. You can disable this behaviour as follow:
 
 1. Open the Windows `Control Panel`
 2. Press Ctrl+F, search for `Device Manager` and open it
@@ -828,8 +828,6 @@ It has also been reported that tools that limit the frame rates of games (e.g. R
 
 Otherwise, this is usually caused by laptops where OBS runs on the integrated graphics chip, while VSeeFace runs on a separate discrete one. Enabling the `SLI/Crossfire Capture Mode` option may enable it to work, but is usually slow. Further information can be found [here](https://obsproject.com/forum/threads/laptop-black-screen-when-capturing-read-here-first.5965/).
 
-In one case, Streamlabs OBS could only capture VSeeFace when both Streamlabs OBS and VSeeFace where running with admin privileges, which is very odd and should not usually happen, but if you can't get the game capture to work, you could give it a try.
-
 Another workaround is to use the [virtual camera](#virtual-camera) with a fully transparent background image and an ARGB video capture source, as described above.
 
 #### Settings and log file location
@@ -899,7 +897,7 @@ A surprising number of people have asked if it's possible to support the develop
 
 ### Deat
 
-If you appreciate Deat's contributions to VSeeFace, his amazing [Tracking World](http://deatrathias.net/TW/) or just him being him overall, you can buy him a [Ko-fi](https://ko-fi.com/deatrathias), tip him through [Streamlabs](https://streamlabs.com/virtual_deat/tip) or subscribe to his [Twitch](https://www.twitch.tv/virtual_deat) channel.
+If you appreciate Deat's contributions to VSeeFace, his amazing [Tracking World](http://deatrathias.net/TW/) or just him being him overall, you can buy him a [Ko-fi](https://ko-fi.com/deatrathias) or subscribe to his [Twitch](https://www.twitch.tv/virtual_deat) channel.
 
 ### Emiliana
 
