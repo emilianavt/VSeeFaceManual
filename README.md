@@ -20,9 +20,9 @@ Please note that Live2D models are not supported. For those, please check out VT
 
 <a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.37c/VSeeFace-v1.13.37c.zip" class="download">Download<br>v1.13.37c</a>
 
-**If you use a Leap Motion, update your Leap Motion software to [V5.2](https://developer.leapmotion.com/tracking-software-download)! Just make sure to uninstall any older versions of the Leap Motion software first. If necessary, V4 compatiblity can be enabled from VSeeFace's advanced settings.**
+**If you use a Leap Motion, update your Leap Motion software to [V5.2 or newer](https://developer.leapmotion.com/tracking-software-download)! Just make sure to uninstall any older versions of the Leap Motion software first. If necessary, V4 compatiblity can be enabled from VSeeFace's advanced settings.**
 
-<span lang="ja">**VSeeFace v1.13.36oからLeap Motionの手トラッキングに[Leap Motion Gemini V5.2](https://developer.leapmotion.com/tracking-software-download)が必要です。V5.2インストール前にLeap Motion Orionの旧バージョンをアンインストールしないと正常な動作が保証されません。必要に応じてVSeeFaceの設定からV4互換性を有効にすることができます。**</span>
+<span lang="ja">**VSeeFace v1.13.36oからLeap Motionの手トラッキングに[Leap Motion Gemini V5.2以上](https://developer.leapmotion.com/tracking-software-download)が必要です。V5.2インストール前にLeap Motion Orionの旧バージョンをアンインストールしないと正常な動作が保証されません。必要に応じてVSeeFaceの設定からV4互換性を有効にすることができます。**</span>
 
 Old versions can be found in the release archive [here](https://github.com/emilianavt/VSeeFaceReleases/releases/). This website, the #vseeface-updates channel on Deat's discord and the release archive are the only official download locations for VSeeFace.
 
