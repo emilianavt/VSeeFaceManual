@@ -124,6 +124,7 @@ There are a lot of tutorial videos out there. This section lists a few to help y
 大福らなチャンネル</span>
 * <span lang="ja">[【Webカメラで動かす】3D VTuber 向け Unity 要らずで簡単！全身+顔+指が動くフルトラッキング環境解説【VSeeFace+TDPT+waidayo】](https://www.youtube.com/watch?v=SKhRsChcGGk) @ ひのちゃんねる/hinochannel</span>
 * <span lang="ja">[Webカメラ2台で顔も身体もトラッキング！解説動画](https://www.youtube.com/watch?v=wdJZYL7GUCw) @ あこゆかプロジェクト</span>
+* <span lang="ja">[VSeeFace Spout2で画面をエクスポートって何？メニューをOBSに映さない方法](https://www.youtube.com/watch?v=92aga2mMaFY) @ 出口貞夫 / Deguchi Sadao</span>
 
 ## Manual
 
