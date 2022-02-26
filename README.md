@@ -631,7 +631,7 @@ If you can't get VSeeFace to receive anything, check these things first:
 * Make sure both the phone and the PC are on the same network. If the phone is using mobile data it won't work. Sometimes, if the PC is on multiple networks, the "Show IP" button will also not show the correct address, so you might have to figure it out using `ipconfig` or some other way.
 * Try disabling all the `Track ...` options to make sure the received tracking data isn't getting overwritten by VSeeFace's own tracking.
 
-#### <a href="vrchat"></a>VRChat OSC support
+#### <a name="vrchat"></a>VRChat OSC support
 
 Starting with 1.13.38, there is experimental support for VRChat's experimental [OSC](https://docs.vrchat.com/docs/osc-overview) support. When the `VRChat OSC sender` option in the advanced settings is enabled in VSeeFace, it will send the following avatar parameters:
 
