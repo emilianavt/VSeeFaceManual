@@ -631,6 +631,16 @@ If you can't get VSeeFace to receive anything, check these things first:
 * Make sure both the phone and the PC are on the same network. If the phone is using mobile data it won't work. Sometimes, if the PC is on multiple networks, the "Show IP" button will also not show the correct address, so you might have to figure it out using `ipconfig` or some other way.
 * Try disabling all the `Track ...` options to make sure the received tracking data isn't getting overwritten by VSeeFace's own tracking.
 
+#### <a href="vrchat"></a>VRChat OSC support
+
+Starting with 1.13.38, there is experimental support for VRChat's experimental [OSC](https://docs.vrchat.com/docs/osc-overview) support. When the `VRChat OSC sender` option in the advanced settings is enabled in VSeeFace, it will send the following avatar parameters:
+
+* `GazeX`, a `float` from 0 to 1 with representing the horizontal gaze direction from right to left and 0.5 being the eyes looking straight forward.
+* `GazeY`, a `float` from 0 to 1 with representing the horizontal gaze direction from down to up and 0.5 being the eyes looking straight forward.
+* `Blink`, a `float` from 0 to 1 with the eyes being fully opened at 0 and fully closed at 1.
+* `MouthOpen`, a `float` from 0 to 1 with the mouth being fully closed at 0 and fully open at 1.
+* `MouthWideNarrow`, a `float` from -1 to 1 with the mouth having its regular shape at 0, being wider than normal at -1 and narrower than normal at 1. This will only become active when the mouth is also at least slightly open. Configuring a 0.25 deadzone around 0 might be advisable.
+
 ### Model preview in Unity
 
 If you are working on an avatar, it can be useful to get an accurate idea of how it will look in VSeeFace before exporting the VRM. You can load [this](https://github.com/emilianavt/VSeeFacePreview/releases/latest) example project into Unity 2019.4.16f1 and load the included preview scene to preview your model with VSeeFace like lighting settings. This project also allows posing an avatar and sending the pose to VSeeFace using the VMC protocol starting with VSeeFace v1.13.34b.
