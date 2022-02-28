@@ -637,7 +637,7 @@ If you can't get VSeeFace to receive anything, check these things first:
 
 #### <a name="vrchat"></a>VRChat OSC support
 
-Starting with 1.13.38, there is experimental support for VRChat's experimental [OSC](https://docs.vrchat.com/docs/osc-overview) support. When the `VRChat OSC sender` option in the advanced settings is enabled in VSeeFace, it will send the following avatar parameters:
+Starting with 1.13.38, there is experimental support for VRChat's avatar [OSC](https://docs.vrchat.com/docs/osc-overview) support. When the `VRChat OSC sender` option in the advanced settings is enabled in VSeeFace, it will send the following avatar parameters:
 
 * `GazeX`, a `float` from 0 to 1 with representing the horizontal gaze direction from right to left and 0.5 being the eyes looking straight forward.
 * `GazeY`, a `float` from 0 to 1 with representing the horizontal gaze direction from down to up and 0.5 being the eyes looking straight forward.
@@ -645,6 +645,10 @@ Starting with 1.13.38, there is experimental support for VRChat's experimental [
 * `MouthOpen`, a `float` from 0 to 1 with the mouth being fully closed at 0 and fully open at 1.
 * `MouthWideNarrow`, a `float` from -1 to 1 with the mouth having its regular shape at 0, being wider than normal at -1 and narrower than normal at 1. This will only become active when the mouth is also at least slightly open. Configuring a 0.25 deadzone around 0 might be advisable.
 * `BrowsDownUp`, a `float` from -1 to 1 with the brows being all the way down at -1 and all the way up at 1, with 0 being the brows being at their default position.
+
+Using these parameters, an avatar can be set up to have basic face tracking. As wearing a VR headset will interfere with face tracking, this is mainly intended for playing in desktop mode.
+
+**Note:** Only webcam based face tracking is supported at this point.
 
 ### Model preview in Unity
 
