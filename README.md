@@ -18,7 +18,7 @@ Please note that Live2D models are not supported. For those, please check out VT
 
 **To update VSeeFace, just delete the old folder or overwrite it when unpacking the new version.**
 
-<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.37c/VSeeFace-v1.13.37c.zip" class="download">Download<br>v1.13.37c</a>
+<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.38/VSeeFace-v1.13.38.zip" class="download">Download<br>v1.13.38</a>
 
 **If you use a Leap Motion, update your Leap Motion software to [V5.2 or newer](https://developer.leapmotion.com/tracking-software-download)! Just make sure to uninstall any older versions of the Leap Motion software first. If necessary, V4 compatiblity can be enabled from VSeeFace's advanced settings.**
 
@@ -32,7 +32,7 @@ The latest release notes can be found <a href="https://gist.github.com/emilianav
 
 The reason it is currently only released in this way, is to make sure that everybody who tries it out has an easy channel to give me feedback.
 
-<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。iFacialMocap/FaceMotion3Dによるパーフェクトシンクも対応です。VMCプロトコルも対応です（[Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077)、[iFacialMocap2VMC](http://suvidriel.com/)）。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.37c/VSeeFace-v1.13.37c.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
+<span lang="ja" id="japanese-info">VSeeFaceはVTuber向けのフェーストラッキングソフトです。Webカメラで簡単にVRMアバターを動かすことができます。Leap Motionによる手と指のトラッキング機能もあります。iFacialMocap/FaceMotion3Dによるパーフェクトシンクも対応です。VMCプロトコルも対応です（[Waidayo](https://apps.apple.com/us/app/waidayo/id1513166077)、[iFacialMocap2VMC](http://suvidriel.com/)）。ダウンロードは<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.38/VSeeFace-v1.13.38.zip">こちら</a>。リリースノートは<a href="https://gist.github.com/emilianavt/90bc0b73e2713276e6f630db09977eae">こちら</a>。まだベータ版です。</span>
 
 <span lang="ja">VRM以外UnityのAssetBundle形式の[VSFAvatar](https://scrapbox.io/riel-tech/VSFAvatar)も使えます。SDKは<a href="https://github.com/emilianavt/VSeeFaceSDK/releases/latest">こちら</a>。VSFAvatar形式のモデルでカスタムシェーダーやDynamic Bonesやコンストレイントなどを使用が出来ます。 </span>
 
@@ -78,7 +78,7 @@ Starting with VSeeFace v1.13.36, a new Unity asset bundle and VRM based avatar f
 
 A README file with various important information is included in the SDK, but you can also read it [here](https://github.com/emilianavt/VSeeFaceSDK/blob/master/README.md).
 
-SDK download: [v1.13.37b](https://github.com/emilianavt/VSeeFaceSDK/releases/download/v1.13.37b/VSF_SDK_v1.13.37b.unitypackage) ([release archive](https://github.com/emilianavt/VSeeFaceSDK/releases))
+SDK download: [v1.13.38](https://github.com/emilianavt/VSeeFaceSDK/releases/download/v1.13.38/VSF_SDK_v1.13.38.unitypackage) ([release archive](https://github.com/emilianavt/VSeeFaceSDK/releases))
 
 <span lang="ja">日本語の情報が@narou_rielさんの[メモサイト](https://scrapbox.io/riel-tech/VSFAvatar)にはあります。</span>
 
@@ -159,6 +159,10 @@ Those bars are there to let you know that you are close to the edge of your webc
 #### <a name="gaze"></a>Does VSeeFace have gaze tracking?
 
 Yes, unless you are using the `Toaster` quality level or have enabled `Synthetic gaze` which makes the eyes follow the head movement, similar to what Luppet does. You can try increasing the gaze strength and sensitivity to make it more visible.
+
+#### Why isn't my custom window resolution saved when exiting VSeeFace?
+
+Resolutions that are smaller than the default resolution of 1280x720 are not saved, because it is possible to shrink the window in such a way that it would be hard to change it back. You might be able to manually enter such a resolution in the settings.ini file.
 
 #### Can I change avatars/effect settings/props without having the UI show up in OBS with a hotkey?
 
@@ -640,6 +644,7 @@ Starting with 1.13.38, there is experimental support for VRChat's experimental [
 * `Blink`, a `float` from 0 to 1 with the eyes being fully opened at 0 and fully closed at 1.
 * `MouthOpen`, a `float` from 0 to 1 with the mouth being fully closed at 0 and fully open at 1.
 * `MouthWideNarrow`, a `float` from -1 to 1 with the mouth having its regular shape at 0, being wider than normal at -1 and narrower than normal at 1. This will only become active when the mouth is also at least slightly open. Configuring a 0.25 deadzone around 0 might be advisable.
+* `BrowsDownUp`, a `float` from -1 to 1 with the brows being all the way down at -1 and all the way up at 1, with 0 being the brows being at their default position.
 
 ### Model preview in Unity
 
