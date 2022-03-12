@@ -248,7 +248,7 @@ This is usually caused by over-eager anti virus programs. The face tracking is w
 
 Check the "Console" tabs. There are probably some errors marked with a red symbol. You might have to scroll a bit to find it. These are usually some kind of compiler errors caused by other assets, which prevent Unity from compiling the VSeeFace SDK scripts. One way of resolving this is to remove the offending assets from the project. Another way is to make a new Unity project with only UniVRM 0.66 and the VSeeFace SDK in it.
 
-#### I'm using a custom shader in my VSFAvatar, but a transparent section turns opaque parts of my model translucent in OBS?
+#### <a name="blendop"></a>I'm using a custom shader in my VSFAvatar, but a transparent section turns opaque parts of my model translucent in OBS?
 
 In cases where using a shader with transparency leads to objects becoming translucent in OBS in an incorrect manner, setting the alpha blending operation to "Max" often helps. For example, there is a setting for this in the "Rendering Options", "Blending" section of the Poiyomi shader. In the case of a custom shader, setting `BlendOp Add, Max` or similar, with the important part being the `Max` should help.
 
