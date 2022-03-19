@@ -18,7 +18,7 @@ To make use of this functionality:
 
 5) If you have multiple instances of VSeeFace, they should show up as separate entries under `Spout Senders`. Select the one you want to capture.
 
-6) It is still recommended to use the ※ button to disable the UI when possible, as this will avoid the background from leaking into anti-aliased and transparent pixels, causing white outlines and similar issues.
+6) **It is still recommended to use the ※ button to disable the UI when possible, as this will avoid the background from leaking into anti-aliased and transparent pixels, causing white outlines and similar issues.**
 
 If the image appears flipped vertically, right click on your capture source, select `Transform` and then `Flip Vertical` to make it show up correctly.
 
