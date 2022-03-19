@@ -308,7 +308,7 @@ Make sure to use a recent version of UniVRM (0.66). With VSFAvatar, the shader v
 
 #### <a name="blendshape-normals"></a>I converted my model to VRM format, but when I blink, my mouth moves or I activate an expressions, it looks weird and the shadows shift?
 
-Make sure to set "Blendshape Normals" to "None" on the FBX when you import it into Unity and before you export your VRM. That should prevent        this issue.
+Make sure to set "Blendshape Normals" to "None" or enable "Legacy Blendshape Normals" on the FBX when you import it into Unity and before you export your VRM. That should prevent        this issue.
 
 #### How can I get my eyebrows to work on a custom model?
 
