@@ -246,7 +246,7 @@ This is usually caused by over-eager anti virus programs. The face tracking is w
 
 #### The VSeeFace SDK doesn't work (no menu showing up, export failing with an error that a file wasn't found)?
 
-Check the "Console" tabs. There are probably some errors marked with a red symbol. You might have to scroll a bit to find it. These are usually some kind of compiler errors caused by other assets, which prevent Unity from compiling the VSeeFace SDK scripts. One way of resolving this is to remove the offending assets from the project. Another way is to make a new Unity project with only UniVRM 0.66 and the VSeeFace SDK in it.
+Check the "Console" tabs. There are probably some errors marked with a red symbol. You might have to scroll a bit to find it. These are usually some kind of compiler errors caused by other assets, which prevent Unity from compiling the VSeeFace SDK scripts. One way of resolving this is to remove the offending assets from the project. Another way is to make a new Unity project with only UniVRM 0.89 and the VSeeFace SDK in it.
 
 #### <a name="blendop"></a>I'm using a custom shader in my VSFAvatar, but a transparent section turns opaque parts of my model translucent in OBS?
 
@@ -258,7 +258,7 @@ There is the "L" hotkey, which lets you directly load a model file. In general l
 
 #### When exporting a VSFAvatar, this error appears? `Detected invalid components on avatar: "UniGLTF.RuntimeGltfInstance",`
 
-This error occurs with more recent versions of UniVRM. Currently [UniVRM 0.66](https://github.com/vrm-c/UniVRM/releases/tag/v0.66.0) is supported. When installing a different version of UniVRM, make sure to first completely remove all folders of the version already in the project.
+This error occurs with more recent versions of UniVRM. Currently [UniVRM 0.89](https://github.com/vrm-c/UniVRM/releases/tag/v0.89.0) is supported. When installing a different version of UniVRM, make sure to first completely remove all folders of the version already in the project.
 
 #### <a name="gpuscheduling"></a>Can disabling hardware-accelerated GPU scheduling help fix performance issues?
 
@@ -304,7 +304,7 @@ First, make sure you are using the ※ button to hide the UI and use a game capt
 
 #### My VSFAvatar has bright pixels around it even with the UI hidden?
 
-Make sure to use a recent version of UniVRM (0.66). With VSFAvatar, the shader version from your project is included in the model file. Older versions of MToon had some issues with transparency, which are fixed in recent versions.
+Make sure to use a recent version of UniVRM (0.89). With VSFAvatar, the shader version from your project is included in the model file. Older versions of MToon had some issues with transparency, which are fixed in recent versions.
 
 #### <a name="blendshape-normals"></a>I converted my model to VRM format, but when I blink, my mouth moves or I activate an expressions, it looks weird and the shadows shift?
 
