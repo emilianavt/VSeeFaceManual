@@ -24,6 +24,8 @@ If the image appears flipped vertically, right click on your capture source, sel
 
 Please note that Spout2 might not work on certain GPUs (e.g. many integrated Intel graphics).
 
+StreamLabs does [not](https://github.com/Off-World-Live/obs-spout2-plugin/issues/37) support the Spout2 plugin, so because of that and various other reasons, including lower system load, I recommend switching to [OBS](https://obsproject.com/). OBS has a function to import already set up scenes from StreamLabs, so switching should be rather easy.
+
 ## PrprLive plugin conflict
 
 Reportedly the α-Channel OBS plugin provided by PrprLive can cause a conflict with the Spout2 OBS plugin. As there is no uninstallation option, if you have this plugin installed, you may have to manually remove `prpr-library.dll` from the OBS plugins folder, before the `Spout2 Capture` shows up in OBS. You should also be able to capture PrprLive with the Spout2 plugin after this.
