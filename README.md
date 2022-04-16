@@ -168,6 +168,10 @@ Resolutions that are smaller than the default resolution of 1280x720 are not sav
 
 You can completely avoid having the UI show up in OBS, by using the Spout2 functionality. For more information, please refer to [this](https://www.vseeface.icu/spout). Effect settings can be controlled with components from the VSeeFace SDK, so if you are using a VSFAvatar model, you can create animations linked to hotkeyed blendshapes to animate and manipulate the effect settings. The local "L" hotkey will open a file opening dialog to directly open model files without going through the avatar picker UI, but loading the model can lead to lag during the loading process.
 
+#### Is Spout2 capture supported by StreamLabs?
+
+StreamLabs does [not](https://github.com/Off-World-Live/obs-spout2-plugin/issues/37) support the Spout2 OBS plugin, so because of that and various other reasons, including lower system load, I recommend switching to [OBS](https://obsproject.com/). OBS has a function to import already set up scenes from StreamLabs, so switching should be rather easy.
+
 #### What are the requirements for a custom model to make use the gaze tracking?
 
 If humanoid eye bones are assigned in Unity, VSeeFace will directly use these for gaze tracking. The gaze strength determines how far the eyes will move. To use the VRM blendshape presets for gaze tracking, make sure that no eye bones are assigned in Unity's humanoid rig configuration. Sometimes other bones (ears or hair) get assigned as eye bones by mistake, so that is something to look out for. The synthetic gaze, which moves the eyes either according to head movement or so that they look at the camera, uses the `VRMLookAtBoneApplyer` or the `VRMLookAtBlendShapeApplyer`, depending on what exists on the model. Also see the [model issues](#model-issues) section for more information on things to look out for.
