@@ -172,9 +172,9 @@ You can completely avoid having the UI show up in OBS, by using the Spout2 funct
 
 StreamLabs does [not](https://github.com/Off-World-Live/obs-spout2-plugin/issues/37) support the Spout2 OBS plugin, so because of that and various other reasons, including lower system load, I recommend switching to [OBS](https://obsproject.com/). OBS has a function to import already set up scenes from StreamLabs, so switching should be rather easy.
 
-#### <a name="gaze"></a>What are the requirements for a custom model to make use the gaze tracking?
+#### <a name="gaze-setup"></a>What are the requirements for a custom model to make use the gaze tracking?
 
-If humanoid eye bones are assigned in Unity, VSeeFace will directly use these for gaze tracking. The gaze strength setting in VSeeFace determines how far the eyes will move and can be subtle, so if you are trying to determine whether your eyes are set up correctly, try turning it up all the way. You can also use the [Vita](https://www.vseeface.icu/Vita.vrm) model to test this, which is known to have a working eye setup.
+If humanoid eye bones are assigned in Unity, VSeeFace will directly use these for gaze tracking. The gaze strength setting in VSeeFace determines how far the eyes will move and can be subtle, so if you are trying to determine whether your eyes are set up correctly, try turning it up all the way. You can also use the [Vita](https://www.vseeface.icu/Vita.vrm) model to test this, which is known to have a working eye setup. Also, see [here](#gaze) if it does not seem to work.
 
 To use the VRM blendshape presets for gaze tracking, make sure that no eye bones are assigned in Unity's humanoid rig configuration. Sometimes other bones (ears or hair) get assigned as eye bones by mistake, so that is something to look out for. The synthetic gaze, which moves the eyes either according to head movement or so that they look at the camera, uses the `VRMLookAtBoneApplyer` or the `VRMLookAtBlendShapeApplyer`, depending on what exists on the model. Also see the [model issues](#model-issues) section for more information on things to look out for.
 
