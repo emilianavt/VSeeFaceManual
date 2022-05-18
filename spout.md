@@ -26,6 +26,10 @@ Please note that Spout2 might not work on certain GPUs (e.g. many integrated Int
 
 StreamLabs does [not](https://github.com/Off-World-Live/obs-spout2-plugin/issues/37) support the Spout2 OBS plugin, so because of that and various other reasons, including lower system load, I recommend switching to [OBS](https://obsproject.com/). OBS has a function to import already set up scenes from StreamLabs, so switching should be rather easy.
 
+## Why use Spout2 to capture VSeeFace?
+
+The main reason to use Spout2 for capturing VSeeFace is capture it without any menus or other UI elements showing up. It can also be more reliable than using a game capture. The performance is about the same as capturing with a game capture, but it is much better than that of the virtual camera which was previously the only way to capture VSeeFace without any menus showing up. Another issue with the virtual camera, which does not exist with Spout2, is that it is limited to a resolution of 1280x720 and will stretch or squish the image if the window's aspect ratio does not match it.
+
 ## PrprLive plugin conflict
 
 Reportedly the α-Channel OBS plugin provided by PrprLive can cause a conflict with the Spout2 OBS plugin. As there is no uninstallation option, if you have this plugin installed, you may have to manually remove `prpr-library.dll` from the OBS plugins folder, before the `Spout2 Capture` shows up in OBS. You should also be able to capture PrprLive with the Spout2 plugin after this.
