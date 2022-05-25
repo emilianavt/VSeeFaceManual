@@ -275,7 +275,7 @@ In at least one case, the following setting has apparently fixed this: Windows =
 
 #### <a name="upload"></a>I uploaded my model to VSeeFace and deleted the file, now it's gone?
 
-There is no online service that the model gets uploaded to, so in fact no upload takes place at all. When you add a model to the avatar selection, VSeeFace simply stores the location of the file on your PC in a text file, so if you move the model file, rename it or delete it, it disappears from the avatar selection because VSeeFace can no longer find a file at that spot. Please take care and backup your precious model files.
+There is no online service that the model gets uploaded to, so in fact no upload takes place at all and, in fact, calling uploading is not accurate. When you add a model to the avatar selection, VSeeFace simply stores the location of the file on your PC in a text file. If you move the model file, rename it or delete it, it disappears from the avatar selection because VSeeFace can no longer find a file at that specific place. Please take care and backup your precious model files.
 
 #### I get an error when starting the tracking with DroidCam (or some other camera)?
 
