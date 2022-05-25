@@ -267,11 +267,15 @@ There is the "L" hotkey, which lets you directly load a model file. In general l
 
 #### When exporting a VSFAvatar, this error appears? `Detected invalid components on avatar: "UniGLTF.RuntimeGltfInstance",`
 
-This error occurs with more recent versions of UniVRM. Currently [UniVRM 0.89](https://github.com/vrm-c/UniVRM/releases/tag/v0.89.0) is supported. When installing a different version of UniVRM, make sure to first completely remove all folders of the version already in the project.
+This error occurs with certain versions of UniVRM. Currently [UniVRM 0.89](https://github.com/vrm-c/UniVRM/releases/tag/v0.89.0) is supported. When installing a different version of UniVRM, make sure to first completely remove all folders of the version already in the project.
 
 #### <a name="gpuscheduling"></a>Can disabling hardware-accelerated GPU scheduling help fix performance issues?
 
-In at least one case, the following setting has apparently fixed this: Windows => Graphics Settings => Change default graphics settings => Disable "Hardware-accelerated GPU scheduling". In another case, setting VSeeFace to realtime priority seems to have helped.
+In at least one case, the following setting has apparently fixed this: Windows => Graphics Settings => Change default graphics settings => Disable "Hardware-accelerated GPU scheduling". In another case, setting VSeeFace to realtime priority seems to have helped. However, it has also reported that turning it on helps. Please see [here](/#lag) for more information.
+
+#### <a name="upload"></a>I uploaded my model to VSeeFace and deleted the file, now it's gone?
+
+There is no online service that the model gets uploaded to, so in fact no upload takes place at all. When you add a model to the avatar selection, VSeeFace simply stores the location of the file on your PC in a text file, so if you move the model file, rename it or delete it, it disappears from the avatar selection because VSeeFace can no longer find a file at that spot. Please take care and backup your precious model files.
 
 #### I get an error when starting the tracking with DroidCam (or some other camera)?
 
