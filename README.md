@@ -724,6 +724,8 @@ Notes on running wine: First make sure you have the Arial font installed. You ca
 
 Starting with VSeeFace v1.13.33f, while running under wine `--background-color '#00FF00'` can be used to set a window background color. To disable wine mode and make things work like on Windows, `--disable-wine-mode` can be used.
 
+**Limitations:** The virtual camera, Spout2 and Leap Motion support probably won't work.
+
 ### Troubleshooting
 
 This section lists common issues and possible solutions for them.
