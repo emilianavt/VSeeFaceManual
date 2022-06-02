@@ -265,6 +265,10 @@ In cases where using a shader with transparency leads to objects becoming transl
 
 There is the "L" hotkey, which lets you directly load a model file. In general loading models is too slow to be useful for use through hotkeys. If you want to switch outfits, I recommend adding them all to one model. With VRM this can be done by changing making meshes transparent by changing the alpha value of its material through a material blendshape. For VSFAvatar, the objects can be toggled directly using Unity animations.
 
+#### <a name="shoost"></a>Since VSeeFace has no greenscreen option, how can I use it with [Shoost](https://www.patreon.com/posts/62585593)?
+
+Enable [Spout2](/spout) support in the `General settings` of VSeeFace, enable `Spout Capture` in Shoost's settings and you will be able to directly capture VSeeFace in Shoost using a Spout Capture layer. You can find screenshots of the options [here](https://twitter.com/emiliana_vt/status/1532343997158629378).
+
 #### When exporting a VSFAvatar, this error appears? `Detected invalid components on avatar: "UniGLTF.RuntimeGltfInstance",`
 
 This error occurs with certain versions of UniVRM. Currently [UniVRM 0.89](https://github.com/vrm-c/UniVRM/releases/tag/v0.89.0) is supported. When installing a different version of UniVRM, make sure to first completely remove all folders of the version already in the project.
