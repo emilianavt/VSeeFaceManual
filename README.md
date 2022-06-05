@@ -333,7 +333,11 @@ You can add two custom VRM blend shape clips called "Brows up" and "Brows down" 
 
 #### <a name="mediapipe"></a>When will VSeeFace support webcam based hand tracking (through MediaPipe or KalidoKit)?
 
-Probably not anytime soon. In my experience, the current webcam based hand tracking don't work well enough to warrant spending the time to integrate them. I have written more about this [here](https://twitter.com/emiliana_vt/status/1458137048989061120).
+Probably not anytime soon. In my experience, the current webcam based hand tracking don't work well enough to warrant spending the time to integrate them. I have written more about this [here](https://twitter.com/emiliana_vt/status/1458137048989061120). If you require webcam based hand tracking, I would recommend using [RiBLA Broadcast (β)](https://booth.pm/ja/items/3642935), which is free and available for Windows and Mac.
+
+#### Can I use custom scripts with VSFAvatar format?
+
+No, and it's not just because of the component whitelist. VSFAvatar is based on Unity asset bundles, which cannot contain code. If you export a model with a custom script on it, the script will not be inside the file. Only a reference to the script in the form "there is script `7feb5bfa-9c94-4603-9bff-dde52bd3f885` on the model with 'speed' set to 0.5" will actually reach VSeeFace. Since VSeeFace was not compiled with script `7feb5bfa-9c94-4603-9bff-dde52bd3f885` present, it will just produce  a cryptic error. The explicit check for allowed components exists to prevent weird errors caused by such situations.
 
 #### I want to run VSeeFace on another PC and use a capture card to capture it, is that possible?
 
