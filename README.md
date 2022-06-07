@@ -249,9 +249,9 @@ To fix this error, please install the [V5.2 (Gemini) SDK](https://developer.leap
 
 All configurable hotkeys also work while it is in the background or minimized, so the expression hotkeys, the audio lipsync toggle hotkey and the configurable position reset hotkey all work from any other program as well. On some systems it might be necessary to run VSeeFace as admin to get this to work properly for some reason.
 
-#### My VSeeFace randomly disappears?/It can no longer find the facetracker.exe file?
+#### My VSeeFace randomly disappears?/It can no longer find the facetracker.exe file?/Why did VSeeFace delete itself off my PC?
 
-This is usually caused by over-eager anti virus programs. The face tracking is written in Python and for some reason anti virus programs seem to dislike that and sometimes decide to delete VSeeFace or parts of it. There should be a way to whitelist the folder somehow to keep this from happening if you encounter this type of issue.
+VSeeFace never deletes itself. This is usually caused by over-eager anti-virus programs. The face tracking is written in Python and for some reason anti-virus programs seem to dislike that and sometimes decide to delete VSeeFace or parts of it. There should be a way to whitelist the folder somehow to keep this from happening if you encounter this type of issue.
 
 #### The VSeeFace SDK doesn't work (no menu showing up, export failing with an error that a file wasn't found)?
 
