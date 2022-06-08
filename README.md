@@ -671,7 +671,7 @@ Starting with 1.13.38, there is experimental support for VRChat's avatar [OSC](h
 * `MouthWideNarrow`, a `float` from -1 to 1 with the mouth having its regular shape at 0, being wider than normal at -1 and narrower than normal at 1. This will only become active when the mouth is also at least slightly open. Configuring a 0.25 deadzone around 0 might be advisable.
 * `BrowsDownUp`, a `float` from -1 to 1 with the brows being all the way down at -1 and all the way up at 1, with 0 being the brows being at their default position.
 
-Using these parameters, an avatar can be set up to have basic face tracking. As wearing a VR headset will interfere with face tracking, this is mainly intended for playing in desktop mode.
+To make use of these parameters, the avatar has to be specifically set up for it. If it is, using these parameters, basic face tracking based animations can be applied to an avatar. As wearing a VR headset will interfere with face tracking, this is mainly intended for playing in desktop mode.
 
 **Note:** Only webcam based face tracking is supported at this point.
 
