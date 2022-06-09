@@ -245,6 +245,10 @@ Changing the position also changes the height of the Leap Motion in VSeeFace, so
 
 To fix this error, please install the [V5.2 (Gemini) SDK](https://developer.leapmotion.com/tracking-software-download). It says it's used for VR, but it is also used by desktop applications.
 
+#### Capturing VSeeFace through Spout2 does not work even though it was enabled?
+
+Your system might be missing the Microsoft Visual C++ 2010 Redistributable library. After installing it from [here](https://www.microsoft.com/en-us/download/details.aspx?id=26999) and rebooting it should work.
+
 #### Do hotkeys work even while VSeeFace is in the background?
 
 All configurable hotkeys also work while it is in the background or minimized, so the expression hotkeys, the audio lipsync toggle hotkey and the configurable position reset hotkey all work from any other program as well. On some systems it might be necessary to run VSeeFace as admin to get this to work properly for some reason.
