@@ -8,6 +8,8 @@
 
 To make use of this functionality:
 
+0) Make sure that the [Microsoft Visual C++ 2010 Redistributable](https://www.microsoft.com/en-us/download/details.aspx?id=26999) is installed.
+
 1) Ensure that `Spout2 image capture support` is enabled in the `General settings`. This option is disabled by default.
 
 2) Then install the [Spout2 OBS plugin](https://github.com/Off-World-Live/obs-spout2-plugin/releases).
