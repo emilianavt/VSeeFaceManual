@@ -381,7 +381,7 @@ I really don't know, it's not like I have a lot of PCs with various specs to tes
 
 No.
 
-#### Does VSeeFace run on Mac?
+#### <a name="macos"></a>Does VSeeFace run on Mac?
 
 No. Although, if you are very experienced with Linux and wine as well, you can try following [these](#running-on-linux-and-maybe-mac) instructions for running it on Linux. Alternatively, you can look into other options like [3tene](https://3tene.com/free/) or [RiBLA Broadcast](https://booth.pm/ja/items/3642935).
 
