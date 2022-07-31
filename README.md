@@ -339,6 +339,10 @@ You can add two custom VRM blend shape clips called "Brows up" and "Brows down" 
 
 Probably not anytime soon. In my experience, the current webcam based hand tracking don't work well enough to warrant spending the time to integrate them. I have written more about this [here](https://twitter.com/emiliana_vt/status/1458137048989061120). If you require webcam based hand tracking, I would recommend using [RiBLA Broadcast (β)](https://booth.pm/ja/items/3642935), which is free and available for Windows and Mac.
 
+#### <a name="twitchstudio"></a>How can I capture VSeeFace with transparency in Twitch Studio?
+
+Add VSeeFace as a regular screen capture and then add a transparent border like shown [here](assets/img/TwitchStudio.png). The background should now be transparent. I would still recommend using OBS, as that is the main supported software and allows using e.g. [Spout2](/spout) through a plugin.
+
 #### Can I use custom scripts with VSFAvatar format?
 
 No, and it's not just because of the component whitelist. VSFAvatar is based on Unity asset bundles, which cannot contain code. If you export a model with a custom script on it, the script will not be inside the file. Only a reference to the script in the form "there is script `7feb5bfa-9c94-4603-9bff-dde52bd3f885` on the model with 'speed' set to 0.5" will actually reach VSeeFace. Since VSeeFace was not compiled with script `7feb5bfa-9c94-4603-9bff-dde52bd3f885` present, it will just produce  a cryptic error. The explicit check for allowed components exists to prevent weird errors caused by such situations.
