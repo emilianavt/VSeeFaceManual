@@ -393,10 +393,6 @@ No.
 
 No. Although, if you are very experienced with Linux and wine as well, you can try following [these](#running-on-linux-and-maybe-mac) instructions for running it on Linux. Alternatively, you can look into other options like [3tene](https://3tene.com/free/) or [RiBLA Broadcast](https://booth.pm/ja/items/3642935).
 
-#### Can you recommend any alternatives to VSeeFace?
-
-I have made a list of common VTuber programs that you can check out to find the [best VTuber software](https://gist.github.com/emilianavt/cbf4d6de6f7fb01a42d4cce922795794#file-bestvtubersoftware-md) for your use case. It is mainly focused on the types of tracking provided by each program, so if you are looking for a program that supports VR or Leap Motion tracking, you can quickly consult the table.
-
 #### Does VSeeFace run on Linux?
 
 It's reportedly [possible](#running-on-linux-and-maybe-mac) to run it using wine.
