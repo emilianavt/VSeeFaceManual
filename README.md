@@ -18,6 +18,8 @@ Please note that Live2D models are not supported. For those, please check out VT
 
 **To update VSeeFace, just delete the old folder or overwrite it when unpacking the new version.**
 
+**If you experience crashes on Windows 11 with the newest NVIDIA driver, delete `GPUManagementPlugin.dll` from `VSeeFace_data\Plugins\x86_64`!**
+
 <a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.38/VSeeFace-v1.13.38.zip" class="download">Download<br>v1.13.38</a>
 
 **If you use a Leap Motion, update your Leap Motion software to [V5.2 or newer](https://developer.leapmotion.com/tracking-software-download)! Just make sure to uninstall any older versions of the Leap Motion software first. If necessary, V4 compatiblity can be enabled from VSeeFace's advanced settings.**
