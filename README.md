@@ -1,6 +1,5 @@
 ﻿## About
 
-
 <a href="/assets/img/VSeeFaceScreenshot.png"><img src="/assets/img/VSeeFaceScreenshot500px.png" alt="VSeeFace screenshot"></a>
 
 <a href="./#japanese-info">日本語</a>
