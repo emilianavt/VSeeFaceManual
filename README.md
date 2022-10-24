@@ -193,6 +193,7 @@ In rare cases it can be a tracking issue. If your screen is your main light sour
 
 More often, the issue is caused by Windows allocating all of the GPU or CPU to the game, leaving nothing for VSeeFace. Here are some things you can try to improve the situation:
 
+* If you are using an NVIDIA GPU, make sure you are running the latest driver and the latest version of VSeeFace. Ensure that hardware based GPU scheduling is enabled.
 * Make sure you are using VSeeFace v1.13.37c or newer and run it as administrator. If you use a game capture instead of [Spout2](/spout) to capture VSeeFace, you might have to run OBS as administrator as well for the game capture to work properly.
 * Ensure that "Disable increased background priority" in the "General settings" is *not ticked*, so that the increased background priority function is enabled. This is the case by default.
 
@@ -285,7 +286,7 @@ This error occurs with certain versions of UniVRM. Currently [UniVRM 0.89](https
 
 #### <a name="gpuscheduling"></a>Can disabling hardware-accelerated GPU scheduling help fix performance issues?
 
-In at least one case, the following setting has apparently fixed this: Windows => Graphics Settings => Change default graphics settings => Disable "Hardware-accelerated GPU scheduling". In another case, setting VSeeFace to realtime priority seems to have helped. However, it has also reported that turning it on helps. Please see [here](/#lag) for more information.
+Usually it is better left on! But in at least one case, the following setting has apparently fixed this: Windows => Graphics Settings => Change default graphics settings => Disable "Hardware-accelerated GPU scheduling". In another case, setting VSeeFace to realtime priority seems to have helped. However, it has also reported that turning it on helps. Please see [here](/#lag) for more information.
 
 #### <a name="upload"></a>I uploaded my model to VSeeFace and deleted the file, now it's gone?
 
