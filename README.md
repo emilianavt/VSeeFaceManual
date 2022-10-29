@@ -18,6 +18,7 @@ Please note that Live2D models are not supported. For those, please check out VT
 
 **To update VSeeFace, just delete the old folder or overwrite it when unpacking the new version.**
 
+**If VSeeFace does not start for you, this may be caused by the NVIDIA driver version 526. For details, please see [here](https://www.vseeface.icu/#startup-issues).**
 
 <a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.38b/VSeeFace-v1.13.38b3.zip" class="download">Download<br>v1.13.38b3</a>
 
