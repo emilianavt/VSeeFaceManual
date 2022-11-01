@@ -756,7 +756,7 @@ This section lists common issues and possible solutions for them.
 
 #### Startup issues
 
-**Some users are reporting issues with NVIDIA driver version 526 causing VSeeFace to crash or freeze when starting after showing the Unity logo. VSeeFace v1.13.38b has been updated to v1.13.38b2, which might help a bit. You can also try running `UninstallAll.bat` in `VSeeFace_Data\StreamingAssets\UnityCapture` as a workaround. If this does not work, please roll back your [NVIDIA driver](https://www.nvidia.com/download/Find.aspx?lang=en-us) to 522 or earlier for now. This should fix usually the issue.**
+**Some users are reporting issues with NVIDIA driver version 526 causing VSeeFace to crash or freeze when starting after showing the Unity logo. VSeeFace v1.13.38b has been updated to v1.13.38b2, which might help a bit. You can also try running `UninstallAll.bat` in `VSeeFace_Data\StreamingAssets\UnityCapture` as a workaround. If this does not work, please roll back your [NVIDIA driver](https://www.nvidia.com/download/Find.aspx?lang=en-us) (set "Recommended/Beta:" to "All") to 522 or earlier for now. This should fix usually the issue.**
 
 If the VSeeFace window remains black when starting and you have an AMD graphics card, please try disabling `Radeon Image Sharpening` either globally or for VSeeFace. It reportedly can cause this type of issue.
 
