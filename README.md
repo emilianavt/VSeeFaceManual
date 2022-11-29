@@ -172,9 +172,9 @@ It can, you just have to move the camera. Please refer to the last slide of the 
 
 Resolutions that are smaller than the default resolution of 1280x720 are not saved, because it is possible to shrink the window in such a way that it would be hard to change it back. You might be able to manually enter such a resolution in the settings.ini file.
 
-#### Can I change avatars/effect settings/props without having the UI show up in OBS with a hotkey?
+#### <a name="model-switch"></a>Can I change avatars/effect settings/props without having the UI show up in OBS with a hotkey?
 
-You can completely avoid having the UI show up in OBS, by using the Spout2 functionality. For more information, please refer to [this](https://www.vseeface.icu/spout). Effect settings can be controlled with components from the VSeeFace SDK, so if you are using a VSFAvatar model, you can create animations linked to hotkeyed blendshapes to animate and manipulate the effect settings. The local "L" hotkey will open a file opening dialog to directly open model files without going through the avatar picker UI, but loading the model can lead to lag during the loading process.
+You can completely avoid having the UI show up in OBS, by using the Spout2 functionality. For more information, please refer to [this](https://www.vseeface.icu/spout). Effect settings can be controlled with components from the VSeeFace SDK, so if you are using a VSFAvatar model, you can create animations linked to hotkeyed blendshapes to animate and manipulate the effect settings. The local "L" hotkey will open a file opening dialog to directly open model files without going through the avatar picker UI, but loading the model can lead to lag during the loading process. Since loading models is laggy, I do not plan to add general model hotkey loading support. Instead, where possible, I would recommend using VRM material blendshapes or VSFAvatar animations to manipulate how the current model looks without having to load a new one.
 
 #### Is Spout2 capture supported by StreamLabs?
 
