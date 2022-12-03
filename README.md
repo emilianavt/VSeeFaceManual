@@ -596,6 +596,8 @@ In case of connection issues, you can try the following:
 * Apparently sometimes starting VSeeFace as administrator can help.
 * Restart the PC.
 
+Some security and anti virus products include their own firewall that is separate from the Windows one, so make sure to check there as well if you use one.
+
 If it still doesn't work, you can confirm basic connectivity using the [MotionReplay](https://github.com/emilianavt/MotionReplay/releases/tag/v0.1.1-ifacialmocap) tool. Close VSeeFace, start MotionReplay, enter the iPhone's IP address and press the button underneath. You should see the packet counter counting up. If the packet counter does not count up, data is not being received at all, indicating a network or firewall issue.
 
 If you encounter issues where the head moves, but the face appears frozen:
