@@ -591,7 +591,7 @@ When hybrid lipsync and the `Only open mouth according to one source` option are
 In case of connection issues, you can try the following:
 
 * Make sure the iPhone and PC are on the same network.
-* Check the [Windows firewall](/assets/img/Firewall1.png)'s [Advanced settings](/assets/img/Firewall2.png). In there, make sure that in the [Inbound Rules](/assets/img/Firewall3.png) VSeeFace is set to accept connections. It was also reported that adjusting the path of the VSeeFace program to include the `.exe` at the end can help.
+* Check the [Windows firewall](/assets/img/Firewall1.png)'s [Advanced settings](/assets/img/Firewall2.png). In there, make sure that in the [Inbound Rules](/assets/img/Firewall3.png) VSeeFace is set to accept connections. It was also reported that adjusting the path of the VSeeFace program to include the `.exe` at the end can help. If VSeeFace does not show up at all, manually adding it may help.
 * In iOS, look for iFacialMocap in the app list and ensure that it has the `Local Network` permission.
 * Apparently sometimes starting VSeeFace as administrator can help.
 * Restart the PC.
