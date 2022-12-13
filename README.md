@@ -346,7 +346,7 @@ You can add two custom VRM blend shape clips called "Brows up" and "Brows down" 
 
 #### <a name="mediapipe"></a>When will VSeeFace support webcam based hand tracking (through MediaPipe or KalidoKit)?
 
-Probably not anytime soon. In my experience, the current webcam based hand tracking don't work well enough to warrant spending the time to integrate them. I have written more about this [here](https://twitter.com/emiliana_vt/status/1458137048989061120). If you require webcam based hand tracking, you can try using something like [this](https://booth.pm/en/items/4275972) or [this](https://github.com/Kariaro/VRigUnity/) to send the tracking data to VSeeFace, although I personally haven't tested it yet. [RiBLA Broadcast (β)](https://booth.pm/ja/items/3642935) is a nice standalone software which also supports MediaPipe hand tracking and is free and available for both Windows and Mac.
+Probably not anytime soon. In my experience, the current webcam based hand tracking don't work well enough to warrant spending the time to integrate them. I have written more about this [here](https://twitter.com/emiliana_vt/status/1458137048989061120). If you require webcam based hand tracking, you can try using something like [this](https://github.com/Kariaro/VRigUnity/) to send the tracking data to VSeeFace, although I personally haven't tested it yet. [RiBLA Broadcast (β)](https://booth.pm/ja/items/3642935) is a nice standalone software which also supports MediaPipe hand tracking and is free and available for both Windows and Mac.
 
 #### <a name="twitchstudio"></a>How can I capture VSeeFace with transparency in Twitch Studio?
 
