@@ -352,7 +352,7 @@ Probably not anytime soon. In my experience, the current webcam based hand track
 
 Add VSeeFace as a regular screen capture and then add a transparent border like shown [here](assets/img/TwitchStudio.png). The background should now be transparent. I would still recommend using OBS, as that is the main supported software and allows using e.g. [Spout2](/spout) through a plugin.
 
-#### Can I use custom scripts with VSFAvatar format?
+#### <a name="customscripts"></a>Can I use custom scripts with VSFAvatar format?
 
 No, and it's not just because of the component whitelist. VSFAvatar is based on Unity asset bundles, which cannot contain code. If you export a model with a custom script on it, the script will not be inside the file. Only a reference to the script in the form "there is script `7feb5bfa-9c94-4603-9bff-dde52bd3f885` on the model with 'speed' set to 0.5" will actually reach VSeeFace. Since VSeeFace was not compiled with script `7feb5bfa-9c94-4603-9bff-dde52bd3f885` present, it will just produce  a cryptic error. The explicit check for allowed components exists to prevent weird errors caused by such situations.
 
@@ -423,6 +423,10 @@ As a final note, for higher resolutions like 720p and 1080p, I would recommend l
 #### <a name="live2d"></a>Does VSeeFace support Live2D models?
 
 No, VSeeFace only supports 3D models in VRM format. While there are free tiers for Live2D integration licenses, adding Live2D support to VSeeFace would only make sense if people could load their own models. In that case, it would be classified as an "Expandable Application", which needs a different type of license, for which there is no free tier. As VSeeFace is a free program, integrating an SDK that requires the payment of licensing fees is not an option.
+
+#### <a name="3d-or-live2d"></a>Would a Live2D model be easier on my PC than a 3D model?
+
+While it intuitiviely might seem like it should be that way, it's not necessarily the case. When using VTube Studio and VSeeFace with webcam tracking, VSeeFace usually uses a bit less system resources. If iPhone (or Android with MeowFace) tracking is used without any webcam tracking, it will get rid of most of the CPU load in both cases, but VSeeFace usually still performs a little better. Of course, it always depends on the specific circumstances. Highly complex 3D models can use up a lot of GPU power, but in the average case, just going Live2D won't reduce rendering costs compared to 3D models.
 
 #### <a name="eos"></a>I am using a Canon EOS camera and the tracking won't work.
 
