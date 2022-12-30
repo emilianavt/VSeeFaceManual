@@ -56,7 +56,7 @@ VSeeFace is beta software. There may be bugs and new versions may change things 
 
 ### Extending functionality
 
-While modifying the files of VSeeFace itself is not allowed, injecting DLLs for the purpose of adding or modifying functionality (e.g. using a framework like BepInEx) to VSeeFace is allowed. Analyzing the code of VSeeFace (e.g. with ILSpy) or referring to provided data (e.g. VSF SDK components and comment strings in translation files) to aid in developing such mods is also allowed.
+While modifying the files of VSeeFace itself is not allowed, injecting DLLs for the purpose of adding or modifying functionality (e.g. using a framework like BepInEx) to VSeeFace is allowed. Analyzing the code of VSeeFace (e.g. with ILSpy) or referring to provided data (e.g. VSF SDK components and comment strings in translation files) to aid in developing such mods is also allowed. Mods are not allowed to modify the display of any credit information or version information.
 
 Please refrain from commercial distribution of mods and keep them freely available if you develop and distribute them. Also, please avoid distributing mods that exhibit strongly unexpected behaviour for users.
 
