@@ -167,6 +167,10 @@ You can hide and show the ※ button using the space key.
 
 Those bars are there to let you know that you are close to the edge of your webcam's field of view and should stop moving that way, so you don't lose tracking due to being out of sight. If you have set the UI to be hidden using the ※ button in the lower right corner, blue bars will still appear, but they will be invisible in OBS as long as you are using a `Game Capture` with `Allow transparency` enabled.
 
+#### <a name="vroidhub"></a>I'm using a model from VRoid Hub and when I press start, a white bar appears in the center of the screen and nothing happens?
+
+For some reason, VSeeFace failed to download your model from VRoid Hub. As a workaround, you can manually download it from the [VRoid Hub website](https://hub.vroid.com/) and add it as a local avatar.
+
 #### <a name="gaze"></a>Does VSeeFace have gaze tracking?
 
 Yes, unless you are using the `Toaster` quality level or have enabled `Synthetic gaze` which makes the eyes follow the head movement, similar to what Luppet does. You can try increasing the gaze strength and sensitivity to make it more visible.
