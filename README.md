@@ -117,7 +117,6 @@ There are a lot of tutorial videos out there. This section lists a few to help y
 * [VR Tracking from VMC to VSeeFace](https://www.youtube.com/watch?v=LkO0VusjkHU) @ Suvidriel
 * [Hand Tracking / Leap Motion Controller VSeeFace Tutorial](https://www.youtube.com/watch?v=R2o7R3FCEio) @ AMIRITE GAMING
 * [VTuber Twitch Expression & Animation Integration](https://www.youtube.com/watch?v=EV6Xesa8jPA) @ Fofamit
-* [VSFAvatar tutorials](https://www.youtube.com/watch?v=drOmco8yNHc&list=PLD0oHCcDlFyLzQKwJuw5ptxTWn4sgwvXP) @ Suvidriel
 * [How to pose your model with Unity and the VMC protocol receiver](https://youtu.be/HPTUy4y07M0) @ NiniNeen
 * [How To Use Waidayo, iFacialMocap, FaceMotion3D, And VTube Studio For VSeeFace To VTube With](https://www.youtube.com/watch?v=xJ2c3yKFeoA) @ Kana Fuyuko
 
@@ -126,6 +125,13 @@ There are a lot of tutorial videos out there. This section lists a few to help y
 * [Springbones: How to add physics to bones](https://www.youtube.com/watch?v=tpl_mqU8i7U) @ Deat's virtual escapades
 * [How to Adjust Vroid blendshapes in Unity!](https://www.youtube.com/watch?v=ECZXlzlIcKU) @ Argama Witch
 * [Advanced emotions for VRoid VRM models](https://www.youtube.com/watch?v=u4wqTu6lXx8) @ Suvidriel
+
+### VSFAvatar model tutorials
+
+* [VSFAvatar tutorial playlist](https://www.youtube.com/watch?v=drOmco8yNHc&list=PLD0oHCcDlFyLzQKwJuw5ptxTWn4sgwvXP) @ Suvidriel
+* [How I fix Mesh Related Issues on my VRM/VSF Models](https://www.youtube.com/watch?v=AvI2w5iDCa8) @ Feline Entity
+* [Turning Blendshape Clips into Animator Parameters](https://www.youtube.com/watch?v=85Ym0x6VL4k) @ Feline Entity
+* [Proxy Bones (instant model changes, tracking-independent animations, ragdoll)](https://www.youtube.com/watch?v=jYsBVNIWtTY) @ Feline Entity
 
 ### <a name="tutorials-ja"></a><span lang="ja">日本語のチュートリアル動画：</span>
 
