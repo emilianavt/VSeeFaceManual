@@ -398,6 +398,10 @@ Right click it, select `Extract All...` and press next. You should have a new fo
 
 If Windows 10 won't run the file and complains that the file may be a threat because it is not signed, you can try the following: Right click it -> Properties -> Unblock -> Apply or select exe file -> Select More Info -> Run Anyways
 
+#### <a name="vrm1"></a>When loading my model, I get an error saying something about a NotVrm0Exception, what's up with that?
+
+VSeeFace does not support VRM 1.0 models. Make sure to export your model as VRM0X. Please refer to the [VSeeFace SDK README](https://github.com/emilianavt/VSeeFaceSDK/blob/master/README.md) for the currently recommended version of UniVRM.
+
 #### Sometimes, when leaving the PC, my model suddenly moves away and starts acting strange.
 
 Make sure that you don't have anything in the background that looks like a face (posters, people, TV, etc.). Sometimes even things that are not very face-like at all might get picked up. A good way to check is to run the `run.bat` from `VSeeFace_Data\StreamingAssets\Binary`. It will show you the camera image with tracking points. If green tracking points show up somewhere on the background while you are not in the view of the camera, that might be the cause. Just make sure to close VSeeFace and any other programs that might be accessing the camera first.
@@ -447,6 +451,10 @@ While it intuitiviely might seem like it should be that way, it's not necessaril
 #### <a name="eos"></a>I am using a Canon EOS camera and the tracking won't work.
 
 Try setting the camera settings on the VSeeFace starting screen to default settings. The selection will be marked in red, but you can ignore that and press start anyways. It usually works this way.
+
+#### <a name="luppet"></a>I heard that Luppet is good, but I don't want to pay for it to try it. Is it better than VSeeFace?
+
+You can try [Luppet](https://booth.pm/ja/items/1196507)'s free trial.
 
 #### Does VSeeFace support the Tobii eye tracker?
 
