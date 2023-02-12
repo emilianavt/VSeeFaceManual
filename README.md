@@ -18,6 +18,7 @@ Please note that Live2D models are not supported. For those, please check out VT
 
 **To update VSeeFace, just delete the old folder or overwrite it when unpacking the new version.**
 
+**If VSeeFace does not start for you, this may be caused by the NVIDIA driver version 526. For details, please see [here](https://www.vseeface.icu/#startup-issues).**
 
 <a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.38c/VSeeFace-v1.13.38c.zip" class="download">Download<br>v1.13.38c</a>
 
@@ -52,6 +53,12 @@ You can use VSeeFace to stream or do pretty much anything you like, including no
 VSeeFace is beta software. There may be bugs and new versions may change things around. It is offered without any kind of warrenty, so use it at your own risk. It should generally work fine, but it may be a good idea to keep the previous version around when updating.
 
 <span lang="ja">ライセンス：営利・非営利問わずご自由にお使いください。</span>
+
+### Extending functionality
+
+While modifying the files of VSeeFace itself is not allowed, injecting DLLs for the purpose of adding or modifying functionality (e.g. using a framework like BepInEx) to VSeeFace is allowed. Analyzing the code of VSeeFace (e.g. with ILSpy) or referring to provided data (e.g. VSF SDK components and comment strings in translation files) to aid in developing such mods is also allowed. Mods are not allowed to modify the display of any credits information or version information.
+
+Please refrain from commercial distribution of mods and keep them freely available if you develop and distribute them. Also, please avoid distributing mods that exhibit strongly unexpected behaviour for users.
 
 ### Disclaimer
 
@@ -110,14 +117,21 @@ There are a lot of tutorial videos out there. This section lists a few to help y
 * [VR Tracking from VMC to VSeeFace](https://www.youtube.com/watch?v=LkO0VusjkHU) @ Suvidriel
 * [Hand Tracking / Leap Motion Controller VSeeFace Tutorial](https://www.youtube.com/watch?v=R2o7R3FCEio) @ AMIRITE GAMING
 * [VTuber Twitch Expression & Animation Integration](https://www.youtube.com/watch?v=EV6Xesa8jPA) @ Fofamit
-* [VSFAvatar tutorials](https://www.youtube.com/watch?v=drOmco8yNHc&list=PLD0oHCcDlFyLzQKwJuw5ptxTWn4sgwvXP) @ Suvidriel
 * [How to pose your model with Unity and the VMC protocol receiver](https://youtu.be/HPTUy4y07M0) @ NiniNeen
+* [How To Use Waidayo, iFacialMocap, FaceMotion3D, And VTube Studio For VSeeFace To VTube With](https://www.youtube.com/watch?v=xJ2c3yKFeoA) @ Kana Fuyuko
 
 ### VRM model tutorials
 
 * [Springbones: How to add physics to bones](https://www.youtube.com/watch?v=tpl_mqU8i7U) @ Deat's virtual escapades
 * [How to Adjust Vroid blendshapes in Unity!](https://www.youtube.com/watch?v=ECZXlzlIcKU) @ Argama Witch
 * [Advanced emotions for VRoid VRM models](https://www.youtube.com/watch?v=u4wqTu6lXx8) @ Suvidriel
+
+### VSFAvatar model tutorials
+
+* [VSFAvatar tutorial playlist](https://www.youtube.com/watch?v=drOmco8yNHc&list=PLD0oHCcDlFyLzQKwJuw5ptxTWn4sgwvXP) @ Suvidriel
+* [How I fix Mesh Related Issues on my VRM/VSF Models](https://www.youtube.com/watch?v=AvI2w5iDCa8) @ Feline Entity
+* [Turning Blendshape Clips into Animator Parameters](https://www.youtube.com/watch?v=85Ym0x6VL4k) @ Feline Entity
+* [Proxy Bones (instant model changes, tracking-independent animations, ragdoll)](https://www.youtube.com/watch?v=jYsBVNIWtTY) @ Feline Entity
 
 ### <a name="tutorials-ja"></a><span lang="ja">日本語のチュートリアル動画：</span>
 
@@ -159,6 +173,10 @@ You can hide and show the ※ button using the space key.
 
 Those bars are there to let you know that you are close to the edge of your webcam's field of view and should stop moving that way, so you don't lose tracking due to being out of sight. If you have set the UI to be hidden using the ※ button in the lower right corner, blue bars will still appear, but they will be invisible in OBS as long as you are using a `Game Capture` with `Allow transparency` enabled.
 
+#### <a name="vroidhub"></a>I'm using a model from VRoid Hub and when I press start, a white bar appears in the center of the screen and nothing happens?
+
+For some reason, VSeeFace failed to download your model from VRoid Hub. As a workaround, you can manually download it from the [VRoid Hub website](https://hub.vroid.com/) and add it as a local avatar.
+
 #### <a name="gaze"></a>Does VSeeFace have gaze tracking?
 
 Yes, unless you are using the `Toaster` quality level or have enabled `Synthetic gaze` which makes the eyes follow the head movement, similar to what Luppet does. You can try increasing the gaze strength and sensitivity to make it more visible.
@@ -171,9 +189,9 @@ It can, you just have to move the camera. Please refer to the last slide of the 
 
 Resolutions that are smaller than the default resolution of 1280x720 are not saved, because it is possible to shrink the window in such a way that it would be hard to change it back. You might be able to manually enter such a resolution in the settings.ini file.
 
-#### Can I change avatars/effect settings/props without having the UI show up in OBS with a hotkey?
+#### <a name="model-switch"></a>Can I change avatars/effect settings/props without having the UI show up in OBS with a hotkey?
 
-You can completely avoid having the UI show up in OBS, by using the Spout2 functionality. For more information, please refer to [this](https://www.vseeface.icu/spout). Effect settings can be controlled with components from the VSeeFace SDK, so if you are using a VSFAvatar model, you can create animations linked to hotkeyed blendshapes to animate and manipulate the effect settings. The local "L" hotkey will open a file opening dialog to directly open model files without going through the avatar picker UI, but loading the model can lead to lag during the loading process.
+You can completely avoid having the UI show up in OBS, by using the Spout2 functionality. For more information, please refer to [this](https://www.vseeface.icu/spout). Effect settings can be controlled with components from the VSeeFace SDK, so if you are using a VSFAvatar model, you can create animations linked to hotkeyed blendshapes to animate and manipulate the effect settings. The local "L" hotkey will open a file opening dialog to directly open model files without going through the avatar picker UI, but loading the model can lead to lag during the loading process. Since loading models is laggy, I do not plan to add general model hotkey loading support. Instead, where possible, I would recommend using VRM material blendshapes or VSFAvatar animations to manipulate how the current model looks without having to load a new one.
 
 #### Is Spout2 capture supported by StreamLabs?
 
@@ -344,13 +362,13 @@ You can add two custom VRM blend shape clips called "Brows up" and "Brows down" 
 
 #### <a name="mediapipe"></a>When will VSeeFace support webcam based hand tracking (through MediaPipe or KalidoKit)?
 
-Probably not anytime soon. In my experience, the current webcam based hand tracking don't work well enough to warrant spending the time to integrate them. I have written more about this [here](https://twitter.com/emiliana_vt/status/1458137048989061120). If you require webcam based hand tracking, I would recommend using [RiBLA Broadcast (β)](https://booth.pm/ja/items/3642935), which is free and available for Windows and Mac.
+Probably not anytime soon. In my experience, the current webcam based hand tracking don't work well enough to warrant spending the time to integrate them. I have written more about this [here](https://twitter.com/emiliana_vt/status/1458137048989061120). If you require webcam based hand tracking, you can try using something like [this](https://github.com/Kariaro/VRigUnity/) to send the tracking data to VSeeFace, although I personally haven't tested it yet. [RiBLA Broadcast (β)](https://booth.pm/ja/items/3642935) is a nice standalone software which also supports MediaPipe hand tracking and is free and available for both Windows and Mac.
 
 #### <a name="twitchstudio"></a>How can I capture VSeeFace with transparency in Twitch Studio?
 
 Add VSeeFace as a regular screen capture and then add a transparent border like shown [here](assets/img/TwitchStudio.png). The background should now be transparent. I would still recommend using OBS, as that is the main supported software and allows using e.g. [Spout2](/spout) through a plugin.
 
-#### Can I use custom scripts with VSFAvatar format?
+#### <a name="customscripts"></a>Can I use custom scripts with VSFAvatar format?
 
 No, and it's not just because of the component whitelist. VSFAvatar is based on Unity asset bundles, which cannot contain code. If you export a model with a custom script on it, the script will not be inside the file. Only a reference to the script in the form "there is script `7feb5bfa-9c94-4603-9bff-dde52bd3f885` on the model with 'speed' set to 0.5" will actually reach VSeeFace. Since VSeeFace was not compiled with script `7feb5bfa-9c94-4603-9bff-dde52bd3f885` present, it will just produce  a cryptic error. The explicit check for allowed components exists to prevent weird errors caused by such situations.
 
@@ -379,6 +397,10 @@ N versions of Windows are missing some multimedia features. First make sure your
 Right click it, select `Extract All...` and press next. You should have a new folder called VSeeFace. Inside there should be a file called `VSeeFace` with a blue icon, like the logo on this site. Double click on that to run VSeeFace. There's a video [here](Install.mp4).
 
 If Windows 10 won't run the file and complains that the file may be a threat because it is not signed, you can try the following: Right click it -> Properties -> Unblock -> Apply or select exe file -> Select More Info -> Run Anyways
+
+#### <a name="vrm1"></a>When loading my model, I get an error saying something about a NotVrm0Exception, what's up with that?
+
+VSeeFace does not support VRM 1.0 models. Make sure to export your model as VRM0X. Please refer to the [VSeeFace SDK README](https://github.com/emilianavt/VSeeFaceSDK/blob/master/README.md) for the currently recommended version of UniVRM.
 
 #### Sometimes, when leaving the PC, my model suddenly moves away and starts acting strange.
 
@@ -422,9 +444,17 @@ As a final note, for higher resolutions like 720p and 1080p, I would recommend l
 
 No, VSeeFace only supports 3D models in VRM format. While there are free tiers for Live2D integration licenses, adding Live2D support to VSeeFace would only make sense if people could load their own models. In that case, it would be classified as an "Expandable Application", which needs a different type of license, for which there is no free tier. As VSeeFace is a free program, integrating an SDK that requires the payment of licensing fees is not an option.
 
+#### <a name="3d-or-live2d"></a>Would a Live2D model be easier on my PC than a 3D model?
+
+While it intuitiviely might seem like it should be that way, it's not necessarily the case. When using VTube Studio and VSeeFace with webcam tracking, VSeeFace usually uses a bit less system resources. If iPhone (or Android with MeowFace) tracking is used without any webcam tracking, it will get rid of most of the CPU load in both cases, but VSeeFace usually still performs a little better. Of course, it always depends on the specific circumstances. Highly complex 3D models can use up a lot of GPU power, but in the average case, just going Live2D won't reduce rendering costs compared to 3D models.
+
 #### <a name="eos"></a>I am using a Canon EOS camera and the tracking won't work.
 
 Try setting the camera settings on the VSeeFace starting screen to default settings. The selection will be marked in red, but you can ignore that and press start anyways. It usually works this way.
+
+#### <a name="luppet"></a>I heard that Luppet is good, but I don't want to pay for it to try it. Is it better than VSeeFace?
+
+You can try [Luppet](https://booth.pm/ja/items/1196507)'s free trial.
 
 #### Does VSeeFace support the Tobii eye tracker?
 
@@ -589,10 +619,12 @@ When hybrid lipsync and the `Only open mouth according to one source` option are
 In case of connection issues, you can try the following:
 
 * Make sure the iPhone and PC are on the same network.
-* Check the [Windows firewall](/assets/img/Firewall1.png)'s [Advanced settings](/assets/img/Firewall2.png). In there, make sure that in the [Inbound Rules](/assets/img/Firewall3.png) VSeeFace is set to accept connections. It was also reported that adjusting the path of the VSeeFace program to include the `.exe` at the end can help.
+* Check the [Windows firewall](/assets/img/Firewall1.png)'s [Advanced settings](/assets/img/Firewall2.png). In there, make sure that in the [Inbound Rules](/assets/img/Firewall3.png) VSeeFace is set to accept connections. It was also reported that adjusting the path of the VSeeFace program to include the `.exe` at the end can help. If VSeeFace does not show up at all, manually adding it may help.
 * In iOS, look for iFacialMocap in the app list and ensure that it has the `Local Network` permission.
 * Apparently sometimes starting VSeeFace as administrator can help.
 * Restart the PC.
+
+Some security and anti virus products include their own firewall that is separate from the Windows one, so make sure to check there as well if you use one.
 
 If it still doesn't work, you can confirm basic connectivity using the [MotionReplay](https://github.com/emilianavt/MotionReplay/releases/tag/v0.1.1-ifacialmocap) tool. Close VSeeFace, start MotionReplay, enter the iPhone's IP address and press the button underneath. You should see the packet counter counting up. If the packet counter does not count up, data is not being received at all, indicating a network or firewall issue.
 
@@ -755,7 +787,7 @@ This section lists common issues and possible solutions for them.
 
 #### Startup issues
 
-**Some users are reporting issues with NVIDIA driver version 526 causing VSeeFace to crash or freeze when starting after showing the Unity logo. VSeeFace v1.13.38b has been updated to v1.13.38b2, which might help a bit. You can also try running `UninstallAll.bat` in `VSeeFace_Data\StreamingAssets\UnityCapture` as a workaround. If this does not work, please roll back your NVIDIA driver to 522 for now. This should fix usually the issue.**
+**Some users are reporting issues with NVIDIA driver version 526 causing VSeeFace to crash or freeze when starting after showing the Unity logo. VSeeFace v1.13.38b has been updated to v1.13.38b2, which might help a bit. You can also try running `UninstallAll.bat` in `VSeeFace_Data\StreamingAssets\UnityCapture` as a workaround. If this does not work, please roll back your [NVIDIA driver](https://www.nvidia.com/download/Find.aspx?lang=en-us) (set "Recommended/Beta:" to "All") to 522 or earlier for now. This should fix usually the issue. Generally, since the issue is triggered by certain virtual camera drivers, uninstalling all virtual cameras should be effective as well. Another workaround is to set VSeeFace to run in Windows 8 compatibility mode, but this might cause issues in the future, so it's only recommended as a last resort.**
 
 If the VSeeFace window remains black when starting and you have an AMD graphics card, please try disabling `Radeon Image Sharpening` either globally or for VSeeFace. It reportedly can cause this type of issue.
 
