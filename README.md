@@ -752,7 +752,9 @@ Translations are coordinated on GitHub in the [VSeeFaceTranslations](https://git
 
 ### Running on Linux and maybe Mac
 
-**On v1.13.37c and later, it is necessary to delete GPUManagementPlugin.dll to be able to run VSeeFace with wine. This will be fixed in the future.**
+**On v1.13.37c and later, it is necessary to delete GPUManagementPlugin.dll to be able to run VSeeFace with wine. This should be fixed on the latest versions.**
+
+**Since OpenGL got deprecated on MacOS, it currently doesn't seem to be possible to properly run VSeeFace even with wine. Models end up not being rendered.**
 
 Some people have gotten VSeeFace to run on Linux through wine and it might be possible on Mac as well, but nobody tried, to my knowledge. However, reading webcams is not possible through wine versions before 6. Starting with wine 6, you can try just using it normally.
 
