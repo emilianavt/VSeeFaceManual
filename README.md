@@ -142,6 +142,7 @@ There are a lot of tutorial videos out there. This section lists a few to help y
 * <span lang="ja">[VSeeFace Spout2で画面をエクスポートって何？メニューをOBSに映さない方法](https://www.youtube.com/watch?v=92aga2mMaFY) @ 出口貞夫 / Deguchi Sadao</span>
 * <span lang="ja">[VSFAvatar形式で3Dルーム、デスクトップキャプチャ、カメラ切り替え](https://www.youtube.com/watch?v=lgU9UzUE0CA) @ 金曜日びすたん</span>
 * <span lang="ja">[【VSeeFaceSDK】VSeeFaceでリアルタイムエフェクト動かしたい](https://www.youtube.com/watch?v=OhjwhXhxAqw) @ 金曜日びすたん</span>
+* <span lang="ja">[個人Vtuberでも豪華フルトラ配信ができる?！解説講座動画 (mocopi)](https://www.youtube.com/watch?v=bx45_rnnNUo) @ 出口貞夫 / Deguchi Sadao</span>
 
 ## Manual
 
