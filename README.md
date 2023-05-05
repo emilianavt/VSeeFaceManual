@@ -885,6 +885,8 @@ This is usually caused by the model not being in the correct pose when being fir
 * Palm faces downward, parallel to the ground
 * Thumb parallel to the ground 45 degrees between x and z axis
 
+Also make sure that all five fingers are mapped in Unity's humanoid configuration. If the model has less fingers, please make sure to add some dummy bones for the missing fingers.
+
 ##### My blendshape only works in a blend shape clip, not in an animation
 
 Using the same blendshapes in multiple blend shape clips or animations can cause issues. While in theory, reusing it in multiple blend shape clips should be fine, a blendshape that is used in both an animation and a blend shape clip will not work in the animation, because it will be overridden by the blend shape clip after being applied by the animation.
