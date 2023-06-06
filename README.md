@@ -591,7 +591,7 @@ It is also possible to set up only a few of the possible expressions. This usual
 
 Having an expression detection setup loaded can increase the startup time of VSeeFace even if expression detection is disabled or set to simple mode. To avoid this, press the `Clear calibration` button, which will clear out all calibration data and preventing it from being loaded at startup. You can always load your detection setup again using the `Load calibration` button.
 
-### OSC/VMC protocol support
+### VMC protocol support
 
 VSeeFace both supports sending and receiving motion data (humanoid bone rotations, root offset, blendshape values) using the [VMC protocol](https://protocol.vmc.info/) introduced by Virtual Motion Capture. If both sending and receiving are enabled, sending will be done after received data has been applied. In this case, make sure that VSeeFace is not sending data to itself, i.e. the ports for sending and receiving are different, otherwise very strange things may happen.
 
