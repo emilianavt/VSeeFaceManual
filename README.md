@@ -601,6 +601,8 @@ Please note that received blendshape data will not be used for expression detect
 
 You can find a list of applications with support for the VMC protocol [here](https://protocol.vmc.info/Reference).
 
+**Note:** VMC protocol operates by transmitting data over the OSC protocol. However, this does not mean that it is compatible with any OSC compatible application, unless that application specifically supports VMC protocol.
+
 #### VR tracking
 
 To combine VR tracking with VSeeFace's tracking, you can either use [Tracking World](http://deatrathias.net/TW/) or the pixivFANBOX version of [Virtual Motion Capture](https://vmc.info/download.html) to send VR tracking data over VMC protocol to VSeeFace. [This](https://www.youtube.com/watch?v=LkO0VusjkHU) video by Suvidriel explains how to set this up with Virtual Motion Capture.
