@@ -84,7 +84,7 @@ Starting with VSeeFace v1.13.36, a new Unity asset bundle and VRM based avatar f
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jhQ8DF87I5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-A README file with various important information is included in the SDK, but you can also read it [here](https://github.com/emilianavt/VSeeFaceSDK/blob/master/README.md).
+A README file with various important information is included in the SDK, but you can also read it [here](https://github.com/emilianavt/VSeeFaceSDK/blob/master/README.md). The README file also contains informations on compatible versions for Unity and UniVRM as well as supported versions of other components, so make sure to refer to it if you need any of this information.
 
 SDK download: [v1.13.38c](https://github.com/emilianavt/VSeeFaceSDK/releases/download/v1.13.38c/VSF_SDK_v1.13.38c.unitypackage) ([release archive](https://github.com/emilianavt/VSeeFaceSDK/releases))
 
