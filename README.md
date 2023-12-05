@@ -194,9 +194,9 @@ Resolutions that are smaller than the default resolution of 1280x720 are not sav
 
 You can completely avoid having the UI show up in OBS, by using the Spout2 functionality. For more information, please refer to [this](https://www.vseeface.icu/spout). Effect settings can be controlled with components from the VSeeFace SDK, so if you are using a VSFAvatar model, you can create animations linked to hotkeyed blendshapes to animate and manipulate the effect settings. The local "L" hotkey will open a file opening dialog to directly open model files without going through the avatar picker UI, but loading the model can lead to lag during the loading process. Since loading models is laggy, I do not plan to add general model hotkey loading support. Instead, where possible, I would recommend using VRM material blendshapes or VSFAvatar animations to manipulate how the current model looks without having to load a new one.
 
-#### Is Spout2 capture supported by StreamLabs?
+#### Is Spout2 capture supported by Streamlabs?
 
-StreamLabs does [not](https://github.com/Off-World-Live/obs-spout2-plugin/issues/37) support the Spout2 OBS plugin, so because of that and various other reasons, including lower system load, I recommend switching to [OBS](https://obsproject.com/). OBS has a function to import already set up scenes from StreamLabs, so switching should be rather easy.
+Streamlabs has implemented Spout2, you can find their documentation [here](https://streamlabs.com/content-hub/post/vtuber-support-on-streamlabs-desktop).
 
 #### <a name="gaze-setup"></a>What are the requirements for a custom model to make use the gaze tracking?
 
