@@ -417,7 +417,7 @@ No.
 
 #### <a name="macos"></a>Does VSeeFace run on Mac?
 
-No. Although, if you are very experienced with Linux and wine as well, you can try following [these](#running-on-linux-and-maybe-mac) instructions for running it on Linux. Alternatively, you can look into other options like [3tene](https://3tene.com/free/) or [RiBLA Broadcast](https://booth.pm/ja/items/3642935).
+No. Although, if you are very experienced with Linux and wine as well, you can try following [these](#running-on-linux-and-maybe-mac) instructions for running it on Linux. A tutorial for running VSeeFace via Whisky can be found [here](https://danirukun.com/blog/2023-12-25-vseeface-macos/#vseeface), also chroma keying out the grey background may be difficult and the wine specific options detailed in the previous link do not seem to be supported. Alternatively, you can look into other options like [3tene](https://3tene.com/free/) or [RiBLA Broadcast](https://booth.pm/ja/items/3642935).
 
 #### Does VSeeFace run on Linux?
 
