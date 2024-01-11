@@ -291,9 +291,13 @@ Check the "Console" tabs. There are probably some errors marked with a red symbo
 
 In cases where using a shader with transparency leads to objects becoming translucent in OBS in an incorrect manner, setting the alpha blending operation to "Max" often helps. For example, there is a setting for this in the "Rendering Options", "Blending" section of the Poiyomi shader. In the case of a custom shader, setting `BlendOp Add, Max` or similar, with the important part being the `Max` should help.
 
-####  <a name="avatar-hotkey"></a>Can I switch avatars with a hotkey?
+#### <a name="avatar-hotkey"></a>Can I switch avatars with a hotkey?
 
 There is the "L" hotkey, which lets you directly load a model file. In general loading models is too slow to be useful for use through hotkeys. If you want to switch outfits, I recommend adding them all to one model. With VRM this can be done by changing making meshes transparent by changing the alpha value of its material through a material blendshape. For VSFAvatar, the objects can be toggled directly using Unity animations.
+
+#### <a href="rtx"></a>Is there support for RTX tracking?
+
+It's not directly supported, but you can try using it via the this [Expression Bridge](https://github.com/DrBomb/ExpressionAppBridge) application.
 
 #### <a name="shoost"></a>Since VSeeFace has no greenscreen option, how can I use it with [Shoost](https://www.patreon.com/posts/62585593)?
 
