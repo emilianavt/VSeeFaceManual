@@ -475,6 +475,12 @@ Please note that the camera needs to be reenabled every time you start VSeeFace 
 
 No. It uses paid assets from the Unity asset store that cannot be freely redistributed. However, the actual face tracking and avatar animation code is open source. You can find it [here](https://github.com/emilianavt/OpenSeeFace) and [here](https://gist.github.com/emilianavt/b211073096a4484fb92e6550212c2f48).
 
+#### Why isn't VSeeFace open source?
+
+As I wrote [here](https://github.com/emilianavt/VSeeFaceReleases/issues/6#issuecomment-1004923794): It uses proprietary assets from the Unity asset store. I could in theory release a repository with all those dependencies removed so people who feel like buying them themselves could build their own version, but keeping a separate repository for that up to date would just mean extra work for me. It's also my personal feeling that I just simply don't want to make it open source.
+
+The hard part behind it is the face tracking library, [OpenSeeFace](https://github.com/emilianavt/OpenSeeFace), which is open source. You are free to build your own open source VTubing application on top of it.
+
 #### <a name="ahk"></a><a name="autohotkey"></a>How can I trigger expressions from AutoHotkey?
 
 It seems that the regular send key command doesn't work, but adding a delay to prolong the key press helps. You can try something like this:
