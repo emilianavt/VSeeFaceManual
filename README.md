@@ -158,6 +158,10 @@ You can rotate, zoom and move the camera by holding the Alt key and using the di
 
 Once you've found a camera position you like and would like for it to be the initial camera position, you can set the default camera setting in the `General settings` to `Custom`. You can now move the camera into the desired position and press `Save` next to it, to save a custom camera position. Please note that these custom camera positions to not adapt to avatar size, while the regular default positions do.
 
+#### How can I change the direction of the lighting?
+
+You can adjust the lighting by holding the Ctrl key and dragging the mouse while left clicking. Pressing `D` will reset it. The currently set light position can be saved in the `Light settings` window.
+
 #### How do I do chroma keying with a gray background?
 
 VSeeFace does not support chroma keying. Instead, capture it in OBS using a game capture and enable the `Allow transparency` option on it. Once you press the tiny ※ button in the lower right corner, the UI will become hidden and the background will turn transparent in OBS. You can hide and show the ※ button using the space key.
