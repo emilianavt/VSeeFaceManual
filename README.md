@@ -84,7 +84,7 @@ Starting with VSeeFace v1.13.36, a new Unity asset bundle and VRM based avatar f
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jhQ8DF87I5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-A README file with various important information is included in the SDK, but you can also read it [here](https://github.com/emilianavt/VSeeFaceSDK/blob/master/README.md).
+A README file with various important information is included in the SDK, but you can also read it [here](https://github.com/emilianavt/VSeeFaceSDK/blob/master/README.md). The README file also contains informations on compatible versions for Unity and UniVRM as well as supported versions of other components, so make sure to refer to it if you need any of this information.
 
 SDK download: [v1.13.38c](https://github.com/emilianavt/VSeeFaceSDK/releases/download/v1.13.38c/VSF_SDK_v1.13.38c.unitypackage) ([release archive](https://github.com/emilianavt/VSeeFaceSDK/releases))
 
@@ -158,6 +158,10 @@ You can rotate, zoom and move the camera by holding the Alt key and using the di
 
 Once you've found a camera position you like and would like for it to be the initial camera position, you can set the default camera setting in the `General settings` to `Custom`. You can now move the camera into the desired position and press `Save` next to it, to save a custom camera position. Please note that these custom camera positions to not adapt to avatar size, while the regular default positions do.
 
+#### How can I change the direction of the lighting?
+
+You can adjust the lighting by holding the Ctrl key and dragging the mouse while left clicking. Pressing `D` will reset it. The currently set light position can be saved in the `Light settings` window.
+
 #### How do I do chroma keying with a gray background?
 
 VSeeFace does not support chroma keying. Instead, capture it in OBS using a game capture and enable the `Allow transparency` option on it. Once you press the tiny ※ button in the lower right corner, the UI will become hidden and the background will turn transparent in OBS. You can hide and show the ※ button using the space key.
@@ -194,9 +198,9 @@ Resolutions that are smaller than the default resolution of 1280x720 are not sav
 
 You can completely avoid having the UI show up in OBS, by using the Spout2 functionality. For more information, please refer to [this](https://www.vseeface.icu/spout). Effect settings can be controlled with components from the VSeeFace SDK, so if you are using a VSFAvatar model, you can create animations linked to hotkeyed blendshapes to animate and manipulate the effect settings. The local "L" hotkey will open a file opening dialog to directly open model files without going through the avatar picker UI, but loading the model can lead to lag during the loading process. Since loading models is laggy, I do not plan to add general model hotkey loading support. Instead, where possible, I would recommend using VRM material blendshapes or VSFAvatar animations to manipulate how the current model looks without having to load a new one.
 
-#### Is Spout2 capture supported by StreamLabs?
+#### Is Spout2 capture supported by Streamlabs?
 
-StreamLabs does [not](https://github.com/Off-World-Live/obs-spout2-plugin/issues/37) support the Spout2 OBS plugin, so because of that and various other reasons, including lower system load, I recommend switching to [OBS](https://obsproject.com/). OBS has a function to import already set up scenes from StreamLabs, so switching should be rather easy.
+Streamlabs has implemented Spout2, you can find their documentation [here](https://streamlabs.com/content-hub/post/vtuber-support-on-streamlabs-desktop).
 
 #### <a name="gaze-setup"></a>What are the requirements for a custom model to make use the gaze tracking?
 
@@ -291,9 +295,13 @@ Check the "Console" tabs. There are probably some errors marked with a red symbo
 
 In cases where using a shader with transparency leads to objects becoming translucent in OBS in an incorrect manner, setting the alpha blending operation to "Max" often helps. For example, there is a setting for this in the "Rendering Options", "Blending" section of the Poiyomi shader. In the case of a custom shader, setting `BlendOp Add, Max` or similar, with the important part being the `Max` should help.
 
-####  <a name="avatar-hotkey"></a>Can I switch avatars with a hotkey?
+#### <a name="avatar-hotkey"></a>Can I switch avatars with a hotkey?
 
 There is the "L" hotkey, which lets you directly load a model file. In general loading models is too slow to be useful for use through hotkeys. If you want to switch outfits, I recommend adding them all to one model. With VRM this can be done by changing making meshes transparent by changing the alpha value of its material through a material blendshape. For VSFAvatar, the objects can be toggled directly using Unity animations.
+
+#### <a href="rtx"></a>Is there support for RTX tracking?
+
+It's not directly supported, but you can try using it via the this [Expression Bridge](https://github.com/DrBomb/ExpressionAppBridge) application.
 
 #### <a name="shoost"></a>Since VSeeFace has no greenscreen option, how can I use it with [Shoost](https://www.patreon.com/posts/62585593)?
 
@@ -417,7 +425,7 @@ No.
 
 #### <a name="macos"></a>Does VSeeFace run on Mac?
 
-No. Although, if you are very experienced with Linux and wine as well, you can try following [these](#running-on-linux-and-maybe-mac) instructions for running it on Linux. Alternatively, you can look into other options like [3tene](https://3tene.com/free/) or [RiBLA Broadcast](https://booth.pm/ja/items/3642935).
+No. Although, if you are very experienced with Linux and wine as well, you can try following [these](#running-on-linux-and-maybe-mac) instructions for running it on Linux. A tutorial for running VSeeFace via Whisky can be found [here](https://danirukun.com/blog/2023-12-25-vseeface-macos/#vseeface), also chroma keying out the grey background may be difficult and the wine specific options detailed in the previous link do not seem to be supported. Alternatively, you can look into other options like [3tene](https://3tene.com/free/) or [RiBLA Broadcast](https://booth.pm/ja/items/3642935).
 
 #### Does VSeeFace run on Linux?
 
@@ -470,6 +478,12 @@ Please note that the camera needs to be reenabled every time you start VSeeFace 
 #### Is VSeeFace open source? I heard it was open source.
 
 No. It uses paid assets from the Unity asset store that cannot be freely redistributed. However, the actual face tracking and avatar animation code is open source. You can find it [here](https://github.com/emilianavt/OpenSeeFace) and [here](https://gist.github.com/emilianavt/b211073096a4484fb92e6550212c2f48).
+
+#### Why isn't VSeeFace open source?
+
+As I wrote [here](https://github.com/emilianavt/VSeeFaceReleases/issues/6#issuecomment-1004923794): It uses proprietary assets from the Unity asset store. I could in theory release a repository with all those dependencies removed so people who feel like buying them themselves could build their own version, but keeping a separate repository for that up to date would just mean extra work for me. It's also my personal feeling that I just simply don't want to make it open source.
+
+The hard part behind it is the face tracking library, [OpenSeeFace](https://github.com/emilianavt/OpenSeeFace), which is open source. You are free to build your own open source VTubing application on top of it.
 
 #### <a name="ahk"></a><a name="autohotkey"></a>How can I trigger expressions from AutoHotkey?
 

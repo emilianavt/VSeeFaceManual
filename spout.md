@@ -28,7 +28,7 @@ If the image appears flipped vertically, right click on your capture source, sel
 
 Please note that Spout2 might not work on certain GPUs (e.g. many integrated Intel graphics).
 
-StreamLabs does [not](https://github.com/Off-World-Live/obs-spout2-plugin/issues/37) support the Spout2 OBS plugin, so because of that and various other reasons, including lower system load, I recommend switching to [OBS](https://obsproject.com/). OBS has a function to import already set up scenes from StreamLabs, so switching should be rather easy.
+StreamLabs [does](https://streamlabs.com/content-hub/post/vtuber-support-on-streamlabs-desktop) also support Spout2.
 
 ## Why use Spout2 to capture VSeeFace?
 
