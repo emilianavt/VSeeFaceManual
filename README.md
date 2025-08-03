@@ -20,7 +20,7 @@ Please note that Live2D models are not supported. For those, please check out VT
 
 **If VSeeFace does not start for you, this may be caused by the NVIDIA driver version 526. For details, please see [here](https://www.vseeface.icu/#startup-issues).**
 
-<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.38c/VSeeFace-v1.13.38c2.zip" class="download">Download<br>v1.13.38c2</a>
+<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.38c/VSeeFace-v1.13.38c3.zip" class="download">Download<br>v1.13.38c3</a>
 
 **If you use a Leap Motion, update your Leap Motion software to [V5.2 or newer](https://developer.leapmotion.com/tracking-software-download)! Just make sure to uninstall any older versions of the Leap Motion software first. If necessary, V4 compatiblity can be enabled from VSeeFace's advanced settings.**
 
