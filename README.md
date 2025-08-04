@@ -18,7 +18,9 @@ Please note that Live2D models are not supported. For those, please check out VT
 
 **To update VSeeFace, just delete the old folder or overwrite it when unpacking the new version.**
 
-**If VSeeFace does not start for you, this may be caused by the NVIDIA driver version 526. For details, please see [here](https://www.vseeface.icu/#startup-issues).**
+<!-- **If VSeeFace does not start for you, this may be caused by the NVIDIA driver version 526. For details, please see [here](https://www.vseeface.icu/#startup-issues).** -->
+
+**VSeeFace only supports the VRM0 standard, not VRM 1.0. Make sure to select the VRM0 export format when exporting models from VRoid Studio or other applications.**
 
 <a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.38c/VSeeFace-v1.13.38c3.zip" class="download">Download<br>v1.13.38c3</a>
 
@@ -161,6 +163,10 @@ Once you've found a camera position you like and would like for it to be the ini
 #### How can I change the direction of the lighting?
 
 You can adjust the lighting by holding the Ctrl key and dragging the mouse while left clicking. Pressing `D` will reset it. The currently set light position can be saved in the `Light settings` window.
+
+#### I just exported my model from VRoid Studio, but VSeeFace won't load it?
+
+VSeeFace only supports the VRM0 standard, not VRM 1.0. Make sure to select the VRM0 export format when exporting models from VRoid Studio or other applications.
 
 #### How do I do chroma keying with a gray background?
 
