@@ -164,7 +164,7 @@ Once you've found a camera position you like and would like for it to be the ini
 
 You can adjust the lighting by holding the Ctrl key and dragging the mouse while left clicking. Pressing `D` will reset it. The currently set light position can be saved in the `Light settings` window.
 
-#### I just exported my model from VRoid Studio, but VSeeFace won't load it?
+#### <a name="vrm0"></a>I just exported my model from VRoid Studio, but VSeeFace won't load it?
 
 VSeeFace only supports the VRM0 standard, not VRM 1.0. Make sure to select the VRM0 export format when exporting models from VRoid Studio or other applications.
 
