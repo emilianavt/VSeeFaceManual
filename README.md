@@ -775,7 +775,7 @@ Translations are coordinated on GitHub in the [VSeeFaceTranslations](https://git
 
 ### Running on Linux and maybe Mac
 
-**On v1.13.37c and later, it is necessary to delete GPUManagementPlugin.dll to be able to run VSeeFace with wine. This should be fixed on the latest versions.**
+**If you encounter very high CPU usage, please try deleting or renaming LeapCV5.dll and see if that helps.**
 
 **Since OpenGL got deprecated on MacOS, it currently doesn't seem to be possible to properly run VSeeFace even with wine. Models end up not being rendered.**
 
@@ -805,6 +805,8 @@ Notes on running wine: First make sure you have the Arial font installed. You ca
 Starting with VSeeFace v1.13.33f, while running under wine `--background-color '#00FF00'` can be used to set a window background color. To disable wine mode and make things work like on Windows, `--disable-wine-mode` can be used.
 
 **Limitations:** The virtual camera, Spout2 and Leap Motion support probably won't work. If a virtual camera is needed, OBS provides virtual camera functionality and the captured window can be reexported using this. In some cases [extra steps](https://askubuntu.com/questions/1332772/obs-studio-virtual-camera-wont-work/1356887#1356887) may be required to get it to work.
+
+On v1.13.37c and later, it is necessary to delete GPUManagementPlugin.dll to be able to run VSeeFace with wine. This should be fixed on the latest versions.
 
 ### Troubleshooting
 
