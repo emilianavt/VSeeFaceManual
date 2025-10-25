@@ -22,7 +22,9 @@ Please note that Live2D models are not supported. For those, please check out VT
 
 **VSeeFace only supports the VRM0 standard, not VRM 1.0. Make sure to select the VRM0 export format when exporting models from VRoid Studio or other applications.**
 
-<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.38c/VSeeFace-v1.13.38c3.zip" class="download">Download<br>v1.13.38c3</a>
+**VSeeFace v1.13.38c4 contains a patch for the recent Unity security vulnerability, so updating is recommended.**
+
+<a href="https://github.com/emilianavt/VSeeFaceReleases/releases/download/v1.13.38c/VSeeFace-v1.13.38c4.zip" class="download">Download<br>v1.13.38c4</a>
 
 <!-- **If you use a Leap Motion, update your Leap Motion software to [V5.2 or newer](https://developer.leapmotion.com/tracking-software-download)! Just make sure to uninstall any older versions of the Leap Motion software first. If necessary, V4 compatiblity can be enabled from VSeeFace's advanced settings.**
 
